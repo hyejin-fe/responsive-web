@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>도서기증 | 수지도서관</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard.css">
-    <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/서브페이지명.css">
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/sub/donation.css">
     <script src="scripts/sub/서브페이지명.js" defer></script>
 </head>
 <body>
@@ -29,59 +29,334 @@
                     <li><button>기증자료목록</button></li>
                 </ul>
                 <div class="tab-cont">
-                    <h2 class="tit-sec blind">기증안내</h2>
-                    <div class="">
+                    <div class="dona-info">
+                        <h2 class="tit-sec blind">기증안내</h2>
+                        <div class="">
+                            <div class="detail-box">
+                                <p>도서기증</p>
+                                <p>집에서 잠자고 있는 질 좋은 장서를 보다 많은 시민에게 제공하기 위해 도서를 기증받고 있습니다. 기증 참여는 개인, 단체 누구나 가능합니다.</p>
+                            </div>
+                        </div>
+                        <h3 class="tit-sub">기증 절차</h3>
+                        <div class="step-area">
+                            <div class="step-box">
+                                <p class="step-tit">STEP 01</p>
+                                <p class="step-cont">
+                                    <span class="step-name">서약서 작성</span>
+                                    <span class="step-sub">• 홈페이지에서 서약서 작성후 기증 신청</span>
+                                </p>
+                            </div>
+                            <div class="step-box">
+                                <p class="step-tit">STEP 02</p>
+                                <p class="step-cont">
+                                    <span class="step-name">도서관 방문</span>
+                                    <span class="step-sub">• 기증신청조회에서 서약서를 출력, 기증 자료와 함께 제출</span>
+                                </p>
+                            </div>
+                            <div class="step-box">
+                                <p class="step-tit">STEP 03</p>
+                                <p class="step-cont">
+                                    <span class="step-name">기증 자료 선정</span>
+                                    <span class="step-sub">• 기준에 따라 자료 선정 및 장서 등록</span>
+                                </p>
+                            </div>
+                            <div class="step-box">
+                                <p class="step-tit">STEP 04</p>
+                                <p class="step-cont">
+                                    <span class="step-name">기증 자료 목록 게시</span>
+                                    <span class="step-sub">• 승인 완료 후 장서로 등록된 기증자료 목록을 게시</span>
+                                </p>
+                            </div>
+                        </div>
+                        <h3 class="tit-sub">기증대상 자료</h3>
+                        <div class="">
+                            <p>• 신간도서로 도서관에 미소장중인 자료</p>
+                            <p>• 소장되어 있으나 대출빈도가 높은 자료</p>
+                            <p>• 향토자료 및 희귀자료 등 소장가치가 있다고 판단되는 자료</p>
+                            <p>• 점자도서, 큰글자 도서 등 장애인을 위한 자료</p>
+                            <p>• 기타 도서관 장서로 활용 가능한 자료</p>
+                        </div>
+                        <h3 class="tit-sub">기증제외 자료</h3>
+                        <div class="">
+                            <p>• 용인시 도서관에서 이미 소장하고 있는 자료</p>
+                            <p>• 파손·오손된 자료 및 개인 복사본 자료</p>
+                            <p>• 수험서, 문제집, 만화 등의 자료</p>
+                            <p>• 당해년 기준 발행 10년 이상된 출판자료</p>
+                            <p>• 기타 도서관 소장에 부적합하다고 판단되는 자료</p>
+                        </div>
+                        <h3 class="tit-sub">참고사항</h3>
+                        <div class="">
+                            <p>• 기증 받은 도서 중 도서관 장서로 등록되지 않을 수 있습니다.</p>
+                            <p>• 기증받은 도서가 기증 제외 자료일 경우 폐기될 수 있습니다.</p>
+                            <p>• 도서관 등록 전체, 별도 코너 마련 등 조건부 기증은 받지 않습니다.</p>
+                        </div>
+                        <h3 class="tit-sub">용인시립도서관 기증접수 및 문의</h3>
+                        <p>처인구</p>  <!-- 표 들어갈 위치 -->
+                        <p>기흥구</p>
+                        <p>수지구</p>
+                        <h3 class="tit-sub">타기관 기증 문의</h3>
+                        <div class="">
+                            <p>• 국립중앙도서관 책다모아<a href="">(https://www.nl.go.kr/NL/contents/N30401010000.do)</a></p>
+                            <p>• 사랑의 책 나누기 운동본부<a href="">(https://www.facebook.com/nanumbk/)</a></p>
+                        </div>
+                    </div>
+                    <div class="dona-apply">
+                        <h2 class="tit-sec blind">서약서작성</h2>
+                        <form>
+                            <!-- 서약서작성01 -->
+                            <fieldset>
+                                <legend>개인정보 수집·이용 동의 안내</legend>
+                                <div class="base-form">
+                                    <p>도서기증과 관련하여 아래와 같이 개인정보를 수집·이용하고자 합니다.</p>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>수집·이용 항목</th>
+                                                <th>수집·이용 목적</th>
+                                                <th>보유기간</th>
+                                            </tr>
+                                        </thead>
+                                        <!-- <tfoot></tfoot> -->
+                                        <tbody>
+                                            <tr>
+                                                <td>개인 및 기관명, 주소, 휴대폰번호</td>
+                                                <td>정보주체동의 도서기증 신청자 현황</td>
+                                                <td>5년</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p>개인정보 수집과 관련하여 동의를 거부할 권리가 있으며, 거부 시 도서기증이 불가능함을 알려드립니다.</p>
+                                </div>
+                                <p>위와 같이 개인정보를 수집·이용하는데 동의하십니까?</p>
+                                <label>
+                                    <input type="radio" value=""> 동의안함
+                                    <input type="radio" value=""> 동의함
+                                </label>
+                            </fieldset>
+                            <!-- 서약서작성02 -->
+                            <fieldset>
+                                <legend>기증 정보</legend>
+                                <p>(모든 항목 필수 입력)</p>
+                                <button>기증서약서 다운로드</button>
+                                <div class="base-form>
+                                    <dl>
+                                        <dt>기증도서관선택</dt>
+                                        <dd>
+                                            <label for="" class="blind">기증도서관선택</label>
+                                            <select name="" id="">
+                                                <option></option>
+                                            </select>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>개인 및 기관명</dt>
+                                        <dd>
+                                            <label for="" class="blind">개인 및 기관명 기입</label>
+                                            <input type="text" name="" id="">
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>연락처</dt>
+                                        <dd>
+                                            <label for="tellFirst" class="blind">전화번호 앞자리 선택</label>
+                                            <select name="tellFirst" id="tellFirst">
+                                                <option></option>
+                                            </select>
+                                            <label for="tellMiddle" class="blind">전화번호 중간자리 기입</label>
+                                            <input type="text" name="tellMiddle" id="tellMiddle">
+                                            <label for="tellLast" class="blind">전화번호 끝자리 기입</label>
+                                            <input type="text" name="tellLast" id="tellLast">
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>주소</dt>
+                                        <label>
+                                            <input type="text"> <button>주소찾기</button>
+                                        </label>
+                                        <label for="detailAd" class="blind">상세주소 기입</label>
+                                        <input type="text" name="detailAd" id="detailAd">
+                                    </dl>
+                                    <dl>
+                                        <dt>주요 기증 분야</dt>
+                                        <dd>
+                                            <label for="" class="blind">주요 기증 분야 기입</label>
+                                            <input type="text" name="" id="">
+                                            <span>※ 예) 일반도서, 아동청소년도서</span>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>도서수량</dt>
+                                        <dd>
+                                            <label for="" class="blind">도사수량 기입</label>
+                                            <input type="text" name="" id="">
+                                            <span>(권)</span>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>등록제외자료 반환여부</dt>
+                                        <dd>
+                                            <label for="" class="blind">도사수량 기입</label>
+                                            <input type="radio" name="" id=""> 미반환
+                                            <input type="radio" name="" id=""> 반환(기증자 방문)
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>인수증</dt>
+                                        <dd>
+                                            <label>
+                                                <input type="radio" name="" id=""> 미발급(기증자 방문)
+                                                <input type="radio" name="" id=""> 발급(이메일 필수)
+                                            </label>
+                                            <input type="text" name="" id="">
+                                            <span>@</span>
+                                            <input type="text" name="" id="">
+                                            <select name="" id="">
+                                                <option></option>
+                                            </select>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>비밀번호</dt>
+                                        <dd>
+                                            <input type="password" placeholder="비밀번호 입력">
+                                            <input type="password" placeholder="비밀번호 재입력">
+                                            <p class="pwd-check">비밀번호 불일치</p>
+                                            <p>※ 8~20자 영어소문자, 숫자, 특수문자사용 가능</p>
+                                            <p>※ 신청 조회 시 꼭 필요합니다</p>
+                                            <p>※ 등록 완료 후 비밀번호 수정/찾기가 어려우니 꼭 확인해주세요.</p>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div>
+                                    <button class="cancel-btn">취소</button>
+                                    <button class="apply-btn">신청확인</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="dona-inquiry">
+                        <h2 class="tit-sec blind">기증신청조회</h2>
                         <div class="detail-box">
-                            <p>도서기증</p>
-                            <p>집에서 잠자고 있는 질 좋은 장서를 보다 많은 시민에게 제공하기 위해 도서를 기증받고 있습니다. 기증 참여는 개인, 단체 누구나 가능합니다.</p>
+                            <p>유의사항</p>
+                            <p>▪ 기증신청조회에서 기증서약서 출력 후 직접 방문하여 기증 담당자에게 접수</p>
+                            <p>▪ 용인시 도서관 자료기증 처리기준에 따라 선정된 자료는 도서관 장서로 등록</p>
+                            <p>▪ 선정에서 제외된 자료는 도서를 필요로 하는 관련기관에 재기증</p>
+                        </div>
+                        <div class="base-form">
+                            <form>
+                                <legend class="">기증신청조회 검색</legend>
+                                <label for="" class="blind"></label>
+                                <select name="" id="">
+                                    <option value="">전체도서관</option>
+                                </select>
+                                <label for="" class="blind"></label>
+                                <select name="" id="">
+                                    <option value="">신청자명</option>
+                                </select>
+                                <label for="" class="blind"></label>
+                                <input type="text" name="" id="">
+                                <button>검색</button>
+                            </form>
+                        </div>
+                        <div class="post-cont">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>기증도서관</th>
+                                        <th>기증자(처)</th>
+                                        <th>처리상태</th>
+                                    </tr>
+                                </thead>
+                                <!-- <tfoot></tfoot> -->
+                                <tbody>
+                                    <tr>
+                                        <td>보정</td>
+                                        <td>현민지</td>
+                                        <td>신청중</td>
+                                    </tr>
+                                    <tr>
+                                        <td>창덕</td>
+                                        <td>윤재성</td>
+                                        <td>신청승인</td>
+                                    </tr>
+                                    <tr>
+                                        <td>기흥</td>
+                                        <td>이찬주</td>
+                                        <td>신청취소</td>
+                                    </tr>
+                                    <tr>
+                                        <td>성복</td>
+                                        <td>이은정</td>
+                                        <td>신청취소</td>
+                                    </tr>
+                                    <tr>
+                                        <td>보정</td>
+                                        <td>장진석</td>
+                                        <td>신청취소</td>
+                                    </tr>
+                                    <tr>
+                                        <td>동천</td>
+                                        <td>박수만</td>
+                                        <td>신청중</td>
+                                    </tr>
+                                    <tr>
+                                        <td>보정</td>
+                                        <td>정건</td>
+                                        <td>신청취소</td>
+                                    </tr>
+                                    <tr>
+                                        <td>수지</td>
+                                        <td>박현주</td>
+                                        <td>신청중</td>
+                                    </tr>
+                                    <tr>
+                                        <td>수지</td>
+                                        <td>오정민</td>
+                                        <td>신청중</td>
+                                    </tr>
+                                    <tr>
+                                        <td>죽전</td>
+                                        <td>한신애</td>
+                                        <td>신청중</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-                    <h3 class="tit-sub">기증 절차</h3>
-                    <div class="step-area">
-                        <div class="step-box">
-                            <p class="step-tit">STEP 01</p>
-                            <p class="step-cont">
-                                <span class="step-name">서약서 작성</span>
-                                <span class="step-sub">• 홈페이지에서 서약서 작성후 기증 신청</span>
-                            </p>
+                    <div class="dona-list">
+                        <h2 class="tit-sec blind">기증자료목록</h2>
+                        <div class="base-form">
+                            <form>
+                                <legend class="">기증자료목록 검색</legend>
+                                <label for="" class="blind"></label>
+                                <select name="" id="">
+                                    <option value="">전체도서관</option>
+                                </select>
+                                <label for="" class="blind"></label>
+                                <select name="" id="">
+                                    <option value="">신청자명</option>
+                                </select>
+                                <label for="" class="blind"></label>
+                                <input type="text" name="" id="">
+                                <button>검색</button>
+                            </form>
                         </div>
-                        <div class="step-box">
-                            <p class="step-tit">STEP 02</p>
-                            <p class="step-cont">
-                                <span class="step-name">도서관 방문</span>
-                                <span class="step-sub">• 기증신청조회에서 서약서를 출력, 기증 자료와 함께 제출</span>
-                            </p>
+                        <div class="post-cont">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>제목</th>
+                                        <th>등록일</th>
+                                    </tr>
+                                </thead>
+                                <!-- <tfoot></tfoot> -->
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2">등록된 게시글이 없습니다.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <div class="step-box">
-                            <p class="step-tit">STEP 03</p>
-                            <p class="step-cont">
-                                <span class="step-name">기증 자료 선정</span>
-                                <span class="step-sub">• 기준에 따라 자료 선정 및 장서 등록</span>
-                            </p>
-                        </div>
-                        <div class="step-box">
-                            <p class="step-tit">STEP 04</p>
-                            <p class="step-cont">
-                                <span class="step-name">기증 자료 목록 게시</span>
-                                <span class="step-sub">• 승인 완료 후 장서로 등록된 기증자료 목록을 게시</span>
-                            </p>
-                        </div>
-                    </div>
-                    <h3 class="tit-sub">기증대상 자료</h3>
-                    <div class="">
-                        <p>• 신간도서로 도서관에 미소장중인 자료</p>
-                        <p>• 소장되어 있으나 대출빈도가 높은 자료</p>
-                        <p>• 향토자료 및 희귀자료 등 소장가치가 있다고 판단되는 자료</p>
-                        <p>• 점자도서, 큰글자 도서 등 장애인을 위한 자료</p>
-                        <p>• 기타 도서관 장서로 활용 가능한 자료</p>
-                    </div>
-                    <h3 class="tit-sub">기증제외 자료</h3>
-                    <div class="">
-                        <p>• 용인시 도서관에서 이미 소장하고 있는 자료</p>
-                        <p>• 파손·오손된 자료 및 개인 복사본 자료</p>
-                        <p>• 수험서, 문제집, 만화 등의 자료</p>
-                        <p>• 당해년 기준 발행 10년 이상된 출판자료</p>
-                        <p>• 기타 도서관 소장에 부적합하다고 판단되는 자료</p>
                     </div>
                 </div>
                 
