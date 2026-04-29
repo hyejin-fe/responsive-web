@@ -1,0 +1,192 @@
+/* ================================
+    [전체 반응형 가이드]
+    1. 모바일 대응 최소값 (320px) = .wrapper의 min-width 제한
+    2. 데스크탑 콘텐츠 폭 최대값 (1200px) = .inner의 max-width 제한  
+================================ */
+
+/* Reset style */ /* 기본값 초기화 - 여기서만 태그 선택자 허용 */
+* { box-sizing: border-box; }
+body, h1, h2, h3, h4, p, ul, ol, li, button, a { margin: 0; padding: 0; }
+h1, h2, h3, h4 { font-size: inherit; }
+ul, ol { list-style: none; }
+a { text-decoration: none; color: inherit; }
+button { border: 0; background: transparent; cursor: pointer; }
+img { vertical-align: top; max-width: 100%; }
+input, button, select, textarea {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    background: none;
+    font-family: inherit; /* 필수: 부모 폰트 상속 */
+    appearance: none;  /* 필수: 기기별 기본 스타일 제거 */
+}
+
+input:focus, button:focus {
+    outline: none;
+}
+
+
+/* reset */
+table { 
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0 none;
+    width: 100%;
+}
+
+th, td {
+    border: 0 none;
+    text-align: left;
+    vertical-align: top;
+    font-weight: normal;
+}
+
+
+/* 2. Base (기본 레이아웃 및 폰트) */
+body { 
+    font-size: 16px; color: #333; line-height: 1.6; 
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; 
+}
+h1 { line-height: 1.2; }
+h2, h3 { line-height: 1.4; }
+a { color:#333; line-height: 1.4; font-size: 14px; font-weight: 500; }
+a:hover { text-decoration: underline; }
+
+input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* 3. 레이아웃 클래스 (공통 사용) */
+.wrapper { width: 100%; min-width: 320px; }
+.container { width: 100%; }
+.inner { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 20px; background-color: #ececec; }
+
+/* 4. 공통 UI 컴포넌트 */
+.img-box { overflow: hidden; }
+.img-box img { width: 100%; display: block; }
+
+/* 5. 접근성 클래스 */
+.blind { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); }
+
+/* ★★★★★ 팀별로 정해진 공통 클래스 규칙 나열 */
+.tit-main { color: #111; font-size: 24px; font-weight: 500; line-height: 1.2; } /* 본문의 대제목 - size */
+.tit-sec { color: #111; font-size: 20px; font-weight: 500; line-height: 1.4; } /* 본문의 중제목 - size */ 
+.tit-sub { color: #111; font-size: 20px; font-weight: 500; line-height: 1.4; } /* 본문의 소제목 - size */
+
+/* 공통 border 스타일 */
+.base-form, .dropdown, .icon-btn {
+    border: 1px solid #e2e2e2;
+}
+.navi span {  /* 상단 경로 */
+    font-size: 14px;
+    color: #464646;
+}
+
+.base-form { 
+    /* border: 1px solid #e2e2e2; */
+}
+
+.dropdown { /* 펼쳤다 접었다 */
+    /* border: 1px solid #e2e2e2; */
+}
+
+.tab-btn li { 
+    font-size: 20px;
+    color: #0d4f80;
+    border: 1px solid #e2e2e2;
+}
+.tab-btn li.active {
+    color: #0d4f80;
+    border: 0 none;
+}
+
+.icon-btn { /* 주제별,인기도서 아이콘 */
+    /* border: 1px solid #e2e2e2; */
+    border-radius: 3px;
+}
+
+.icon-btn.active{
+    border: 1px solid #222222;
+}
+
+.detail-box { /* 전 빗금이었던 박스 */
+    border-top: 1px solid #222222;
+    background-color: #f6f6f6;
+}
+
+.post-cont { /* 테이블 */
+    border-top: 2px solid #555;
+}
+.post-cont td {
+    border-bottom: 1px solid #e2e2e2;
+}
+.post-cont td:last-child {
+    border-bottom: 1px solid #ababab;
+}
+
+.img-cont li { /* 이미지만 있는 페이지 (큐레이션) */
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.chart { /* 표 */
+    border-top: 2px solid #555;
+}
+.chart th {
+    background-color: #f7f7f7;
+}
+.chart td {
+    border-bottom: 1px solid #e2e2e2;
+}
+.chart td:last-child {
+    border-bottom: 1px solid #ababab;
+}
+
+.step-box { /* 절차 */
+
+}
+
+.paging span {
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+}
+.paging span.active {
+    background-color: #333;
+}
+.paging-btn {
+    background-color: #eee;
+}
+
+.wrapper { 
+    width: 100%;
+    min-width: 320px;
+}
+
+@media screen and (max-width: 767px){
+    .blind-m { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); }
+}
+
+@media screen and (min-width: 1024px){ /* 데스크탑 min-width가 다를 수 있음 */
+    body { 
+        font-size: 18px;
+    }
+}
