@@ -16,12 +16,14 @@
             
         </aside><!-- // #aside End -->
         <section id="main">
-            <p class="navi">
-                <span>열린마당</span>
-                <span>도서기증</span>
-            </p>
-            <h1 class="tit-main">도서기증</h1>
-            <div class="">
+            <div class="main-top">  <!-- top부분 메인부분 div로 묶어서 나누기 물어보기 -->
+                <p class="navi">
+                    <span>열린마당</span>
+                    <span>도서기증</span>
+                </p>
+                <h1 class="tit-main">도서기증</h1>
+            </div>
+            <div class="main-cont">
                 <ul class="tab-btn">
                     <li><button>기증안내</button></li>
                     <li><button>서약서작성</button></li>
@@ -138,7 +140,7 @@
                                 <legend>기증 정보</legend>
                                 <p>(모든 항목 필수 입력)</p>
                                 <button>기증서약서 다운로드</button>
-                                <div class="base-form>
+                                <div class="base-form">
                                     <dl>
                                         <dt>기증도서관선택</dt>
                                         <dd>
@@ -170,11 +172,13 @@
                                     </dl>
                                     <dl>
                                         <dt>주소</dt>
-                                        <label>
-                                            <input type="text"> <button>주소찾기</button>
-                                        </label>
-                                        <label for="detailAd" class="blind">상세주소 기입</label>
-                                        <input type="text" name="detailAd" id="detailAd">
+                                        <dd>
+                                            <label>
+                                                <input type="text"> <button>주소찾기</button>
+                                            </label>
+                                            <label for="detailAd" class="blind">상세주소 기입</label>
+                                            <input type="text" name="detailAd" id="detailAd">
+                                        </dd>
                                     </dl>
                                     <dl>
                                         <dt>주요 기증 분야</dt>
@@ -262,61 +266,83 @@
                             <table>
                                 <thead>
                                     <tr>
+                                        <th>번호</th>
                                         <th>기증도서관</th>
                                         <th>기증자(처)</th>
+                                        <th>신청일</th>
                                         <th>처리상태</th>
                                     </tr>
                                 </thead>
                                 <!-- <tfoot></tfoot> -->
                                 <tbody>
                                     <tr>
+                                        <td>202</td>
                                         <td>보정</td>
                                         <td>현민지</td>
+                                        <td>2026.04.25</td>
                                         <td>신청중</td>
                                     </tr>
                                     <tr>
+                                        <td>201</td>
                                         <td>창덕</td>
                                         <td>윤재성</td>
+                                        <td>2026.04.23</td>
                                         <td>신청승인</td>
                                     </tr>
                                     <tr>
+                                        <td>200</td>
                                         <td>기흥</td>
                                         <td>이찬주</td>
+                                        <td>2026.04.17</td>
                                         <td>신청취소</td>
                                     </tr>
                                     <tr>
+                                        <td>199</td>
                                         <td>성복</td>
                                         <td>이은정</td>
+                                        <td>2026.04.12</td>
                                         <td>신청취소</td>
                                     </tr>
                                     <tr>
+                                        <td>198</td>
                                         <td>보정</td>
                                         <td>장진석</td>
+                                        <td>2026.04.07</td>
                                         <td>신청취소</td>
                                     </tr>
                                     <tr>
+                                        <td>197</td>
                                         <td>동천</td>
                                         <td>박수만</td>
+                                        <td>2026.04.01</td>
                                         <td>신청중</td>
                                     </tr>
                                     <tr>
+                                        <td>196</td>
                                         <td>보정</td>
                                         <td>정건</td>
+                                        <td>2026.03.31</td>
                                         <td>신청취소</td>
                                     </tr>
                                     <tr>
+                                        <td>195</td>
                                         <td>수지</td>
                                         <td>박현주</td>
+                                        <td>2026.03.29</td>
                                         <td>신청중</td>
                                     </tr>
                                     <tr>
+                                        <td>194</td>
                                         <td>수지</td>
                                         <td>오정민</td>
+                                        <td>2026.03.28</td>
                                         <td>신청중</td>
                                     </tr>
                                     <tr>
+                                        <td>193</td>
                                         <td>죽전</td>
                                         <td>한신애</td>
+                                        <td>2026.03.25</td>
                                         <td>신청중</td>
                                     </tr>
                                 </tbody>
@@ -359,14 +385,17 @@
                             <table>
                                 <thead>
                                     <tr>
+                                        <th>번호</th>
                                         <th>제목</th>
+                                        <th>첨부</th>
                                         <th>등록일</th>
+                                        <th>조회수</th>
                                     </tr>
                                 </thead>
                                 <!-- <tfoot></tfoot> -->
                                 <tbody>
                                     <tr>
-                                        <td colspan="2">등록된 게시글이 없습니다.</td>
+                                        <td colspan="5">등록된 게시글이 없습니다.</td>
                                     </tr>
                                 </tbody>
                             </table>
