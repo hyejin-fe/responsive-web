@@ -13,7 +13,7 @@
 
     <div class="container">
         <aside id="aside" class="blind-m">
-            <div>열린마당</div>
+            <h1>열린마당</h1>
             <div>
                 <ul>
                     <li>도서관소식</li>
@@ -55,13 +55,13 @@
             </div>
             <div class="contents">
                 <ul class="tab-btn">
-                    <li><button>기증안내</button></li>
+                    <li class="show active"><button>기증안내</button></li>
                     <li><button>서약서작성</button></li>
                     <li><button>기증신청조회</button></li>
                     <li><button>기증자료목록</button></li>
                 </ul>
                 <div class="tab-cont">
-                    <div class="dona-info">
+                    <div class="dona-info ">
                         <h2 class="tit-sec blind">기증안내</h2>
                         <div class="detail-box">
                             <p>도서기증</p>
@@ -87,7 +87,7 @@
                             <dl class="step-box">
                                 <dt>STEP 04</dt>
                                 <dd>기증 자료 목록 게시</dd>
-                                <dd">• 승인 완료 후 장서로 등록된 기증자료 목록을 게시</dd>
+                                <dd>• 승인 완료 후 장서로 등록된 기증자료 목록을 게시</dd>
                             </dl>
                         </div>
                         <h3 class="tit-sub">기증대상 자료</h3>
@@ -113,104 +113,106 @@
                             <p>• 도서관 등록 전체, 별도 코너 마련 등 조건부 기증은 받지 않습니다.</p>
                         </div>
                         <h3 class="tit-sub">용인시립도서관 기증접수 및 문의</h3>
-                        <p>처인구</p>  <!-- 표 들어갈 위치 -->
+                        <p class="chart-tit">처인구</p>  <!-- 표 들어갈 위치 -->
                         <table class="chart">
                             <!-- <thead></thead> -->
                             <!-- <tfoot></tfoot> -->
                             <tbody>
                                 <tr>
-                                    <th>용인중앙도서관</th>
+                                    <th scope="row">용인 중앙 도서관</th>
                                     <td>031-6193-1260</td>
-                                    <th>포곡도서관</th>
+                                    <th scope="row">포곡 도서관</th>
                                     <td>031-6193-1290</td>
                                 </tr>
                                 <tr>
-                                    <th>모현도서관</th>
+                                    <th scope="row">모현 도서관</th>
                                     <td>031-6193-1330</td>
-                                    <th>남사도서관</th>
+                                    <th scope="row">남사 도서관</th>
                                     <td>031-6193-1370</td>
                                 </tr>
                                 <tr>
-                                    <th>양지해밀도서관</th>
+                                    <th scope="row">양지 해밀 도서관</th>
                                     <td>031-6193-1285</td>
-                                    <th>이동꿈틀도서관</th>
+                                    <th scope="row">이동 꿈틀 도서관</th>
                                     <td>031-6193-1390</td>
                                 </tr>
                             </tbody>
                         </table>
-                        <p>기흥구</p>
+                        <p class="chart-tit">기흥구</p>
                         <table class="chart">
                             <!-- <thead></thead> -->
                             <!-- <tfoot></tfoot> -->
                             <tbody>
                                 <tr>
-                                    <th>구성도서관도서관</th>
+                                    <th scope="row">구성 도서관</th>
                                     <td>031-6193-1470</td>
-                                    <th>동백도서관</th>
+                                    <th scope="row">동백 도서관</th>
                                     <td>031-6193-1310</td>
                                 </tr>
                                 <tr>
-                                    <th>기흥도서관</th>
+                                    <th scope="row">기흥 도서관</th>
                                     <td>031-6193-1440</td>
-                                    <th>보라도서관</th>
+                                    <th scope="row">보라 도서관</th>
                                     <td>031-6193-1490</td>
                                 </tr>
                                 <tr>
-                                    <th>흥덕도서관</th>
+                                    <th scope="row">흥덕 도서관</th>
                                     <td>031-6193-1510</td>
-                                    <th>서농도서관</th>
+                                    <th scope="row">서농 도서관</th>
                                     <td>031-6193-1530</td>
                                 </tr>
                                 <tr>
-                                    <th>창덕도서관</th>
+                                    <th scope="row">창덕 도서관</th>
                                     <td>031-6193-1350</td>
-                                    <th>영덕도서관</th>
+                                    <th scope="row">영덕 도서관</th>
                                     <td>031-6193-1550</td>
                                 </tr>
                                 <tr>
-                                    <th>구갈희망누리도서관</th>
+                                    <th scope="row">구갈 희망 누리 도서관</th>
                                     <td>031-6193-1465</td>
+                                    <td colspan="2"></td>
                                 </tr>
                             </tbody>
                         </table>
-                        <p>수지구</p>
-                        <table>
+                        <p class="chart-tit">수지구</p>
+                        <table class="chart">
                             <!-- <thead></thead> -->
                             <!-- <tfoot></tfoot> -->
                             <tbody>
                                 <tr>
-                                    <th>수지도서관</th>
+                                    <th scope="row">수지 도서관</th>
                                     <td>031-6193-1620</td>
-                                    <th>죽전도서관</th>
+                                    <th scope="row">죽전 도서관</th>
                                     <td>031-6193-1650</td>
                                 </tr>
                                 <tr>
-                                    <th>상현도서관</th>
+                                    <th scope="row">상현 도서관</th>
                                     <td>031-6193-1670</td>
-                                    <th>성복도서관</th>
+                                    <th scope="row">성복 도서관</th>
                                     <td>031-6193-1700</td>
                                 </tr>
                                 <tr>
-                                    <th>동천도서관</th>
+                                    <th scope="row">동천 도서관</th>
                                     <td>031-6193-1725</td>
+                                    <td colspan="2"></td>
                                 </tr>
                             </tbody>
-                        </table class="chart">
+                        </table>
                         <h3 class="tit-sub">타기관 기증 문의</h3>
                         <div class="">
                             <p>• 국립중앙도서관 책다모아<a href="">(https://www.nl.go.kr/NL/contents/N30401010000.do)</a></p>
                             <p>• 사랑의 책 나누기 운동본부<a href="">(https://www.facebook.com/nanumbk/)</a></p>
                         </div>
                     </div>
-                    <div class="dona-apply">
+                    <div class="dona-apply ">
                         <h2 class="tit-sec blind">서약서작성</h2>
                         <form>
                             <!-- 서약서작성01 -->
                             <fieldset>
                                 <legend>개인정보 수집·이용 동의 안내</legend>
-                                <div class="base-form">
+                                <div class="apply-info">
                                     <p>도서기증과 관련하여 아래와 같이 개인정보를 수집·이용하고자 합니다.</p>
-                                    <table>
+                                    <table class="chart">
                                         <thead>
                                             <tr>
                                                 <th>수집·이용 항목</th>
@@ -230,47 +232,72 @@
                                     <p>개인정보 수집과 관련하여 동의를 거부할 권리가 있으며, 거부 시 도서기증이 불가능함을 알려드립니다.</p>
                                 </div>
                                 <p>위와 같이 개인정보를 수집·이용하는데 동의하십니까?</p>
-                                <label>
-                                    <input type="radio" value=""> 동의안함
-                                    <input type="radio" value=""> 동의함
-                                </label>
+                                <div class="apply-radio">
+                                    <label><input type="radio" name="apply" id="apply00" value="0"> 동의안함</label>
+                                    <label><input type="radio" name="apply" id="apply01" value="1"> 동의함</label>
+                                </div>  
                             </fieldset>
                             <!-- 서약서작성02 -->
                             <fieldset>
                                 <legend>기증 정보</legend>
-                                <p>(모든 항목 필수 입력)</p>
-                                <button>기증서약서 다운로드</button>
+                                <p class="test">(모든 항목 필수 입력)</p>
+                                <button class="download">기증서약서 다운로드</button>
                                 <div class="base-form">
-                                    <dl>
-                                        <dt>기증도서관선택</dt>
+                                    <dl class="library-ch">
+                                        <dt>기증도서관 선택</dt>
                                         <dd>
-                                            <label for="" class="blind">기증도서관선택</label>
-                                            <select name="" id="">
-                                                <option></option>
-                                            </select>
+                                            <ul>
+                                                <li class="show active">전체도서관</li>
+                                                <li>도서관정책과</li>
+                                                <li>구갈희망누리도서관</li>
+                                                <li>기흥도서관</li>
+                                                <li>남사도서관</li>
+                                                <li>동백도서관</li>
+                                                <li>동천도서관</li>
+                                                <li>모현도서관</li>
+                                                <li>보라도서관</li>
+                                                <li>보정도서관</li>
+                                                <li>상현도서관</li>
+                                                <li>서농도서관</li>
+                                                <li>성복도서관</li>
+                                                <li>수지도서관</li>
+                                                <li>양지해밀도서관</li>
+                                                <li>영덕도서관</li>
+                                                <li>이동꿈툴도서관</li>
+                                                <li>죽전도서관</li>
+                                                <li>창덕도서관</li>
+                                                <li>포곡도서관</li>
+                                                <li>흥덕도서관</li>
+                                            </ul>
                                         </dd>
                                     </dl>
-                                    <dl>
+                                    <dl class="name-ch">
                                         <dt>개인 및 기관명</dt>
                                         <dd>
                                             <label for="" class="blind">개인 및 기관명 기입</label>
                                             <input type="text" name="" id="">
                                         </dd>
                                     </dl>
-                                    <dl>
+                                    <dl class="tell-num">
                                         <dt>연락처</dt>
                                         <dd>
                                             <label for="tellFirst" class="blind">전화번호 앞자리 선택</label>
-                                            <select name="tellFirst" id="tellFirst">
-                                                <option></option>
-                                            </select>
+                                            <ul name="tellFirst" id="tellFirst">
+                                                <li class="show active">010</li>
+                                                <li>011</li>
+                                                <li>016</li>
+                                                <li>017</li>
+                                                <li>02</li>
+                                                <li>031</li>
+                                                <li>032</li>
+                                            </ul>
                                             <label for="tellMiddle" class="blind">전화번호 중간자리 기입</label>
                                             <input type="text" name="tellMiddle" id="tellMiddle">
                                             <label for="tellLast" class="blind">전화번호 끝자리 기입</label>
                                             <input type="text" name="tellLast" id="tellLast">
                                         </dd>
                                     </dl>
-                                    <dl>
+                                    <dl class="address">
                                         <dt>주소</dt>
                                         <dd>
                                             <label>
@@ -296,20 +323,20 @@
                                             <span>(권)</span>
                                         </dd>
                                     </dl>
-                                    <dl>
-                                        <dt>등록제외자료 반환여부</dt>
+                                    <dl class="return">
+                                        <dt>등록제외 자료 반환여부</dt>
                                         <dd>
                                             <label for="" class="blind">도사수량 기입</label>
-                                            <input type="radio" name="" id=""> 미반환
-                                            <input type="radio" name="" id=""> 반환(기증자 방문)
+                                            <input type="radio" name="return" id="return00" value="0"> 미반환
+                                            <input type="radio" name="return" id="return01" value="1"> 반환(기증자 방문)
                                         </dd>
                                     </dl>
-                                    <dl>
+                                    <dl class="check">
                                         <dt>인수증</dt>
                                         <dd>
-                                            <label>
-                                                <input type="radio" name="" id=""> 미발급(기증자 방문)
-                                                <input type="radio" name="" id=""> 발급(이메일 필수)
+                                            <label class="radio-btn">
+                                                <input type="radio" name="issue" id="issue00" value="0"> 미발급(기증자 방문)
+                                                <input type="radio" name="issue" id="issue01" value="1"> 발급(이메일 필수)
                                             </label>
                                             <input type="text" name="" id="">
                                             <span>@</span>
@@ -338,7 +365,7 @@
                             </fieldset>
                         </form>
                     </div>
-                    <div class="dona-inquiry">
+                    <div class="dona-inquiry show">
                         <h2 class="tit-sec blind">기증신청조회</h2>
                         <div class="detail-box">
                             <p>유의사항</p>
@@ -348,18 +375,38 @@
                         </div>
                         <div class="base-form">
                             <form>
-                                <legend class="">기증신청조회 검색</legend>
-                                <label for="" class="blind"></label>
-                                <select name="" id="">
-                                    <option value="">전체도서관</option>
-                                </select>
-                                <label for="" class="blind"></label>
-                                <select name="" id="">
-                                    <option value="">신청자명</option>
-                                </select>
-                                <label for="" class="blind"></label>
-                                <input type="text" name="" id="">
-                                <button>검색</button>
+                                <fieldset>
+                                    <legend class="">기증신청조회 검색</legend>
+                                    <div class="search">
+                                        <label for="libraryCh" class="blind">조회할 도서관 선택</label>
+                                        <ul name="libraryCh" id="libraryCh">
+                                            <li class="show active">전체도서관</li>
+                                            <li>도서관정책과</li>
+                                            <li>구갈희망누리도서관</li>
+                                            <li>기흥도서관</li>
+                                            <li>남사도서관</li>
+                                            <li>동백도서관</li>
+                                            <li>동천도서관</li>
+                                            <li>모현도서관</li>
+                                            <li>보라도서관</li>
+                                            <li>보정도서관</li>
+                                            <li>상현도서관</li>
+                                            <li>서농도서관</li>
+                                            <li>성복도서관</li>
+                                            <li>수지도서관</li>
+                                            <li>양지해밀도서관</li>
+                                            <li>영덕도서관</li>
+                                            <li>이동꿈툴도서관</li>
+                                            <li>죽전도서관</li>
+                                            <li>창덕도서관</li>
+                                            <li>포곡도서관</li>
+                                            <li>흥덕도서관</li>
+                                        </ul>
+                                        <label for="userName" class="blind">조회할 신청자명 기입</label>
+                                        <input type="text" name="userName" id="userName" placeholder="신청자명">
+                                        <button>검색</button>
+                                    </div>
+                                </fieldset>
                             </form>
                         </div>
                         <div class="post-cont">
@@ -377,70 +424,70 @@
                                 <tbody>
                                     <tr>
                                         <td class="blind-m">202</td>
-                                        <td><span>보정</span></td>
+                                        <td><span class="bj">보정</span></td>
                                         <td>현민지</td>
                                         <td class="blind-m">2026.04.25</td>
                                         <td>신청중</td>
                                     </tr>
                                     <tr>
                                         <td class="blind-m">201</td>
-                                        <td>창덕</td>
+                                        <td><span class="cd">창덕</span></td>
                                         <td>윤재성</td>
                                         <td class="blind-m">2026.04.23</td>
                                         <td>신청승인</td>
                                     </tr>
                                     <tr>
                                         <td class="blind-m">200</td>
-                                        <td>기흥</td>
+                                        <td><span class="gh">기흥</span></td>
                                         <td>이찬주</td>
                                         <td class="blind-m">2026.04.17</td>
                                         <td>신청취소</td>
                                     </tr>
                                     <tr>
                                         <td class="blind-m">199</td>
-                                        <td>성복</td>
+                                        <td><span class="sb">성복</span></td>
                                         <td>이은정</td>
                                         <td class="blind-m">2026.04.12</td>
                                         <td>신청취소</td>
                                     </tr>
                                     <tr>
                                         <td class="blind-m">198</td>
-                                        <td>보정</td>
+                                        <td><span class="bj">보정</span></td>
                                         <td>장진석</td>
                                         <td class="blind-m">2026.04.07</td>
                                         <td>신청취소</td>
                                     </tr>
                                     <tr>
                                         <td class="blind-m">197</td>
-                                        <td>동천</td>
+                                        <td><span class="dc">동천</span></td>
                                         <td>박수만</td>
                                         <td class="blind-m">2026.04.01</td>
                                         <td>신청중</td>
                                     </tr>
                                     <tr>
                                         <td class="blind-m">196</td>
-                                        <td>보정</td>
+                                        <td><span class="bj">보정</span></td>
                                         <td>정건</td>
                                         <td class="blind-m">2026.03.31</td>
                                         <td>신청취소</td>
                                     </tr>
                                     <tr>
                                         <td class="blind-m">195</td>
-                                        <td>수지</td>
+                                        <td><span class="sj">수지</span></td>
                                         <td>박현주</td>
                                         <td class="blind-m">2026.03.29</td>
                                         <td>신청중</td>
                                     </tr>
                                     <tr>
                                         <td class="blind-m">194</td>
-                                        <td>수지</td>
+                                        <td><span class="sj">수지</span></td>
                                         <td>오정민</td>
                                         <td class="blind-m">2026.03.28</td>
                                         <td>신청중</td>
                                     </tr>
                                     <tr>
                                         <td class="blind-m">193</td>
-                                        <td>죽전</td>
+                                        <td><span class="jj">죽전</span></td>
                                         <td>한신애</td>
                                         <td class="blind-m">2026.03.25</td>
                                         <td>신청중</td>
@@ -450,20 +497,20 @@
                         </div>
                         <div class="paging-box">
                             <p class="paging">
-                                <span>맨앞</span>
-                                <span>이전</span>
-                                <span>1</span>
-                                <span>2</span>
-                                <span>3</span>
-                                <span>4</span>
-                                <span>5</span>
-                                <span>6</span>
-                                <span>7</span>
-                                <span>8</span>
-                                <span>9</span>
-                                <span>10</span>
-                                <span>다음</span>
-                                <span>맨뒤</span>
+                                <a href="#" class="paging-btn first"></a>
+                                <a href="#" class="paging-btn prev"></a>
+                                <a href="#">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                                <a href="#">6</a>
+                                <a href="#">7</a>
+                                <a href="#">8</a>
+                                <a href="#">9</a>
+                                <a href="#">10</a>
+                                <a href="#" class="paging-btn next"></a>
+                                <a href="#" class="paging-btn last"></a>
                             </p>
                         </div>
                     </div>

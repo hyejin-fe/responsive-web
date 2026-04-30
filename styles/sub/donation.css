@@ -1,6 +1,8 @@
-.container {
-    
+body {
+    word-break: keep-all;  /* 한글 단어 끊김 방지 */
+    word-wrap: break-word;       /* 단어가 넘으면 줄바꿈 */
 }
+
 
 #main {
     padding: 20px;
@@ -14,32 +16,261 @@
     padding-top: 30px;
 }
 
+/* tab-btn */
 #main .contents .tab-btn {
     margin-bottom: 25px;
 }
 #main .contents .tab-btn li {
+    display: none;
     width: 100%;
     text-align: center;
     padding: 4px 0;
+    border: 1px solid #e2e2e2;
     font-weight: 500;
 }
+#main .contents .tab-btn li.show {
+    display: block;
+}
+#main .contents .tab-btn li.active {
+    background-color: #1b6eab;
+    border: 1px solid #1b6eab;
+}
+#main .contents .tab-btn li.active button {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
 #main .contents .tab-btn button {
     width: 100%;
 }
 
+/* 공통부분 */
 #main .contents .detail-box {
     padding: 10px;
     margin-bottom: 25px;
 }
 
-#main .contents .step-box {
+#main .contents .tit-sub {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+fieldset {
+    border: 0 none;
+}
+legend {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+/* .dona-info */
+#main .contents .dona-info {
+    display: none;
+}
+#main .contents .dona-info.show {
+    display: block;
+}
+
+.dona-info .step-box {
     border: 1px solid #e2e2e2;
     border-radius: 10px;
     overflow: hidden;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    text-align: center;
 }
-#main .contents .step-box dt {
+.dona-info .step-box dt {
     background-color: #e2e2e2;
     text-align: center;
     padding: 10px 0;
     margin-bottom: 10px;
+}
+.dona-info .step-box dd {
+    padding: 0 20px;
+}
+
+.dona-info .chart-tit {
+    font-size: 17px;
+    font-weight: 500;
+}
+.dona-info .chart {
+    margin: 10px 0 20px 0;
+    table-layout: fixed;
+}
+.chart tr:last-child th {
+    border-bottom: 1px solid #ababab;
+}
+.chart th {
+    text-align: center;
+    line-height: 1.2;
+    padding: 15px;
+    border-bottom: 1px solid #e2e2e2;
+}
+.chart td { padding: 5px; }
+
+
+
+/* .dona-apply */
+#main .contents .dona-apply {
+    display: none;
+}
+#main .contents .dona-apply.show {
+    display: block;
+}
+
+/* 동의안내 */
+.dona-apply .apply-info {
+    padding: 10px;
+    border: 1px solid #e2e2e2;
+    margin-bottom: 10px;
+}
+.dona-apply .apply-info table {
+    margin: 10px 0;
+}
+
+.dona-apply .apply-radio input {
+    appearance: auto;
+    width: auto;
+}
+
+/* 기증정보 */
+.dona-apply fieldset:last-child {
+    margin-top: 20px;
+    position: relative;
+}
+.dona-apply .test {
+    font-size: 14px;
+}
+.dona-apply .download {
+    position: absolute; right: 0; top: -5px;
+    padding: 4px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #555;
+}
+
+.dona-apply .base-form {
+    border-top: 2px solid #555;
+    margin-top: 5px;
+}
+.dona-apply .base-form dl {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #e2e2e2;
+}
+.dona-apply .base-form dt {
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+    background-color: #f8f8fa;
+    line-height: 1.2;
+}
+.dona-apply .base-form dd {
+    width: 70%;
+    padding: 10px;
+}
+
+.dona-apply .library-ch ul {
+    border: 1px solid #e2e2e2;
+}
+.dona-apply .library-ch li {
+    display: none;
+    padding: 4px;
+    border-top: 1px solid #e2e2e2;
+}
+.dona-apply .library-ch li:first-child {
+    border-top: 0 none;
+}
+.dona-apply .library-ch li.show {
+    display: block;
+}
+
+
+.dona-apply .tell-num dd {
+    display: flex;
+    gap: 4px;
+}
+.dona-apply .tell-num ul {
+    border: 1px solid #e2e2e2;
+}
+.dona-apply .tell-num li {
+    display: none;
+    padding: 4px 20px 4px 4px;
+    border-top: 1px solid #e2e2e2;
+}
+.dona-apply .tell-num li:first-child {
+    border-top: 0 none;
+}
+.dona-apply .tell-num li.show {
+    display: block;
+}
+
+.dona-apply .address label {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 4px;
+}
+
+.dona-apply .return dd {
+}
+.dona-apply .return input {
+    appearance: auto;
+    width: auto;
+}
+
+.dona-apply .check .radio-btn input {
+    appearance: auto;
+    width: auto;
+}
+
+
+
+
+/* .dona-inquiry */
+#main .contents .dona-inquiry {
+    display: none;
+}
+#main .contents .dona-inquiry.show {
+    display: block;
+}
+
+.dona-inquiry .base-form {
+    padding: 10px;
+}
+.dona-inquiry .base-form div {
+    display: flex;
+    gap: 4px;
+}
+
+.dona-inquiry .base-form ul {
+    border: 1px solid #e2e2e2;
+}
+.dona-inquiry .base-form li {
+    display: none;
+    padding: 4px 20px 4px 4px;
+    border-top: 1px solid #e2e2e2;
+}
+.dona-inquiry .base-form li:first-child {
+    border-top: 0 none;
+}
+.dona-inquiry .base-form li.show {
+    display: block;
+}
+
+.dona-inquiry .base-form button {
+    width: 100%;
+    border: 1px solid #e2e2e2;
+}
+
+
+
+
+/* .dona-list */
+#main .contents .dona-list {
+    display: none;
+}
+#main .contents .dona-list.show {
+    display: block;
 }

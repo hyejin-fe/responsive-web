@@ -1,3 +1,7 @@
+body {
+    word-break: keep-all;  /* 한글 단어 끊김 방지 */
+}
+
 .container {
     width: 100%;
 }

@@ -6,13 +6,13 @@
 
 /* Reset style */ /* 기본값 초기화 - 여기서만 태그 선택자 허용 */
 * { box-sizing: border-box; }
-body, h1, h2, h3, h4, p, ul, ol, li, button, a { margin: 0; padding: 0; }
+body, h1, h2, h3, h4, p, ul, ol, li, dl, dt, dd, button, a { margin: 0; padding: 0; }
 h1, h2, h3, h4 { font-size: inherit; }
 ul, ol { list-style: none; }
 a { text-decoration: none; color: inherit; }
 button { border: 0; background: transparent; cursor: pointer; }
 img { vertical-align: top; max-width: 100%; }
-input, button, select, textarea {
+input, button, select, textarea, fieldset {
     margin: 0;
     padding: 0;
     border: 0 none;
@@ -61,21 +61,14 @@ input {
     color: #333;
 }
 
-button {
-    padding: 10px 20px;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #007bff;
-    color: #fff;
-    transition: 0.3s;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
 
 /* 3. 레이아웃 클래스 (공통 사용) */
+#main { padding: 20px;}
+#main .main-top {
+    padding: 20px 0;
+    border-bottom: 1px solid #e2e2e2;
+}
+#main .contents {padding-top: 30px;}
 .wrapper { width: 100%; min-width: 320px; }
 .container { width: 100%; }
 .inner { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 20px; background-color: #ececec; }
@@ -88,12 +81,12 @@ button:hover {
 .blind { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); }
 
 /* ★★★★★ 팀별로 정해진 공통 클래스 규칙 나열 */
-.tit-main { color: #111; font-size: 24px; font-weight: 500; line-height: 1.2; } /* 본문의 대제목 - size */
+.tit-main { color: #111; font-size: 26px; font-weight: 500; line-height: 1.2; } /* 본문의 대제목 - size */
 .tit-sec { color: #111; font-size: 20px; font-weight: 500; line-height: 1.4; } /* 본문의 중제목 - size */ 
 .tit-sub { color: #111; font-size: 20px; font-weight: 500; line-height: 1.4; } /* 본문의 소제목 - size */
 
 /* 공통 border 스타일 */
-.base-form, .dropdown, .icon-btn {
+.base-form, .dropdown, .icon-btn li {
     border: 1px solid #e2e2e2;
 }
 .navi span {  /* 상단 경로 */
@@ -111,11 +104,12 @@ button:hover {
 
 .tab-btn li { 
     font-size: 20px;
-    color: #0d4f80;
+    background-color: #fff;
     border: 1px solid #e2e2e2;
 }
 .tab-btn li.active {
-    color: #0d4f80;
+    color: #fff;
+    background-color: #0d4f80;
     border: 0 none;
 }
 
@@ -139,7 +133,10 @@ button:hover {
 .post-cont td {
     border-bottom: 1px solid #e2e2e2;
 }
-.post-cont td:last-child {
+.post-cont tr:first-child td {
+    border-top: 1px solid #ababab;
+}
+.post-cont tr:last-child td {
     border-bottom: 1px solid #ababab;
 }
 
@@ -156,7 +153,7 @@ button:hover {
 .chart td {
     border-bottom: 1px solid #e2e2e2;
 }
-.chart td:last-child {
+.chart tr:last-child td {
     border-bottom: 1px solid #ababab;
 }
 
@@ -164,12 +161,13 @@ button:hover {
 
 }
 
-.paging span {
+.paging a {
+    display: inline-block;
     width: 24px;
     height: 24px;
     font-size: 14px;
 }
-.paging span.active {
+.paging a.active {
     background-color: #333;
 }
 .paging-btn {
