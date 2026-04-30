@@ -1,0 +1,45 @@
+.container {
+    
+}
+
+#main {
+    padding: 20px;
+}
+#main .main-top {
+    padding: 30px 0;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+#main .contents {
+    padding-top: 30px;
+}
+
+#main .contents .tab-btn {
+    margin-bottom: 25px;
+}
+#main .contents .tab-btn li {
+    width: 100%;
+    text-align: center;
+    padding: 4px 0;
+    font-weight: 500;
+}
+#main .contents .tab-btn button {
+    width: 100%;
+}
+
+#main .contents .detail-box {
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+#main .contents .step-box {
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#main .contents .step-box dt {
+    background-color: #e2e2e2;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}

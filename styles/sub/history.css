@@ -1,0 +1,36 @@
+#main {
+    padding: 20px;
+}
+#main .main-top {
+    padding: 30px 0;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+#main .contents {
+    padding-top: 30px;
+}
+
+#main .contents .history-top {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 70px;
+}
+#main .contents .history-top p {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.5;
+    padding-bottom: 10px;
+}
+
+#main .contents .history-list {
+    display: flex;
+    width: 100%;
+}
+#main .contents .history-list .left {
+    width: 50%;
+    padding-right: 15px;
+}
+#main .contents .history-list .right {
+    width: 50%;
+    padding-left: 15px;
+}
