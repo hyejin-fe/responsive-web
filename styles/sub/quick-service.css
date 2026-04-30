@@ -1,5 +1,6 @@
 body {
     word-break: keep-all;  /* 한글 단어 끊김 방지 */
+    word-wrap: break-word;  /* 단어가 넘으면 줄바꿈 */
 }
 
 .container {

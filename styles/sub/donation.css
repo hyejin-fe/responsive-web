@@ -1,6 +1,6 @@
 body {
     word-break: keep-all;  /* 한글 단어 끊김 방지 */
-    word-wrap: break-word;       /* 단어가 넘으면 줄바꿈 */
+    word-wrap: break-word;  /* 단어가 넘으면 줄바꿈 */
 }
 
 
@@ -213,8 +213,6 @@ legend {
     margin-bottom: 4px;
 }
 
-.dona-apply .return dd {
-}
 .dona-apply .return input {
     appearance: auto;
     width: auto;
@@ -224,7 +222,6 @@ legend {
     appearance: auto;
     width: auto;
 }
-
 
 
 
@@ -262,6 +259,36 @@ legend {
 .dona-inquiry .base-form button {
     width: 100%;
     border: 1px solid #e2e2e2;
+}
+.post-cont {
+    margin-top: 10px;
+}
+.post-cont table { 
+    table-layout: fixed;
+    margin-bottom: 10px;
+}
+.post-cont table th, .post-cont .library, .post-cont .state {
+    text-align: center;
+}
+.post-cont th {
+    font-weight: 500;
+}
+.post-cont th, .post-cont td {
+    padding: 10px 0;
+    border-right: 1px solid #e2e2e2;
+}
+.post-cont th:last-child, .post-cont td:last-child {
+    border-right: 0 none;
+}
+.post-cont td.user {
+    padding-left: 10px;
+}
+
+
+
+@media screen and (max-width: 767px){
+.post-cont .blind-m { display: none; }
+.post-cont .library, .post-cont .state { width: 80px; }
 }
 
 

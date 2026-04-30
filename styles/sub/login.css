@@ -1,0 +1,24 @@
+body {
+    word-break: keep-all;  /* 한글 단어 끊김 방지 */
+    word-wrap: break-word;  /* 단어가 넘으면 줄바꿈 */
+}
+
+.user-login {
+    margin-bottom: 20px;
+    background-color: #e2e2e2;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+.sns-login {
+    background-color: #e2e2e2;
+    border-radius: 5px;
+    padding: 20px;
+}
