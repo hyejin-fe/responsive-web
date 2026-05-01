@@ -10,6 +10,18 @@ body {
     padding: 30px 0;
     border-bottom: 1px solid #e2e2e2;
 }
+#main .main-top .navi span {
+    padding-left: 20px;
+    position: relative;
+}
+#main .main-top .navi span:first-child::before {
+    content: "";
+}
+#main .main-top .navi span::before {
+    content: ">";
+    position: absolute; left: 4px; top: -4px;
+}
+
 #main .contents {
     padding-top: 30px;
 }
