@@ -1,8 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     word-break: keep-all;  /* 한글 단어 끊김 방지 */
     word-wrap: break-word;  /* 단어가 넘으면 줄바꿈 */
 }
-
 
 #main {
     padding: 20px;
@@ -45,10 +48,15 @@ body {
     width: 100%;
 }
 
+
 /* 공통부분 */
 #main .contents .detail-box {
     padding: 10px;
     margin-bottom: 25px;
+}
+.detail-box p:first-child {
+    font-size: 20px;
+    font-weight: 500;
 }
 
 #main .contents .tit-sub {
@@ -65,6 +73,7 @@ legend {
 }
 
 
+
 /* .dona-info */
 #main .contents .dona-info {
     display: none;
@@ -73,6 +82,7 @@ legend {
     display: block;
 }
 
+/* 기증절차 */
 .dona-info .step-box {
     border: 1px solid #e2e2e2;
     border-radius: 10px;
@@ -86,29 +96,53 @@ legend {
     text-align: center;
     padding: 10px 0;
     margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
 }
 .dona-info .step-box dd {
     padding: 0 20px;
 }
+.dona-info .step-box dd:nth-child(2) {
+    font-weight: 500;
+    color: #1b6eab;
+}
 
+/* */
+.dona-info .explain p {
+    padding-left: 16px;
+    position: relative;
+}
+.dona-info .explain p::before {
+    content: "•";
+    position: absolute; left: 0; top: -2px;
+    font-size: 18px;
+}
+
+/* 접수문의 */
 .dona-info .chart-tit {
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 500;
 }
 .dona-info .chart {
-    margin: 10px 0 20px 0;
+    margin: 5px 0 20px 0;
     table-layout: fixed;
 }
 .chart tr:last-child th {
     border-bottom: 1px solid #ababab;
 }
 .chart th {
+    vertical-align: middle;
     text-align: center;
     line-height: 1.2;
     padding: 15px;
     border-bottom: 1px solid #e2e2e2;
+    font-weight: 500;
 }
-.chart td { padding: 5px; }
+.chart td {
+    padding: 5px;
+    vertical-align: middle;
+    text-align: center;
+}
 
 
 
@@ -128,6 +162,12 @@ legend {
 }
 .dona-apply .apply-info table {
     margin: 10px 0;
+}
+.dona-apply .apply-info table th, .dona-apply .apply-info table td {
+    border-right: 1px solid #e2e2e2;
+}
+.apply-info table th:last-child, .apply-info table td:last-child {
+    border-right: 0 none;
 }
 
 .dona-apply .apply-radio input {
@@ -158,13 +198,18 @@ legend {
 .dona-apply .base-form dl {
     display: flex;
     width: 100%;
+    align-items: stretch;
     border-bottom: 1px solid #e2e2e2;
 }
 .dona-apply .base-form dt {
     width: 30%;
     padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     background-color: #f8f8fa;
+    font-weight: 500;
     line-height: 1.2;
 }
 .dona-apply .base-form dd {
@@ -172,13 +217,16 @@ legend {
     padding: 10px;
 }
 
+/* 도서관선택 */
 .dona-apply .library-ch ul {
-    border: 1px solid #e2e2e2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
 }
 .dona-apply .library-ch li {
     display: none;
-    padding: 4px;
-    border-top: 1px solid #e2e2e2;
+    padding: 10px 15px;
+    border-top: 1px solid #ccc;
 }
 .dona-apply .library-ch li:first-child {
     border-top: 0 none;
@@ -187,18 +235,20 @@ legend {
     display: block;
 }
 
-
+/* 연락처 */
 .dona-apply .tell-num dd {
     display: flex;
     gap: 4px;
 }
 .dona-apply .tell-num ul {
-    border: 1px solid #e2e2e2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 .dona-apply .tell-num li {
     display: none;
-    padding: 4px 20px 4px 4px;
-    border-top: 1px solid #e2e2e2;
+    height: 100%;
+    padding: 10px 20px 10px 15px;
+    border-top: 1px solid #ccc;
 }
 .dona-apply .tell-num li:first-child {
     border-top: 0 none;
@@ -207,20 +257,111 @@ legend {
     display: block;
 }
 
+/* 주소 */
 .dona-apply .address label {
     display: flex;
     gap: 4px;
     margin-bottom: 4px;
 }
+.dona-apply .address button {
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #444;
+    border-radius: 5px;
+}
 
+/* 반환여부 */
+.dona-apply .return dd {
+    display: flex;
+    flex-direction: column;
+}
 .dona-apply .return input {
     appearance: auto;
     width: auto;
 }
 
+/* 인수증 */
+.dona-apply .check dd {
+    display: flex;
+    flex-direction: column;
+}
 .dona-apply .check .radio-btn input {
     appearance: auto;
     width: auto;
+}
+.check .email-box {
+    margin-top: 5px;
+}
+.check .email-box .email {
+    width: 100%;
+    display: flex;
+    margin-bottom: 5px;
+}
+.check .email span {
+    padding: 0 4px;
+    line-height: 45px;
+    vertical-align: middle;
+}
+.check ul {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.check li {
+    display: none;
+    height: 100%;
+    padding: 10px 20px 10px 15px;
+    border-top: 1px solid #ccc;
+}
+.check li:first-child {
+    border-top: 0 none;
+}
+.check li.show {
+    display: block;
+}
+
+/* 비밀번호 */
+.dona-apply .user-pwd input {
+    margin-bottom: 5px;
+} 
+.dona-apply .user-pwd p {
+    padding-left: 16px;
+    line-height: 1.3;
+}
+.user-pwd p.sentence {
+    position: relative;
+}
+.user-pwd p.sentence::before {
+    content: "※";
+    position: absolute; left: 0; top: -2px;
+    font-size: 18px;
+}
+
+/* 버튼 */
+.dona-apply .btn {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+    box-sizing: border-box;
+}
+.dona-apply .btn .cancel-btn {
+    width: 40%;
+    padding: 10px 20px;
+    background-color: #e2e2e2;
+    font-size: 18px;
+    font-weight: 500;
+}
+.dona-apply .btn .apply-btn {
+    width: 60%;
+    padding: 10px 20px;
+    background-color: #5F99C4;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+.dona-apply .btn .apply-btn.active {
+    background-color: #1b6eab;
 }
 
 
@@ -233,20 +374,35 @@ legend {
     display: block;
 }
 
-.dona-inquiry .base-form {
-    padding: 10px;
+/* 디테일박스 */
+.dona-inquiry .detail-box .sentence {
+    padding-left: 16px;
+    position: relative;
 }
-.dona-inquiry .base-form div {
+.detail-box .sentence::before {
+    content: "▪";
+    position: absolute; left: 0; top: 0;
+    font-size: 18px;
+}
+
+/* 조회검색 */
+.dona-inquiry .base-form {
+    border: 0 none;
+    margin-bottom: 20px;
+}
+.dona-inquiry .base-form .user-se {
     display: flex;
     gap: 4px;
+    margin-top: 5px;
 }
 
 .dona-inquiry .base-form ul {
-    border: 1px solid #e2e2e2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 .dona-inquiry .base-form li {
     display: none;
-    padding: 4px 20px 4px 4px;
+    padding: 10px 20px 10px 15px;
     border-top: 1px solid #e2e2e2;
 }
 .dona-inquiry .base-form li:first-child {
@@ -258,11 +414,14 @@ legend {
 
 .dona-inquiry .base-form button {
     width: 100%;
-    border: 1px solid #e2e2e2;
+    border: 1px solid #444;
+    background-color: #444;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 3px;
 }
-.post-cont {
-    margin-top: 10px;
-}
+
+/* 테이블 */
 .post-cont table { 
     table-layout: fixed;
     margin-bottom: 10px;
@@ -275,7 +434,6 @@ legend {
 }
 .post-cont th, .post-cont td {
     padding: 10px 0;
-    border-right: 1px solid #e2e2e2;
 }
 .post-cont th:last-child, .post-cont td:last-child {
     border-right: 0 none;
@@ -300,4 +458,34 @@ legend {
 }
 #main .contents .dona-list.show {
     display: block;
+}
+
+
+
+.lb-cate {
+    padding: 4px 20px;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: 500;
+}
+.sj { /* 수지 */
+    background-color: #1b6eab;
+}
+.jj { /* 죽전 */
+    background-color: #a88200;
+}
+.bj { /* 보정 */
+    background-color: #8a9a5b;
+}
+.dc { /* 동천 */
+    background-color: #14c0ba;
+}
+.sb { /* 성복 */
+    background-color: #119814;
+}
+.gh { /* 기흥 */
+    background-color: #595bd1;
+}
+.cd { /* 창덕 */
+    background-color: #3784f0;
 }

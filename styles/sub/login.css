@@ -3,22 +3,99 @@ body {
     word-wrap: break-word;  /* 단어가 넘으면 줄바꿈 */
 }
 
-.user-login {
+#main {
+    padding: 20px;
+}
+#main .main-top {
+    padding: 30px 0;
+    border-bottom: 1px solid #e2e2e2;
+}
+#main .contents {
+    padding-top: 30px;
+}
+
+/* 공통부분 */
+#main .contents .tit-sec {
+    margin-bottom: 30px;
+}
+#main .contents .sentence {
+    padding-left: 16px;
+    position: relative;
+    line-height: 1.5;
+}
+#main .contents .sentence::before {
+    content: "※";
+    position: absolute; left: 0; top: -2px;
+    font-size: 18px;
+}
+
+
+/* .user-login */
+#main .contents .user-login {
     margin-bottom: 20px;
     background-color: #f8f8f8;
     border-radius: 5px;
     padding: 20px;
 }
 
+.user-login form {
+    display: flex;
+    margin: 10px 0;
+}
+.user-login form input {
+    background-color: #fff;
+}
+.user-login form input:nth-child(2) {
+    margin-bottom: 5px;
+}
+.user-login form button {
+    width: 30%;
+    padding: 20px;
+    margin-left: 5px;
+    border-radius: 3px;
+    font-weight: 500;
+    background-color: #444;
+    color: #fff;
+}
+
+.user-login .find {
+    margin-bottom: 10px;
+}
+.user-login .find button {
+    font-size: 14px;
+    padding-right: 10px;
+    position: relative;
+}
+.user-login .find button::after {
+    content: "|";
+    font-size: 12px;
+    position: absolute; right: 0; top: 2px
+}
+.user-login .find button:last-child::after {
+    content: "";
+}
 
 
-
-
-
-
-
-.sns-login {
+/* .sns-login */
+#main .contents .sns-login {
     background-color: #f8f8f8;
     border-radius: 5px;
     padding: 20px;
+}
+.sns-login button {
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+.sns-login button:nth-child(2) {
+    background-color: #01a94a;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+.sns-login button:nth-child(3) {
+    background-color: #ffeb3b;
+    font-size: 18px;
+    font-weight: 500
 }
