@@ -426,6 +426,16 @@ legend {
     padding-left: 10px;
 }
 
+.paging {
+    display: flex;
+}
+.paging a {
+    line-height: 24px;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 2px;
+}
+
 
 
 /* .dona-list */
@@ -454,6 +464,6 @@ legend {
 
 
 @media screen and (max-width: 767px){
-.post-cont .blind-m { display: none; }
-.post-cont .library, .post-cont .state, .post-cont .date { width: 80px; }
+    .post-cont .blind-m { display: none; }
+    .post-cont .library, .post-cont .date, .post-cont .state { width: 80px; }
 }

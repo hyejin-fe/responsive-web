@@ -126,6 +126,8 @@ input {
     background-color: #1b6eab;  /* 임시 배경색 */
     width: 100%;
     height: 120px;
+    line-height: 120px;
+    vertical-align: middle;
     margin-bottom: 20px;
     box-sizing: border-box;
 }

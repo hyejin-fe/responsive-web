@@ -19,6 +19,7 @@
 #main .contents .user-login {
     margin-bottom: 20px;
     background-color: #f8f8f8;
+    border: 1px solid #e2e2e2;
     border-radius: 5px;
     padding: 20px;
 }
@@ -64,6 +65,7 @@
 /* .sns-login */
 #main .contents .sns-login {
     background-color: #f8f8f8;
+    border: 1px solid #e2e2e2;
     border-radius: 5px;
     padding: 20px;
 }
@@ -83,4 +85,20 @@
     background-color: #ffeb3b;
     font-size: 18px;
     font-weight: 500
+}
+
+@media screen and (min-width: 768px) {
+    #main .contents {
+        display: flex;
+        gap: 20px;
+    }
+
+    /* .user-login */
+    #main .contents .user-login {
+        width: 50%;
+        margin-bottom: 0;
+    }
+    #main .contents .sns-login {
+        width: 50%;
+    }
 }
