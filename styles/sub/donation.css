@@ -386,33 +386,33 @@ legend {
 }
 
 /* 조회검색 */
-.dona-inquiry .base-form {
+.dona-inquiry .base-form, .dona-list .base-form {
     border: 0 none;
     margin-bottom: 20px;
 }
-.dona-inquiry .base-form .user-se {
+.dona-inquiry .base-form .user-se, .dona-list .base-form .title-se {
     display: flex;
     gap: 4px;
     margin-top: 5px;
 }
 
-.dona-inquiry .base-form ul {
+.dona-inquiry .base-form ul, .dona-list .base-form ul {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-.dona-inquiry .base-form li {
+.dona-inquiry .base-form li, .dona-list .base-form li {
     display: none;
     padding: 10px 20px 10px 15px;
     border-top: 1px solid #e2e2e2;
 }
-.dona-inquiry .base-form li:first-child {
+.dona-inquiry .base-form li:first-child, .dona-list .base-form li:first-child {
     border-top: 0 none;
 }
-.dona-inquiry .base-form li.show {
+.dona-inquiry .base-form li.show, .dona-list .base-form li.show {
     display: block;
 }
 
-.dona-inquiry .base-form button {
+.dona-inquiry .base-form button, .dona-list .base-form button {
     width: 100%;
     border: 1px solid #444;
     background-color: #444;
@@ -444,14 +444,6 @@ legend {
 
 
 
-@media screen and (max-width: 767px){
-.post-cont .blind-m { display: none; }
-.post-cont .library, .post-cont .state { width: 80px; }
-}
-
-
-
-
 /* .dona-list */
 #main .contents .dona-list {
     display: none;
@@ -460,8 +452,19 @@ legend {
     display: block;
 }
 
+.dona-list table { 
+    table-layout: fixed;
+    margin-bottom: 10px;
+}
+.dona-list table th {
+    text-align: center;
+}
+.dona-list table td {
+    
+}
 
 
+/* 도서관분류 */
 .lb-cate {
     padding: 4px 20px;
     border-radius: 3px;
@@ -488,4 +491,11 @@ legend {
 }
 .cd { /* 창덕 */
     background-color: #3784f0;
+}
+
+
+
+@media screen and (max-width: 767px){
+.post-cont .blind-m { display: none; }
+.post-cont .library, .post-cont .state { width: 80px; }
 }

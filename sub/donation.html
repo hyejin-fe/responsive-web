@@ -528,18 +528,44 @@
                         <h2 class="tit-sec blind">기증자료목록</h2>
                         <div class="base-form">
                             <form>
-                                <legend class="blind">기증자료목록 검색</legend>
-                                <label for="" class="blind"></label>
-                                <select name="" id="">
-                                    <option value="">전체도서관</option>
-                                </select>
-                                <label for="" class="blind"></label>
-                                <select name="" id="">
-                                    <option value="">신청자명</option>
-                                </select>
-                                <label for="" class="blind"></label>
-                                <input type="text" name="" id="">
-                                <button>검색</button>
+                                <fieldset>
+                                    <legend class="blind">기증신청조회 검색</legend>
+                                    <div class="search">
+                                        <label for="libraryCh" class="blind">조회할 도서관 선택</label>
+                                        <ul name="libraryCh" id="libraryCh">
+                                            <li class="show active">전체도서관</li>
+                                            <li>도서관정책과</li>
+                                            <li>구갈희망누리도서관</li>
+                                            <li>기흥도서관</li>
+                                            <li>남사도서관</li>
+                                            <li>동백도서관</li>
+                                            <li>동천도서관</li>
+                                            <li>모현도서관</li>
+                                            <li>보라도서관</li>
+                                            <li>보정도서관</li>
+                                            <li>상현도서관</li>
+                                            <li>서농도서관</li>
+                                            <li>성복도서관</li>
+                                            <li>수지도서관</li>
+                                            <li>양지해밀도서관</li>
+                                            <li>영덕도서관</li>
+                                            <li>이동꿈툴도서관</li>
+                                            <li>죽전도서관</li>
+                                            <li>창덕도서관</li>
+                                            <li>포곡도서관</li>
+                                            <li>흥덕도서관</li>
+                                        </ul>
+                                        <div class="title-se">
+                                            <ul>
+                                                <li class="show">제목</li>
+                                                <li>내용</li>
+                                            </ul>
+                                            <label for="userName" class="blind">조회할 제목 또는 내용 기입</label>
+                                            <input type="text" name="userName" id="userName">
+                                            <button>검색</button>
+                                        </div>
+                                    </div>
+                                </fieldset>
                             </form>
                         </div>
                         <div class="post-cont">
@@ -549,7 +575,7 @@
                                         <th class="blind-m">번호</th>
                                         <th>제목</th>
                                         <th class="blind-m">첨부</th>
-                                        <th>등록일</th>
+                                        <th class="date">등록일</th>
                                         <th class="blind-m">조회수</th>
                                     </tr>
                                 </thead>
