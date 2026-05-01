@@ -11,38 +11,50 @@
 </head>
 <body>
 
-    <div class="container">
+    <div class="container inner">
         <aside id="aside" class="blind-m">
             <h1>열린마당</h1>
-            <div>
-                <ul>
-                    <li>도서관소식</li>
-                    <li>보도자료</li>
-                    <li>도서관연중행사</li>
-                    <li>도서관 카드뉴스</li>
-                    <li>자주하는질문</li>
-                    <li>묻고답하기</li>
-                    <li>설문조사</li>
-                    <li>
-                        <dl>
-                            <dt>원클릭대관신청</dt>
-                            <dd>수지도서관대관신청</dd>
-                            <dd>원클릭대관신청</dd>
-                            <dd>원클릭대관신청안내</dd>
-                        </dl>
-                    </li>
-                    <li>견학신청</li>
-                    <li>
-                        <dl>
-                            <dt>시민참여</dt>
-                            <dd>자원활동가</dd>
-                            <dd>자원봉사신청안내</dd>
-                            <dd>강사지원신청</dd>
-                            <dd>도서관공모</dd>
-                        </dl>
-                    </li>
-                    <li>도서기증</li>
-                </ul>
+            <div class="side-tab">
+                <dl>
+                    <dt>도서관소식</dt>
+                </dl>
+                <dl>
+                    <dt>보도자료</dt>
+                </dl>
+                <dl>
+                    <dt>도서관연중행사</dt>
+                </dl>
+                <dl>
+                    <dt>도서관 카드뉴스</dt>
+                </dl>
+                <dl>
+                    <dt>자주하는질문</dt>
+                </dl>
+                <dl>
+                    <dt>묻고답하기</dt>
+                </dl>
+                <dl>
+                    <dt>설문조사</dt>
+                </dl>
+                <dl>
+                    <dt>원클릭대관신청</dt>
+                    <dd>수지도서관대관신청</dd>
+                    <dd>원클릭대관신청</dd>
+                    <dd>원클릭대관신청안내</dd>
+                </dl>
+                <dl>
+                    <dt>견학신청</dt>
+                </dl>
+                <dl>
+                    <dt>시민참여</dt>
+                    <dd>자원활동가</dd>
+                    <dd>자원봉사신청안내</dd>
+                    <dd>강사지원신청</dd>
+                    <dd>도서관공모</dd>
+                </dl>
+                <dl class="active">
+                    <dt>도서기증</dt>
+                </dl>
             </div>
         </aside><!-- // #aside End -->
         <section id="main">
@@ -61,7 +73,7 @@
                     <li><button>기증자료목록</button></li>
                 </ul>
                 <div class="tab-cont">
-                    <div class="dona-info show">
+                    <div class="dona-info ">
                         <h2 class="tit-sec blind">기증안내</h2>
                         <div class="detail-box">
                             <p>도서기증</p>
@@ -204,7 +216,7 @@
                             <p>사랑의 책 나누기 운동본부<a href="">(https://www.facebook.com/nanumbk/)</a></p>
                         </div>
                     </div>
-                    <div class="dona-apply ">
+                    <div class="dona-apply show">
                         <h2 class="tit-sec blind">서약서작성</h2>
                         <form>
                             <!-- 서약서작성01 -->
@@ -372,7 +384,7 @@
                             </fieldset>
                         </form>
                     </div>
-                    <div class="dona-inquiry ">
+                    <div class="dona-inquiry show">
                         <h2 class="tit-sec blind">기증신청조회</h2>
                         <div class="detail-box">
                             <p>유의사항</p>
@@ -384,39 +396,37 @@
                             <form>
                                 <fieldset>
                                     <legend class="blind">기증신청조회 검색</legend>
+                                    <label for="libraryCh" class="blind">조회할 도서관 선택</label>
+                                    <ul name="libraryCh" id="libraryCh">
+                                        <li class="show active">전체도서관</li>
+                                        <li>도서관정책과</li>
+                                        <li>구갈희망누리도서관</li>
+                                        <li>기흥도서관</li>
+                                        <li>남사도서관</li>
+                                        <li>동백도서관</li>
+                                        <li>동천도서관</li>
+                                        <li>모현도서관</li>
+                                        <li>보라도서관</li>
+                                        <li>보정도서관</li>
+                                        <li>상현도서관</li>
+                                        <li>서농도서관</li>
+                                        <li>성복도서관</li>
+                                        <li>수지도서관</li>
+                                        <li>양지해밀도서관</li>
+                                        <li>영덕도서관</li>
+                                        <li>이동꿈툴도서관</li>
+                                        <li>죽전도서관</li>
+                                        <li>창덕도서관</li>
+                                        <li>포곡도서관</li>
+                                        <li>흥덕도서관</li>
+                                    </ul>
                                     <div class="search">
-                                        <label for="libraryCh" class="blind">조회할 도서관 선택</label>
-                                        <ul name="libraryCh" id="libraryCh">
-                                            <li class="show active">전체도서관</li>
-                                            <li>도서관정책과</li>
-                                            <li>구갈희망누리도서관</li>
-                                            <li>기흥도서관</li>
-                                            <li>남사도서관</li>
-                                            <li>동백도서관</li>
-                                            <li>동천도서관</li>
-                                            <li>모현도서관</li>
-                                            <li>보라도서관</li>
-                                            <li>보정도서관</li>
-                                            <li>상현도서관</li>
-                                            <li>서농도서관</li>
-                                            <li>성복도서관</li>
-                                            <li>수지도서관</li>
-                                            <li>양지해밀도서관</li>
-                                            <li>영덕도서관</li>
-                                            <li>이동꿈툴도서관</li>
-                                            <li>죽전도서관</li>
-                                            <li>창덕도서관</li>
-                                            <li>포곡도서관</li>
-                                            <li>흥덕도서관</li>
+                                        <ul>
+                                            <li class="show">신청자명</li>
                                         </ul>
-                                        <div class="user-se">
-                                            <ul>
-                                                <li class="show">신청자명</li>
-                                            </ul>
-                                            <label for="userName" class="blind">조회할 신청자명 기입</label>
-                                            <input type="text" name="userName" id="userName">
-                                            <button>검색</button>
-                                        </div>
+                                        <label for="userName" class="blind">조회할 신청자명 기입</label>
+                                        <input type="text" name="userName" id="userName">
+                                        <button>검색</button>
                                     </div>
                                 </fieldset>
                             </form>
@@ -530,40 +540,38 @@
                             <form>
                                 <fieldset>
                                     <legend class="blind">기증신청조회 검색</legend>
+                                    <label for="libraryCh" class="blind">조회할 도서관 선택</label>
+                                    <ul name="libraryCh" id="libraryCh">
+                                        <li class="show active">전체도서관</li>
+                                        <li>도서관정책과</li>
+                                        <li>구갈희망누리도서관</li>
+                                        <li>기흥도서관</li>
+                                        <li>남사도서관</li>
+                                        <li>동백도서관</li>
+                                        <li>동천도서관</li>
+                                        <li>모현도서관</li>
+                                        <li>보라도서관</li>
+                                        <li>보정도서관</li>
+                                        <li>상현도서관</li>
+                                        <li>서농도서관</li>
+                                        <li>성복도서관</li>
+                                        <li>수지도서관</li>
+                                        <li>양지해밀도서관</li>
+                                        <li>영덕도서관</li>
+                                        <li>이동꿈툴도서관</li>
+                                        <li>죽전도서관</li>
+                                        <li>창덕도서관</li>
+                                        <li>포곡도서관</li>
+                                        <li>흥덕도서관</li>
+                                    </ul>
                                     <div class="search">
-                                        <label for="libraryCh" class="blind">조회할 도서관 선택</label>
-                                        <ul name="libraryCh" id="libraryCh">
-                                            <li class="show active">전체도서관</li>
-                                            <li>도서관정책과</li>
-                                            <li>구갈희망누리도서관</li>
-                                            <li>기흥도서관</li>
-                                            <li>남사도서관</li>
-                                            <li>동백도서관</li>
-                                            <li>동천도서관</li>
-                                            <li>모현도서관</li>
-                                            <li>보라도서관</li>
-                                            <li>보정도서관</li>
-                                            <li>상현도서관</li>
-                                            <li>서농도서관</li>
-                                            <li>성복도서관</li>
-                                            <li>수지도서관</li>
-                                            <li>양지해밀도서관</li>
-                                            <li>영덕도서관</li>
-                                            <li>이동꿈툴도서관</li>
-                                            <li>죽전도서관</li>
-                                            <li>창덕도서관</li>
-                                            <li>포곡도서관</li>
-                                            <li>흥덕도서관</li>
+                                        <ul>
+                                            <li class="show">제목</li>
+                                            <li>내용</li>
                                         </ul>
-                                        <div class="title-se">
-                                            <ul>
-                                                <li class="show">제목</li>
-                                                <li>내용</li>
-                                            </ul>
-                                            <label for="userName" class="blind">조회할 제목 또는 내용 기입</label>
-                                            <input type="text" name="userName" id="userName">
-                                            <button>검색</button>
-                                        </div>
+                                        <label for="userName" class="blind">조회할 제목 또는 내용 기입</label>
+                                        <input type="text" name="userName" id="userName">
+                                        <button>검색</button>
                                     </div>
                                 </fieldset>
                             </form>

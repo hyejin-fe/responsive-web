@@ -2,34 +2,6 @@
     box-sizing: border-box;
 }
 
-body {
-    word-break: keep-all;  /* 한글 단어 끊김 방지 */
-    word-wrap: break-word;  /* 단어가 넘으면 줄바꿈 */
-}
-
-#main {
-    padding: 20px;
-}
-#main .main-top {
-    padding: 30px 0;
-    border-bottom: 1px solid #e2e2e2;
-}
-#main .main-top .navi span {
-    padding-left: 20px;
-    position: relative;
-}
-.main-top .navi span:first-child::before {
-    content: "";
-}
-.main-top .navi span::before {
-    content: ">";
-    position: absolute; left: 4px; top: -4px;
-}
-
-
-#main .contents {
-    padding-top: 30px;
-}
 
 /* tab-btn */
 #main .contents .tab-btn {
@@ -402,7 +374,7 @@ legend {
     border: 0 none;
     margin-bottom: 20px;
 }
-.dona-inquiry .base-form .user-se, .dona-list .base-form .title-se {
+.dona-inquiry .base-form .search, .dona-list .base-form .search {
     display: flex;
     gap: 4px;
     margin-top: 5px;
@@ -478,35 +450,6 @@ legend {
     padding: 10px 10px;
 }
 
-
-/* 도서관분류 */
-.lb-cate {
-    padding: 4px 20px;
-    border-radius: 3px;
-    color: #fff;
-    font-weight: 500;
-}
-.sj { /* 수지 */
-    background-color: #1b6eab;
-}
-.jj { /* 죽전 */
-    background-color: #a88200;
-}
-.bj { /* 보정 */
-    background-color: #8a9a5b;
-}
-.dc { /* 동천 */
-    background-color: #14c0ba;
-}
-.sb { /* 성복 */
-    background-color: #119814;
-}
-.gh { /* 기흥 */
-    background-color: #595bd1;
-}
-.cd { /* 창덕 */
-    background-color: #3784f0;
-}
 
 
 

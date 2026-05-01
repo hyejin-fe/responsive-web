@@ -46,6 +46,8 @@ th, td {
 body { 
     font-size: 16px; color: #333; line-height: 1.6; 
     font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; 
+    word-break: keep-all;  /* 한글 단어 끊김 방지 */
+    word-wrap: break-word;  /* 단어가 넘으면 줄바꿈 */
 }
 h1 { line-height: 1.2; }
 h2, h3 { line-height: 1.4; }
@@ -63,35 +65,113 @@ input {
 
 
 /* 3. 레이아웃 클래스 (공통 사용) */
-#main { padding: 20px;}
-#main .main-top {
-    padding: 20px 0;
-    border-bottom: 1px solid #e2e2e2;
-}
-#main .contents {padding-top: 30px;}
 .wrapper { width: 100%; min-width: 320px; }
-.container { width: 100%; }
-.inner { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 20px; background-color: #ececec; }
+.container {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    box-sizing: border-box;
+}
+.inner { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
 
 /* 4. 공통 UI 컴포넌트 */
 .img-box { overflow: hidden; }
 .img-box img { width: 100%; display: block; }
 
+
 /* 5. 접근성 클래스 */
 .blind { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); }
+
 
 /* ★★★★★ 팀별로 정해진 공통 클래스 규칙 나열 */
 .tit-main { color: #111; font-size: 26px; font-weight: 500; line-height: 1.2; } /* 본문의 대제목 - size */
 .tit-sec { color: #111; font-size: 20px; font-weight: 500; line-height: 1.4; } /* 본문의 중제목 - size */ 
 .tit-sub { color: #111; font-size: 20px; font-weight: 500; line-height: 1.4; } /* 본문의 소제목 - size */
 
+
+/* 메인 상단  */
+#main .main-top {
+    padding: 30px 0;
+    border-bottom: 1px solid #e2e2e2;
+}
+#main .main-top .navi span {  /* 네비 */
+    font-size: 14px;
+    color: #464646;
+    padding-left: 20px;
+    position: relative;
+}
+.main-top .navi span:first-child::before {
+    content: "";
+}
+.main-top .navi span::before {
+    content: ">";
+    position: absolute; left: 4px; top: -4px;
+}
+
+#main .contents {
+    padding-top: 30px;
+}
+
+
+/* 사이드 */
+#aside {
+    width: 20%;
+}
+#aside h1 {
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    background-color: #1b6eab;  /* 임시 배경색 */
+    width: 100%;
+    height: 120px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+#aside dl {
+    border: 1px solid #e2e2e2;
+    border-bottom: 0 none;
+    font-weight: 500;
+}
+#aside dl:last-child {
+    border-bottom: 1px solid #e2e2e2;
+}
+#aside dl.active {
+    border: 2px solid #03416E;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.15);
+}
+
+#aside dl dt {
+    width: 100%;
+    padding: 20px;
+}
+#aside dl.active dt {
+    background-color: #03416E;
+    color: #fff;
+    font-weight: 600;
+    z-index: 1;
+}
+#aside dl dd {
+    display: none;
+    margin: 10px 20px;
+}
+#aside dl.active dd {
+    display: block;
+    color: #03416E;
+    font-weight: 500;
+}
+
+/* 메인내용부분 */
+#main {
+    width: 80%;
+}
+
+
 /* 공통 border 스타일 */
 .base-form, .dropdown, .icon-btn li {
     border: 1px solid #e2e2e2;
-}
-.navi span {  /* 상단 경로 */
-    font-size: 14px;
-    color: #464646;
 }
 
 .base-form { 
@@ -179,12 +259,55 @@ input {
     min-width: 320px;
 }
 
+
+/* 도서관분류 */
+.lb-cate {
+    padding: 4px 20px;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: 500;
+}
+.sj { /* 수지 */
+    background-color: #1b6eab;
+}
+.jj { /* 죽전 */
+    background-color: #a88200;
+}
+.bj { /* 보정 */
+    background-color: #8a9a5b;
+}
+.dc { /* 동천 */
+    background-color: #14c0ba;
+}
+.sb { /* 성복 */
+    background-color: #119814;
+}
+.gh { /* 기흥 */
+    background-color: #595bd1;
+}
+.cd { /* 창덕 */
+    background-color: #3784f0;
+}
+.gt { /* 공통 */
+    background-color: #303030;
+}
+
+
+
 @media screen and (max-width: 767px){
     .blind-m { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); }
 }
+
+
+@media screen and (max-width: 1024px) {  /* 모바일, 테블릿에서 사이드 안보이게 */
+    #aside.blind-m { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); }
+    #main { width: 100%;}
+}
+
 
 @media screen and (min-width: 1024px){ /* 데스크탑 min-width가 다를 수 있음 */
     body { 
         font-size: 18px;
     }
 }
+
