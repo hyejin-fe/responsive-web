@@ -117,6 +117,7 @@
     padding: 10px 20px
 }
 .space-apply .space-ch span {
+    font-weight: 500;
     line-height: 33px;
     vertical-align: middle;
 }
@@ -130,6 +131,11 @@
     background-color: #fff;
     border: 1px solid #e4e4e4;
 }
+.space-apply .space-ch button.active {
+    font-weight: 500;
+    color: #fff;
+    background-color: #444;
+}
 
 .space-apply .calendar {
     margin-top: 20px;
@@ -138,6 +144,13 @@
 .space-apply .calendar .month {
     display: flex;
     padding: 10px;
+}
+.space-apply .calendar .month p {
+    line-height: 36px;
+    vertical-align: middle;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 500;
 }
 .space-apply .calendar .month button {
     padding: 4px 8px;
@@ -158,9 +171,22 @@
 }
 .space-apply .calendar th {
     text-align: center;
+    padding: 10px 0;
+    border-bottom: 2px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+}
+.space-apply .calendar th:last-child {
+    border-right: 0 none;
 }
 .space-apply .calendar td {
+    padding: 4px;
     height: 50px;
+    border-bottom: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+    background-color: #f0f0f0;
+}
+.space-apply .calendar td:last-child {
+    border-right: 0 none;
 }
 .space-apply .calendar td span {
     margin-left: 2px;
@@ -182,7 +208,7 @@
     content: "";
     width: 14px;
     height: 14px;
-    border: 1px solid #ababab;
+    border: 1px solid #e2e2e2;
     border-radius: 20px;
     box-sizing: border-box;
     background-color: #fff;
@@ -193,14 +219,47 @@
     content: "";
     width: 14px;
     height: 14px;
-    border: 1px solid #ababab;
+    border: 1px solid #e2e2e2;
     border-radius: 20px;
     box-sizing: border-box;
-    background-color: #ababab;
+    background-color: #f0f0f0;
     position: absolute; left: 0; top: 50%;
     transform: translateY(-50%);
 }
 
-.space-apply .calendar .time {
-    
+.space-apply .time, .space-apply .schedule {
+    margin-top: 20px;
+    border-top: 2px solid #555;
+}
+.space-apply .time p, .space-apply .schedule p {
+    padding: 10px;
+}
+
+
+.space-apply .time .time-btns, .space-apply .schedule div {
+    border-top: 1px solid #ababab;
+    border-bottom: 1px solid #ababab;
+    height: 200px;
+    padding: 20px 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.space-apply .time .time-btns button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 1px solid #e2e2e2;
+}
+
+.space-apply .apply-btn {
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #5F99C4;
+}
+.space-apply .apply-btn.active {
+    background-color: #1B6EAB;
 }
