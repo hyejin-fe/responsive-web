@@ -101,4 +101,12 @@
     #main .contents .sns-login {
         width: 50%;
     }
+
+    .user-login form button {
+        font-size: 18px;
+    }
+
+    .user-login .find button {
+        font-size: 16px;
+    }
 }

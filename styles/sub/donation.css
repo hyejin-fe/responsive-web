@@ -11,16 +11,15 @@
     display: none;
     width: 100%;
     text-align: center;
-    padding: 4px 0;
+    padding: 10px 0;
     border: 1px solid #e2e2e2;
-    font-weight: 500;
 }
 #main .contents .tab-btn li.show {
     display: block;
 }
 #main .contents .tab-btn li.active {
-    background-color: #1b6eab;
-    border: 1px solid #1b6eab;
+    background-color: #0d4f80;
+    border: 1px solid #0d4f80;
 }
 #main .contents .tab-btn li.active button {
     color: #fff;
@@ -227,6 +226,7 @@ legend {
 .dona-apply .tell-num ul {
     border: 1px solid #ccc;
     border-radius: 5px;
+    width: 40%;
 }
 .dona-apply .tell-num li {
     display: none;
@@ -254,6 +254,23 @@ legend {
     color: #fff;
     background-color: #444;
     border-radius: 5px;
+}
+
+/* 도서수량 */
+.dona-apply .book-cnt label {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.dona-apply .book-cnt input {
+    border: 0 none;
+    outline: none;
+    flex: 1;
+}
+.dona-apply .book-cnt span {
+    line-height: 43px;
+    vertical-align: middle;
+    padding-right: 10px;
 }
 
 /* 반환여부 */
@@ -373,6 +390,8 @@ legend {
 .dona-inquiry .base-form, .dona-list .base-form {
     border: 0 none;
     margin-bottom: 20px;
+    padding: 10px;
+    background-color: #e2e2e2;
 }
 .dona-inquiry .base-form .search, .dona-list .base-form .search {
     display: flex;
@@ -383,6 +402,7 @@ legend {
 .dona-inquiry .base-form ul, .dona-list .base-form ul {
     border: 1px solid #ccc;
     border-radius: 5px;
+    background-color: #fff;
 }
 .dona-inquiry .base-form li, .dona-list .base-form li {
     display: none;
@@ -396,8 +416,12 @@ legend {
     display: block;
 }
 
+.dona-inquiry .base-form input, .dona-list .base-form input {
+    background-color: #fff;
+}
+
 .dona-inquiry .base-form button, .dona-list .base-form button {
-    width: 100%;
+    width: 50%;
     border: 1px solid #444;
     background-color: #444;
     color: #fff;
@@ -408,9 +432,9 @@ legend {
 /* 테이블 */
 .post-cont table { 
     table-layout: fixed;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
-.post-cont table th, .post-cont .library, .post-cont .state {
+.post-cont table th, .post-cont .library, .post-cont .state, .post-cont .number, .post-cont .date {
     text-align: center;
 }
 .post-cont th {
@@ -428,6 +452,7 @@ legend {
 
 .paging {
     display: flex;
+    justify-content: center
 }
 .paging a {
     line-height: 24px;
@@ -465,5 +490,74 @@ legend {
 
 @media screen and (max-width: 767px){
     .post-cont .blind-m { display: none; }
-    .post-cont .library, .post-cont .date, .post-cont .state { width: 80px; }
+    .post-cont .library, .post-cont .state, .post-cont .date { width: 80px; }
+}
+
+@media screen and (min-width: 768px){
+    #main .contents .tab-btn {
+        display: flex;
+    }
+    #main .contents .tab-btn li {
+        display: block;
+        border-left: 0 none;
+    }
+    #main .contents .tab-btn li:first-child{
+        border-left: 1px solid #e2e2e2;
+    }
+    #main .contents .tab-btn li.active {
+        z-index: 1;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    #main .contents .tab-btn li button {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    /*  */
+    .dona-info .step-area {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    /*  */
+    .check .email-box {
+        display: flex;
+    }
+    .check .email-box .email {
+        margin-bottom: 0;
+    }
+    .check .email-box .domain {
+        width: 40%;
+        margin-left: 5px;
+    }
+
+    /*  */
+    .post-cont .library, .post-cont .date, .post-cont .number, .post-cont .state, .post-cont .attach, .post-cont .views { width: 100px; }
+
+    /*  */
+    .dona-inquiry .base-form fieldset, .dona-list .base-form fieldset {
+        display: flex;
+    }
+    .dona-inquiry .base-form .test01, .dona-list .base-form .test01 {
+        margin-right: 4px;
+        width: 30%;
+    }
+    .dona-inquiry .base-form .search, .dona-list .base-form .search {
+        margin-top: 0;
+        width: 100%;
+    }
+    .base-form .search .test02 {
+        width: 50%;
+    }
+    .base-form .search button {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    #main .contents .step-area {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }

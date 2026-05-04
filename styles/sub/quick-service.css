@@ -13,11 +13,12 @@
 .contents .tab-btn li {
     width: 100%;
     text-align: center;
-    padding: 4px 0;    
+    padding: 10px 0;    
 }
 .contents .tab-btn li.active {
-    border: 1px solid #1b6eab;
-    background-color: #1b6eab;
+    border: 1px solid #0d4f80;
+    background-color: #0d4f80;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 }
 .contents .tab-btn li button {
     font-size: 20px;
@@ -49,9 +50,22 @@
 
 
 
-
-@media screen and (min-width: 640px){
+@media screen and (min-width: 768px){
     #main .contents .ani-btn {
         grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+@media screen and (min-width: 1024px){
+    #main .contents .ani-btn {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .contents .ani-btn li:hover {
+        border: 1px solid #222;
+        transform: translateY(-5px);
+        background-color: #fff;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
     }
 }

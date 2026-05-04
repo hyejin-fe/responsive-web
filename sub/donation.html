@@ -216,7 +216,7 @@
                             <p>사랑의 책 나누기 운동본부<a href="">(https://www.facebook.com/nanumbk/)</a></p>
                         </div>
                     </div>
-                    <div class="dona-apply ">
+                    <div class="dona-apply show">
                         <h2 class="tit-sec blind">서약서작성</h2>
                         <form>
                             <!-- 서약서작성01 -->
@@ -327,12 +327,13 @@
                                             <span>※ 예) 일반도서, 아동청소년도서</span>
                                         </dd>
                                     </dl>
-                                    <dl>
+                                    <dl class="book-cnt">
                                         <dt>도서수량</dt>
                                         <dd>
-                                            <label for="" class="blind">도사수량 기입</label>
-                                            <input type="text" name="" id="">
-                                            <span>(권)</span>
+                                            <label>
+                                                <input type="text" name="" id="">
+                                                <span>(권)</span>
+                                            </label>
                                         </dd>
                                     </dl>
                                     <dl class="return">
@@ -355,7 +356,7 @@
                                                     <label for="emailDot" class="blind">이메일 선택</label>
                                                     <input type="text" name="emailDot" id="emailDot">
                                                 </div>
-                                                <ul name="" id="">
+                                                <ul class="domain">
                                                     <li class="show active">gmail.com</li>
                                                     <li>naver.com</li>
                                                     <li>hanmail.net</li>
@@ -384,7 +385,7 @@
                             </fieldset>
                         </form>
                     </div>
-                    <div class="dona-inquiry show">
+                    <div class="dona-inquiry ">
                         <h2 class="tit-sec blind">기증신청조회</h2>
                         <div class="detail-box">
                             <p>유의사항</p>
@@ -396,32 +397,34 @@
                             <form>
                                 <fieldset>
                                     <legend class="blind">기증신청조회 검색</legend>
-                                    <label for="libraryCh" class="blind">조회할 도서관 선택</label>
-                                    <ul name="libraryCh" id="libraryCh">
-                                        <li class="show active">전체도서관</li>
-                                        <li>도서관정책과</li>
-                                        <li>구갈희망누리도서관</li>
-                                        <li>기흥도서관</li>
-                                        <li>남사도서관</li>
-                                        <li>동백도서관</li>
-                                        <li>동천도서관</li>
-                                        <li>모현도서관</li>
-                                        <li>보라도서관</li>
-                                        <li>보정도서관</li>
-                                        <li>상현도서관</li>
-                                        <li>서농도서관</li>
-                                        <li>성복도서관</li>
-                                        <li>수지도서관</li>
-                                        <li>양지해밀도서관</li>
-                                        <li>영덕도서관</li>
-                                        <li>이동꿈툴도서관</li>
-                                        <li>죽전도서관</li>
-                                        <li>창덕도서관</li>
-                                        <li>포곡도서관</li>
-                                        <li>흥덕도서관</li>
-                                    </ul>
+                                    <div class="test01">
+                                        <label for="libraryCh" class="blind">조회할 도서관 선택</label>
+                                        <ul name="libraryCh" id="libraryCh">
+                                            <li class="show active">전체도서관</li>
+                                            <li>도서관정책과</li>
+                                            <li>구갈희망누리도서관</li>
+                                            <li>기흥도서관</li>
+                                            <li>남사도서관</li>
+                                            <li>동백도서관</li>
+                                            <li>동천도서관</li>
+                                            <li>모현도서관</li>
+                                            <li>보라도서관</li>
+                                            <li>보정도서관</li>
+                                            <li>상현도서관</li>
+                                            <li>서농도서관</li>
+                                            <li>성복도서관</li>
+                                            <li>수지도서관</li>
+                                            <li>양지해밀도서관</li>
+                                            <li>영덕도서관</li>
+                                            <li>이동꿈툴도서관</li>
+                                            <li>죽전도서관</li>
+                                            <li>창덕도서관</li>
+                                            <li>포곡도서관</li>
+                                            <li>흥덕도서관</li>
+                                        </ul>
+                                    </div>
                                     <div class="search">
-                                        <ul>
+                                        <ul class="test02">
                                             <li class="show">신청자명</li>
                                         </ul>
                                         <label for="userName" class="blind">조회할 신청자명 기입</label>
@@ -541,31 +544,33 @@
                                 <fieldset>
                                     <legend class="blind">기증신청조회 검색</legend>
                                     <label for="libraryCh" class="blind">조회할 도서관 선택</label>
-                                    <ul name="libraryCh" id="libraryCh">
-                                        <li class="show active">전체도서관</li>
-                                        <li>도서관정책과</li>
-                                        <li>구갈희망누리도서관</li>
-                                        <li>기흥도서관</li>
-                                        <li>남사도서관</li>
-                                        <li>동백도서관</li>
-                                        <li>동천도서관</li>
-                                        <li>모현도서관</li>
-                                        <li>보라도서관</li>
-                                        <li>보정도서관</li>
-                                        <li>상현도서관</li>
-                                        <li>서농도서관</li>
-                                        <li>성복도서관</li>
-                                        <li>수지도서관</li>
-                                        <li>양지해밀도서관</li>
-                                        <li>영덕도서관</li>
-                                        <li>이동꿈툴도서관</li>
-                                        <li>죽전도서관</li>
-                                        <li>창덕도서관</li>
-                                        <li>포곡도서관</li>
-                                        <li>흥덕도서관</li>
-                                    </ul>
+                                    <div class="test01">
+                                        <ul name="libraryCh" id="libraryCh">
+                                            <li class="show active">전체도서관</li>
+                                            <li>도서관정책과</li>
+                                            <li>구갈희망누리도서관</li>
+                                            <li>기흥도서관</li>
+                                            <li>남사도서관</li>
+                                            <li>동백도서관</li>
+                                            <li>동천도서관</li>
+                                            <li>모현도서관</li>
+                                            <li>보라도서관</li>
+                                            <li>보정도서관</li>
+                                            <li>상현도서관</li>
+                                            <li>서농도서관</li>
+                                            <li>성복도서관</li>
+                                            <li>수지도서관</li>
+                                            <li>양지해밀도서관</li>
+                                            <li>영덕도서관</li>
+                                            <li>이동꿈툴도서관</li>
+                                            <li>죽전도서관</li>
+                                            <li>창덕도서관</li>
+                                            <li>포곡도서관</li>
+                                            <li>흥덕도서관</li>
+                                        </ul>
+                                    </div>
                                     <div class="search">
-                                        <ul>
+                                        <ul class="test02">
                                             <li class="show">제목</li>
                                             <li>내용</li>
                                         </ul>
@@ -580,11 +585,11 @@
                             <table>
                                 <thead>
                                     <tr>
-                                        <th class="blind-m">번호</th>
+                                        <th class="blind-m number">번호</th>
                                         <th class="title">제목</th>
-                                        <th class="blind-m">첨부</th>
+                                        <th class="blind-m attach">첨부</th>
                                         <th class="date">등록일</th>
-                                        <th class="blind-m">조회수</th>
+                                        <th class="blind-m views">조회수</th>
                                     </tr>
                                 </thead>
                                 <!-- <tfoot></tfoot> -->
