@@ -1,0 +1,206 @@
+#main .contents .tab-btn {
+    display: flex;
+    margin-bottom: 25px;
+}
+.contents .tab-btn li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border: 1px solid #e2e2e2;
+}
+.contents .tab-btn li.active {
+    background-color: #0d4f80;
+    border: 1px solid #0d4f80;
+}
+.contents .tab-btn li button {
+    font-size: 18px;
+    font-weight: 500;
+}
+.contents .tab-btn li.active button {
+    color: #fff;
+}
+
+
+/* .space-info */
+#main .contents .space-info {
+    display: none;
+}
+#main .contents .space-info.show {
+    display: block;
+}
+
+#main .contents .tit-sub {
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.space-info .explain p {
+    padding-left: 16px;
+    position: relative;
+}
+.space-info .explain .sentence::before {
+    content: "▪";
+    font-size: 18px;
+    color: #333;
+    position: absolute; left: 0; top: -2px;
+}
+.space-info .explain .red {
+    color: #e72121;
+}
+
+.space-info .step-box {
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.space-info .step-box dt {
+    background-color: #e2e2e2;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.space-info .step-box dd {
+    padding: 0 20px;
+}
+
+.space-info .btns {
+    width: 100%;
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #e2e2e2;
+    text-align: center;
+}
+.space-info .btns p {
+    line-height: 1.2;
+}
+.space-info .btns button {
+    font-size: 18px;
+    color: #fff;
+    margin-top: 10px;
+    padding: 10px 25px;
+    box-sizing: border-box;
+}
+.space-info .btns .check-btn {
+    background-color: #727272;
+}
+.space-info .btns .apply-btn {
+    margin-left: 10px;
+    background-color: #1b6eab;
+}
+
+
+/* .space-apply */
+#main .contents .space-apply {
+    display: none;
+}
+#main .contents .space-apply.show {
+    display: block;
+}
+
+.space-apply .detail-box {
+    padding: 10px;
+    margin-bottom: 25px;
+}
+.space-apply .detail-box p:first-child {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.space-apply .space-ch {
+    display: flex;
+    background-color: #e2e2e2;
+    padding: 10px 20px
+}
+.space-apply .space-ch span {
+    line-height: 33px;
+    vertical-align: middle;
+}
+.space-apply .space-ch div {
+    margin-left: auto;
+}
+.space-apply .space-ch button {
+    font-size: 16px;
+    padding: 4px 8px;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #e4e4e4;
+}
+
+.space-apply .calendar {
+    margin-top: 20px;
+    border-top: 2px solid #555;
+}
+.space-apply .calendar .month {
+    display: flex;
+    padding: 10px;
+}
+.space-apply .calendar .month button {
+    padding: 4px 8px;
+    border: 1px solid #e2e2e2;
+}
+.space-apply .calendar .month span {
+    margin-left: auto;
+    padding: 4px 8px;
+    border: 1px solid #e2e2e2;
+}
+
+.space-apply .calendar table {
+    border-top: 1px solid #ababab;
+    border-bottom: 1px solid #ababab;
+}
+.space-apply .calendar th, .space-apply .calendar td {
+    width: calc(100% / 7);
+}
+.space-apply .calendar th {
+    text-align: center;
+}
+.space-apply .calendar td {
+    height: 50px;
+}
+.space-apply .calendar td span {
+    margin-left: 2px;
+    padding: 1px 4px;
+    border-radius: 50px;
+    color: #fff;
+    background-color: #76C7FF;
+}
+.space-apply .calendar td span.today {
+    padding: 1px 5px;
+    background-color: #444;
+}
+
+.space-apply .calendar p span {
+    padding-left: 18px;
+    position: relative;
+}
+.space-apply .calendar p .ok::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border: 1px solid #ababab;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    position: absolute; left: 0; top: 50%;
+    transform: translateY(-50%);
+}
+.space-apply .calendar p .no::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border: 1px solid #ababab;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: #ababab;
+    position: absolute; left: 0; top: 50%;
+    transform: translateY(-50%);
+}
+
+.space-apply .calendar .time {
+    
+}
