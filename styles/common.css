@@ -164,6 +164,14 @@ input {
     color: #03416E;
     font-weight: 500;
 }
+#aside dl.active dd.on {
+    font-weight: 600;
+    position: relative;
+}
+#aside dl.active dd.on::after {
+    content: ">";
+    position: absolute; right: 0; top: -1px;
+}
 
 /* 메인내용부분 */
 #main {
@@ -174,14 +182,6 @@ input {
 /* 공통 border 스타일 */
 .base-form, .dropdown, .icon-btn li {
     border: 1px solid #e2e2e2;
-}
-
-.base-form { 
-    /* border: 1px solid #e2e2e2; */
-}
-
-.dropdown { /* 펼쳤다 접었다 */
-    /* border: 1px solid #e2e2e2; */
 }
 
 .tab-btn li { 
@@ -196,7 +196,6 @@ input {
 }
 
 .icon-btn { /* 주제별,인기도서 아이콘 */
-    /* border: 1px solid #e2e2e2; */
     border-radius: 3px;
 }
 
@@ -237,10 +236,6 @@ input {
 }
 .chart tr:last-child td {
     border-bottom: 1px solid #ababab;
-}
-
-.step-box { /* 절차 */
-
 }
 
 .paging a {
@@ -289,6 +284,12 @@ input {
 }
 .cd { /* 창덕 */
     background-color: #3784f0;
+}
+.yd { /* 영덕 */
+    background-color: #347b56 ; 
+}
+.db { /* 동백*/
+    background-color: #727900 ;
 }
 .gt { /* 공통 */
     background-color: #303030;

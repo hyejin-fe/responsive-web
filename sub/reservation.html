@@ -38,7 +38,7 @@
                 </dl>
                 <dl class="active">
                     <dt>원클릭대관신청</dt>
-                    <dd>수지도서관대관신청</dd>
+                    <dd class="on">수지도서관대관신청</dd>
                     <dd>원클릭대관신청</dd>
                     <dd>원클릭대관신청안내</dd>
                 </dl>
@@ -58,7 +58,7 @@
             </div>
         </aside><!-- // #aside End -->
         <section id="main">
-            <div class="main-top">  <!-- top부분 메인부분 div로 묶어서 나누기 물어보기 -->
+            <div class="main-top">
                 <p class="navi">
                     <span>열린마당</span>
                     <span>도서기증</span>
@@ -147,112 +147,179 @@
                                 <button>소모임실2</button>
                             </div>
                         </div>
-                        <div class="calendar">
-                            <div class="month">
-                                <button><</button>
-                                <p>2026. 05</p>
-                                <button>></button>
-                                <span>이번달</span>
-                            </div>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th class="sun" scope="col">일</th>
-                                        <th class="mon" scope="col">월</th>
-                                        <th class="tue" scope="col">화</th>
-                                        <th class="wed" scope="col">수</th>
-                                        <th class="thu" scope="col">목</th>
-                                        <th class="fri" scope="col">금</th>
-                                        <th class="sat" scope="col">토</th>
-                                    </tr>
-                                </thead>
-                                <!-- <tfoot></tfoot> -->
-                                <tbody>
-                                    <tr>
-                                        <td class="sun"></td>
-                                        <td class="mon"></td>
-                                        <td class="tue"></td>
-                                        <td class="wed"></td>
-                                        <td class="thu"></td>
-                                        <td class="fri">1<span>H</span></td>
-                                        <td class="sat">2</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="sun">3</td>
-                                        <td class="mon">4<span class="today">T</span></td>
-                                        <td class="tue">5<span>H</span></td>
-                                        <td class="wed">6</td>
-                                        <td class="thu">7</td>
-                                        <td class="fri">8</td>
-                                        <td class="sat">9</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="sun">10</td>
-                                        <td class="mon">11<span>H</span></td>
-                                        <td class="tue">12</td>
-                                        <td class="wed">13</td>
-                                        <td class="thu">14</td>
-                                        <td class="fri">15</td>
-                                        <td class="sat">16</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="sun">17</td>
-                                        <td class="mon">18</td>
-                                        <td class="tue">19</td>
-                                        <td class="wed">20</td>
-                                        <td class="thu">21</td>
-                                        <td class="fri">22</td>
-                                        <td class="sat">23</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="sun">24<span>H</span></td>
-                                        <td class="mon">25<span>H</span></td>
-                                        <td class="tue">26</td>
-                                        <td class="wed">27</td>
-                                        <td class="thu">28</td>
-                                        <td class="fri">29</td>
-                                        <td class="sat">30</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="sun">31</td>
-                                        <td class="mon"></td>
-                                        <td class="tue"></td>
-                                        <td class="wed"></td>
-                                        <td class="thu"></td>
-                                        <td class="fri"></td>
-                                        <td class="sat"></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <p>
-                                <span class="ok">신청가능</span>
-                                <span class="no">신청불가</sppushan>
-                            </p>
-                        </div>
-                        <div class="time">
-                            <p class="choeice">시간 선택</p>
-                            <div class="time-cont">
-                                <p>신청할 날짜를 선택해주세요.</p>
-                                <div class="time-btns">
-                                    <button class="blind">10:00~12:00</button>
-                                    <button class="blind">12:00~14:00</button>
-                                    <button class="blind">14:00~16:00</button>
-                                    <button class="blind">16:00~18:00</button>
-                                    <button class="blind">18:00~20:00</button>
-                                    <button class="blind">21:00</button>
+                        <div class="test03">
+                            <div class="calendar">
+                                <div class="month">
+                                    <button><</button>
+                                    <p>2026. 05</p>
+                                    <button>></button>
+                                    <span>이번달</span>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="schedule">
-                            <p>선택한 일정</p>
-                            <div class="schedule-time">
-                                <p>선택한 일정이 없습니다.</p>
-                                <div>
-                                    <button></button>
+                                <div class="day">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th class="sun" scope="col">일</th>
+                                                <th class="mon" scope="col">월</th>
+                                                <th class="tue" scope="col">화</th>
+                                                <th class="wed" scope="col">수</th>
+                                                <th class="thu" scope="col">목</th>
+                                                <th class="fri" scope="col">금</th>
+                                                <th class="sat" scope="col">토</th>
+                                            </tr>
+                                        </thead>
+                                        <!-- <tfoot></tfoot> -->
+                                        <tbody>
+                                            <tr>
+                                                <td class="sun"></td>
+                                                <td class="mon"></td>
+                                                <td class="tue"></td>
+                                                <td class="wed"></td>
+                                                <td class="thu"></td>
+                                                <td class="fri">1<span>H</span></td>
+                                                <td class="sat">2</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun">3</td>
+                                                <td class="mon">4</td>
+                                                <td class="tue">5<span>H</span></td>
+                                                <td class="wed">6<span class="today">T</span></td>
+                                                <td class="thu">7</td>
+                                                <td class="fri">8</td>
+                                                <td class="sat">9</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun">10</td>
+                                                <td class="mon">11<span>H</span></td>
+                                                <td class="tue">12</td>
+                                                <td class="wed">13</td>
+                                                <td class="thu">14</td>
+                                                <td class="fri">15</td>
+                                                <td class="sat">16</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun">17</td>
+                                                <td class="mon">18</td>
+                                                <td class="tue">19</td>
+                                                <td class="wed">20</td>
+                                                <td class="thu">21</td>
+                                                <td class="fri">22</td>
+                                                <td class="sat">23</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun">24<span>H</span></td>
+                                                <td class="mon">25<span>H</span></td>
+                                                <td class="tue">26</td>
+                                                <td class="wed">27</td>
+                                                <td class="thu">28</td>
+                                                <td class="fri">29</td>
+                                                <td class="sat">30</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun">31</td>
+                                                <td class="mon"></td>
+                                                <td class="tue"></td>
+                                                <td class="wed"></td>
+                                                <td class="thu"></td>
+                                                <td class="fri"></td>
+                                                <td class="sat"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="blind">
+                                        <thead>
+                                            <tr>
+                                                <th class="sun" scope="col">일</th>
+                                                <th class="mon" scope="col">월</th>
+                                                <th class="tue" scope="col">화</th>
+                                                <th class="wed" scope="col">수</th>
+                                                <th class="thu" scope="col">목</th>
+                                                <th class="fri" scope="col">금</th>
+                                                <th class="sat" scope="col">토</th>
+                                            </tr>
+                                        </thead>
+                                        <!-- <tfoot></tfoot> -->
+                                        <tbody>
+                                            <tr>
+                                                <td class="sun"></td>
+                                                <td class="mon">1</td>
+                                                <td class="tue">2</td>
+                                                <td class="wed">3<span>H</span></td>
+                                                <td class="thu">4</td>
+                                                <td class="fri">5</td>
+                                                <td class="sat">6<span>H</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun">7</td>
+                                                <td class="mon">8<span>H</span></td>
+                                                <td class="tue">9</td>
+                                                <td class="wed">10</td>
+                                                <td class="thu">11</td>
+                                                <td class="fri">12</td>
+                                                <td class="sat">13</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun">14</td>
+                                                <td class="mon">15</td>
+                                                <td class="tue">16</td>
+                                                <td class="wed">17</td>
+                                                <td class="thu">18</td>
+                                                <td class="fri">19</td>
+                                                <td class="sat">20</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun">21</td>
+                                                <td class="mon">22<span>H</span></td>
+                                                <td class="tue">23</td>
+                                                <td class="wed">24</td>
+                                                <td class="thu">25</td>
+                                                <td class="fri">26</td>
+                                                <td class="sat">27</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun">28</td>
+                                                <td class="mon">29</td>
+                                                <td class="tue">30</td>
+                                                <td class="wed"></td>
+                                                <td class="thu"></td>
+                                                <td class="fri"></td>
+                                                <td class="sat"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
+                                <p class="possible">
+                                    <span class="ok">신청가능</span>
+                                    <span class="no">신청불가</sppushan>
+                                </p>
+                            </div>
+                            <div class="test04">
+                                <div class="time">
+                                    <p class="choice">시간 선택</p>
+                                    <div class="time-cont">
+                                        <p>신청할 날짜를 선택해주세요.</p>
+                                        <div class="time-btns">
+                                            <button class="blind">10:00~12:00</button>
+                                            <button class="blind">12:00~14:00</button>
+                                            <button class="blind">14:00~16:00</button>
+                                            <button class="blind">16:00~18:00</button>
+                                            <button class="blind">18:00~20:00</button>
+                                            <button class="blind">21:00</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="schedule">
+                                    <p class="choice">선택한 일정</p>
+                                    <div class="schedule-time">
+                                        <p>선택한 일정이 없습니다.</p>
+                                        <div class="choeice-btns">
+                                            <button></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="apply-btn">신청하기</button>
                             </div>
                         </div>
-                        <button class="apply-btn">신청하기</button>
                     </div>
                 </div>
             </div>

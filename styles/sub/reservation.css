@@ -110,6 +110,35 @@
     font-size: 20px;
     font-weight: 500;
 }
+.space-apply .detail-box p:nth-child(2) {
+    margin-bottom: 8px;
+}
+
+.space-apply .detail-box span {
+    padding-left: 24px;
+    padding-right: 4px;
+    position: relative;
+}
+.space-apply .detail-box .today::before {
+    content: "T";
+    font-size: 14px;
+    background-color: #444;
+    color: #fff;
+    padding: 0 6px;
+    border-radius: 50px;
+    text-align: center;
+    position: absolute; left: 0; top: -1px;
+}
+.space-apply .detail-box .rest::before {
+    content: "H";
+    font-size: 14px;
+    background-color: #76C7FF;
+    color: #fff;
+    padding: 0 6px;
+    border-radius: 50px;
+    text-align: center;
+    position: absolute; left: 0; top: -1px;
+}
 
 .space-apply .space-ch {
     display: flex;
@@ -146,7 +175,7 @@
     padding: 10px;
 }
 .space-apply .calendar .month p {
-    line-height: 36px;
+    line-height: 44px;
     vertical-align: middle;
     padding: 0 10px;
     font-size: 18px;
@@ -160,6 +189,7 @@
     margin-left: auto;
     padding: 4px 8px;
     border: 1px solid #e2e2e2;
+    line-height: 34px;
 }
 
 .space-apply .calendar table {
@@ -200,6 +230,16 @@
     background-color: #444;
 }
 
+.space-apply .calendar .sun {
+    color: #b33636;
+}
+.space-apply .calendar .sat {
+    color: #3e5cbe;
+}
+
+.space-apply .calendar .possible {
+    margin-top: 8px;
+}
 .space-apply .calendar p span {
     padding-left: 18px;
     position: relative;
@@ -234,13 +274,19 @@
 .space-apply .time p, .space-apply .schedule p {
     padding: 10px;
 }
+.space-apply .time .choice, .space-apply .schedule .choice {
+    font-size: 18px;
+    font-weight: 500;
+}
 
-
-.space-apply .time .time-btns, .space-apply .schedule div {
+.space-apply .time .time-cont, .space-apply .schedule .schedule-time {
     border-top: 1px solid #ababab;
     border-bottom: 1px solid #ababab;
     height: 200px;
     padding: 20px 10px;
+}
+
+.space-apply .time .time-btns {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
@@ -262,4 +308,22 @@
 }
 .space-apply .apply-btn.active {
     background-color: #1B6EAB;
+}
+
+@media screen and (min-width: 768px) {
+    .contents .tab-btn li button {
+        font-size: 20px;
+    }
+    
+    .space-apply .test03 {
+        display: flex;
+        width: 100%;
+        gap: 20px;
+    }
+    .space-apply .calendar {
+        width: 100%;
+    }
+    .space-apply .test04 {
+        width: 100%;
+    }
 }

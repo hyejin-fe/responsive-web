@@ -426,6 +426,8 @@ legend {
     color: #fff;
     font-weight: 500;
     border-radius: 3px;
+    padding: 10px 0;
+    box-sizing: border-box
 }
 
 /* 테이블 */
@@ -551,7 +553,9 @@ legend {
         width: 50%;
     }
     .base-form .search button {
+        padding: 10px 0;
         font-size: 18px;
+        box-sizing: border-box;
     }
 }
 
