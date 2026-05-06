@@ -2,47 +2,47 @@
     width: 100%;
 }
 
-#main .main-sec .ment {
+#main .main-cont .introduce {
     text-align: center;
 }
-.main-sec .ment p {
+.main-cont .introduce p {
     line-height: 1.2;
 }
-.main-sec .ment p:last-child {
+.main-cont .introduce p:last-child {
     font-size: 24px;
     font-weight: 500;
 }
 
 /*  */
-#main .main-sec .first, #main .main-sec .login {
+#main .main-cont .first, #main .main-cont .login {
     border: 1px solid #1B6EAB;
     border-radius: 20px;
     overflow: hidden;
     margin-top: 20px;
 }
 
-.main-sec .first input {
+.main-cont .first input {
     height: 100%;
     border: 0 none;
 }
-.main-sec .first .test00 {
+.main-cont .first .rest-area {
     padding: 16px;
     color: #fff;
     background-color: #1B6EAB;
 }
-.main-sec .first .test00 .rest-info {
+.main-cont .first .rest-area .rest-info {
     border-bottom: 2px solid #e2e2e2;
     padding-bottom: 16px;
     text-align: center;
 }
 
-.main-sec .first .test00 .open-time {
+.main-cont .first .rest-area .open-time {
     margin-top: 16px;
     padding-right: 10px;
     height: 150px;
     overflow-y: auto;
 }
-.main-sec .first .test00 .open-time p {
+.main-cont .first .rest-area .open-time p {
     display: flex;
 }
 .open-time p span {
@@ -61,25 +61,27 @@
 
 
 /*  */
-.main-sec .login {
+.main-cont .login {
     text-align: center;
 }
-.main-sec .login legend {
+.main-cont .login legend {
     font-size: 24px;
     font-weight: 500;
     padding: 4px 0;
     color: #fff;
-    background-color: #1B6EAB;
+    background-color: #03416E;
+    border: 1px solid #03416E;
+    z-index: 1;
 }
-.main-sec .login .in-box {
+.main-cont .login .in-box {
     padding: 20px 20px 10px 20px;
     display: flex;
 }
-.main-sec .login .in-box label:last-child input{
+.main-cont .login .in-box label:last-child input{
     margin-top: 4px;
 }
 
-.main-sec .login .in-box button {
+.main-cont .login .in-box button {
     font-size: 16px;
     font-weight: 500;
     padding: 20px;
@@ -89,23 +91,45 @@
     border-radius: 3px;
 }
 
-.main-sec .login p {
+.main-cont .login p {
     margin-bottom: 10px;
 }
-.main-sec .login p button {
+.main-cont .login p button {
     font-size: 14px;
     padding-right: 10px;
     position: relative;
 }
-.main-sec .login p button::after {
+.main-cont .login p button::after {
     content: "|";
     font-size: 12px;
     position: absolute; right: 0; top: 2px;
 }
-.main-sec .login p button:last-child::after {
+.main-cont .login p button:last-child::after {
     content: "";
 }
 
+/*  */
+.main-cont .quick-btns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+.main-cont .quick-btns a {
+    text-align: center;
+}
+.main-cont .quick-btns a button {
+    margin: 0 auto;
+    width: 70px;
+    height: 70px;
+    border-radius: 25px;
+    background-color: #fff;
+    margin-bottom: 8px;
+}
 
 
 /*  */
@@ -143,36 +167,38 @@
     margin-left: auto;
 }
 
-.slide-banner-wrap {
+.curation .slide-banner-wrap {
     width: 100%;
     overflow: hidden;
     margin-top: 8px;
     box-sizing: border-box;
 }
-.slide-banner {
+.curation .slide-banner {
     
     display: flex;
     gap: 8px
 }
 
-.slide-banner li {
+.curation .slide-banner li {
     flex-shrink: 0;
 }
-.slide-banner .img-mask {
+.curation .slide-banner .img-mask {
     width: 260px;
     height: 380px;
     background-color: #e2e2e2;
 }
-.slide-banner li dt {
+.curation .slide-banner li dt {
     width: 260px;
     margin-top: 8px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
+.curation .slide-banner li dd {
+    display: none;
+}
 
-
-.slide-btns {
+.curation .slide-btns {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -182,37 +208,37 @@
 
 
 @media screen and (min-width: 768px) {
-    .test05 {
+    .top-box {
         width: 100%;
         display: flex;
         gap: 10px;
     }
     
-    .test05 .first {
+    .top-box .first {
         width: 60%;
     }
-    .test05 .first form {
+    .top-box .first form {
         display: flex;
     }
-    .test05 .first form label {
+    .top-box .first form label {
         width: 100%;
     }
-    .test05 .first .trending {
+    .top-box .first .trending {
         display: flex;
         margin-left: auto;
         padding: 10px;
         width: 40%;
         color: #fff;
-        background-color: #1B6EAB;
+        background-color: #03416E;
     }
-    .test05 .first .trending li {
+    .top-box .first .trending li {
         display: none;
         line-height: 38px;
     }
-    .test05 .first .trending li.show {
+    .top-box .first .trending li.show {
         display: block;
     }
-    .test05 .first .trending .updown {
+    .top-box .first .trending .updown {
         margin-left: auto;
         display: flex;
         flex-direction: column;  /* 세로로 정렬 */
@@ -220,30 +246,64 @@
     }
     
     
-    
-    .test05 .first .test00 {
+    .top-box .first .rest-area {
         display: flex;
     }
-    .test05 .first .test00 .rest-info {
+    .top-box .first .rest-area .rest-info {
         width: 50%;
         border-bottom: 0 none;
         border-right: 2px solid #e2e2e2;
         padding: 0 20px 0 0;
     }
 
-    .test05 .first .test00 .open-time {
+    .top-box .first .rest-area .open-time {
         width: 50%;
         margin: 0;
         padding-left: 20px;
     }
 
-    .test05 .login {
+    .top-box .login {
         width: 40%;
     }
 
-    .test05 .login legend {
+    .top-box .login legend {
         height: 58px;
         padding: 12px 0;
         box-sizing: border-box;
     }
+
+    .curation .slide-banner li.show {
+        display: flex;
+    }
+    .curation .slide-banner li.show dl {
+        width: 260px;
+        height: 380px;
+        margin-left: 10px;
+    }
+    .curation .slide-banner li.show dd {
+        display: block;
+    }
 }
+
+
+@media screen and (min-width: 500px) {
+    .main-cont .quick-btns {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .main-cont .quick-btns a button {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .main-cont .quick-btns {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+    }
+    
+}
+
