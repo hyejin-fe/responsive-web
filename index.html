@@ -3,43 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>메인 | 수지도서관</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/sub/서브페이지명.js" defer></script>
 </head>
 <body>
     <div class="container inner">
         <section id="main">
-            <div class="">
-
-            </div>
+            <div class="main-sec">
+                <div class="ment">
+                    <p>시민 행복과 미래를 이끄는</p>
+                    <p>수지도서관</p>
+                </div>
+                <div class="test05">
+                    <div class="first">
+                        <form>
+                            <legend class="blind">검색</legend>
+                            <label>
+                                <input type="text" placeholder="도서를 검색해주세요.">
+                            </label>
+                            <div class="trending blind-m">
+                                <ul class="slide">
+                                    <li>삼국지</li>
+                                    <li>모순</li>
+                                    <li class="show">안녕이라 그랬어</li>
+                                    <li>혼모노</li>
+                                    <li>한강</li>
+                                </ul>
+                                <div class="updown">
+                                    <button>▲</button>
+                                    <button>▼</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="test00">
+                            <div class="rest-info">
+                                <p>휴관일</p>
+                                <p class="year">2026</p>
+                                <p class="btns">
+                                    <button class="prev"><</button>
+                                    <span>05</span>
+                                    <button class="nest">></button>
+                                </p>
+                                <div class="rest-day">
+                                    <span>01</span>
+                                    <span>05</span>
+                                    <span>11</span>
+                                    <span>24</span>
+                                    <span>25</span>
+                                </div>
+                                <p>매월 두 번째, 네 번째 월요일 정기휴관</p>
+                            </div>
+                            <div class="open-time">
+                                <p>
+                                    <span class="left">(평일) 종합자료실</span>
+                                    <span class="rigth">09:00~22:00</span>
+                                </p>
+                                <p>
+                                    <span class="left">(평일) 디지털존</span>
+                                    <span class="rigth">09:00~22:00</span>
+                                </p>
+                                <p>
+                                    <span class="left">(평일) 어린이자료실</span>
+                                    <span class="rigth">09:00~18:00</span>
+                                </p>
+                                <p>
+                                    <span class="left">(주말) 종합/어린이/디지털존</span>
+                                    <span class="rigth">09:00~17:00</span>
+                                </p>
+                                <p>
+                                    <span class="left">(화~토) 메이커스페이스</span>
+                                    <span class="rigth">10:00~17:00</span>
+                                </p>
+                                <p>
+                                    <span class="left">(화~토) 미디어창작실</span>
+                                    <span class="rigth">10:00~17:00</span>
+                                </p>
+                                <p>
+                                    <span class="left">(화~토) VR·AR 체험관</span>
+                                    <span class="rigth">10:00~17:00</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>  <!-- /.first End -->
+                    <div class="login">
+                        <form>
+                            <legend>로그인</legend>
+                            <div class="in-box">
+                                <div>
+                                    <label>
+                                        <input type="text" placeholder="아이디">
+                                    </label>
+                                    <label>
+                                        <input type="password" placeholder="비밀번호">
+                                    </label>
+                                </div>
+                                <button>로그인</button>
+                            </div>
+                            <p>
+                                <button>아이디찾기</button>
+                                <button>비밀번호찾기</button>
+                                <button>회원가입</button>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>  <!-- /.main-sec End -->
             <div class="curation">
-                <h2>북큐레이션</h2>
+                <h2 class="tit-sec">북큐레이션</h2>
                 <div class="tab-btn">
-                    <button>독서산책</button>
+                    <button class="active">독서산책</button>
                     <button>사서추천도서</button>
                     <button><a href="#">Ai추천도서</a></button>
                     <button><a href="#">+</a></button>
                 </div>
-                <div class="slide-banner">
-                    <div class="test">
-                        <div class="img-mask"></div>
-                        <p>밥보다 등산</p>
-                    </div>
-                    <div class="test">
-                        <div class="img-mask"></div>
-                        <p>오늘 하루, 감성 캠핑 : 작은 텐트 하나로 시작된 감성 라이프</p>
-                    </div>
-                    <div class="test">
-                        <div class="img-mask"></div>
-                        <p>필사, 어른이 되는 시간 : 소란한 세상에서 평온함을 찾는 가장 고귀한 방법</p>
-                    </div>
-                    <div class="test">
-                        <div class="img-mask"></div>
-                        <p>(마법 같은 영상 제작을 위한) 스마트폰 촬영 및 편집 with 캡컷</p>
-                    </div>
-                    <div class="test">
-                        <div class="img-mask"></div>
-                        <p>공부보다 악기 : 할 일보다 좋아하는 일에 더 진심인 이들을 위한 어느 의대생의 음악 이야기</p>
-                    </div>
+                <div class="slide-banner-wrap">
+                    <ul class="slide-banner">
+                        <li class="show">
+                            <div class="img-mask"></div>
+                            <dl>
+                                <dt>밥보다 등산</dt>
+                                <dd>손민규 지음</dd>
+                                <dd>책밥상</dd>
+                                <dd>2021</dd>
+                                <dd>"산길은 험하니, 안 넘어지고 안다치기 위해서는 좀 더 걸음에 집중해야 했다. 산에서는 잡념이 내 몸을 갉아 먹을 틈이 없었다." 30여 년간 등산을 좋아산 저자에게 힘이 되어준 산 그리고 함께 산에 오른 사람들에 관한 이야기</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <div class="img-mask"></div>
+                            <dl>
+                                <dt>오늘 하루, 감성 캠핑 : 작은 텐트 하나로 시작된 감성 라이프</dt>
+                                <dd>안흥준 지음</dd>
+                                <dd>루리책방</dd>
+                                <dd>2022</dd>
+                                <dd>"날씨나 자신의 기분에 따라서 캠핑의 전체적인 톤을 정하고 그에 맞는 장비를 준비해서 캠핑 장소에 도착해 자신의 입맛에 맞게 캠핑장을 꾸밉니다." 캠핑을 처음 시작하려고 하는데 무엇부터 사야할지 막막한 사람, 감성 ...</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <div class="img-mask"></div>
+                            <dl>
+                                <dt>필사, 어른이 되는 시간 : 소란한 세상에서 평온함을 찾는 가장 고귀한 방법</dt>
+                                <dd>나태주 지음 / 보담 삽화</dd>
+                                <dd>북로그컴퍼니</dd>
+                                <dd>2025</dd>
+                                <dd>"필사는 언제 해도 좋지만, 눈뜨자마자 한다면 하루의 시작부터 기분이 맑아질 것입니다." 한평생 시를 쓰며 닦고 또 닦아낸 시인의 깨끗한 마음이 담긴 시들을 필사하며 사유할 수 있는 시집이다.</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <div class="img-mask"></div>
+                            <dl>
+                                <dt>(마법 같은 영상 제작을 위한) 스마트폰 촬영 및 편집 with 캡컷</dt>
+                                <dd></dd>
+                                <dd></dd>
+                                <dd></dd>
+                                <dd></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <div class="img-mask"></div>
+                            <dt>공부보다 악기 : 할 일보다 좋아하는 일에 더 진심인 이들을 위한 어느 의대생의 음악 이야기</dt>
+                        </li>
+                    </ul>
+                    <p class="slide-btns">
+                        <button class="prev"><</button>
+                        <button class="next">></button>
+                    </p>
                 </div>
             </div>
             
