@@ -12,10 +12,10 @@
 <body>
     <div class="container inner">
         <section id="main">
-            <div class="main-cont">
+            <div class="main-cont">  <!-- 메인 섹션 -->
                 <div class="introduce">
                     <p>시민 행복과 미래를 이끄는</p>
-                    <p>수지도서관</p>
+                    <h1 class="tit-main">수지도서관</h1>
                 </div>
                 <div class="top-box">
                     <div class="first">
@@ -110,7 +110,7 @@
                                 <button>회원가입</button>
                             </p>
                         </form>
-                    </div>
+                    </div>  <!-- /.login End -->
                 </div>
                 <div class="quick-btns">
                     <h2 class="blind">자주찾는 페이지</h2>
@@ -157,73 +157,129 @@
                 </div>  <!-- /.quick-btns End -->
             </div>  <!-- /.main-sec End -->
             
-            <div class="curation">
-                <h2 class="tit-sec">북큐레이션</h2>
-                <div class="tab-btn">
-                    <button class="active">독서산책</button>
-                    <button>사서추천도서</button>
-                    <button><a href="#">Ai추천도서</a></button>
-                    <button><a href="#">+</a></button>
+            <div class="curation">  <!-- 북큐레이션 -->
+                <div class="title">
+                    <h2 class="tit-sec">북큐레이션</h2>
+                    <a href="#" class="full"><img src="images/icon/plus.png" alt="전체보기"></a>
                 </div>
-                <div class="slide-banner-wrap">
-                    <ul class="slide-banner">
-                        <li class="show">
-                            <a href="#"><div class="img-mask">이미지</div></a>
-                            <dl>
-                                <dt>밥보다 등산</dt>
-                                <dd>손민규 지음</dd>
-                                <dd>책밥상</dd>
-                                <dd>2021</dd>
-                                <dd>"산길은 험하니, 안 넘어지고 안다치기 위해서는 좀 더 걸음에 집중해야 했다. 산에서는 잡념이 내 몸을 갉아 먹을 틈이 없었다." 30여 년간 등산을 좋아산 저자에게 힘이 되어준 산 그리고 함께 산에 오른 사람들에 관한 이야기</dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <a href="#"><div class="img-mask">이미지</div></a>
-                            <dl>
-                                <dt>오늘 하루, 감성 캠핑 : 작은 텐트 하나로 시작된 감성 라이프</dt>
-                                <dd>안흥준 지음</dd>
-                                <dd>루리책방</dd>
-                                <dd>2022</dd>
-                                <dd>"날씨나 자신의 기분에 따라서 캠핑의 전체적인 톤을 정하고 그에 맞는 장비를 준비해서 캠핑 장소에 도착해 자신의 입맛에 맞게 캠핑장을 꾸밉니다." 캠핑을 처음 시작하려고 하는데 무엇부터 사야할지 막막한 사람, 감성 ...</dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <a href="#"><div class="img-mask">이미지</div></a>
-                            <dl>
-                                <dt>필사, 어른이 되는 시간 : 소란한 세상에서 평온함을 찾는 가장 고귀한 방법</dt>
-                                <dd>나태주 지음 / 보담 삽화</dd>
-                                <dd>북로그컴퍼니</dd>
-                                <dd>2025</dd>
-                                <dd>"필사는 언제 해도 좋지만, 눈뜨자마자 한다면 하루의 시작부터 기분이 맑아질 것입니다." 한평생 시를 쓰며 닦고 또 닦아낸 시인의 깨끗한 마음이 담긴 시들을 필사하며 사유할 수 있는 시집이다.</dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <a href="#"><div class="img-mask">이미지</div></a>
-                            <dl>
-                                <dt>(마법 같은 영상 제작을 위한) 스마트폰 촬영 및 편집 with 캡컷</dt>
-                                <dd>롱제이 지음</dd>
-                                <dd>시프트</dd>
-                                <dd>2025</dd>
-                                <dd>"인생을 바꾸는 가장 빠른 지름길은 단언컨데 영상입니다!" 스마트폰 카메라를 사용해 소중한 추억 재미있는 일상을 영상으로 남겨볼 수 있는 마법같은 영상 편집 비범을 알려준다.</dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <a href="#"><div class="img-mask">이미지</div></a>
-                            <dl>
-                                <dt>공부보다 악기 : 할 일보다 좋아하는 일에 더 진심인 이들을 위한 어느 의대생의 음악 이야기</dt>
-                                <dd>김지현 지음</dd>
-                                <dd>노천서재</dd>
-                                <dd>2025</dd>
-                                <dd>"좀 늦으면 어떻단 말인가. 이제라도 이렇게 배우고 연습하니 되는데." 낙담을 동반한 연습을 거치면서 비로소 조금 더 아름다운 소리를 내면서 어느 순간 취미활동을 악기 연주를 오래 지속하고 있는 작가의 에세이다.</dd>
-                            </dl>
-                        </li>
-                    </ul>
-                    <p class="slide-btns">
-                        <button class="prev"><</button>
-                        <button class="next">></button>
-                    </p>
+                <div class="curation-box">
+                    <div class="tab-btn">
+                        <button class="active">독서산책</button>
+                        <button>사서추천도서</button>
+                        <button><a href="#">Ai추천도서</a></button>
+                    </div>
+                    <div class="slide-banner-wrap">
+                        <ul class="slide-banner show">
+                            <li class="show">
+                                <a href="#"><div class="img-mask">이미지</div></a>
+                                <dl>
+                                    <dt>밥보다 등산</dt>
+                                    <dd>손민규 지음</dd>
+                                    <dd>책밥상</dd>
+                                    <dd>2021</dd>
+                                    <dd>"산길은 험하니, 안 넘어지고 안다치기 위해서는 좀 더 걸음에 집중해야 했다. 산에서는 잡념이 내 몸을 갉아 먹을 틈이 없었다." 30여 년간 등산을 좋아산 저자에게 힘이 되어준 산 그리고 함께 산에 오른 사람들에 관한 이야기</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <a href="#"><div class="img-mask">이미지</div></a>
+                                <dl>
+                                    <dt>오늘 하루, 감성 캠핑 : 작은 텐트 하나로 시작된 감성 라이프</dt>
+                                    <dd>안흥준 지음</dd>
+                                    <dd>루리책방</dd>
+                                    <dd>2022</dd>
+                                    <dd>"날씨나 자신의 기분에 따라서 캠핑의 전체적인 톤을 정하고 그에 맞는 장비를 준비해서 캠핑 장소에 도착해 자신의 입맛에 맞게 캠핑장을 꾸밉니다." 캠핑을 처음 시작하려고 하는데 무엇부터 사야할지 막막한 사람, 감성 ...</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <a href="#"><div class="img-mask">이미지</div></a>
+                                <dl>
+                                    <dt>필사, 어른이 되는 시간 : 소란한 세상에서 평온함을 찾는 가장 고귀한 방법</dt>
+                                    <dd>나태주 지음 / 보담 삽화</dd>
+                                    <dd>북로그컴퍼니</dd>
+                                    <dd>2025</dd>
+                                    <dd>"필사는 언제 해도 좋지만, 눈뜨자마자 한다면 하루의 시작부터 기분이 맑아질 것입니다." 한평생 시를 쓰며 닦고 또 닦아낸 시인의 깨끗한 마음이 담긴 시들을 필사하며 사유할 수 있는 시집이다.</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <a href="#"><div class="img-mask">이미지</div></a>
+                                <dl>
+                                    <dt>(마법 같은 영상 제작을 위한) 스마트폰 촬영 및 편집 with 캡컷</dt>
+                                    <dd>롱제이 지음</dd>
+                                    <dd>시프트</dd>
+                                    <dd>2025</dd>
+                                    <dd>"인생을 바꾸는 가장 빠른 지름길은 단언컨데 영상입니다!" 스마트폰 카메라를 사용해 소중한 추억 재미있는 일상을 영상으로 남겨볼 수 있는 마법같은 영상 편집 비범을 알려준다.</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <a href="#"><div class="img-mask">이미지</div></a>
+                                <dl>
+                                    <dt>공부보다 악기 : 할 일보다 좋아하는 일에 더 진심인 이들을 위한 어느 의대생의 음악 이야기</dt>
+                                    <dd>김지현 지음</dd>
+                                    <dd>노천서재</dd>
+                                    <dd>2025</dd>
+                                    <dd>"좀 늦으면 어떻단 말인가. 이제라도 이렇게 배우고 연습하니 되는데." 낙담을 동반한 연습을 거치면서 비로소 조금 더 아름다운 소리를 내면서 어느 순간 취미활동을 악기 연주를 오래 지속하고 있는 작가의 에세이다.</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                        <ul class="slide-banner ">
+                            <li class="show">
+                                <a href="#"><div class="img-mask">이미지</div></a>
+                                <dl>
+                                    <dt>(1월 북큐레이션 북시그널 선정도서)가장 젊은 날의 철학</dt>
+                                    <dd>이충녕 지음</dd>
+                                    <dd>북스톤</dd>
+                                    <dd>2024</dd>
+                                    <dd>개인의 고유성을 존중하고 자기 삶을 선택할 용기를 주는 책입니다.</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <a href="#"><div class="img-mask">이미지</div></a>
+                                <dl>
+                                    <dt>(1월 북큐레이션 북시그널 선정도서)사지 않는 생활</dt>
+                                    <dd>후데코 지음 / 노경아 옮김</dd>
+                                    <dd>스노우폭스북스</dd>
+                                    <dd>2022</dd>
+                                    <dd>진짜 필요한 것만 남기는 삶의 철학! 단순하고 여유로운 삶을 실천하는 방법!</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <a href="#"><div class="img-mask">이미지</div></a>
+                                <dl>
+                                    <dt>(1월 북큐레이션 북시그널 선정도서)점과 선과 새</dt>
+                                    <dd>조오 지음</dd>
+                                    <dd>창비</dd>
+                                    <dd>2024</dd>
+                                    <dd>주변 생명과 공전하는 법! 생명 존중과 공감의 ㄱ치, 도시 인공 구조물에 부딪혀 죽는 안타까운 새들의 현실을 다룹니다.</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <a href="#"><div class="img-mask">이미지</div></a>
+                                <dl>
+                                    <dt>(1월 북큐레이션 북시그널 선정도서)거인의 통찰/dt>
+                                    <dd>샘 해리스 지음 / 이은정 옮김</dd>
+                                    <dd>Being(비잉)</dd>
+                                    <dd>2022</dd>
+                                    <dd>인간의 본질, 대화가 문명과 도덕적 진보를 이끌어온 원동력임을 보여줍니다.</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <a href="#"><div class="img-mask">이미지</div></a>
+                                <dl>
+                                    <dt>조그맣게 살거야</dt>
+                                    <dd>진민영 지음</dd>
+                                    <dd>책읽는고양이</dd>
+                                    <dd>2018</dd>
+                                    <dd>미니멀 라이프 경험담을 통해 현실적인 조언을 해줍니다.</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                        <p class="slide-btns">
+                            <button class="prev"><</button>
+                            <button class="next">></button>
+                        </p>
+                    </div>
                 </div>
-            </div>
+            </div>  <!-- /.curation End -->
             
             
         </section><!-- // #main End -->

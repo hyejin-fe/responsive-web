@@ -11,10 +11,6 @@
 .main-cont .introduce p:first-child {
     font-size: 18px;
 }
-.main-cont .introduce p:last-child {
-    font-size: 30px;
-    font-weight: 600;
-}
 
 /*  */
 #main .main-cont .first, #main .main-cont .login {
@@ -168,23 +164,37 @@
 }
 
 
-/*  */
+/* curation - 북큐레이션 */
 #main .curation {
     box-sizing: border-box;
 }
 
-.tit-sec {
+.curation .title {
+    display: flex;
+}
+.title .tit-sec {
     font-size: 28px;
     font-weight: 600;
 }
+.title .full {
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    background-color: #fff;
+    border: 1px solid #333;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
 
 .curation .tab-btn {
     margin-top: 16px;
     display: flex;
-    gap: 4px;
 }
 .curation .tab-btn button {
     font-size: 16px;
+    font-weight: 500;
+    margin-right: 4px;
     padding: 8px 10px;
     background-color: #e2e2e2;
     border-radius: 50px;
@@ -199,9 +209,6 @@
 .tab-btn button.active a {
     color: #fff;
 }
-.tab-btn button:last-child {
-    margin-left: auto;
-}
 
 .curation .slide-banner-wrap {
     width: 100%;
@@ -209,8 +216,11 @@
     margin-top: 8px;
     box-sizing: border-box;
 }
+
 .curation .slide-banner {
-    
+    display: none;
+}
+.curation .slide-banner.show {
     display: flex;
     gap: 8px
 }
@@ -320,6 +330,10 @@
         font-size: 18px;
     }
 
+
+    .curation .tab-btn button {
+        font-size: 16px;
+    }
     .curation .slide-banner li.show {
         display: flex;
     }
@@ -369,7 +383,30 @@
     .top-box .login {
         width: 40%;
     }
+
+    .curation .curation-box {
+        display: flex;
+    }
+    .curation .curation-box .tab-btn {
+        flex-direction: column;  /* 세로로 정렬 */
+        margin-right: 10px;
+    }
+    .curation-box .tab-btn button {
+        margin-bottom: 8px;
+    }
+    .curation-box .tab-btn button:last-child {
+        margin-top: 16px;
+        position: relative;
+    }
+    .curation-box .tab-btn button:last-child::before {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: #646464;
+        position: absolute; left: 0; top: -12px;
+    }
 }
+    
 
 @media screen and (min-width: 1024px) and (max-width: 1074px) {
     .rest-area .open-time {
