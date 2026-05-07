@@ -8,9 +8,12 @@
 .main-cont .introduce p {
     line-height: 1.2;
 }
+.main-cont .introduce p:first-child {
+    font-size: 18px;
+}
 .main-cont .introduce p:last-child {
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 600;
 }
 
 /*  */
@@ -30,20 +33,47 @@
     color: #fff;
     background-color: #1B6EAB;
 }
-.main-cont .first .rest-area .rest-info {
+.rest-area .rest-info {
     border-bottom: 2px solid #e2e2e2;
     padding-bottom: 16px;
     text-align: center;
 }
+.rest-area .rest-info .test {
+    line-height: 20px;
+}
+.rest-area .rest-info .year {
+    font-size: 20px;
+    vertical-align: bottom;
+}
+.rest-area .rest-info .btns span {
+    font-size: 30px;
+    font-weight: 600;
+}
 
-.main-cont .first .rest-area .open-time {
+.rest-area .rest-info .rest-day {
+    margin: 10px 0;
+}
+.rest-area .rest-info .rest-day span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    color: #333;
+    background-color: #fff;
+    line-height: 40px;
+    font-weight: 500;
+}
+
+
+.rest-area .open-time {
     margin-top: 16px;
-    padding-right: 10px;
+    padding-right: 16px;
     height: 150px;
     overflow-y: auto;
 }
-.main-cont .first .rest-area .open-time p {
+.rest-area .open-time p {
     display: flex;
+    margin-bottom: 2px;
 }
 .open-time p span {
     display: inline-block;
@@ -95,18 +125,19 @@
     margin-bottom: 10px;
 }
 .main-cont .login p button {
-    font-size: 14px;
+    font-size: 16px;
     padding-right: 10px;
     position: relative;
 }
 .main-cont .login p button::after {
     content: "|";
-    font-size: 12px;
+    font-size: 14px;
     position: absolute; right: 0; top: 2px;
 }
 .main-cont .login p button:last-child::after {
     content: "";
 }
+
 
 /*  */
 .main-cont .quick-btns {
@@ -119,16 +150,21 @@
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 20px;
 }
-.main-cont .quick-btns a {
+.quick-btns a {
+    display: flex;
+    flex-direction: column;  /* 세로로 정렬 */
     text-align: center;
 }
-.main-cont .quick-btns a button {
+.quick-btns a button {
     margin: 0 auto;
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     border-radius: 25px;
     background-color: #fff;
     margin-bottom: 8px;
+}
+.quick-btns a span {
+    font-size: 16px;
 }
 
 
@@ -153,17 +189,17 @@
     background-color: #e2e2e2;
     border-radius: 50px;
 }
-.curation .tab-btn button.active {
+.tab-btn button.active {
     color: #fff;
     background-color: #1B6EAB;
 }
-.curation .tab-btn button a {
+.tab-btn button a {
     font-size: 16px;
 }
-.curation .tab-btn button.active a {
+.tab-btn button.active a {
     color: #fff;
 }
-.curation .tab-btn button:last-child {
+.tab-btn button:last-child {
     margin-left: auto;
 }
 
@@ -179,22 +215,23 @@
     gap: 8px
 }
 
-.curation .slide-banner li {
+.slide-banner li {
     flex-shrink: 0;
 }
-.curation .slide-banner .img-mask {
+.slide-banner .img-mask {
     width: 260px;
     height: 380px;
     background-color: #e2e2e2;
 }
-.curation .slide-banner li dt {
+.slide-banner li dt {
     width: 260px;
     margin-top: 8px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    color: #646464;
 }
-.curation .slide-banner li dd {
+.slide-banner li dd {
     display: none;
 }
 
@@ -206,17 +243,27 @@
 }
 
 
+@media screen and (min-width: 520px) {
+    .main-cont .login .in-box div {
+        width: 70%;
+    }
+    .main-cont .login .in-box button {
+        width: 30%;
+    }
+
+    .main-cont .quick-btns {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .main-cont .quick-btns a button {
+        width: 80px;
+        height: 80px;
+    }
+}
+
 
 @media screen and (min-width: 768px) {
-    .top-box {
-        width: 100%;
-        display: flex;
-        gap: 10px;
-    }
-    
-    .top-box .first {
-        width: 60%;
-    }
     .top-box .first form {
         display: flex;
     }
@@ -262,9 +309,6 @@
         padding-left: 20px;
     }
 
-    .top-box .login {
-        width: 40%;
-    }
 
     .top-box .login legend {
         height: 58px;
@@ -272,33 +316,36 @@
         box-sizing: border-box;
     }
 
+    .main-cont .quick-btns a span {
+        font-size: 18px;
+    }
+
     .curation .slide-banner li.show {
         display: flex;
     }
-    .curation .slide-banner li.show dl {
+    .slide-banner li.show dl {
         width: 260px;
         height: 380px;
         margin-left: 10px;
     }
-    .curation .slide-banner li.show dd {
+    .slide-banner li.show dt {
+        font-size: 24px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    .slide-banner li.show dd {
         display: block;
+        font-weight: 500;
+    }
+    .slide-banner li.show dd:last-child {
+        color: #646464;
+        margin-top: 10px;
     }
 }
 
 
-@media screen and (min-width: 500px) {
-    .main-cont .quick-btns {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-    }
-    .main-cont .quick-btns a button {
-        width: 80px;
-        height: 80px;
-    }
-}
-
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1100px){
     .main-cont .quick-btns {
         width: 100%;
         display: grid;
@@ -307,3 +354,25 @@
     
 }
 
+
+@media screen and (min-width: 1024px) {
+    .top-box {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+    }
+    
+    .top-box .first {
+        width: 60%;
+    }
+
+    .top-box .login {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1074px) {
+    .rest-area .open-time {
+        height: 180px;
+    }
+}
