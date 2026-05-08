@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard.css">
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/index.css">
-    <script src="scripts/sub/서브페이지명.js" defer></script>
+    <script src="scripts/sub/ai-pick.js" defer></script><!--스크립트 임시 배치-->
 </head>
 <body>
-    <div class="container inner">
+<div class="container inner">
         <section id="main">
-            <div class="main-cont">  <!-- 메인 섹션 -->
+            <div class="sec-area main-cont">  <!-- 메인 섹션 -->
                 <div class="introduce">
                     <p>시민 행복과 미래를 이끄는</p>
                     <h1 class="tit-main">수지도서관</h1>
@@ -155,133 +155,466 @@
                         <span>문화행사</span>
                     </a>
                 </div>  <!-- /.quick-btns End -->
-            </div>  <!-- /.main-sec End -->
-            
-            <div class="curation">  <!-- 북큐레이션 -->
-                <div class="title">
-                    <h2 class="tit-sec">북큐레이션</h2>
-                    <a href="#" class="full"><img src="images/icon/plus.png" alt="전체보기"></a>
-                </div>
-                <div class="curation-box">
-                    <div class="tab-btn">
-                        <button class="active">독서산책</button>
-                        <button>사서추천도서</button>
-                        <button><a href="#">Ai추천도서</a></button>
+            </div>  <!-- /.main-cont End -->
+            <!--pc너비 일때 한묶음-->
+            <div class="banner-wrap">
+                <!--도서관 소식-->
+                <div class="sec-area notice">
+                    <div class="tit-box">
+                        <h2 class="tit-sec">도서관 소식</h2>
+                        <p>도서관의 주요소식을 알려드립니다.</p>
+                        <a href="#" class="more">+</a>
                     </div>
+                
+                <ul class="list-box">
+                    <li>
+                        <span>공통</span>
+                        <dl>
+                            <dt>2026년 용인시 도서관 2분기 히든북스 및 SNS 이벤트 운영 안내</dt>
+                            <dd>2026.04.29</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <span>공통</span>
+                        <dl>
+                            <dt>도서관 이용자 승용차 요일제 시행 안내</dt>
+                            <dd>2026.04.08</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <span>공통</span>
+                        <dl>
+                            <dt>2026년 5월 공립작은도서관 휴관일 안내</dt>
+                            <dd>2026.05.06</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <span class="sj">수지</span>
+                        <dl>
+                            <dt>[재외동포 이해교육] 전은주 교수가 들려주는 '시로 만나는 재외동포 이야기'</dt>
+                            <dd>2026.05.06</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <span class="sj">수지</span>
+                        <dl>
+                            <dt>수지도서관 5월 프라이빗 수요극장</dt>
+                            <dd>2026.05.04</dd>
+                        </dl>
+                    </li>
+                </ul>
+                </div><!--/도서관 소식-->
+                <!--팝업존-->
+                <div class="sec-area event-banner">
+                    <div class="tit-box">
+                        <h2 class="m-tit">팝업존</h2>
+                        <p class="sub-tit">도서관의 다양한 소식을 만나보세요.</p>
+                    </div>
+                        <div class="banner-area">
+                            <div class="img-area">
+                                <div class="img-box">
+                                    이미지
+                                    <img src="" alt="">
+                                </div>
+                                <div class="img-box">
+                                    이미지
+                                    <img src="" alt="">
+                                </div>
+                                <div class="img-box">
+                                    이미지
+                                    <img src="" alt="">
+                                </div>
+                                <div class="img-box">
+                                    이미지
+                                    <img src="" alt="">
+                                </div>
+                                <div class="img-box">
+                                    이미지
+                                    <img src="" alt="">
+                                </div>
+                            </div>
+                            <div clss="btn-area">
+                                <button class="prev-btn">이전</button>
+                                <button class="next-btn">다음</button>
+                                <button class="stop-btn">정지</button>
+                            </div>
+                        </div>
+                </div><!--/팝업존-->
+            </div>
+            <!--pc너비 일때 한묶음-->
+            <div class="banner-wrap">
+                <!--도서관 이용안내-->
+                <div class="sec-area guide">
+                    <div class="main-area">
+                        <h2 class="tit-main">도서관 이용안내</h2>
+                        <p class="more">+</p>
+                    </div>
+                    <p class="main-txt">도서관 이용안내 입니다.</p>
+                    <div class="btn-box">
+                        <p><a href="">자료이용</a></p>
+                        <p class="last"><a href="">장애인서비스</a></p>
+                    </div>
+                    <div class="big-box">
+                        <p class="tit-box">좌석 현황</p>
+                        <div class="desc">
+                            <table class="seatbl">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="ta-l">좌석 구분</th>
+                                        <th scope="col" class="ta-l01">전체</th>
+                                        <th scope="col" class="ta-l02">사용</th>
+                                        <th scope="col" class="ta-l03">잔여</th>
+                                        <th scope="col" class="ta-l04">대기</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="col" class="ta-l20">디지털존 노트북석</th>
+                                        <td class="ta-l21">69</td>
+                                        <td class="ta-l22">44</td>
+                                        <td class="ta-l23">25</td>
+                                        <td class="ta-l24">0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div><!--/도서관 이용안내-->
+                <!--도서관 아카이브-->
+                <div class="sec-area archive-banner">
+                    <div class="tit-wrap">
+                        <div class="tit-box">
+                            <h2 class="tit-sec">도서관 아카이브</h2>
+                            <p>다양한 자료와 사진으로 소개하는 도서관 기록을 둘러보세요.</p>
+                            <a href="#" class="more">+</a>
+                        </div>
+                            <ul class="sel-box">
+                                <li>보도자료</li>
+                                <li class="on">카드뉴스</li>
+                                <li>북큐레이션</li>
+                                <li>사진자료</li>
+                                <li>영상자료</li>
+                                <li>행사포스터</li>
+                                <li>발간자료</li>
+                            </ul>
+                    </div><!--banner-wrap-->
+                    <div class="list-wrap">
+                        <ul class="banner-list">
+                            <li class="card-ui">
+                                <div>이미지</div>
+                                <dl>
+                                    <dt>[모현] 지구를 위한 작은 실천, 모현도서관에서 함께 해요!</dt>
+                                    <dd>2026.05.06</dd>
+                                </dl>
+                            </li>
+                            <li class="card-ui">
+                                <div>이미지</div>
+                                <dl>
+                                    <dt>재외동포, 어디까지 알고 계신가요? : 서농도서관 찾아가는 재외동포 이해교육</dt>
+                                    <dd>2026.05.04</dd>
+                                </dl>
+                            </li>
+                            <li class="card-ui">
+                                <div>이미지</div>
+                                <dl>
+                                    <dt>[상현] 참여 ON! 도서관 UP! 시민이 함께 만드는 그린라이브러리</dt>
+                                    <dd>2026.04.29</dd>
+                                </dl>
+                            </li>
+                            <li class="card-ui">
+                                <div>이미지</div>
+                                <dl>
+                                    <dt>작가와 함께 맛보는 쫄깃쫄깃 호랭떡집 이야기</dt>
+                                    <dd>2026.04.28</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!--/도서관 아카이브-->
+            </div>
+                <!--문화 행사-->
+                <div class="sec-area culture-banner">
+                    <div class="main-area">
+                        <h2 class="tit-main">문화행사</h2>
+                        <p class="more">+</p><!-- a로 임시했음-->
+                    </div>
+                    <ul class="culture-btns">
+                        <li><a class="culture" href="">문화행사</a></li>
+                        <li><a class="vacation" href="">방학특강</a></li>    
+                    </ul>    
                     <div class="slide-banner-wrap">
-                        <ul class="slide-banner show">
-                            <li class="show">
-                                <a href="#"><div class="img-mask">이미지</div></a>
-                                <dl>
-                                    <dt>밥보다 등산</dt>
-                                    <dd>손민규 지음</dd>
-                                    <dd>책밥상</dd>
-                                    <dd>2021</dd>
-                                    <dd>"산길은 험하니, 안 넘어지고 안다치기 위해서는 좀 더 걸음에 집중해야 했다. 산에서는 잡념이 내 몸을 갉아 먹을 틈이 없었다." 30여 년간 등산을 좋아산 저자에게 힘이 되어준 산 그리고 함께 산에 오른 사람들에 관한 이야기</dd>
-                                </dl>
-                            </li>
-                            <li>
-                                <a href="#"><div class="img-mask">이미지</div></a>
-                                <dl>
-                                    <dt>오늘 하루, 감성 캠핑 : 작은 텐트 하나로 시작된 감성 라이프</dt>
-                                    <dd>안흥준 지음</dd>
-                                    <dd>루리책방</dd>
-                                    <dd>2022</dd>
-                                    <dd>"날씨나 자신의 기분에 따라서 캠핑의 전체적인 톤을 정하고 그에 맞는 장비를 준비해서 캠핑 장소에 도착해 자신의 입맛에 맞게 캠핑장을 꾸밉니다." 캠핑을 처음 시작하려고 하는데 무엇부터 사야할지 막막한 사람, 감성 ...</dd>
-                                </dl>
-                            </li>
-                            <li>
-                                <a href="#"><div class="img-mask">이미지</div></a>
-                                <dl>
-                                    <dt>필사, 어른이 되는 시간 : 소란한 세상에서 평온함을 찾는 가장 고귀한 방법</dt>
-                                    <dd>나태주 지음 / 보담 삽화</dd>
-                                    <dd>북로그컴퍼니</dd>
-                                    <dd>2025</dd>
-                                    <dd>"필사는 언제 해도 좋지만, 눈뜨자마자 한다면 하루의 시작부터 기분이 맑아질 것입니다." 한평생 시를 쓰며 닦고 또 닦아낸 시인의 깨끗한 마음이 담긴 시들을 필사하며 사유할 수 있는 시집이다.</dd>
-                                </dl>
-                            </li>
-                            <li>
-                                <a href="#"><div class="img-mask">이미지</div></a>
-                                <dl>
-                                    <dt>(마법 같은 영상 제작을 위한) 스마트폰 촬영 및 편집 with 캡컷</dt>
-                                    <dd>롱제이 지음</dd>
-                                    <dd>시프트</dd>
-                                    <dd>2025</dd>
-                                    <dd>"인생을 바꾸는 가장 빠른 지름길은 단언컨데 영상입니다!" 스마트폰 카메라를 사용해 소중한 추억 재미있는 일상을 영상으로 남겨볼 수 있는 마법같은 영상 편집 비범을 알려준다.</dd>
-                                </dl>
-                            </li>
-                            <li>
-                                <a href="#"><div class="img-mask">이미지</div></a>
-                                <dl>
-                                    <dt>공부보다 악기 : 할 일보다 좋아하는 일에 더 진심인 이들을 위한 어느 의대생의 음악 이야기</dt>
-                                    <dd>김지현 지음</dd>
-                                    <dd>노천서재</dd>
-                                    <dd>2025</dd>
-                                    <dd>"좀 늦으면 어떻단 말인가. 이제라도 이렇게 배우고 연습하니 되는데." 낙담을 동반한 연습을 거치면서 비로소 조금 더 아름다운 소리를 내면서 어느 순간 취미활동을 악기 연주를 오래 지속하고 있는 작가의 에세이다.</dd>
-                                </dl>
-                            </li>
-                        </ul>
-                        <ul class="slide-banner ">
-                            <li class="show">
-                                <a href="#"><div class="img-mask">이미지</div></a>
-                                <dl>
-                                    <dt>(1월 북큐레이션 북시그널 선정도서)가장 젊은 날의 철학</dt>
-                                    <dd>이충녕 지음</dd>
-                                    <dd>북스톤</dd>
-                                    <dd>2024</dd>
-                                    <dd>개인의 고유성을 존중하고 자기 삶을 선택할 용기를 주는 책입니다.</dd>
-                                </dl>
-                            </li>
-                            <li>
-                                <a href="#"><div class="img-mask">이미지</div></a>
-                                <dl>
-                                    <dt>(1월 북큐레이션 북시그널 선정도서)사지 않는 생활</dt>
-                                    <dd>후데코 지음 / 노경아 옮김</dd>
-                                    <dd>스노우폭스북스</dd>
-                                    <dd>2022</dd>
-                                    <dd>진짜 필요한 것만 남기는 삶의 철학! 단순하고 여유로운 삶을 실천하는 방법!</dd>
-                                </dl>
-                            </li>
-                            <li>
-                                <a href="#"><div class="img-mask">이미지</div></a>
-                                <dl>
-                                    <dt>(1월 북큐레이션 북시그널 선정도서)점과 선과 새</dt>
-                                    <dd>조오 지음</dd>
-                                    <dd>창비</dd>
-                                    <dd>2024</dd>
-                                    <dd>주변 생명과 공전하는 법! 생명 존중과 공감의 ㄱ치, 도시 인공 구조물에 부딪혀 죽는 안타까운 새들의 현실을 다룹니다.</dd>
-                                </dl>
-                            </li>
-                            <li>
-                                <a href="#"><div class="img-mask">이미지</div></a>
-                                <dl>
-                                    <dt>(1월 북큐레이션 북시그널 선정도서)거인의 통찰/dt>
-                                    <dd>샘 해리스 지음 / 이은정 옮김</dd>
-                                    <dd>Being(비잉)</dd>
-                                    <dd>2022</dd>
-                                    <dd>인간의 본질, 대화가 문명과 도덕적 진보를 이끌어온 원동력임을 보여줍니다.</dd>
-                                </dl>
-                            </li>
-                            <li>
-                                <a href="#"><div class="img-mask">이미지</div></a>
-                                <dl>
-                                    <dt>조그맣게 살거야</dt>
-                                    <dd>진민영 지음</dd>
-                                    <dd>책읽는고양이</dd>
-                                    <dd>2018</dd>
-                                    <dd>미니멀 라이프 경험담을 통해 현실적인 조언을 해줍니다.</dd>
-                                </dl>
-                            </li>
-                        </ul>
-                        <p class="slide-btns">
-                            <button class="prev"><</button>
-                            <button class="next">></button>
-                        </p>
+                        <div class="event"><!--ul-->
+                            <div class="event-box">
+                                <span class="event-sj">수지</span>
+                                <span class="event-ing">접수중</span>
+                                <p class="event-title">수지도서관X경희대 메이커 AI·SW교육 「핑퐁 로봇」
+                                    <a href="#"></a>
+                                </p>
+                                <div class="item-info">
+                                    <p class="event-period">2026.04.28(화) 10:00 ~ 2026.05.06(수) 18:00</p>
+                                    <p class="target">초등 4-6학년 15명</p>
+                                    <p class="survey-participant"><span>신청 : 10/15</span><span class="stand-by">대기 : 0/10</span></p>
+                                </div><!--item-info-->
+                            </div>
+                            <div class="event-box">
+                                <span class="event-sj">수지</span>
+                                <span class="event-ing">접수중</span>
+                                <p class="event-title">수지도서관X경희대 메이커 AI ·SW교육 「로봇대회 체험반」
+                                    <a href="#"></a>
+                                </p>
+                                <div class="item-info">
+                                    <p class="event-period">2026.04.28(화) 10:00 ~ 2026.05.06(수) 18:00</p>
+                                    <p class="target">초등 4-6학년 18명</p>
+                                    <p class="survey-participant"><span>신청 : 13/18</span><span class="stand-by">대기 : 0/10</span></p>
+                                </div><!--item-info-->
+                            </div>
+                            <div class="event-box">
+                                <span class="event-sj">수지</span>
+                                <span class="event-ing end">마감(대기신청)</span>
+                                <p class="event-title">[메이커] 카네이션으로 전하는 감사의 한마디 「카네이션 감사카드(5월)」
+                                    <a href="#"></a>
+                                </p>
+                                <div class="item-info">
+                                    <p class="event-period">2026.04.29(수) 10:00 ~ 2026.05.11(월) 18:00</p>
+                                    <p class="target">성인 12명</p>
+                                    <p class="survey-participant"><span>신청 : 12/12</span><span class="stand-by">대기 : 0/5</span></p>
+                                </div>
+                            </div>
+                            <div class="event-box">
+                                <span class="event-sj">수지</span>
+                                <span class="event-ing end">마감(대기신청)</span>
+                                <p class="event-title">[5월 독서문화행사] (가족)업사이클링 팝업북 만들기(2차: 5.21.목)
+                                    <a href="#"></a>
+                                </p>
+                                <div class="item-info">
+                                    <p class="event-period">2026.04.20(월) 10:00 ~ 2026.05.08(금) 18:00</p>
+                                    <p class="target">가족 12팀(보호자 1명, 7세~초2 아이 1명)</p>
+                                    <p class="survey-participant"><span>신청 : 12/12</span><span class="stand-by">대기 : 0/5</span></p>
+                                </div>
+                            </div>
+                            <div class="event-box">
+                                <span class="event-sj">수지</span>
+                                <span class="event-ing before">신청전</span>
+                                <p class="event-title">[메이커] 3D펜 리틀메이커스(2부) - 5월 30일(토) ※해당 일에는 내부교육으로 1부는 진행하지 않습니다.
+                                    <a href="#"></a>
+                                </p>
+                                <div class="item-info">
+                                    <p class="event-period">2026.05.26(화) 10:00 ~ 2026.05.29(금) 17:00</p>
+                                    <p class="target">초등학생 10명(미취학아동은 부모님동반시 가능)</p>
+                                    <p class="survey-participant"><span>신청 : 0/10</span><span class="stand-by">대기 : 0/0</span></p>
+                                </div>
+                            </div>
+                            <div class="event-box">
+                                <span class="event-sj">수지</span>
+                                <span class="event-ing before">신청전</span>
+                                <p class="event-title">[메이커] 3D펜 리틀메이커스(1부) - 5월 16일(토)
+                                    <a href="#"></a>
+                                </p>
+                                <div class="item-info">
+                                    <p class="event-period">2026.05.12(화) 10:00 ~ 2026.05.15(금) 17:00</p>
+                                    <p class="target">초등학생 10명(미취학아동은 부모님동반시 가능)</p>
+                                    <p class="survey-participant"><span>신청 : 0/10</span><span class="stand-by">대기 : 0/0</span></p>
+                                </div>  
+                            </div>
+                            <div class="event-box">
+                                <span class="event-sj">수지</span>
+                                <span class="event-ing before">신청전</span> 
+                                <p class="event-title">[메이커] 3D펜 리틀메이커스(2부) - 5월 16일(토)
+                                    <a href="#"></a>
+                                </p>
+                                <div class="item-info">
+                                    <p class="event-period">2026.05.12(화) 10:00 ~ 2026.05.15(금) 17:00</p>
+                                    <p class="target">초등학생 10명(미취학아동은 부모님동반시 가능)</p>
+                                    <p class="survey-participant"><span>신청 : 0/10</span><span class="stand-by">대기 : 0/0</span></p>
+                                </div>
+                            </div>
+                            <div class="event-box">
+                                <span class="event-sj">수지</span>
+                                <span class="event-ing before">신청전</span>
+                                <p class="event-title">[수지 온에어(On-Air)] 5월 14일(목) 키즈 승무원 - 4회차(16:00~16:30)
+                                    <a href="#"></a>
+                                </p>
+                                <div class="item-info">
+                                    <p class="event-period">2026.05.07(목) 10:00 ~ 2026.05.11(월) 18:00</p>
+                                    <p class="target">(대본 읽기가 가능한) 만 6세 ~ 13세 어린이</p>
+                                    <p class="survey-participant"><span>신청 : 0/1</span><span class="stand-by">대기 : 0/1</span></p>
+                                </div>
+                            </div>
+                            <div class="event-box">
+                                <span class="event-sj">수지</span>
+                                <span class="event-ing before">신청전</span>
+                                <p class="event-title">[수지 온에어(On-Air)] 5월 14일(목) 키즈 승무원 - 1회차(14:00~14:30)
+                                    <a href="#"></a>
+                                </p>
+                                <div class="item-info">
+                                    <p class="event-period">2026.05.07(목) 10:00 ~ 2026.05.11(월) 18:00</p>
+                                    <p class="target">(대본 읽기가 가능한) 만 6세 ~ 13세 어린이</p>
+                                    <p class="survey-participant"><span>신청 : 0/1</span><span class="stand-by">대기 : 0/1</span></p>
+                                </div>
+                            </div>
+                            <div class="event-box">
+                                <span class="event-sj">수지</span>
+                                <span class="event-ing before">신청전</span>
+                                <p class="event-title">[수지 온에어(On-Air)] 5월 14일(목) 키즈 승무원 - 3회차(15:20~15:50)
+                                    <a href="#"></a>
+                                </p>
+                                <div class="item-info">
+                                    <p class="event-period">2026.05.07(목) 10:00 ~ 2026.05.11(월) 18:00</p>
+                                    <p class="target">(대본 읽기가 가능한) 만 6세 ~ 13세 어린이</p>
+                                    <p class="survey-participant"><span>신청 : 0/1</span><span class="stand-by">대기 : 0/1</span></p>
+                                </div>
+                            </div>
+                            <div class="event-box">
+                                <span class="event-sj">수지</span>
+                                <span class="event-ing before">신청전</span>
+                                <p class="event-title">[수지 온에어(On-Air)] 5월 14일(목) 키즈 승무원 - 2회차(14:40~15:10)
+                                    <a href="#"></a>
+                                </p>
+                                <div class="item-info">
+                                    <p class="event-period">2026.05.07(목) 10:00 ~ 2026.05.11(월) 18:00</p>
+                                    <p class="target">(대본 읽기가 가능한) 만 6세 ~ 13세 어린이</p>
+                                    <p class="survey-participant"><span>신청 : 0/1</span><span class="stand-by">대기 : 0/1</span></p>
+                                </div>
+                            </div>
+                            <div class="event-box">
+                                <span class="event-sj">수지</span>
+                                <span class="event-ing end01">마감</span>
+                                <p class="event-title">[메이커] 우리가족 놀이공원 「레고로 만드는 움직이는 놀이기구」(1부)
+                                    <a href="#"></a>
+                                </p>
+                                <div class="item-info">
+                                    <p class="event-period">2026.04.29(수) 10:00 ~ 2026.05.06(수) 18:00</p>
+                                    <p class="target">초등 4-6학년 학생 및 학부모(2인1조) 10팀</p>
+                                    <p class="survey-participant"><span>신청 : 10/10</span><span class="stand-by">대기 : 10/10</span></p>
+                                </div>
+                            </div>
+                        </div><!--/event-->
+                    </div><!-- slide-banner-wrap -->
+                </div><!--/문화 행사-->
+                <!-- 북큐레이션 -->
+                <div class="sec-area curation">  
+                    <div class="title">
+                        <h2 class="tit-sec">북큐레이션</h2>
+                        <a href="#" class="full"><img src="images/icon/plus.png" alt="전체보기"></a>
                     </div>
-                </div>
-            </div>  <!-- /.curation End -->
-            
-            
+                    <div class="curation-box">
+                        <div class="tab-btn">
+                            <button class="active">독서산책</button>
+                            <button>사서추천도서</button>
+                            <button><a href="#">Ai추천도서</a></button>
+                        </div>
+                        <div class="slide-banner-wrap">
+                            <ul class="slide-banner show">
+                                <li class="show">
+                                    <a href="#"><div class="img-mask">이미지</div></a>
+                                    <dl>
+                                        <dt>밥보다 등산</dt>
+                                        <dd>손민규 지음</dd>
+                                        <dd>책밥상</dd>
+                                        <dd>2021</dd>
+                                        <dd>"산길은 험하니, 안 넘어지고 안다치기 위해서는 좀 더 걸음에 집중해야 했다. 산에서는 잡념이 내 몸을 갉아 먹을 틈이 없었다." 30여 년간 등산을 좋아산 저자에게 힘이 되어준 산 그리고 함께 산에 오른 사람들에 관한 이야기</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <a href="#"><div class="img-mask">이미지</div></a>
+                                    <dl>
+                                        <dt>오늘 하루, 감성 캠핑 : 작은 텐트 하나로 시작된 감성 라이프</dt>
+                                        <dd>안흥준 지음</dd>
+                                        <dd>루리책방</dd>
+                                        <dd>2022</dd>
+                                        <dd>"날씨나 자신의 기분에 따라서 캠핑의 전체적인 톤을 정하고 그에 맞는 장비를 준비해서 캠핑 장소에 도착해 자신의 입맛에 맞게 캠핑장을 꾸밉니다." 캠핑을 처음 시작하려고 하는데 무엇부터 사야할지 막막한 사람, 감성 ...</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <a href="#"><div class="img-mask">이미지</div></a>
+                                    <dl>
+                                        <dt>필사, 어른이 되는 시간 : 소란한 세상에서 평온함을 찾는 가장 고귀한 방법</dt>
+                                        <dd>나태주 지음 / 보담 삽화</dd>
+                                        <dd>북로그컴퍼니</dd>
+                                        <dd>2025</dd>
+                                        <dd>"필사는 언제 해도 좋지만, 눈뜨자마자 한다면 하루의 시작부터 기분이 맑아질 것입니다." 한평생 시를 쓰며 닦고 또 닦아낸 시인의 깨끗한 마음이 담긴 시들을 필사하며 사유할 수 있는 시집이다.</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <a href="#"><div class="img-mask">이미지</div></a>
+                                    <dl>
+                                        <dt>(마법 같은 영상 제작을 위한) 스마트폰 촬영 및 편집 with 캡컷</dt>
+                                        <dd>롱제이 지음</dd>
+                                        <dd>시프트</dd>
+                                        <dd>2025</dd>
+                                        <dd>"인생을 바꾸는 가장 빠른 지름길은 단언컨데 영상입니다!" 스마트폰 카메라를 사용해 소중한 추억 재미있는 일상을 영상으로 남겨볼 수 있는 마법같은 영상 편집 비범을 알려준다.</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <a href="#"><div class="img-mask">이미지</div></a>
+                                    <dl>
+                                        <dt>공부보다 악기 : 할 일보다 좋아하는 일에 더 진심인 이들을 위한 어느 의대생의 음악 이야기</dt>
+                                        <dd>김지현 지음</dd>
+                                        <dd>노천서재</dd>
+                                        <dd>2025</dd>
+                                        <dd>"좀 늦으면 어떻단 말인가. 이제라도 이렇게 배우고 연습하니 되는데." 낙담을 동반한 연습을 거치면서 비로소 조금 더 아름다운 소리를 내면서 어느 순간 취미활동을 악기 연주를 오래 지속하고 있는 작가의 에세이다.</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                            <ul class="slide-banner ">
+                                <li class="show">
+                                    <a href="#"><div class="img-mask">이미지</div></a>
+                                    <dl>
+                                        <dt>(1월 북큐레이션 북시그널 선정도서)가장 젊은 날의 철학</dt>
+                                        <dd>이충녕 지음</dd>
+                                        <dd>북스톤</dd>
+                                        <dd>2024</dd>
+                                        <dd>개인의 고유성을 존중하고 자기 삶을 선택할 용기를 주는 책입니다.</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <a href="#"><div class="img-mask">이미지</div></a>
+                                    <dl>
+                                        <dt>(1월 북큐레이션 북시그널 선정도서)사지 않는 생활</dt>
+                                        <dd>후데코 지음 / 노경아 옮김</dd>
+                                        <dd>스노우폭스북스</dd>
+                                        <dd>2022</dd>
+                                        <dd>진짜 필요한 것만 남기는 삶의 철학! 단순하고 여유로운 삶을 실천하는 방법!</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <a href="#"><div class="img-mask">이미지</div></a>
+                                    <dl>
+                                        <dt>(1월 북큐레이션 북시그널 선정도서)점과 선과 새</dt>
+                                        <dd>조오 지음</dd>
+                                        <dd>창비</dd>
+                                        <dd>2024</dd>
+                                        <dd>주변 생명과 공전하는 법! 생명 존중과 공감의 ㄱ치, 도시 인공 구조물에 부딪혀 죽는 안타까운 새들의 현실을 다룹니다.</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <a href="#"><div class="img-mask">이미지</div></a>
+                                    <dl>
+                                        <dt>(1월 북큐레이션 북시그널 선정도서)거인의 통찰/dt>
+                                        <dd>샘 해리스 지음 / 이은정 옮김</dd>
+                                        <dd>Being(비잉)</dd>
+                                        <dd>2022</dd>
+                                        <dd>인간의 본질, 대화가 문명과 도덕적 진보를 이끌어온 원동력임을 보여줍니다.</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <a href="#"><div class="img-mask">이미지</div></a>
+                                    <dl>
+                                        <dt>조그맣게 살거야</dt>
+                                        <dd>진민영 지음</dd>
+                                        <dd>책읽는고양이</dd>
+                                        <dd>2018</dd>
+                                        <dd>미니멀 라이프 경험담을 통해 현실적인 조언을 해줍니다.</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                            <p class="slide-btns">
+                                <button class="prev"><</button>
+                                <button class="next">></button>
+                            </p>
+                        </div>
+                    </div>
+                </div>  <!-- /큐레이션 End -->
         </section><!-- // #main End -->
     </div><!-- // .container End -->
 </body>

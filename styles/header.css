@@ -1,0 +1,65 @@
+.search-area {
+    position: fixed; left: 0; top: 0;
+    width: 100%;
+    padding: 50px 20px;
+    border-radius: 0 0 20px 20px;
+    background-color: #e2e2e2;
+}
+
+.search-area label {
+    display: flex;
+    border-bottom: 2px solid #333;
+    margin-bottom: 20px;
+}
+.search-area input {
+    border: 0 none;
+}
+
+.search-area .trending {
+    display: flex;
+}
+.search-area .trending p {
+    padding: 2px 8px;
+    margin-right: 10px;
+    height: fit-content;
+    color: #fff;
+    background-color: #1b6eab;
+    border-radius: 20px;
+}
+.search-area .trending ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.search-area .trending ul li {
+    padding: 2px 8px;
+    margin: 0 10px 10px 0;
+    background-color: #fff;
+    border: 1px solid #e2e2e2;
+    border-radius: 20px;
+}
+.search-area .trending ul li:nth-child(n+5) { display: none; }
+
+.search-area button {
+    position: absolute; left: 50%; bottom: -18px;
+    transform: translateX(-50%);
+    width: 36px;
+    height: 36px;
+    border: 1px solid #e2e2e2;
+    border-radius: 50px;
+    background-color: #fff;
+}
+
+/* 태블릿 */
+@media screen and (min-width: 600px) {
+    .search-area {
+        padding: 50px 100px;
+    }
+
+    .search-area .trending ul li:nth-child(n+5) { display: block; }
+    .search-area .trending ul li:nth-child(n+9) { display: none; }
+}
+
+/* 데스크탑 */
+@media (min-width: 1024px) {
+    .search-area .trending ul li:nth-child(n+9) { display: block; }
+}
