@@ -240,6 +240,10 @@
     }
 
     /* header-bar */
+    .header-top {
+        padding: 0;
+        margin: 0;
+    }
     .header-top h1 {
         position: absolute; left: 20px; top: 11px;
         font-size: 28px;
@@ -247,7 +251,7 @@
     .header-btns a {
         font-size: 18px;
     }
-    .header-btns button {
+    .header-btns .sns-menu button {
         font-size: 18px;
     }
 

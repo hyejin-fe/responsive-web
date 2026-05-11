@@ -14,35 +14,36 @@ const donaList = tabCont.querySelector(".dona-list");
 const libraryCh = donaApply.querySelector(".library-ch");
 const tellNum = donaApply.querySelector(".tell-num");
 
-// 1. .tab-btn button 클릭시, 클릭한 버튼에 클래스 추가
+
+// 1. tab-btn button 클릭시, 클릭한 버튼에 클래스 추가
 infoBtn.addEventListener("click", ()=>{
     switchTab(infoBtn, donaInfo);
 });
-
 applyBtn.addEventListener("click", ()=>{
     switchTab(applyBtn, donaApply);
 });
-
 inquiryBtn.addEventListener("click", ()=>{
     switchTab(inquiryBtn, donaInquiry);
 });
-
 listBtn.addEventListener("click", ()=>{
     switchTab(listBtn, donaList);
 });
 
 
-// 2. dona-apply 中 기증도서관선택 : li클릭시, ul에 show 클래스 토글 + 클릭한 li에 active클랙스 추가
+// 2. dona-apply 中 li클릭시, ul에 show 클래스 토글 + 클릭한 li에 active클랙스 추가
 libraryCh.addEventListener("click", (e)=>{
     dropdown(e);
 });
-
 tellNum.addEventListener("click", (e)=>{
     dropdown(e);
 });
 
 
-// 1. 텝버튼 함수
+
+
+
+
+// 1. 탭버튼 함수
 function switchTab(btn, cont){
     btn.classList.add("active");
     [...btn.parentElement.children]
