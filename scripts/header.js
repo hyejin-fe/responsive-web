@@ -45,6 +45,7 @@ closeBtn.addEventListener("click", ()=>{
 });
 
 
+
 // 4. 데스크탑버전 - 
 gnbTabs.forEach(function(tab){
     const menuTit = tab.querySelector(".menu-tit");
