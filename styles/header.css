@@ -215,7 +215,7 @@
 
     /* header-bar */
     .header-top h1 {
-        position: absolute; left: 20px; top: 10px;
+        position: absolute; left: 20px; top: 11px;
         font-size: 28px;
     }
     .header-top h1 span {
@@ -248,6 +248,9 @@
         font-weight: 600;
         padding-bottom: 20px;
     }
+    #gnb.p-base .wrap .menu-tit:hover, #gnb.p-base .wrap .menu-tit.active {
+        color: #1B6EAB;
+    }
 
     #gnb.p-base .wrap .sub-menu {
         display: none;
@@ -276,16 +279,26 @@
     #gnb.p-base .wrap .sub-menu li:last-child {
         padding-bottom: 20px;
     }
-
+    
     #gnb.p-base .wrap .sub-menu a {
         font-size: 18px;
         font-weight: 500;
+        position: relative;
+        z-index: 1;
     }
     #gnb.p-base .wrap .menu-tit:hover ~ .sub-menu a {
         color: #fff;
     }
     #gnb.p-base .wrap .sub-menu:hover a {
         color: #fff;
+    }
+    #gnb.p-base .wrap .sub-menu a:hover::after {
+        content: "";
+        background-color: #03416E;
+        width: calc(100% + 8px);
+        height: 10px;
+        position: absolute; left: -4px; bottom: -1px;
+        z-index: -1;
     }
 
     #gnb.p-base .sub-menu .depth3 {
