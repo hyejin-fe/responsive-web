@@ -1,5 +1,7 @@
 #header {
     width: 100%;
+    border-bottom: 1px solid #e2e2e2;
+    overflow: hidden;
 }
 
 /* header-bar */
@@ -60,6 +62,7 @@
 .header-top {
     display: flex;
     padding-top: 20px;
+    margin-bottom: 10px;
 }
 .header-top h1 {
     font-size: 20px;
@@ -232,8 +235,9 @@
 
 /* 데스크탑 */
 @media screen and (min-width: 1024px){ 
-    /* 검색영역 */
-    .search-area .trending ul li:nth-child(n+9) { display: block; }
+    #header {
+        border-radius: 0 0 50px 50px;
+    }
 
     /* header-bar */
     .header-top h1 {
@@ -247,13 +251,10 @@
         font-size: 18px;
     }
 
-    /* #gnb */
-    #gnb.p-base {
-        border-bottom: 1px solid #e2e2e2;
-        border-radius: 0 0 50px 50px;
-        overflow: hidden;
-    }
+    /* 검색영역 */
+    .search-area .trending ul li:nth-child(n+9) { display: block; }
 
+    /* #gnb */
     #gnb.p-base .wrap {
         display: grid;
         grid-template-columns: repeat(7, 1fr);
