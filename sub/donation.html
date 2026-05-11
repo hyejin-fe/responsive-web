@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard.css">
     <link rel="stylesheet" href="../styles/common.css">
     <link rel="stylesheet" href="../styles/sub/donation.css">
-    <script src="scripts/sub/서브페이지명.js" defer></script>
+    <script src="../scripts/sub/donation.js" defer></script>
 </head>
 <body>
 
@@ -67,13 +67,13 @@
             </div>
             <div class="contents">
                 <ul class="tab-btn">
-                    <li class="show active"><button>기증안내</button></li>
-                    <li><button>서약서작성</button></li>
-                    <li><button>기증신청조회</button></li>
-                    <li><button>기증자료목록</button></li>
+                    <li class="info-btn active"><button>기증안내</button></li>
+                    <li class="apply-btn"><button>서약서작성</button></li>
+                    <li class="inquiry-btn"><button>기증신청조회</button></li>
+                    <li class="list-btn"><button>기증자료목록</button></li>
                 </ul>
                 <div class="tab-cont">
-                    <div class="dona-info ">
+                    <div class="dona-info show">
                         <h2 class="tit-sec blind">기증안내</h2>
                         <div class="detail-box">
                             <p>도서기증</p>
@@ -258,8 +258,8 @@
                                     <dl class="library-ch">
                                         <dt>기증도서관 선택</dt>
                                         <dd>
-                                            <ul>
-                                                <li class="show active">전체도서관</li>
+                                            <ul class="">
+                                                <li class="active">전체도서관</li>
                                                 <li>도서관정책과</li>
                                                 <li>구갈희망누리도서관</li>
                                                 <li>기흥도서관</li>
@@ -294,8 +294,8 @@
                                         <dt>연락처</dt>
                                         <dd>
                                             <label for="tellFirst" class="blind">전화번호 앞자리 선택</label>
-                                            <ul name="tellFirst" id="tellFirst">
-                                                <li class="show active">010</li>
+                                            <ul name="tellFirst" id="tellFirst" class="">
+                                                <li class="active">010</li>
                                                 <li>011</li>
                                                 <li>016</li>
                                                 <li>017</li>
@@ -385,7 +385,7 @@
                             </fieldset>
                         </form>
                     </div>
-                    <div class="dona-inquiry show">
+                    <div class="dona-inquiry ">
                         <h2 class="tit-sec blind">기증신청조회</h2>
                         <div class="detail-box">
                             <p>유의사항</p>
@@ -399,8 +399,8 @@
                                     <legend class="blind">기증신청조회 검색</legend>
                                     <div class="test01">
                                         <label for="libraryCh" class="blind">조회할 도서관 선택</label>
-                                        <ul name="libraryCh" id="libraryCh">
-                                            <li class="show active">전체도서관</li>
+                                        <ul name="libraryCh" id="libraryCh" class="">
+                                            <li class="active">전체도서관</li>
                                             <li>도서관정책과</li>
                                             <li>구갈희망누리도서관</li>
                                             <li>기흥도서관</li>
@@ -545,8 +545,8 @@
                                     <legend class="blind">기증신청조회 검색</legend>
                                     <label for="libraryCh" class="blind">조회할 도서관 선택</label>
                                     <div class="test01">
-                                        <ul name="libraryCh" id="libraryCh">
-                                            <li class="show active">전체도서관</li>
+                                        <ul name="libraryCh" id="libraryCh" class="">
+                                            <li class="active">전체도서관</li>
                                             <li>도서관정책과</li>
                                             <li>구갈희망누리도서관</li>
                                             <li>기흥도서관</li>

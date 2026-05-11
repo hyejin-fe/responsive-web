@@ -1,41 +1,325 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>헤더 | 수지도서관</title>
+    <title>수지도서관</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard.css">
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/header.css">
+    <!-- <script src="scripts/sub/서브페이지명.js" defer></script> -->
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css" rel="stylesheet">
 </head>
 <body>
-
-    <div class="search-area show">
-        <form>
-            <fieldset>
-                <legend class="blind">검색하기</legend>
-                <label>
-                    <input placeholder="검색어를 입력하세요."> <img>
-                </label>
-                <div class="trending">
-                    <p>인기검색어</p>
-                    <ul>
-                        <li><a>흔한남매</a></li>
-                        <li><a>프로젝트 헤일메리</a></li>
-                        <li><a>김애란</a></li>
-                        <li><a>혼모노</a></li>
-                        <li><a>안녕이라 그랬어</a></li>
-                        <li><a>모순</a></li>
-                        <li><a>삼국지</a></li>
-                        <li><a>에그박사</a></li>
-                        <li><a>종이접기</a></li>
-                        <li><a>급류</a></li>
-                    </ul>
-                </div>
-            </fieldset>
-        </form>
-        <button><img src="images/icon/close.png" alt="close"></button>
+    <div class="header-bar">
+        <a href="">로그인</a>
+        <a href="">회원가입</a>
+        <a href="">온라인정회원신청</a>
+        <div class="sns-menu">
+            <button>도서관SNS</button>
+            <ul class="dropdown">
+                <li><a href="#">페이스북</a></li>
+                <li><a href="#">블로그</a></li>
+                <li><a href="#">인스타그램</a></li>
+                <li><a href="#">카카오채널</a></li>
+                <li><a href="#">유튜브</a></li>
+            </ul>
+        </div>
     </div>
+    <div class="test00">
+        <h1>용인특례시 수지도서관</h1>
+        <ul class="blind-p">
+            <li>검색</li>
+            <li>메뉴</li>
+        </ul>
+        <div class="search-area">
+            <form>
+                <fieldset>
+                    <legend class="blind">검색하기</legend>
+                    <label>
+                        <input placeholder="검색어를 입력하세요."> <img>
+                    </label>
+                    <div class="trending">
+                        <p>인기검색어</p>
+                        <ul>
+                            <li><a>흔한남매</a></li>
+                            <li><a>프로젝트 헤일메리</a></li>
+                            <li><a>김애란</a></li>
+                            <li><a>혼모노</a></li>
+                            <li><a>안녕이라 그랬어</a></li>
+                            <li><a>모순</a></li>
+                            <li><a>삼국지</a></li>
+                            <li><a>에그박사</a></li>
+                            <li><a>종이접기</a></li>
+                            <li><a>급류</a></li>
+                        </ul>
+                    </div>
+                </fieldset>
+            </form>
+            <button><img src="images/icon/close.png" alt="close"></button>
+        </div>
+    </div>
+    <nav id="gnb" class="p-base">
+        <h2 class="blind">수지도서관</h2>
+        <div class="main-tit blind-m">
+            <p>수지도서관</p>
+            <button>X</button>
+        </div>
+        <ul class="wrap">
+            <li class="gnb-tab show">
+                <a href="#" class="menu-tit on">자료검색</a>
 
+                <ul class="sub-menu">
+                    <li>
+                        <a href="#">통합자료검색</a>
+                        <ul class="depth3 on">
+                            <li><a href="#">간략검색</a></li>
+                            <li><a href="#">상세검색</a></li>
+                            <li><a href="#">자료검색 도움말</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">주제별자료검색</a></li>
+                    <li><a href="#">신착자료검색</a></li>
+                    <li><a href="#">대출인기도서</a></li>
+                    <li><a href="#">스마트도서관자료검색</a></li>
+                    <li><a href="#">구독자료검색</a></li>
+                    <li><a href="#">희망도서신청</a></li>
+                    <li><a href="#">희망도서바로대출</a></li>
+                    <li>
+                        <a href="#">디지털자료</a>
+                        <ul class="depth3">
+                            <li><a href="#">바로가기</a></li>
+                            <li><a href="#">이용안내</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="gnb-tab">
+                <a href="#" class="menu-tit">이용안내</a>
+
+                <ul class="sub-menu">
+                    <li><a href="#">한눈에보는 도서관서비스</a></li>
+                    <li>
+                        <a href="#">회원안내</a>
+                        <ul class="depth3">
+                            <li><a href="#">회원가입</a></li>
+                            <li><a href="#">다자녀가정회원전환</a></li>
+                            <li><a href="#">책이음회원</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">자료이용안내</a>
+                        <ul class="depth3">
+                            <li><a href="#">이용시간/휴관일</a></li>
+                            <li><a href="#">대출/반납/예약</a></li>
+                            <li><a href="#">상호대차</a></li>
+                            <li><a href="#">스마트도서관</a></li>
+                            <li><a href="#">보존서고자료</a></li>
+                            <li><a href="#">무한독서주간</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">시설이용안내</a>
+                        <ul class="depth3">
+                            <li><a href="#">자료실</a></li>
+                            <li><a href="#">편의시설</a></li>
+                            <li><a href="#">주차장</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">기타이용안내</a>
+                        <ul class="depth3">
+                            <li><a href="#">문학자판기</a></li>
+                            <li><a href="#">모바일앱</a></li>
+                            <li><a href="#">무선인터넷</a></li>
+                            <li><a href="#">VOD서비스</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">장애인서비스</a>
+                        <ul class="depth3">
+                            <li><a href="#">책나래</a></li>
+                            <li><a href="#">장애인 대체자료 안내</a></li>
+                            <li><a href="#">장애인 대체자료 목록</a></li>
+                            <li><a href="#">독서보조기기현황</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">함께하는서비스</a>
+                        <ul class="depth3">
+                            <li><a href="#">찾아가는도서관</a></li>
+                            <li><a href="#">단체대출 서비스</a></li>
+                            <li><a href="#">관학협약</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">지역서점안내</a></li>
+                </ul>
+            </li>
+            <li class="gnb-tab">
+                <a href="#" class="menu-tit">독서마당</a>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="#">추천도서</a>
+                        <ul class="depth3">
+                            <li><a href="#">사서북큐레이션</a></li>
+                            <li><a href="#">톡서산책</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">AI추천도서</a></li>
+                    <li><a href="#">독서공감</a></li>
+                    <li><a href="#">발간/특화자료</a></li>
+                    <li>
+                        <a href="#">올해의책함께읽기</a>
+                        <ul class="depth3">
+                            <li><a href="#">선정도서서</a></li>
+                            <li><a href="#">독서감상평작성</a></li>
+                            <li><a href="#">포토갤러리</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">독서동아리</a></li>
+                </ul>
+            </li>
+            
+            <li class="gnb-tab">
+                <a href="#" class="menu-tit">문화행사</a>
+                <ul class="sub-menu">
+                    <li><a href="#">문화행사신청</a></li>
+                    <li><a href="#">도서관일정</a></li>
+                    <li><a href="#">독서교실·방학특강</a></li>
+                    <li>
+                        <a href="#">메이커스페이스</a>
+                        <ul class="depth3">
+                            <li><a href="#">이용안내</a></li>
+                            <li><a href="#">프로그램</a></li>
+                            <li><a href="#">장비안전교육</a></li>
+                            <li><a href="#">장비예약</a></li>
+                            <li><a href="#">갤러리</a></li>
+                            <li><a href="#">자주하는질문</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">미디어창작실</a></li>
+                    <li><a href="#">VR·AR체험관</a></li>
+                    <li><a href="#">북스타트</a></li>
+                    <li><a href="#">독서마라톤</a></li>
+                    <li>
+                        <a href="#">전국독서감상문대회</a>
+                        <ul class="depth3">
+                            <li><a href="#">사업소개</a></li>
+                            <li><a href="#">독서감상문대회 신청</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">휴먼라이브러리</a></li>
+                    <li><a href="#">북페스티벌</a></li>
+                </ul>
+            </li>
+            <li class="gnb-tab">
+                <a href="#" class="menu-tit">열린마당</a>
+                <ul class="sub-menu">
+                    <li><a href="#">도서관소식</a></li>
+                    <li><a href="#">보도자료</a></li>
+                    <li><a href="#">도서관연중행사</a></li>
+                    <li><a href="#">도서관 카드뉴스</a></li>
+                    <li><a href="#">자주하는질문</a></li>
+                    <li><a href="#">묻고답하기</a></li>
+                    <li><a href="#">설문조사</a></li>
+                    <li>
+                        <a href="#">원클릭대관신청</a>
+                        <ul class="depth3">
+                            <li><a href="#">수지도서관대관신청</a></li>
+                            <li><a href="#">원클릭대관신청</a></li>
+                            <li><a href="#">원클릭대관신청안내</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">견학신청</a></li>
+                    <li>
+                        <a href="#">시민참여</a>
+                        <ul class="depth3">
+                            <li><a href="#">자원활동가</a></li>
+                            <li><a href="#">자원봉사신청안내</a></li>
+                            <li><a href="#">강사지원신청</a></li>
+                            <li><a href="#">도서관공모</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">도서기증</a></li>
+                </ul>
+            </li>
+            <li class="gnb-tab">
+                <a href="#" class="menu-tit">도서관소개</a>
+                <ul class="sub-menu">
+                    <li><a href="#">인사말</a></li>
+                    <li><a href="#">연혁</a></li>
+                    <li>
+                        <a href="#">도서관아카이브</a>
+                        <ul class="depth3">
+                            <li><a href="#">아카이브소개</a></li>
+                            <li><a href="#">아카이브자료</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">도서관현황</a>
+                        <ul class="depth3">
+                            <li><a href="#">자료현황</a></li>
+                            <li><a href="#">시설현황</a></li>
+                            <li><a href="#">층별안내</a></li>
+                            <li><a href="#">360도 투어</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">조직도/직원정보</a>
+                        <ul class="depth3">
+                            <li><a href="#">조직도</a></li>
+                            <li><a href="#">직원정보</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">찾아오시는길</a></li>
+                </ul>
+            </li>
+            <li class="gnb-tab">
+                <a href="#" class="menu-tit">나의도서관</a>
+                <ul class="sub-menu">
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">나의정보</a></li>
+                    <li><a href="#">도서이용내역</a></li>
+                    <li><a href="#">바로대출신청조회</a></li>
+                    <li><a href="#">보존서고도서 이용내역</a></li>
+                    <li><a href="#">관심도서목록</a></li>
+                    <li><a href="#">맞춤추천도서</a></li>
+                    <li>
+                        <a href="#">신청조회</a>
+                        <ul class="depth3">
+                            <li><a href="#">문화행사신청조회</a></li>
+                            <li><a href="#">방학특강신청조회</a></li>
+                            <li><a href="#">메이커스페이스신청조회</a></li>
+                            <li><a href="#">미디어창작실신청조회</a></li>
+                            <li><a href="#">VR·AR체험관신청조회</a></li>
+                            <li><a href="#">대관/견학신청조회</a></li>
+                            <li><a href="#">희망도서신청조회</a></li>
+                            <li><a href="#">휴먼북신청조회</a></li>
+                            <li><a href="#">도서관공모신청조회</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="gnb-tab">
+                <a href="#" class="menu-tit">회원정보</a>
+                <ul class="sub-menu">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">아이디찾기</a></li>
+                    <li><a href="#">비밀번호재발급</a></li>
+                    <li><a href="#">회원가입</a></li>
+                </ul>
+            </li>
+            <li class="gnb-tab">
+                <a href="#" class="menu-tit">홈페이지 이용안내</a>
+                <ul class="sub-menu">
+                    <li><a href="">사이트맵</a></li>
+                    <li><a href="">이용약관</a></li>
+                    <li><a href="">개인정보처리방침</a></li>
+                    <li><a href="">영상정보처리기기운영방침</a></li>
+                    <li><a href="">이메일무단수집거부</a></li>
+                </ul>
+            </li>
+        </ul><!-- gnb End -->  
+    </nav>
 </body>
 </html>

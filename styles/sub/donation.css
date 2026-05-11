@@ -14,10 +14,11 @@
     padding: 10px 0;
     border: 1px solid #e2e2e2;
 }
-#main .contents .tab-btn li.show {
+#main .contents .tab-btn.show li {  /* 모바일 드롭다운용 */
     display: block;
 }
 #main .contents .tab-btn li.active {
+    display: block;
     background-color: #0d4f80;
     border: 1px solid #0d4f80;
 }
@@ -205,6 +206,11 @@ legend {
     border-radius: 5px;
     overflow: hidden;
 }
+/* .dona-apply .library-ch ul.show {  나중에 수정
+    position: absolute;
+    background-color: #fff;
+} */
+
 .dona-apply .library-ch li {
     display: none;
     padding: 10px 15px;
@@ -213,7 +219,10 @@ legend {
 .dona-apply .library-ch li:first-child {
     border-top: 0 none;
 }
-.dona-apply .library-ch li.show {
+.dona-apply .library-ch ul.show li {
+    display: block;
+}
+.dona-apply .library-ch ul li.active {
     display: block;
 }
 
@@ -221,22 +230,32 @@ legend {
 .dona-apply .tell-num dd {
     display: flex;
     gap: 4px;
+    position: relative;
 }
 .dona-apply .tell-num ul {
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 40%;
 }
+.dona-apply .tell-num ul.show {
+    position: absolute;
+    width: 40%;
+    background-color: #fff
+}
+
 .dona-apply .tell-num li {
     display: none;
-    height: 100%;
     padding: 10px 20px 10px 15px;
     border-top: 1px solid #ccc;
 }
 .dona-apply .tell-num li:first-child {
     border-top: 0 none;
 }
-.dona-apply .tell-num li.show {
+.dona-apply .tell-num ul.show li {
+    display: block;
+    ;
+}
+.dona-apply .tell-num ul li.active {
     display: block;
 }
 
@@ -403,6 +422,7 @@ legend {
     border-radius: 5px;
     background-color: #fff;
 }
+
 .dona-inquiry .base-form li, .dona-list .base-form li {
     display: none;
     padding: 10px 20px 10px 15px;
@@ -411,7 +431,10 @@ legend {
 .dona-inquiry .base-form li:first-child, .dona-list .base-form li:first-child {
     border-top: 0 none;
 }
-.dona-inquiry .base-form li.show, .dona-list .base-form li.show {
+.dona-inquiry .base-form ul.show li, .dona-list .base-form ul.show li {
+    display: block;
+}
+.dona-inquiry .base-form ul li.active, .dona-list .base-form ul li.active {
     display: block;
 }
 

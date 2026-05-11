@@ -295,7 +295,9 @@ input {
     background-color: #303030;
 }
 
-
+.blind-p {
+    display: block;
+}
 
 @media screen and (max-width: 767px){
     .blind-m { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); }
@@ -311,6 +313,10 @@ input {
 @media screen and (min-width: 1024px){ /* 데스크탑 min-width가 다를 수 있음 */
     body { 
         font-size: 18px;
+    }
+
+    .blind-p {
+        display: none;
     }
 }
 
