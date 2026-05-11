@@ -1,3 +1,77 @@
+#header {
+    width: 100%;
+}
+
+/* header-bar */
+.header-bar {
+    padding: 10px 20px;
+    position: relative;
+    background-color: #fff;
+}
+
+.header-btns {
+    display: flex;
+}
+.header-btns a {
+    font-size: 14px;
+    padding: 4px 10px;
+    border: 1px solid #e2e2e2;
+    border-radius: 50px;
+    margin-left: 8px;
+}
+.header-btns a:first-child {
+    margin-left: auto;
+}
+
+.header-btns .sns-menu {
+    text-align: right;
+    position: relative;
+    margin-left: 8px;
+}
+.header-btns .sns-menu button {
+    font-size: 14px;
+    padding: 4px 10px;
+    border: 1px solid #e2e2e2;
+    border-radius: 50px;
+}
+
+.header-btns .sns-menu .dropdown {
+    display: none;
+    position: absolute; right: 0; top: 40px;
+    padding: 8px;
+    border-radius: 50px;
+    background-color: #fff;
+}
+.header-btns .sns-menu .dropdown.show {
+    display: flex;
+}
+
+@media screen and (max-width: 400px) {
+    .header-btns {
+        flex-wrap: wrap;
+    }
+
+    .header-btns .sns-menu {
+        margin-top: 4px;
+        margin-left: auto;
+    }
+}
+
+.header-top {
+    display: flex;
+    padding-top: 20px;
+}
+.header-top h1 {
+    font-size: 20px;
+}
+.header-top h1 span {
+    color: #555;
+}
+.header-top .btns {
+    margin-left: auto;
+}
+
+
 /* 검색영역 */
 .search-area {
     display: none;
@@ -53,58 +127,6 @@
     border: 1px solid #e2e2e2;
     border-radius: 50px;
     background-color: #fff;
-}
-
-
-
-/* header-bar */
-.header-bar {
-    padding: 10px 20px;
-    position: relative;
-    background-color: #fff;
-}
-
-.header-btns {
-    display: flex;
-}
-.header-btns a {
-    font-size: 18px;
-    padding: 4px 10px;
-    border: 1px solid #e2e2e2;
-    border-radius: 50px;
-    margin-right: 8px;
-}
-.header-btns a:first-child {
-    margin-left: auto;
-}
-.header-btns button {
-    font-size: 18px;
-    padding: 4px 10px;
-    border: 1px solid #e2e2e2;
-    border-radius: 50px;
-}
-
-.header-btns .sns-menu {
-    text-align: right;
-    position: relative;
-}
-.header-btns .sns-menu .dropdown {
-    display: none;
-    position: absolute; right: 0; top: 40px;
-    padding: 8px;
-    border-radius: 50px;
-    background-color: #fff;
-}
-.header-btns .sns-menu .dropdown.show {
-    display: flex;
-}
-
-.header-top {
-    display: flex;
-}
-
-.header-top .btns {
-    margin-left: auto;
 }
 
 
@@ -218,8 +240,11 @@
         position: absolute; left: 20px; top: 11px;
         font-size: 28px;
     }
-    .header-top h1 span {
-        color: #555;
+    .header-btns a {
+        font-size: 18px;
+    }
+    .header-btns button {
+        font-size: 18px;
     }
 
     /* #gnb */
