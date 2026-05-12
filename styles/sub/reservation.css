@@ -11,6 +11,8 @@
 .contents .tab-btn li.active {
     background-color: #0d4f80;
     border: 1px solid #0d4f80;
+    z-index: 1;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 .contents .tab-btn li button {
     font-size: 18px;
@@ -193,8 +195,12 @@
 }
 
 .space-apply .calendar table {
+    display: none;
     border-top: 1px solid #ababab;
     border-bottom: 1px solid #ababab;
+}
+.space-apply .calendar table.show {
+    display: table;
 }
 .space-apply .calendar th, .space-apply .calendar td {
     width: calc(100% / 7);
@@ -314,8 +320,14 @@
     .contents .tab-btn li button {
         font-size: 20px;
     }
+
+    .space-info .step-area {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
     
-    .space-apply .test03 {
+    .space-apply .apply-ch {
         display: flex;
         width: 100%;
         gap: 20px;
@@ -323,7 +335,7 @@
     .space-apply .calendar {
         width: 100%;
     }
-    .space-apply .test04 {
+    .space-apply .time-ch {
         width: 100%;
     }
 }
