@@ -7,6 +7,11 @@ const tabCont = document.querySelector(".tab-cont");
 const spaceInfo = tabCont.querySelector(".space-info");
 const spaceApply = tabCont.querySelector(".space-apply");
 
+const spaceCh = spaceApply.querySelector(".space-ch");
+const appltCh = spaceApply.querySelector(".apply-ch");
+const day = spaceApply.querySelector(".day")
+const dayTable = day.querySelectorAll("table");
+const showTable = day.querySelector(".show");
 
 // 1. tab-btn button 클릭시, 클릭한 버튼에 클래스 추가
 infoTab.addEventListener("click", ()=>{
@@ -18,6 +23,13 @@ applyTab.addEventListener("click", ()=>{
 
 
 // 2. space-apply 中 
+spaceCh.addEventListener("click", ()=>{
+    [...dayTable].forEach(function(table){
+        
+        table.classList.remove("show");
+        table.nextElementSibling.classList.add("show");
+    });
+});
 
 
 // 1. 탭버튼 함수
