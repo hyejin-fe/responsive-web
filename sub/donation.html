@@ -303,10 +303,12 @@
                                                 <li>031</li>
                                                 <li>032</li>
                                             </ul>
-                                            <label for="tellMiddle" class="blind">전화번호 중간자리 기입</label>
-                                            <input type="text" name="tellMiddle" id="tellMiddle">
-                                            <label for="tellLast" class="blind">전화번호 끝자리 기입</label>
-                                            <input type="text" name="tellLast" id="tellLast">
+                                            <div>
+                                                <label for="tellMiddle" class="blind">전화번호 중간자리 기입</label>
+                                                <input type="text" name="tellMiddle" id="tellMiddle">
+                                                <label for="tellLast" class="blind">전화번호 끝자리 기입</label>
+                                                <input type="text" name="tellLast" id="tellLast">
+                                            </div>
                                         </dd>
                                     </dl>
                                     <dl class="address">
@@ -400,7 +402,7 @@
                                     <legend class="blind">기증신청조회 검색</legend>
                                     <div class="test01">
                                         <label for="libraryCh" class="blind">조회할 도서관 선택</label>
-                                        <ul name="libraryCh" id="libraryCh" class="">
+                                        <ul name="libraryCh" id="libraryCh" class="library-ch">
                                             <li class="active">전체도서관</li>
                                             <li>도서관정책과</li>
                                             <li>구갈희망누리도서관</li>
@@ -425,12 +427,14 @@
                                         </ul>
                                     </div>
                                     <div class="search">
-                                        <ul class="test02">
-                                            <li class="show">신청자명</li>
+                                        <ul class="subject-ch">
+                                            <li class="active">신청자명</li>
                                         </ul>
-                                        <label for="userName" class="blind">조회할 신청자명 기입</label>
-                                        <input type="text" name="userName" id="userName">
-                                        <button>검색</button>
+                                        <div>
+                                            <label for="userName" class="blind">조회할 신청자명 기입</label>
+                                            <input type="text" name="userName" id="userName">
+                                            <button>검색</button>
+                                        </div>
                                     </div>
                                 </fieldset>
                             </form>
@@ -546,7 +550,7 @@
                                     <legend class="blind">기증신청조회 검색</legend>
                                     <label for="libraryCh" class="blind">조회할 도서관 선택</label>
                                     <div class="test01">
-                                        <ul name="libraryCh" id="libraryCh" class="">
+                                        <ul name="libraryCh" id="libraryCh" class="library-ch">
                                             <li class="active">전체도서관</li>
                                             <li>도서관정책과</li>
                                             <li>구갈희망누리도서관</li>
@@ -571,13 +575,15 @@
                                         </ul>
                                     </div>
                                     <div class="search">
-                                        <ul class="test02">
-                                            <li class="show">제목</li>
+                                        <ul class="subject-ch">
+                                            <li class="active">제목</li>
                                             <li>내용</li>
                                         </ul>
-                                        <label for="userName" class="blind">조회할 제목 또는 내용 기입</label>
-                                        <input type="text" name="userName" id="userName">
-                                        <button>검색</button>
+                                        <div>
+                                            <label for="userName" class="blind">조회할 제목 또는 내용 기입</label>
+                                            <input type="text" name="userName" id="userName">
+                                            <button>검색</button>
+                                        </div>
                                     </div>
                                 </fieldset>
                             </form>

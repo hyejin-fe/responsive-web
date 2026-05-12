@@ -13,6 +13,13 @@ const donaList = tabCont.querySelector(".dona-list");
 
 const libraryCh = donaApply.querySelector(".library-ch");
 const tellNum = donaApply.querySelector(".tell-num");
+const emailDot = donaApply.querySelector("#emailDot");
+const domain = donaApply.querySelector(".domain");
+
+const libraryChSec = donaInquiry.querySelector(".library-ch");
+
+const libraryChThu = donaList.querySelector(".library-ch");
+const subjectCh = donaList.querySelector(".subject-ch");
 
 
 // 1. tab-btn button 클릭시, 클릭한 버튼에 클래스 추가
@@ -37,9 +44,33 @@ libraryCh.addEventListener("click", (e)=>{
 tellNum.addEventListener("click", (e)=>{
     dropdown(e);
 });
+domain.addEventListener("click", (e)=>{
+    dropdown(e);
+
+    const clickLi = e.target.closest("li");
+    if(!clickLi) return;
+
+    if(clickLi == domain.firstElementChild) {
+        emailDot.value = '';
+    }else{
+        emailDot.value = clickLi.textContent;
+    }
+});
 
 
+// 3. dona-inquiry 中 li클릭시, ul에 show 클래스 토글 + 클릭한 li에 active클랙스 추가
+libraryChSec.addEventListener("click", (e)=>{
+    dropdown(e);
+});
 
+
+// 3. dona-list 中 li클릭시, ul에 show 클래스 토글 + 클릭한 li에 active클랙스 추가
+libraryChThu.addEventListener("click", (e)=>{
+    dropdown(e);
+});
+subjectCh.addEventListener("click", (e)=>{
+    dropdown(e);
+});
 
 
 
