@@ -395,6 +395,13 @@ legend {
     padding-left: 16px;
     line-height: 1.3;
 }
+.user-pwd .pwd-check {
+    display: none;
+    height: 20px;
+}
+.user-pwd .pwd-check.show {
+    display: block;
+}
 .user-pwd p.sentence {
     position: relative;
 }

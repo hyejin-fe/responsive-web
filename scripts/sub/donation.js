@@ -15,6 +15,10 @@ const libraryCh = donaApply.querySelector(".library-ch");
 const tellNum = donaApply.querySelector(".tell-num");
 const emailDot = donaApply.querySelector("#emailDot");
 const domain = donaApply.querySelector(".domain");
+const userPwd = donaApply.querySelector(".user-pwd");
+const pwd = userPwd.querySelector(".pwd01");
+const rePwd = userPwd.querySelector(".pwd02");
+const pwdCheck = userPwd.querySelector(".pwd-check");
 
 const libraryChSec = donaInquiry.querySelector(".library-ch");
 
@@ -56,6 +60,28 @@ domain.addEventListener("click", (e)=>{
         emailDot.value = clickLi.textContent;
     }
 });
+
+// 2-2. dona-apply 中 비밀번호 입력시 확인
+function checkPwd(){
+    if(pwd.value == '' && rePwd.value == ''){
+        pwdCheck.classList.remove("show");
+        return;
+    }else{
+        pwdCheck.classList.add("show")
+    }
+
+    if(pwd.value == rePwd.value){
+        pwdCheck.style.color = "#6EA834";
+        pwdCheck.textContent = "비밀번호 일치";
+    }else{
+        pwdCheck.style.color = "#DB7171";
+        pwdCheck.textContent = "비밀번호 불일치";
+    }
+}
+
+pwd.addEventListener("input", checkPwd);
+rePwd.addEventListener("input", checkPwd);
+
 
 
 // 3. dona-inquiry 中 li클릭시, ul에 show 클래스 토글 + 클릭한 li에 active클랙스 추가
