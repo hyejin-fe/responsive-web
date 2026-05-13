@@ -88,6 +88,8 @@
     font-weight: 500
 }
 
+
+/* 태블릿, 데스크탑 */
 @media screen and (min-width: 768px) {
     #main .contents {
         display: flex;
