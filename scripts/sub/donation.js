@@ -130,23 +130,16 @@ subjectCh.addEventListener("click", (e)=>{
 
 // 1. 탭버튼 함수
 function switchTab(btn, cont){
-    btn.classList.add("active");
-    [...btn.parentElement.children]
-        .filter(function(child){
-            return child != btn;
-        })
-        .forEach(function(chlid){
-            chlid.classList.remove("active");
-        })
 
-    cont.classList.add("show");
-    [...cont.parentElement.children]
-        .filter(function(child){
-            return child != cont;
-        })
-        .forEach(function(chlid){
-            chlid.classList.remove("show");
-        })
+    tabBtn.querySelectorAll("li").forEach(function(chlid){
+        chlid.classList.remove("active");
+    })
+    btn.classList.add("active");
+
+    tabCont.querySelectorAll("div").forEach(function(chlid){
+        chlid.classList.remove("show");
+    })
+    cont.classList.add("show");        
 
     tabBtn.classList.toggle("show");
 }
@@ -157,15 +150,10 @@ function dropdown(e){
     if(!clickLi) return;
 
     const ul = clickLi.parentElement;
-
+    ul.querySelectorAll("li").forEach(function(child){
+        child.classList.remove("active");
+    })
     clickLi.classList.add("active");
-    [...ul.children]
-        .filter(function(child){
-            return child != clickLi;
-        })
-        .forEach(function(child){
-            child.classList.remove("active");
-        })
 
     ul.classList.toggle("show");
 }

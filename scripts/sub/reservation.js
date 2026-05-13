@@ -22,6 +22,7 @@ const day = spaceApply.querySelector(".day");
 const thisMonth = day.querySelector(".this-month");
 
 
+
 // 1. tab-btn button 클릭시, 클릭한 버튼에 클래스 추가
 infoTab.addEventListener("click", ()=>{
     switchTab(infoTab, spaceInfo);
@@ -62,7 +63,15 @@ thisMonthBtn.addEventListener("click", ()=>{
 });
 
 // 2-1. space-apply 中 소모임실 선택
+room.addEventListener("click", (e)=>{
+    const clickBtn = e.target.closest("button");
+    if(!clickBtn) return;
 
+    room.querySelectorAll("button").forEach(function(btn){
+        btn.classList.remove("active");
+    });
+    clickBtn.classList.add("active");
+});
 
 
 
