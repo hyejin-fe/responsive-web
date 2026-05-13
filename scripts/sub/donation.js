@@ -105,8 +105,11 @@ inputAll.forEach(input => {
 
 // 2-4. dona-apply 中 비밀번호 불일치 + 버튼 클릭시, 알람뜨게하기
 applyBtn.addEventListener("click", ()=>{
-    if(pwd.value !== rePwd.value){
+    const allFilled = [...inputAll].every(input => input.value.trim() !== '');
+    if(allFilled && pwd.value !== rePwd.value){
         alert("비밀번호가 일치하지 않습니다.");
+    }else{
+        alert("신청되었습니다");
     }
 });
 

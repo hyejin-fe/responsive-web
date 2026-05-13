@@ -231,15 +231,16 @@ legend {
 .library-ch li:first-child {
     border-top: 0 none;
 }
+.library-ch ul li.active {
+    display: block;
+    border-top: 0 none;
+}
 .library-ch ul.show li {
     display: block;
     border-top: 1px solid #ccc;
 }
 .library-ch ul.show li:first-child {
     border-top: 0 none;
-}
-.library-ch ul li.active {
-    display: block;
 }
 
 /* 연락처 */
@@ -272,15 +273,15 @@ legend {
 .tell-num li:first-child {
     border-top: 0 none;
 }
+.tell-num ul li.active {
+    display: block;
+    border-top: 0 none;
+}
 .tell-num ul.show li {
     display: block;
     border-top: 1px solid #ccc;
 }
 .tell-num ul.show li:first-child {
-    border-top: 0 none;
-}
-.tell-num ul li.active {
-    display: block;
     border-top: 0 none;
 }
 
