@@ -136,7 +136,7 @@ function switchTab(btn, cont){
     })
     btn.classList.add("active");
 
-    tabCont.querySelectorAll("div").forEach(function(chlid){
+    tabCont.querySelectorAll(".cont").forEach(function(chlid){
         chlid.classList.remove("show");
     })
     cont.classList.add("show");        

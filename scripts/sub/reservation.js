@@ -77,23 +77,16 @@ room.addEventListener("click", (e)=>{
 
 // 1. 탭버튼 함수
 function switchTab(btn, cont){
-    btn.classList.add("active");
-    [...btn.parentElement.children]
-        .filter(function(child){
-            return child != btn;
-        })
-        .forEach(function(chlid){
-            chlid.classList.remove("active");
-        })
 
+    tabBtn.querySelectorAll("li").forEach(function(chlid){
+        chlid.classList.remove("active");
+    })
+    btn.classList.add("active");
+
+    tabCont.querySelectorAll(".div").forEach(function(chlid){
+        chlid.classList.remove("show");
+    })
     cont.classList.add("show");
-    [...cont.parentElement.children]
-        .filter(function(child){
-            return child != cont;
-        })
-        .forEach(function(chlid){
-            chlid.classList.remove("show");
-        })
 
     tabBtn.classList.toggle("show");
 }
