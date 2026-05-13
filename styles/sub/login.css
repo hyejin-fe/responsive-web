@@ -55,7 +55,8 @@
 .user-login .find button::after {
     content: "|";
     font-size: 12px;
-    position: absolute; right: 0; top: 2px
+    color: #888;
+    position: absolute; right: 0; top: 4px
 }
 .user-login .find button:last-child::after {
     content: "";
