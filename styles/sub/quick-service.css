@@ -1,11 +1,4 @@
-
-.contents div {
-    display: none;
-}
-.contents div.show {
-    display: block;
-}
-
+/* 탭버튼 */
 .contents .tab-btn {
     display: flex;
     margin-bottom: 25px;
@@ -28,6 +21,15 @@
     color: #fff;
 }
 
+/* 컨텐츠 */
+.contents .tab-cont div {
+    display: none;
+}
+.contents .tab-cont div.show {
+    display: block;
+}
+
+/* 애니메이션 버튼 */
 .contents .ani-btn {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -49,7 +51,7 @@
 }
 
 
-
+/* 태블릿 */
 @media screen and (min-width: 768px){
     #main .contents .ani-btn {
         grid-template-columns: repeat(4, 1fr);
@@ -60,7 +62,7 @@
     }
 }
 
-
+/* 데스크탑 */
 @media screen and (min-width: 1024px){
     #main .contents .ani-btn {
         grid-template-columns: repeat(5, 1fr);
