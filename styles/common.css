@@ -167,10 +167,16 @@ input {
 #aside dl.active dd.on {
     font-weight: 600;
     position: relative;
+    z-index: 1;
 }
 #aside dl.active dd.on::after {
-    content: ">";
-    position: absolute; right: 0; top: -1px;
+    content: "";
+    background-color: #5F99C4;
+    width: 100%;
+    height: 16px;
+    opacity: 0.5;
+    position: absolute; left: -4px; bottom: 2px;
+    z-index: -1;
 }
 
 /* 메인내용부분 */
