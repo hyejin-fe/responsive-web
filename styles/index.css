@@ -455,30 +455,37 @@
     display: flex;
 }
 
-.curation .slide-banner-wrap {
+.curation .curation-swiper {
     width: 100%;
     overflow: hidden;
     margin-top: 8px;
     box-sizing: border-box;
 }
 
-.curation .slide-banner {
+.curation .swiper-wrapper {
     display: none;
+    width: auto;
+    height: auto;
 }
-.curation .slide-banner.show {
+.curation .swiper-wrapper.show {
     display: flex;
     gap: 8px
 }
 
-.slide-banner li {
+.curation .swiper-wrapper li.swiper-slide {
     flex-shrink: 0;
+    width: auto;
+    overflow: hidden;
 }
-.slide-banner .img-mask {
+.curation .swiper-wrapper li.swiper-slide-active {
+    width: 530px;
+}
+.curation .swiper-wrapper .img-mask {
     width: 260px;
     height: 380px;
     background-color: #e2e2e2;
 }
-.slide-banner li dt {
+.curation .swiper-wrapper li dt {
     width: 260px; /*수정해야함 뉴스와 아카이브 글자 튀어나옴 클래스 따르게 주기*/
     margin-top: 8px;
     white-space: nowrap;
@@ -486,7 +493,7 @@
     text-overflow: ellipsis;
     color: #646464;
 }
-.slide-banner li dd {
+.curation .swiper-wrapper li dd {
     display: none;
 }
 
@@ -581,29 +588,51 @@
     .event-box .event-title {font-size: 20px;}
 
     /*큐레이션*/
-    
-    .curation .slide-banner li.show {
+    .curation .curation-swiper {
+        position: relative;
+        height: 500px;
+    }
+    .curation .swiper-wrapper {
+        position: absolute; left: 0; top: 0;
+    }
+    .curation .swiper-wrapper li.show {
         display: flex;
     }
 
-    .curation .slide-banner li.show dl {
+    .curation .swiper-wrapper li .img-mask {
+        width: calc(300px * 0.7);
+        height: calc(440px * 0.7);
+    }
+    .curation .swiper-wrapper li.show .img-mask {
+        width: 300px;
+        height: 440px;
+        margin-top: 0;
+    }
+    .curation .swiper-wrapper li.show dl {
         width: 260px;
-        height: 380px;
+        height: 440px;
         margin-left: 10px;
     }
-    .curation .slide-banner li.show dt {
+    .curation .swiper-wrapper li dt {
+        width: calc(300px * 0.7);
+    }
+    .curation .swiper-wrapper li.show dt {
         font-size: 24px;
         font-weight: 600;
         color: #333;
         margin-bottom: 10px;
     }
-    .curation .slide-banner li.show dd {
+    .curation .swiper-wrapper li.show dd {
         display: block;
         font-weight: 500;
     }
-    .curation .slide-banner li.show dd:last-child {
+    .curation .swiper-wrapper li.show dd:last-child {
         color: #646464;
         margin-top: 10px;
+    }
+
+    .curation .slide-btns {
+        position: absolute; left: 50%; bottom: 0;
     }
 }
 
