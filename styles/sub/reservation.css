@@ -277,7 +277,7 @@
     border-top: 2px solid #555;
 }
 .space-apply .time p, .space-apply .schedule p {
-    padding: 10px;
+    padding-top: 10px;
 }
 .space-apply .time .choice, .space-apply .schedule .choice {
     font-size: 18px;
@@ -285,13 +285,21 @@
 }
 
 .space-apply .time .time-cont, .space-apply .schedule .schedule-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     border-top: 1px solid #ababab;
     border-bottom: 1px solid #ababab;
     height: 200px;
     padding: 20px 10px;
 }
 
-.space-apply .time-ch .time-cont, .space-apply .time-ch .schedule-time {
+.space-apply .time-ch .cont-box {
+    display: none;
+}
+.space-apply .time-ch .cont-box.show {
+    display: block;
     text-align: center;
 }
 .space-apply .time-ch .cont-box img {
