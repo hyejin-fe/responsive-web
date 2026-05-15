@@ -76,7 +76,6 @@
 }
 
 /*메인 상단*/
-
 #main .main-cont .introduce {
     text-align: center;
 }
@@ -107,6 +106,7 @@
     border-bottom: 2px solid #e2e2e2;
     padding-bottom: 16px;
     text-align: center;
+    overflow: hidden;
 }
 .rest-area .rest-info .test {
     line-height: 20px;
@@ -122,6 +122,10 @@
 
 .rest-area .rest-info .rest-day {
     margin: 10px 0;
+    display: none;
+}
+.rest-area .rest-info .rest-day.show {
+    display: block;
 }
 .rest-area .rest-info .rest-day span {
     display: inline-block;
@@ -229,6 +233,7 @@
     display: flex;
     flex-direction: column;  /* 세로로 정렬 */
     text-align: center;
+    text-decoration: none;
 }
 .quick-btns a button {
     margin: 0 auto;
@@ -237,9 +242,63 @@
     border-radius: 25px;
     background-color: #fff;
     margin-bottom: 8px;
+    position: relative;
 }
+
+.quick-btns a button::before {
+    content: "";
+    background: url("../images/ico_svc_main.png") no-repeat;
+    width: 50px;
+    height: 50px;
+    position: absolute; left: 50%; top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.quick-btns a:nth-child(2) button::before {
+    content: "";
+    background-position: 0 0;
+}
+.quick-btns a:nth-child(3) button::before {
+    content: "";
+    background-position: 0 -50px;
+}
+.quick-btns a:nth-child(4) button::before {
+    content: "";
+    background-position: 0 -100px;
+}
+.quick-btns a:nth-child(5) button::before {
+    content: "";
+    background-position: 0 -200px;
+}
+.quick-btns a:nth-child(6) button::before {
+    content: "";
+    background-position: 0 -500px;
+}
+.quick-btns a:nth-child(7) button::before {
+    content: "";
+    background-position: 0 -550px;
+}
+.quick-btns a:nth-child(8) button::before {
+    content: "";
+    background-position: 0 -600px;
+}
+.quick-btns a:nth-child(9) button::before {
+    content: "";
+    background-position: 0 -250px;
+}
+.quick-btns a:nth-child(10) button::before {
+    content: "";
+    background-position: 0 -300px;
+}
+.quick-btns a:nth-child(11) button::before {
+    content: "";
+    background-position: 0 -800px;
+}
+
 .quick-btns a span {
-    font-size: 1em
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
 }
 
 
@@ -502,7 +561,9 @@
     border: 1px solid #464646;
     border-radius: 50px;
 }
-
+#main .curation .tab-btn button a {
+    background-color: transparent;
+}
 
 /*반응형 부분*/
 @media screen and (min-width: 520px) { 
@@ -534,18 +595,22 @@
     }
     .top-box .first .trending-swiper {
         display: flex;
+        height: 55px;
         margin-left: auto;
         padding: 10px;
         width: 40%;
         color: #fff;
         background-color: #03416E;
+        overflow: hidden;
     }
-    .top-box .first .trending-swiper li {
-        display: none;
-        line-height: 38px;
+    .top-box .first .trending-swiper .swiper-wrapper {
+        display: flex;
+        flex-direction: column;
     }
-    .top-box .first .trending-swiper li.swiper-slide-active {
-        display: block;
+    .top-box .first .trending-swiper .swiper-slide {
+        height: 56px;
+        display: flex;
+        align-items: center;
     }
     .top-box .first .trending-swiper .updown {
         margin-left: auto;
@@ -579,6 +644,7 @@
         padding: 12px 0;
         box-sizing: border-box;
     }
+
     /*이용안내*/
     .seat-table tbody tr td {font-size: 18px; text-align: center;}
     .seat-table tr th:first-child {text-align: left;}
@@ -693,6 +759,63 @@
 
     .top-box .login {
         width: 40%;
+    }
+
+    /* 메인상단 - 자주찾는 메뉴 */
+    .quick-btns a:hover button {
+        background-color: #03416E;
+        animation: shake 0.4s ease-in-out forwards;
+        transform: translateY(-10px);
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    }
+    .quick-btns a:nth-child(2):hover button::before {
+        content: "";
+        background-position: -50px 0;
+    }
+    .quick-btns a:nth-child(3):hover button::before {
+        content: "";
+        background-position: -50px -50px;
+    }
+    .quick-btns a:nth-child(4):hover button::before {
+        content: "";
+        background-position: -50px -100px;
+    }
+    .quick-btns a:nth-child(5):hover button::before {
+        content: "";
+        background-position: -50px -200px;
+    }
+    .quick-btns a:nth-child(6):hover button::before {
+        content: "";
+        background-position: -50px -500px;
+    }
+    .quick-btns a:nth-child(7):hover button::before {
+        content: "";
+        background-position: -50px -550px;
+    }
+    .quick-btns a:nth-child(8):hover button::before {
+        content: "";
+        background-position: -50px -600px;
+    }
+    .quick-btns a:nth-child(9):hover button::before {
+        content: "";
+        background-position: -50px -250px;
+    }
+    .quick-btns a:nth-child(10):hover button::before {
+        content: "";
+        background-position: -50px -300px;
+    }
+    .quick-btns a:nth-child(11):hover button::before {
+        content: "";
+        background-position: -50px -800px;
+    }
+    .quick-btns a:hover span {
+        font-weight: 600;
+    }
+
+    @keyframes shake {
+        0%, 100% { transform: rotate(0deg) translateY(-6px); }
+        25% { transform: rotate(-4deg) translateY(-6px); }
+        75% { transform: rotate(4deg) translateY(-6px); }
     }
 
 

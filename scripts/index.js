@@ -1,5 +1,9 @@
 /* 선택자 - 메인 */
-
+const restInfo = document.querySelector(".rest-info");
+const restPrevBtn = restInfo.querySelector(".prev");
+const restNextBtn = restInfo.querySelector(".next");
+const restMonth = restInfo.querySelector(".month");
+const restBox = restInfo.querySelector(".rest-box");
 
 /* 선택자 - 북큐레이션 */
 const curation = document.querySelector(".curation");
@@ -20,6 +24,7 @@ const slideNextBtn = curationSwiper.querySelector(".next");
 var trendingSwiper = new Swiper(".trending-swiper", {
     direction: "vertical",
     loop: true,
+    spaceBetween: 10,
     
     autoplay: {  // 자동실행
         delay: 2500,
@@ -33,6 +38,27 @@ var trendingSwiper = new Swiper(".trending-swiper", {
     },
 });
 
+// 메인 2. 휴무날 슬라이드
+restPrevBtn.addEventListener("click", function(){
+    const showDay = restBox.querySelector(".show");
+
+    if(showDay.previousElementSibling){
+        showDay.classList.remove("show");
+        showDay.previousElementSibling.classList.add("show");
+
+        restMonth.textContent = String(Number(restMonth.textContent) - 1).padStart(2, "0");
+    }
+})
+restNextBtn.addEventListener("click", function(){
+    const showDay = restBox.querySelector(".show");
+
+    if(showDay.nextElementSibling){
+        showDay.classList.remove("show");
+        showDay.nextElementSibling.classList.add("show");
+
+        restMonth.textContent = String(Number(restMonth.textContent) + 1).padStart(2, "0");
+    }
+})
 
 
 // 북큐레이션 1. 탭버튼 클릭시,
