@@ -291,6 +291,14 @@
     padding: 20px 10px;
 }
 
+.space-apply .time-ch .time-cont, .space-apply .time-ch .schedule-time {
+    text-align: center;
+}
+.space-apply .time-ch .cont-box img {
+    width: 80px;
+    height: 80px;
+}
+
 .space-apply .time .time-btns {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
