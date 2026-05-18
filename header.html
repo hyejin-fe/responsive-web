@@ -11,7 +11,7 @@
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css" rel="stylesheet">
 </head>
 <body>
-    <div id="header">
+    <header id="header" class="inner">
         <div class="header-bar">
             <div class="header-btns">
                 <a href="">로그인</a>
@@ -69,25 +69,25 @@
                 <button class="close-btn">X</button>
             </div>
             <ul class="wrap">
-                <li class="gnb-tab">
-                    <a href="#" class="menu-tit on">자료검색</a>
+                <li class="gnb-tab show">
+                    <a href="#" class="menu-tit">자료검색</a>
                     <ul class="sub-menu">
-                        <li>
+                        <li class="sub-tab">
                             <a href="#">통합자료검색</a>
-                            <ul class="depth3 on">
+                            <ul class="depth3">
                                 <li><a href="#">간략검색</a></li>
                                 <li><a href="#">상세검색</a></li>
                                 <li><a href="#">자료검색 도움말</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">주제별자료검색</a></li>
-                        <li><a href="#">신착자료검색</a></li>
-                        <li><a href="#">대출인기도서</a></li>
-                        <li><a href="#">스마트도서관자료검색</a></li>
-                        <li><a href="#">구독자료검색</a></li>
-                        <li><a href="#">희망도서신청</a></li>
-                        <li><a href="#">희망도서바로대출</a></li>
-                        <li>
+                        <li class="sub-tab"><a href="#">주제별자료검색</a></li>
+                        <li class="sub-tab"><a href="#">신착자료검색</a></li>
+                        <li class="sub-tab"><a href="#">대출인기도서</a></li>
+                        <li class="sub-tab"><a href="#">스마트도서관자료검색</a></li>
+                        <li class="sub-tab"><a href="#">구독자료검색</a></li>
+                        <li class="sub-tab"><a href="#">희망도서신청</a></li>
+                        <li class="sub-tab"><a href="#">희망도서바로대출</a></li>
+                        <li class="sub-tab">
                             <a href="#">디지털자료</a>
                             <ul class="depth3">
                                 <li><a href="#">바로가기</a></li>
@@ -99,8 +99,8 @@
                 <li class="gnb-tab">
                     <a href="#" class="menu-tit">이용안내</a>
                     <ul class="sub-menu">
-                        <li><a href="#">한눈에보는 도서관서비스</a></li>
-                        <li>
+                        <li class="sub-tab"><a href="#">한눈에보는 도서관서비스</a></li>
+                        <li class="sub-tab">
                             <a href="#">회원안내</a>
                             <ul class="depth3">
                                 <li><a href="#">회원가입</a></li>
@@ -108,7 +108,7 @@
                                 <li><a href="#">책이음회원</a></li>
                             </ul>
                         </li>
-                        <li>
+                        <li class="sub-tab">
                             <a href="#">자료이용안내</a>
                             <ul class="depth3">
                                 <li><a href="#">이용시간/휴관일</a></li>
@@ -119,7 +119,7 @@
                                 <li><a href="#">무한독서주간</a></li>
                             </ul>
                         </li>
-                        <li>
+                        <li class="sub-tab">
                             <a href="#">시설이용안내</a>
                             <ul class="depth3">
                                 <li><a href="#">자료실</a></li>
@@ -127,7 +127,7 @@
                                 <li><a href="#">주차장</a></li>
                             </ul>
                         </li>
-                        <li>
+                        <li class="sub-tab">
                             <a href="#">기타이용안내</a>
                             <ul class="depth3">
                                 <li><a href="#">문학자판기</a></li>
@@ -136,7 +136,7 @@
                                 <li><a href="#">VOD서비스</a></li>
                             </ul>
                         </li>
-                        <li>
+                        <li class="sub-tab">
                             <a href="#">장애인서비스</a>
                             <ul class="depth3">
                                 <li><a href="#">책나래</a></li>
@@ -145,7 +145,7 @@
                                 <li><a href="#">독서보조기기현황</a></li>
                             </ul>
                         </li>
-                        <li>
+                        <li class="sub-tab">
                             <a href="#">함께하는서비스</a>
                             <ul class="depth3">
                                 <li><a href="#">찾아가는도서관</a></li>
@@ -153,23 +153,23 @@
                                 <li><a href="#">관학협약</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">지역서점안내</a></li>
+                        <li class="sub-tab"><a href="#">지역서점안내</a></li>
                     </ul>
                 </li>
                 <li class="gnb-tab">
                     <a href="#" class="menu-tit">독서마당</a>
                     <ul class="sub-menu">
-                        <li>
+                        <li class="sub-tab">
                             <a href="#">추천도서</a>
                             <ul class="depth3">
                                 <li><a href="#">사서북큐레이션</a></li>
                                 <li><a href="#">톡서산책</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">AI추천도서</a></li>
-                        <li><a href="#">독서공감</a></li>
-                        <li><a href="#">발간/특화자료</a></li>
-                        <li>
+                        <li class="sub-tab"><a href="#">AI추천도서</a></li>
+                        <li class="sub-tab"><a href="#">독서공감</a></li>
+                        <li class="sub-tab"><a href="#">발간/특화자료</a></li>
+                        <li class="sub-tab">
                             <a href="#">올해의책함께읽기</a>
                             <ul class="depth3">
                                 <li><a href="#">선정도서서</a></li>
@@ -177,16 +177,16 @@
                                 <li><a href="#">포토갤러리</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">독서동아리</a></li>
+                        <li class="sub-tab"><a href="#">독서동아리</a></li>
                     </ul>
                 </li>
                 <li class="gnb-tab">
                     <a href="#" class="menu-tit">문화행사</a>
                     <ul class="sub-menu">
-                        <li><a href="#">문화행사신청</a></li>
-                        <li><a href="#">도서관일정</a></li>
-                        <li><a href="#">독서교실·방학특강</a></li>
-                        <li>
+                        <li class="sub-tab"><a href="#">문화행사신청</a></li>
+                        <li class="sub-tab"><a href="#">도서관일정</a></li>
+                        <li class="sub-tab"><a href="#">독서교실·방학특강</a></li>
+                        <li class="sub-tab">
                             <a href="#">메이커스페이스</a>
                             <ul class="depth3">
                                 <li><a href="#">이용안내</a></li>
@@ -197,32 +197,32 @@
                                 <li><a href="#">자주하는질문</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">미디어창작실</a></li>
-                        <li><a href="#">VR·AR체험관</a></li>
-                        <li><a href="#">북스타트</a></li>
-                        <li><a href="#">독서마라톤</a></li>
-                        <li>
+                        <li class="sub-tab"><a href="#">미디어창작실</a></li>
+                        <li class="sub-tab"><a href="#">VR·AR체험관</a></li>
+                        <li class="sub-tab"><a href="#">북스타트</a></li>
+                        <li class="sub-tab"><a href="#">독서마라톤</a></li>
+                        <li class="sub-tab">
                             <a href="#">전국독서감상문대회</a>
                             <ul class="depth3">
                                 <li><a href="#">사업소개</a></li>
                                 <li><a href="#">독서감상문대회 신청</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">휴먼라이브러리</a></li>
-                        <li><a href="#">북페스티벌</a></li>
+                        <li class="sub-tab"><a href="#">휴먼라이브러리</a></li>
+                        <li class="sub-tab"><a href="#">북페스티벌</a></li>
                     </ul>
                 </li>
                 <li class="gnb-tab">
                     <a href="#" class="menu-tit">열린마당</a>
                     <ul class="sub-menu">
-                        <li><a href="#">도서관소식</a></li>
-                        <li><a href="#">보도자료</a></li>
-                        <li><a href="#">도서관연중행사</a></li>
-                        <li><a href="#">도서관 카드뉴스</a></li>
-                        <li><a href="#">자주하는질문</a></li>
-                        <li><a href="#">묻고답하기</a></li>
-                        <li><a href="#">설문조사</a></li>
-                        <li>
+                        <li class="sub-tab"><a href="#">도서관소식</a></li>
+                        <li class="sub-tab"><a href="#">보도자료</a></li>
+                        <li class="sub-tab"><a href="#">도서관연중행사</a></li>
+                        <li class="sub-tab"><a href="#">도서관 카드뉴스</a></li>
+                        <li class="sub-tab"><a href="#">자주하는질문</a></li>
+                        <li class="sub-tab"><a href="#">묻고답하기</a></li>
+                        <li class="sub-tab"><a href="#">설문조사</a></li>
+                        <li class="sub-tab">
                             <a href="#">원클릭대관신청</a>
                             <ul class="depth3">
                                 <li><a href="#">수지도서관대관신청</a></li>
@@ -230,8 +230,8 @@
                                 <li><a href="#">원클릭대관신청안내</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">견학신청</a></li>
-                        <li>
+                        <li class="sub-tab"><a href="#">견학신청</a></li>
+                        <li class="sub-tab">
                             <a href="#">시민참여</a>
                             <ul class="depth3">
                                 <li><a href="#">자원활동가</a></li>
@@ -240,22 +240,22 @@
                                 <li><a href="#">도서관공모</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">도서기증</a></li>
+                        <li class="sub-tab"><a href="#">도서기증</a></li>
                     </ul>
                 </li>
                 <li class="gnb-tab">
                     <a href="#" class="menu-tit">도서관소개</a>
                     <ul class="sub-menu">
-                        <li><a href="#">인사말</a></li>
-                        <li><a href="#">연혁</a></li>
-                        <li>
+                        <li class="sub-tab"><a href="#">인사말</a></li>
+                        <li class="sub-tab"><a href="#">연혁</a></li>
+                        <li class="sub-tab">
                             <a href="#">도서관아카이브</a>
                             <ul class="depth3">
                                 <li><a href="#">아카이브소개</a></li>
                                 <li><a href="#">아카이브자료</a></li>
                             </ul>
                         </li>
-                        <li>
+                        <li class="sub-tab">
                             <a href="#">도서관현황</a>
                             <ul class="depth3">
                                 <li><a href="#">자료현황</a></li>
@@ -264,27 +264,27 @@
                                 <li><a href="#">360도 투어</a></li>
                             </ul>
                         </li>
-                        <li>
+                        <li class="sub-tab">
                             <a href="#">조직도/직원정보</a>
                             <ul class="depth3">
                                 <li><a href="#">조직도</a></li>
                                 <li><a href="#">직원정보</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">찾아오시는길</a></li>
+                        <li class="sub-tab"><a href="#">찾아오시는길</a></li>
                     </ul>
                 </li>
                 <li class="gnb-tab">
                     <a href="#" class="menu-tit">나의도서관</a>
                     <ul class="sub-menu">
-                        <li><a href="#">이용안내</a></li>
-                        <li><a href="#">나의정보</a></li>
-                        <li><a href="#">도서이용내역</a></li>
-                        <li><a href="#">바로대출신청조회</a></li>
-                        <li><a href="#">보존서고도서 이용내역</a></li>
-                        <li><a href="#">관심도서목록</a></li>
-                        <li><a href="#">맞춤추천도서</a></li>
-                        <li>
+                        <li class="sub-tab"><a href="#">이용안내</a></li>
+                        <li class="sub-tab"><a href="#">나의정보</a></li>
+                        <li class="sub-tab"><a href="#">도서이용내역</a></li>
+                        <li class="sub-tab"><a href="#">바로대출신청조회</a></li>
+                        <li class="sub-tab"><a href="#">보존서고도서 이용내역</a></li>
+                        <li class="sub-tab"><a href="#">관심도서목록</a></li>
+                        <li class="sub-tab"><a href="#">맞춤추천도서</a></li>
+                        <li class="sub-tab">
                             <a href="#">신청조회</a>
                             <ul class="depth3">
                                 <li><a href="#">문화행사신청조회</a></li>
@@ -303,24 +303,24 @@
                 <li class="gnb-tab blind-p">
                     <a href="#" class="menu-tit">회원정보</a>
                     <ul class="sub-menu">
-                        <li><a href="#">로그인</a></li>
-                        <li><a href="#">아이디찾기</a></li>
-                        <li><a href="#">비밀번호재발급</a></li>
-                        <li><a href="#">회원가입</a></li>
+                        <li class="sub-tab"><a href="#">로그인</a></li>
+                        <li class="sub-tab"><a href="#">아이디찾기</a></li>
+                        <li class="sub-tab"><a href="#">비밀번호재발급</a></li>
+                        <li class="sub-tab"><a href="#">회원가입</a></li>
                     </ul>
                 </li>
                 <li class="gnb-tab blind-p">
                     <a href="#" class="menu-tit">홈페이지 이용안내</a>
                     <ul class="sub-menu">
-                        <li><a href="">사이트맵</a></li>
-                        <li><a href="">이용약관</a></li>
-                        <li><a href="">개인정보처리방침</a></li>
-                        <li><a href="">영상정보처리기기운영방침</a></li>
-                        <li><a href="">이메일무단수집거부</a></li>
+                        <li class="sub-tab"><a href="">사이트맵</a></li>
+                        <li class="sub-tab"><a href="">이용약관</a></li>
+                        <li class="sub-tab"><a href="">개인정보처리방침</a></li>
+                        <li class="sub-tab"><a href="">영상정보처리기기운영방침</a></li>
+                        <li class="sub-tab"><a href="">이메일무단수집거부</a></li>
                     </ul>
                 </li>
             </ul><!-- /#gnb End -->  
         </nav>
-    </div>
+    </header>
 </body>
 </html>
