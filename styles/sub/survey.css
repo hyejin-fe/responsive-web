@@ -1,0 +1,213 @@
+.contents .base-form {
+    border: 0 none;
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: #e2e2e2;
+    height: 75px;
+}
+
+.contents .base-form .search {
+    display: flex;
+    gap: 4px;
+    margin-top: 5px;
+    position: relative;
+    line-height: 24px; /* 줄간격 */
+}
+
+.search .library-name {width: 26%; position: absolute; top:0; left:0;}
+.input-box {width: 73%; position: absolute; left: 27%; top:2px; display: flex;}
+
+.contents .base-form ul {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.contents .base-form li.show {
+    display: block;
+}
+
+
+.contents .base-form li {
+    display: none;
+    padding: 11px 20px 10px 15px;
+}
+
+.contents .base-form input {
+    background-color: #fff;
+}
+
+.contents .base-form button {
+    width: 30%;
+    border: 1px solid #444;
+    background-color: #444;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+
+
+.survey-box {
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+    padding: 20px 16px 30px 16px;
+    margin : 0 0 24px 0;
+}
+
+
+.survey .survey-box .survey-ing,.survey-visitor, .survey-end  {
+    font-size: 14px;
+    border: 1px solid #e2e2e2;
+    padding: 3px 5px;
+    border-radius: 2px;
+    align-items: center;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.survey .survey-box .survey-visitor {
+    color: #232323;
+    margin-right: 3px;
+}
+
+.survey .survey-box .survey-ing, .survey-end {
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    color: #fff;
+}
+
+.survey .survey-box .survey-ing {
+    background-color: #1B6EAB;
+}
+
+.survey .survey-box .survey-end {
+    background-color: #949494;
+} 
+.survey .survey-box .survey-title {
+    font-weight: 600;
+    color: #000;
+    padding-bottom: 10px;
+    overflow: hidden;
+    display: -webkit-box; /* 웹킷 기반 브라우저용 레이아웃 방식 */
+    -webkit-box-orient: vertical; /* 박스 방향을 세로로 설정 */
+    -webkit-line-clamp: 2; /* 웹킷 방식 줄 수 제한 */
+    
+}
+
+
+.survey .survey-box .survey-period {
+    font-size: 13px;
+    color: #646464;
+    margin-bottom: 24px;
+}
+.survey .survey-box .composition {
+    overflow: hidden;
+    display: -webkit-box; /* 웹킷 기반 브라우저용 레이아웃 방식 */
+    -webkit-box-orient: vertical; /* 박스 방향을 세로로 설정 */
+    -webkit-line-clamp: 2; /* 웹킷 방식 줄 수 제한 */
+    color: #646464;
+    font-size: 13px;
+    margin-bottom: 13px;
+}
+
+.survey .survey-box .survey-participant {
+    color: #464646;
+    font-size: 14px;
+    display: flex;
+    padding-top: 20px;
+}
+
+.survey .survey-box .survey-participant .num {
+    font-size: 19px;
+    color: #1b6eab;
+    margin-left: auto;
+    font-weight: 600;
+    line-height: 22px; /* 줄간격 */
+}
+
+.paging-box {text-align: center; margin: 40px 0;}
+
+.paging-box a {
+    display: inline-block;
+    height: 32px;
+    font-size: 14px; 
+    font-weight: 300;
+    color: #232323;
+    padding: 5px;
+}
+
+.paging-box a.active{
+    color: #fff;
+    background-color: #232323;
+}
+
+
+@media screen and (min-width: 500px){
+    
+    .survey {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+    .survey-box {
+        margin: 0;
+    }
+    
+}
+
+@media screen and (min-width: 768px){ 
+    body { 
+        font-size: 18px;
+    }
+    
+    .survey .survey-box .composition {
+        font-size: 16px;
+    }
+    .survey .survey-box .survey-title {margin-bottom: 8px; height: 60px;}
+
+    .survey .survey-box .survey-period {
+        font-size: 16px;
+    }
+    .survey {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+    }
+    .survey-box {
+        margin: 0;
+    }
+
+    .survey .survey-box .survey-participant {
+        font-size: 17px;
+    }
+
+    .survey .survey-box .survey-participant .num {
+        font-size: 22px;
+        line-height: 24px; /* 줄간격 */
+    }
+    .paging-box a {
+        font-size: 20px; 
+        width: 35px;
+}
+    
+}
+
+@media screen and (min-width: 1024px){ 
+    body { 
+        font-size: 16px;
+    }
+    .survey .survey-box .survey-title {font-size: 19px; font-weight: 600;}
+    .survey-box{
+        transition: 0.3s;        
+    }
+    #main .contents {padding-left: 20px;}
+
+    .survey-box:hover{
+        transform: translateY(-10px);
+        border: 1px solid #000;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+    
+}

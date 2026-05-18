@@ -4,19 +4,268 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI추천도서 | 수지도서관</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard.css">
-    <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/ai-pick.css">
-    <script src="scripts/sub/서브페이지명.js" defer></script>
+    <link rel="stylesheet" href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css">
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/sub/ai-pick.css">
+    <script src="../scripts/common.js" defer></script>
+    <script src="../scripts/sub/ai-pick.js" defer></script>
 </head>
 <body>
-
-    <div class="container">
-        <aside id="aside">
-            
+    <div class="container inner">
+        <aside id="aside" class="blind-m">
+            <h1>독서마당</h1>
+            <div class="side-tab">
+                <dl>
+                    <dt>추천도서</dt>
+                </dl>
+                <dl class="active">
+                    <dt>AI추천도서</dt>
+                </dl>
+                <dl>
+                    <dt>독서공감</dt>
+                </dl>
+                <dl>
+                    <dt>발간/특화자료</dt>
+                </dl>
+                <dl>
+                    <dt>올해의책함께읽기</dt>
+                </dl>
+                <dl>
+                    <dt>독서동아리</dt>
+                </dl>
+            </div>
         </aside><!-- // #aside End -->
         <section id="main">
-            
+            <div class="main-top">
+                <p class="navi">
+                    <span>독서마당</span>
+                    <span>AI추천도서</span>
+                </p>
+                <h1 class="tit-main">AI추천도서</h1>
+            </div>
+            <!--빗금공간이었던것-->
+            <div class="contents">
+                <div class="detail-box">
+                    <dl>
+                        <dt>인공지능(AI : Artificial Intelligence) 추천도서</dt>
+                        <dd>도서관 이용자의 “개인별 독서 이력”과 “취향 분석”을 통해 맞춤형으로 도서를 추천해드립니다.</dd>
+                        <dd>[다시 추천받기]버튼을 클릭하시면 취향 분석을 통한 새로운 도서를 추천 받으실 수 있습니다.</dd>
+                    </dl>
+                </div><!--/빗금-->
+                <h2 class="blind">4단계 과정을 거치면 AI가 알맞은 책을 추천해드립니다</h2>
+                <ol class="process-info">
+                    <li><span class="on">연령<br class="break-on">정보</span></li>
+                    <li class="non-break"><span>관심사</span></li>
+                    <li><span>관심<br class="break-on">분야</span></li>
+                    <li><span>관심<br class="break-on">도서</span></li>
+                    <li><span>추천<br class="break-on">결과</span></li>
+                </ol>
+                <!--버튼 박스 input 1번째는 라디오, 2~3번째는 체크박스-->
+                <div class="user-select-wrapper">
+                    <!--1~3번째 부분-->
+                    <!--스크립트 시험용 지울예정-->
+                    <div class="step-area">
+                        <h3>
+                            <span class="tit"></span>
+                            <span class="dupli-info"></span>
+                        </h3>
+                        <div class="btns-area">
+                        </div>
+                    </div>
+                    <!--/step-area-->
+                    <div class="user-books off">
+                        <h3>당신의 관심도서를 3개 선택해주세요</h3>
+                            <ul class="user-pick-area">
+                                <li class="card-item">
+                                    <div class="img-box">
+                                        <img src="../images/placeholder-book-img.png" alt="선택한 책1">
+                                    </div>
+                                </li>
+                                <li class="card-item">
+                                    <div class="img-box">
+                                        <img src="../images/placeholder-book-img.png" alt="선택한 책2">
+                                    </div>
+                                </li>
+                                <li class="card-item">
+                                    <div class="img-box">
+                                        <img src="../images/placeholder-book-img.png" alt="선택한 책3">
+                                    </div>
+                                </li>
+                            </ul>
+                        <!--고르는 구간-->
+                            <ul class="ai-pick-list"><!--1~20개--><!--호버 디자인 li안에 div 넣고 포지션 처리함 논 기본값 블록으로 js로온오프 조절-->
+                                <li class="card-item">
+                                    <a href="#">
+                                        <div class="img-box">
+                                            <img src="../images/placeholder-book-img.png" alt="책1">
+                                            <div class="info-box">
+                                                <p class="book-tit">카드 제목</p>
+                                                <p class="book-desc">
+                                                    호버 시 보여질 설명 내용입니다.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="card-item">
+                                    <a href="#">
+                                        <div class="img-box">
+                                            <img src="../images/placeholder-book-img.png" alt="책2">
+                                        </div>
+                                        <div class="info-box">
+                                            <p class="tit">카드 제목</p>
+                                            <p class="desc">
+                                                호버 시 보여질 설명 내용입니다.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="card-item">
+                                    <a href="#">
+                                        <div class="img-box">
+                                            <img src="../images/placeholder-book-img.png" alt="책3">
+                                        </div>
+
+                                        <div class="info-box">
+                                            <p class="tit">카드 제목</p>
+                                            <p class="desc">
+                                                호버 시 보여질 설명 내용입니다.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="card-item">
+                                    <a href="#">
+                                        <div class="img-box">
+                                            <img src="../images/placeholder-book-img.png" alt="책4">
+                                        </div>
+                                        <div class="info-box">
+                                            <p class="tit">카드 제목</p>
+                                            <p class="desc">
+                                                호버 시 보여질 설명 내용입니다.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="card-item">
+                                    <a href="#">
+                                        <div class="img-box">
+                                            <img src="../images/placeholder-book-img.png" alt="책5">
+                                        </div>
+                                        <div class="info-box">
+                                            <p class="tit">카드 제목</p>
+                                            <p class="desc">
+                                                호버 시 보여질 설명 내용입니다.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="card-item">
+                                    <a href="#">
+                                        <div class="img-box">
+                                            <img src="../images/placeholder-book-img.png" alt="책6">
+                                        </div>
+                                        <div class="info-box">
+                                            <p class="tit">카드 제목</p>
+                                            <p class="desc">
+                                                호버 시 보여질 설명 내용입니다.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="ai-pick-final off">
+                        <h3>당신을 위한 인공지능 추천도서입니다.</h3>
+                            <ul class="ai-pick-list"><!--1~20개--><!--호버 디자인 li안에 div 넣고 포지션 처리함 논 기본값 블록으로 js로온오프 조절-->
+                                <li class="card-item">
+                                    <a href="#">
+                                        <div class="img-box">
+                                            <img src="../images/placeholder-book-img.png" alt="책5">
+                                        </div>
+                                        <div class="info-box">
+                                            <p class="book-tit">카드 제목</p>
+                                            <p class="book-desc">
+                                                호버 시 보여질 설명 내용입니다.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="card-item">
+                                    <a href="#">
+                                        <div class="img-box">
+                                            <img src="../images/placeholder-book-img.png" alt="책5">
+                                        </div>
+                                        <div class="info-box">
+                                            <p class="tit">카드 제목</p>
+                                            <p class="desc">
+                                                호버 시 보여질 설명 내용입니다.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="card-item">
+                                    <a href="#">
+                                        <div class="img-box">
+                                            <img src="../images/placeholder-book-img.png" alt="책5">
+                                        </div>
+
+                                        <div class="info-box">
+                                            <p class="tit">카드 제목</p>
+                                            <p class="desc">
+                                                호버 시 보여질 설명 내용입니다.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="card-item">
+                                    <a href="#">
+                                        <div class="img-box">
+                                            <img src="../images/placeholder-book-img.png" alt="책5">
+                                        </div>
+                                        <div class="info-box">
+                                            <p class="tit">카드 제목</p>
+                                            <p class="desc">
+                                                호버 시 보여질 설명 내용입니다.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="card-item">
+                                    <a href="#">
+                                        <div class="img-box">
+                                            <img src="../images/placeholder-book-img.png" alt="책5">
+                                        </div>
+                                        <div class="info-box">
+                                            <p class="tit">카드 제목</p>
+                                            <p class="desc">
+                                                호버 시 보여질 설명 내용입니다.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="card-item">
+                                    <a href="#">
+                                        <div class="img-box">
+                                            <img src="../images/placeholder-book-img.png" alt="책5">
+                                        </div>
+                                        <div class="info-box">
+                                            <p class="tit">카드 제목</p>
+                                            <p class="desc">
+                                                호버 시 보여질 설명 내용입니다.</p> 
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                    </div>
+                    <!--포지션으로 띄우는 버튼들-->
+                    <div class="select-process-btns">
+                        <button class="prev-btn">이전단계</button>
+                        <button class="next-btn">다음단계</button>
+                        <!--마지막 단계 시 나타나는 버튼 - 초기화 -->
+                        <button class="reset">다시추천받기</button>
+                    </div>
+                </div><!--/user-select-area-->
+            </div><!--contents-->
         </section><!-- // #main End -->
     </div><!-- // .container End -->
 

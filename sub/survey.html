@@ -4,19 +4,236 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>설문조사 | 수지도서관</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard.css">
-    <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/서브페이지명.css">
-    <script src="scripts/sub/서브페이지명.js" defer></script>
+    <link rel="stylesheet" href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css">
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/sub/survey.css">
+    <script src="../scripts/common.js" defer></script>
+    <script src="../scripts/sub/survey.js" defer></script>
 </head>
 <body>
 
-    <div class="container">
-        <aside id="aside">
-            
+    <div class="container inner">
+        <aside id="aside" class="blind-m">
+            <h1>열린마당</h1>
+            <div class="side-tab">
+                <dl>
+                    <dt>도서관소식</dt>
+                </dl>
+                <dl>
+                    <dt>보도자료</dt>
+                </dl>
+                <dl>
+                    <dt>도서관연중행사</dt>
+                </dl>
+                <dl>
+                    <dt>도서관 카드뉴스</dt>
+                </dl>
+                <dl>
+                    <dt>자주하는질문</dt>
+                </dl>
+                <dl>
+                    <dt>묻고답하기</dt>
+                </dl>
+                <dl class="active">
+                    <dt>설문조사</dt>
+                </dl>
+                <dl>
+                    <dt>원클릭대관신청</dt>
+                    <dd class="on" >수지도서관대관신청</dd>
+                    <dd>원클릭대관신청</dd>
+                    <dd>원클릭대관신청안내</dd>
+                </dl>
+                <dl>
+                    <dt>견학신청</dt>
+                </dl>
+                <dl>
+                    <dt>시민참여</dt>
+                    <dd class="on" >자원활동가</dd>
+                    <dd>자원봉사신청안내</dd>
+                    <dd>강사지원신청</dd>
+                    <dd>도서관공모</dd>
+                </dl>
+                <dl>
+                    <dt>도서기증</dt>
+                </dl>
+            </div>
         </aside><!-- // #aside End -->
         <section id="main">
-            
+            <div class="main-top">
+                <p class="navi">
+                    <span>열린마당</span>
+                    <span>설문조사</span>
+                </p>
+                <h1 class="tit-main">설문조사</h1>
+            </div>
+            <div class="contents">
+                <div class="base-form">
+                    <form>
+                        <fieldset>
+                        <legend class="blind">보도자료 검색</legend>
+                            
+                        <div class="search">
+                            <ul class="library-name">
+                                <li class="show">제목</li>
+                                <li>내용</li>
+                            </ul>
+                            <div class="input-box">
+                                <label for="userName" class="blind">조회할 신청자명 기입</label>
+                                <input type="text" name="userName" id="userName">
+                                <button>검색</button>
+                            </div>
+                        </div><!-- search -->
+                        </fieldset>
+                    </form>
+                </div><!-- base-form -->
+                <div class="survey">
+                    <div class="survey-box">
+                        <span class="survey-visitor">방문자 전체</span>
+                        <span class="survey-ing">진행중</span>
+                        <p class="survey-title">[동백도서관] 리모델링 관련 설문조사</p>
+                        <p class="survey-period">2026.04.27 ~ 2026.05.10</p>
+                        <p class="composition">2009년 개관한 동백도서관은 건물 노후화에 따른 시설을 개선하고 열린문화공간으로 변화하기 위하여 
+                            리모델링 사업을 계획 중으로, 이용자 여러분의 다양한 의견을 수렴하기 위하여 설문 조사를 실시합니다. 
+                            귀하의 소중한 의견은 통계법 33조에 의해 철저하게 비밀이 보장되며, 오직 도서관 리모델링에 참고하는 용도로만 사용됩니다. 
+                            이용자 여러분의 많은 참여를 부탁드립니다."</p>
+                        <p class="survey-participant">참여자수 <span class="num">15</span>명</p>
+                       
+                    </div>
+                    <div class="survey-box">
+                        <span class="survey-visitor">방문자 전체</span>
+                        <span class="survey-end">종료</span>
+                        <p class="survey-title">2026년 올해의 책(아동 분야) 선정 설문조사</p>
+                        <p class="survey-period">2026.01.26 ~ 2026.02.06</p>
+                        <p class="composition">책을 사랑하는 용인시민들의 선택, 「2026 올해의 책」 시민 추천도서, 문학상 수상작 및 지역작가 도서, 
+                            용인시도서관 인기도서 등에서 엄선한 10권의 후보 도서들 중 용인시민이 
+                            함께 읽을 올해의 책(아동 분야) 3권을 선택해 주세요!</p>
+                        <p class="survey-participant">참여자수 <span class="num">3,988</span>명</p>
+                    </div>
+                    <div class="survey-box">
+                        <span class="survey-visitor">방문자 전체</span>
+                        <span class="survey-end">종료</span>
+                        <p class="survey-title">2026년 올해의 책(일반 분야) 선정 설문조사</p>
+                        <p class="survey-period">2026.01.26 ~ 2026.02.06</p>
+                        <p class="composition">책을 사랑하는 용인시민들의 선택, 「2026 올해의 책」 시민 추천도서, 문학상 수상작 및 지역작가 도서, 
+                            용인시도서관 인기도서 등에서 엄선한 10권의 후보 도서들 중 용인시민이 함께 읽을 올해의 책(일반 분야) 
+                            3권을 선택해 주세요!</p>
+                        <p class="survey-participant">참여자수 <span class="num">4,139</span>명</p>
+                    </div>
+                    <div class="survey-box">
+                        <span class="survey-visitor">방문자 전체</span>
+                        <span class="survey-end">종료</span>
+                        <p class="survey-title">2026, 내가 추천하는 '올해의 책'</p>
+                        <p class="survey-period">2026.01.05 ~ 2026.01.16</p>
+                        <p class="composition">용인시도서관은 시민이 직접 선정한 도서를 함께 읽고 소통하며 생각을 나누는 범시민 독서 캠페인 
+                            올해의 책을 운영하고 있습니다. 용인시민이 추천한 도서를 대상으로 올해의 책을 선정하고자 
+                            하오니 시민 여러분의 많은 관심과 참여 부탁드립니다.
+                            ★★★선정기준 : ①최근 2년 이내(2024~2026)에 발간되어 누구나 부담없이 읽을 수 있는 책(일반, 청소년, 어린이 도서)
+                            ② 다양한 독서 문화 프로그램을 운영하기에 적합한 도서★★★</p>
+                        <p class="survey-participant">참여자수 <span class="num">461</span>명</p>
+                    </div>
+                    <div class="survey-box">
+                        <span class="survey-visitor">방문자 전체</span>
+                        <span class="survey-end">종료</span>
+                        <p class="survey-title">2026년 해피버스(Happy Birth) 용인 북스타트 책 꾸러미 도서 선정 선호도 조사'</p>
+                        <p class="survey-period">2026.01.09 ~ 2026.01.19</p>
+                        <p class="composition">용인시에서는 「책과 함께 인생을 시작하자」라는 의미로 관내 거주 영유아, 초등 입학생(다자녀), 시니어(60세 이상)에게 그림책이 담긴 책 꾸러미를 선물하는 
+                            북스타트를 운영하고 있습니다. 2026년 북스타트 책 꾸러미 도서 선정을 위한 이용자 여러분의 의견을 수렴하고자 선호도 조사를 실시하오니 
+                            관심있는 분들의 많은 참여 부탁드립니다. (선정해주신 도서는 도서관의 잔여 수량을 소진 후 구매할 예정이오니 참고 바랍니다.)</p>
+                        <p class="survey-participant">참여자수 <span class="num">233</span>명</p>
+                    </div>
+                    <div class="survey-box">
+                        <span class="survey-visitor">방문자 전체</span>
+                        <span class="survey-end">종료</span>
+                        <p class="survey-title">2025년 양지해밀도서관 이용실태 및 만족도 조사</p>
+                        <p class="survey-period">2025.11.04 ~ 2025.11.23</p>
+                        <p class="composition">용인시에서는 「책과 함께 인생을 시작하자」라는 의미로 관내 거주 영유아, 초등 입학생(다자녀), 시니어(60세 이상)에게 그림책이 담긴 책 꾸러미를 선물하는 
+                            북스타트를 운영하고 있습니다. 2026년 북스타트 책 꾸러미 도서 선정을 위한 이용자 여러분의 의견을 수렴하고자 선호도 조사를 실시하오니 
+                            관심있는 분들의 많은 참여 부탁드립니다. (선정해주신 도서는 도서관의 잔여 수량을 소진 후 구매할 예정이오니 참고 바랍니다.)</p>
+                        <p class="survey-participant">참여자수 <span class="num">73</span>명</p>
+                    </div>
+                    <div class="survey-box">
+                        <span class="survey-visitor">방문자 전체</span>
+                        <span class="survey-end">종료</span>
+                        <p class="survey-title">2025년 이동꿈틀도서관 이용실태 및 만족도 조사</p>
+                        <p class="survey-period">2025.11.04 ~ 2025.11.23</p>
+                        <p class="composition">안녕하십니까? 용인시 도서관입니다. 저희 용인시 도서관에서는 공공도서관 이용자를 대상으로 이용 실태 및 만족도에 대한 조사를 진행하고 있습니다.
+                        본 조사는 이용자 여러분의 의견을 수렴하여 보다 나는 용인시 도서관을 만들어 나가는데 기초자료로 활용될 예정입니다.
+                        귀하께서 응답해주시는 내용은 통계법 33조에 의해 철저하게 비밀이 보장되며 오직 통계분석 용도로만 사용됩니다.
+                        이용자 여러분의 많은 참여를 부탁드립니다. ※ 설문조사 이벤트 참여를 원하시면 참여 후 화면 캡처를 꼭 해주세요.</p>
+                        <p class="survey-participant">참여자수 <span class="num">37</span>명</p>
+                    </div>
+                    <div class="survey-box">
+                        <span class="survey-visitor">방문자 전체</span>
+                        <span class="survey-end">종료</span>
+                        <p class="survey-title">2025년 포곡도서관 이용실태 및 만족도 조사</p>
+                        <p class="survey-period">2025.11.04 ~ 2025.11.23</p>
+                        <p class="composition">안녕하십니까? 용인시 도서관에서는 공공도서관 이용자를 대상으로 이용 실태 및 만족도에 대한 조사를 진행하고 있습니다.
+                            본 조사는 이용자 여러분의 의견을 수렴하여 보다 나은 용인시 도서관을 만들어 나가는데 기초자료로 활용될 예정입니다. 
+                            귀하께서 응답해 주시는 내용은 통계법 33조에 의해 철저하게 비밀이 보장되며 오직 통계분석 용도로만 사용됩니다. 이용자 여러분의 많은 참여를 부탁드립니다.</p>
+                        <p class="survey-participant">참여자수 <span class="num">96</span>명</p>
+                    </div>
+                    <div class="survey-box">
+                        <span class="survey-visitor">방문자 전체</span>
+                        <span class="survey-end">종료</span>
+                        <p class="survey-title">2025년 청덕도서관 이용실태 및 만족도 조사</p>
+                        <p class="survey-period">2025.11.04 ~ 2025.11.23</p>
+                        <p class="composition">안녕하십니까? 용인시 도서관에서는 공공도서관 이용자를 대상으로 이용 실태 및 만족도에 대한 조사를 진행하고 있습니다.
+                            본 조사는 이용자 여러분의 의견을 수렴하여 보다 나은 용인시 도서관을 만들어 나가는데 기초자료로 활용될 예정입니다.
+                            귀하께서 응답해 주시는 내용은 통계법 33조에 의해 철저하게 비밀이 보장되며 오직 통계분석 용도로만 사용됩니다.
+                            이용자 여러분의 많은 참여를 부탁드립니다.</p>
+                        <p class="survey-participant">참여자수 <span class="num">60</span>명</p>
+                    </div>
+                    <div class="survey-box">
+                        <span class="survey-visitor">방문자 전체</span>
+                        <span class="survey-end">종료</span>
+                        <p class="survey-title">2025년 수지도서관 이용실태 및 만족도 조사</p>
+                        <p class="survey-period">2025.11.04 ~ 2025.11.23</p>
+                        <p class="composition">안녕하십니까? 용인시 도서관에서는 공공도서관 이용자를 대상으로 이용 실태 및 만족도에 대한 조사를 진행하고 있습니다. 
+                            본 조사는 이용자 여러분의 의견을 수렴하여 보다 나은 용인시 도서관을 만들어 나가는데 기초자료로 활용될 예정입니다. 
+                            귀하께서 응답해 주시는 내용은 통계법 33조에 의해 철저하게 비밀이 보장되며 오직 통계분석 용도로만 사용됩니다. 
+                            이용자 여러분의 많은 참여를 부탁드립니다.</p>
+                        <p class="survey-participant">참여자수 <span class="num">193</span>명</p>
+                    </div>
+                    <div class="survey-box">
+                        <span class="survey-visitor">방문자 전체</span>
+                        <span class="survey-end">종료</span>
+                        <p class="survey-title">2025년 보라도서관 이용실태 및 만족도 조사</p>
+                        <p class="survey-period">2025.11.04 ~ 2025.11.23</p>
+                        <p class="composition">안녕하십니까? 용인시 도서관에서는 공공도서관 이용자를 대상으로 이용 실태 및 만족도에 대한 조사를 진행하고 있습니다.
+                            본 조사는 이용자 여러분의 의견을 수렴하여 보다 나은 용인시 도서관을 만들어 나가는데 기초자료로 활용될 예정입니다.
+                            귀하께서 응답해 주시는 내용은 통계법 33조에 의해 철저하게 비밀이 보장되며 오직 통계분석 용도로만 사용됩니다.
+                            이용자 여러분의 많은 참여를 부탁드립니다.</p>
+                        <p class="survey-participant">참여자수 <span class="num">66</span>명</p>
+                    </div>
+                    <div class="survey-box">
+                        <span class="survey-visitor">방문자 전체</span>
+                        <span class="survey-end">종료</span>
+                        <p class="survey-title">2025년 구갈희망누리도서관 이용실태 및 만족도 조사</p>
+                        <p class="survey-period">2025.11.04 ~ 2025.11.23</p>
+                        <p class="composition">안녕하십니까? 용인시 도서관입니다. 저희 용인시 도서관에서는 공공도서관 이용자를 대상으로 이용 실태 및 만족도에 대한 조사를 진행하고 있습니다.
+                            본 조사는 이용자 여러분의 의견을 수렴하여 보다 나는 용인시 도서관을 만들어 나가는데 기초자료로 활용될 예정입니다.
+                            귀하께서 응답해주시는 내용은 통계법 33조에 의해 철저하게 비밀이 보장되며 오직 통계분석 용도로만 사용됩니다.
+                            이용자 여러분의 많은 참여를 부탁드립니다.</p>
+                        <p class="survey-participant">참여자수 <span class="num">24</span>명</p>  
+                    </div>
+                </div><!-- survey End-->
+                   <p class="paging-box">
+                        <a href="#">이전</a>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">7</a>
+                        <a href="#">8</a>
+                        <a href="#">9</a>
+                        <a href="#">10</a>
+                        <a href="#">다음</a>
+                    </p>
+            </div><!-- contents End -->
+
+
         </section><!-- // #main End -->
     </div><!-- // .container End -->
 

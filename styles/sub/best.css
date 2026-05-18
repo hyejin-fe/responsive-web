@@ -1,0 +1,447 @@
+
+
+h1 {font-size: 26px;}
+
+#main .main-top { padding: 20px 8px; border-bottom: 1px solid #e2e2e2; border-top: 1px solid #e2e2e2;;}
+#main .main-content { padding-top: 30px; }
+dl, dt, dd { font-size: inherit; }
+
+.loan-best-area-a fieldset { 
+    
+    width: 100%;
+    display: flex;
+    background-color: #f7f7f7;
+    padding-bottom: 30px;
+    margin: 0 auto; 
+}
+.loan-best-area-a .form-area {
+    width: 100%;
+    margin-bottom: 25px;
+    background-color: #f7f7f7;
+}
+.tab-btn {
+    display: flex;
+    margin: 24px 0;
+    flex-wrap: wrap;
+}
+.tab-btn li {
+    font-size: 18px;
+    flex: 1;
+    padding: 5px;
+    text-align: center;
+}
+
+.form-area {
+    position: relative;
+    width: 100%;
+    height: 118px;
+}
+.form-area fieldset {
+   
+    width: 95%;
+}
+
+.form-area .libary, .form-area .date { 
+    z-index: 10;
+    flex-wrap: wrap;
+    border: 1px solid #e2e2e2;
+    background-color: #fff; 
+}   
+
+.loan-best-area-a .libary { position: absolute; top:20px;  left: 4%; } 
+
+.libary.active{ 
+    display: block;
+}
+.date.active{ 
+    display: block;
+}
+.form-area li{ 
+    display: none;
+    height: 45px;
+
+}
+.form-area li.active {
+    display: block;
+}
+
+.libary-b li { 
+    width: 250px;
+    height: 40px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    
+    display: none;
+    background-color: #fff; 
+}
+
+.libary-b {
+    position: absolute;
+    z-index: 10;
+    border: 1px solid #e2e2e2;
+    
+}
+.loanPeriod-area {
+    position: relative;
+    height: 92px;
+}
+.time-area {
+    position: absolute; bottom:5px; left:68px;
+    padding: 0 none;
+}
+
+
+.libary-area {
+    position: relative;
+    height: 61px;
+}
+.libary-b.show li {display: block;}
+.libary-b li.show {display: block;}
+.libary.show li{display: block;}
+.libary li.show {display: block;}
+.date.show li {display: block;}
+.date li.show  {display: block;}
+
+
+.loan-best-area-a form {
+    background-color: #f7f7f7;
+}
+.loan-best-area-a .search-btn {
+    
+    margin-top: 6px;
+    text-align: center;
+    background-color: #000;
+}
+.search-btn button {
+    color: #fff;
+    
+}
+
+.img-list-area {
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+
+.img-list-area .img-area {
+    background-color: #bdbdbd;
+    
+}
+.img-list-area ul {
+    flex: 0 0 calc(50% - 4px);
+}
+.img-list-area .text {
+    width: 100%;
+    display: flex;
+    min-height: 50px;
+}
+
+.text-tit {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;   /* 몇 줄까지 보여줄지 */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: clip;
+    
+}
+
+
+.icon-btn-area {
+    display: flex;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #555;
+}
+.icon-btn-area .view-all { 
+    height: 100%;
+    width: 80px; 
+    flex-shrink: 0; 
+    justify-content: center;
+    border-radius: 5px;
+
+}
+.icon-btn-area .active { border: 1px solid #000;}
+.icon-btn {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;  
+}
+.icon-btn li {
+    margin-left: 4px;
+    margin-bottom: 4px;
+    width: calc(20% - 5px);
+    border-radius: 5px;
+}
+.icon-btn:last-child {
+    margin-bottom: 0;
+}
+.icon-btn button {
+    width: 100%;
+    height: 80px;
+}
+
+.popular-books-area .libary ul {
+    
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #c8c8c8;
+}
+.popular-books-area fieldset dl {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    border-bottom: 1px solid #e2e2e2;
+    background-color: #f8f8fa
+    
+}
+.popular-books-area .libary ul li {
+    border: none;
+}
+
+.popular-books-area fieldset dt {
+    padding: 10px;    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.popular-books-area fieldset dd {
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    padding: 10px 0;
+}
+.loanPeriod {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.loanPeriod input{
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+}
+.popular-books-area dl {
+    width: 100%;
+}
+.popular-books-area dd button {
+    border: 1px solid #c8c8c8;
+    background-color: #fff;
+    font-weight: 500;
+    margin-bottom: 4px;
+    padding: 0 10px;
+    height: 32px;
+    line-height: 1.4;
+}
+
+fieldset dl { border-bottom: 1px solid #ddd;}
+.card-area { border-bottom: 1px solid #e2e2e2; }
+.card dt { font-size: 16px; }
+.card {
+
+    display: flex;
+    padding: 20px 0;
+    gap: 16px;
+    
+ }
+.card .img-area {
+    flex-shrink: 0;
+    width: 98px;
+    height: 136px;
+    background-color: #bdbdbd; 
+} 
+.best-book-list li:first-child {
+    border-top: 2px solid #555;
+}
+.col-Search {
+    height: 42px; 
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #727272;
+}
+
+
+.paging-box { text-align: center; }
+
+
+/*폼 체크박스 라디오버튼*/
+.popular-books-area form { 
+    border-top: 2px solid #555;
+    border-bottom: 1px solid #e4e4e4;;
+}
+
+.popular-books-area form ul li.active { 
+    display: block;
+}
+.popular-books-area form ul {
+    flex-wrap: wrap;
+}
+input {
+    appearance: auto;
+    background-color: #fff;
+}
+input[type="text"] {
+    height: 35px;
+}
+input[type="radio"], input[type="checkbox"] {
+    display: none;
+}
+label {
+    display: inline-block;
+    padding: 2px 10px;
+    margin: 4px 0;
+    border: 1px solid #e2e2e2;
+    background-color: #fff;
+}
+
+.card-area .text-area dt { 
+    width: 100%; 
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.4; 
+    margin-bottom: 10px;
+}
+
+.loan-best-area-a { display: none; }
+.popular-books-area { display: none; }
+.popular-books-area.show {
+    display: block;
+}
+.loan-best-area-a.show {
+    display: block;
+}
+
+
+@media screen and (max-width: 767px){
+body {
+    font-size: 14px;
+    line-height: 1.4;
+}
+.form-area .libary, .form-area .date { 
+    width: 45%;
+}  
+.date   { position: absolute; top:20px;  left: 51%; } 
+.search-btn {
+    position: absolute; bottom: 10px; left: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 92%;
+    height: 36px;
+}
+   
+.post-cont .blind-m {display: none;}
+.post-cont .date {width: 80px;}
+.card .text-area button { height: 42px;}
+.loanPeriod {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+}
+.loanPeriod input {
+    width: 40%;
+}
+.popular-books-area dd {
+    white-space: normal;
+}
+.popular-books-area ul {
+    white-space: normal;
+}
+
+}
+
+
+
+@media screen and (min-width: 768px){
+body { font-size: 17px; }
+.form-area .libary, .form-area .date { 
+    width: 45%;
+}  
+.date   { position: absolute; top:20px;  left: 51%; } 
+.search-btn {
+    position: absolute; bottom:10px;  left: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 92%;
+    height: 36px;
+}
+.post-cont .blind-m {display: block;}
+.date { width: 100px; }
+.img-list-area {
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+.card .img-area {width: 143px; height: 198px;}
+.card .text-area button { height: 42px;}
+.tab-btn li {
+    font-size: 20px;
+}
+.loanPeriod {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+}
+.card-area .text-area dt {
+    font-size: 22px;
+}
+.time-area {
+    position: absolute; bottom: 44px; left: 428px;
+
+}
+
+}
+
+
+
+
+@media screen and (min-width: 1023px){
+body {font-size: 17px;}
+.form-area .libary, .form-area .date { 
+    width: 40%;
+    
+}  
+.form-area {position: relative; height: 92px;}
+.date   { position: absolute; top:20px;  left: 46%; } 
+.post-cont .blind-m {display: block;}
+.img-list-area {
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.search-btn { 
+    position: absolute; top:16px; left: 88%;
+    width: 10%;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card { position: relative; }
+.card .text-area {display: flex;}
+.card .text-area button { position: absolute; top:75px; right: 8px; width: 170px; height: 54px;}
+.card-area { position: relative; }
+.card .img-area {width: 143px; height: 198px;}
+.card-area .col-Search { 
+    width: 170px; 
+    height: 50px;
+    position: absolute; top:80px; 
+    right: 50px; }
+
+.card-area .text-area dt { 
+    font-size: 23px;
+}
+.time-area {
+    position: absolute; bottom: 44px; left: 428px;
+    
+}
+
+* { word-break: keep-all; overflow-wrap: break-word;} 
+}

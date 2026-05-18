@@ -4,19 +4,311 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>보도자료 | 수지도서관</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard.css">
-    <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/서브페이지명.css">
-    <script src="scripts/sub/서브페이지명.js" defer></script>
+    <link rel="stylesheet" href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css">
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/sub/press.css">
+    <script src="../scripts/common.js" defer></script>
+    <script src="../scripts/sub/press.js" defer></script>
 </head>
 <body>
 
-    <div class="container">
-        <aside id="aside">
-            
+    <div class="container inner">
+        <aside id="aside" class="blind-m">
+            <h1>열린마당</h1>
+            <div class="side-tab">
+                <dl>
+                    <dt>도서관소식</dt>
+                </dl>
+                <dl class="active">
+                    <dt>보도자료</dt>
+                </dl>
+                <dl>
+                    <dt>도서관연중행사</dt>
+                </dl>
+                <dl>
+                    <dt>도서관 카드뉴스</dt>
+                </dl>
+                <dl>
+                    <dt>자주하는질문</dt>
+                </dl>
+                <dl>
+                    <dt>묻고답하기</dt>
+                </dl>
+                <dl>
+                    <dt>설문조사</dt>
+                </dl>
+                <dl>
+                    <dt>원클릭대관신청</dt>
+                    <dd class="on" >수지도서관대관신청</dd>
+                    <dd>원클릭대관신청</dd>
+                    <dd>원클릭대관신청안내</dd>
+                </dl>
+                <dl>
+                    <dt>견학신청</dt>
+                </dl>
+                <dl>
+                    <dt>시민참여</dt>
+                    <dd class="on" >자원활동가</dd>
+                    <dd>자원봉사신청안내</dd>
+                    <dd>강사지원신청</dd>
+                    <dd>도서관공모</dd>
+                </dl>
+                <dl>
+                    <dt>도서기증</dt>
+                </dl>
+            </div>
         </aside><!-- // #aside End -->
         <section id="main">
-            
+            <div class="main-top">
+                <p class="navi">
+                    <span>열린마당</span>
+                    <span>보도자료</span>
+                </p>
+                <h1 class="tit-main">보도자료</h1>
+            </div>
+            <div class="contents">
+                <div class="base-form">
+                    <form>
+                        <fieldset>
+                            <legend class="blind">보도자료 검색</legend>
+                            <div class="library-box">
+                                <label for="librarych" class="blind">조회할 도서관 선택</label>
+                                <ul name="librarych" id="librarych">
+                                    <li class="show active">전체도서관</li>
+                                    <li>도서관정책과</li>
+                                    <li>구갈희망누리도서관</li>
+                                    <li>기흥도서관</li>
+                                    <li>남사도서관</li>
+                                    <li>동백도서관</li>
+                                    <li>동천도서관</li>
+                                    <li>모현도서관</li>
+                                    <li>보라도서관</li>
+                                    <li>보정도서관</li>
+                                    <li>상현도서관</li>
+                                    <li>서농도서관</li>
+                                    <li>성복도서관</li>
+                                    <li>수지도서관</li>
+                                    <li>양지해밀도서관</li>
+                                    <li>영덕도서관</li>
+                                    <li>이동꿈툴도서관</li>
+                                    <li>죽전도서관</li>
+                                    <li>창덕도서관</li>
+                                    <li>포곡도서관</li>
+                                    <li>흥덕도서관</li>
+                                </ul>
+                            </div>
+
+                            <div class="search">
+                                <ul class="library-name">
+                                    <li class="show">제목</li>
+                                    <li>내용</li>
+                                </ul>
+                                <div class="input-box">
+                                    <label for="userName" class="blind">조회할 신청자명 기입</label>
+
+                                    <input type="text" name="userName" id="userName">
+                                    
+                                    <button>검색</button>
+                                </div>
+                            </div><!-- search -->
+                            </fieldset>
+                        </form>
+                    </div><!-- base-form -->
+                <div class="post-cont">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="blind-m blind-t press-number"  scope="col">번호</th>
+                                <th class="blind-m press-img" scope="col">썸네일</th>
+                                <th class= "press-name"scope="col" >제목</th>
+                                <th class="blind-m blind-t" scope="col">첨부</th>
+                                <th class="press-date" scope="col">등록일</th>
+                                <th class="blind-m press-views" scope="col">조회수</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-line">
+                            <tr>
+                                <td class="blind-m blind-t press-number">106</td>
+                                <td class="blind-m press-img">이미지</td>
+                                <td class="table-list press-name"><span class="lb-cate sj">수지</span><a href="">용인특례시 서부도서관, 어린이 야간 독서문화 프로그램 '한밤중 북소동’ 운영</a></td>
+                                <td class="blind-m blind-t press-png">첨부파일</td>
+                                <td class="press-date">2026.04.02</td>
+                                <td class="blind-m press-views">351</td>
+                            </tr>
+                            <tr>
+                                <td class="blind-m blind-t press-number">105</td>
+                                <td class="blind-m press-img">이미지</td>
+                                <td class="table-list press-name"><span class="lb-cate gt">공통</span><a href="">용인특례시, 4월 도서관주간 맞아 독서문화행사 '풍성'</a></td>
+                                <td class="blind-m blind-t press-png">첨부파일</td>
+                                <td class="press-date">2026.03.25</td>
+                                <td class="blind-m press-views">600</td>
+                            </tr>
+                            <tr>
+                                <td class="blind-m blind-t press-number">104</td>
+                                <td class="blind-m press-img">이미지</td>
+                                <td class="table-list press-name"><span class="lb-cate gt">공통</span><a href="">용인특례시, 2026년 도서관 작가강연회 운영</a></td>
+                                <td class="blind-m blind-t press-png">첨부파일</td>
+                                <td class="press-date">2026.03.24</td>
+                                <td class="blind-m press-views">643</td>
+                            </tr>
+                            <tr>
+                                <td class="blind-m blind-t press-number">103</td>
+                                <td class="blind-m press-img">이미지</td>
+                                <td class="table-list press-name"><span class="lb-cate gt">공통</span><a href="">용인특례시, 상반기 희망 전자책 서비스 운영</a></td>
+                                <td class="blind-m blind-t press-png">첨부파일</td>
+                                <td class="press-date">2026.03.23</td>
+                                <td class="blind-m press-views">519</td>
+                            </tr>
+                            <tr>
+                                <td class="blind-m blind-t press-number">102</td>
+                                <td class="blind-m press-img">이미지</td>
+                                <td class="table-list press-name"><span class="lb-cate gh">기흥</span><a href="">용인특례시 기흥도서관, 어린이 천 권 읽기 프로젝트 ‘천권DREAM’ 참여자 모집</a></td>
+                                <td class="blind-m blind-t press-png">첨부파일</td>
+                                <td class="press-date">2026.03.13</td>
+                                <td class="blind-m press-views">722</td>
+                            </tr>
+                            <tr>
+                                <td class="blind-m blind-t press-number">101</td>
+                                <td class="blind-m press-img">이미지</td>
+                                <td class="table-list press-name"><span class="lb-cate gh">기흥</span><a href="">용인특례시 기흥·수지도서관, ‘도서관 문화예술 동아리 지원사업’ 선정</a></td>
+                                <td class="blind-m blind-t press-png">첨부파일</td>
+                                <td class="press-date">2026.03.13</td>
+                                <td class="blind-m press-views">618</td>
+                            </tr>
+                            <tr>
+                                <td class="blind-m blind-t press-number">100</td>
+                                <td class="blind-m press-img">이미지</td>
+                                <td class="table-list press-name"><span class="lb-cate gt">공통</span><a href="">용인특례시, 2026년 ‘올해의 책’ 선정</a></td>
+                                <td class="blind-m blind-t press-png">첨부파일</td>
+                                <td class="press-date">2026.03.09</td>
+                                <td class="blind-m press-views">761</td>
+                            </tr>
+                            <tr>
+                                <td class="blind-m blind-t press-number">99</td>
+                                <td class="blind-m press-img">이미지</td>
+                                <td class="table-list press-name"><span class="lb-cate sj">수지</span><a href="">용인시 서부도서관, 이용자 편의 위해 시설 개선</a></td>
+                                <td class="blind-m blind-t press-png">첨부파일</td>
+                                <td class="press-date">2026.03.03</td>
+                                <td class="blind-m press-views">840</td>
+                            </tr>
+                            <tr>
+                                <td class="blind-m blind-t press-number">98</td>
+                                <td class="blind-m press-img">이미지</td>
+                                <td class="table-list press-name"><span class="lb-cate sj">수지</span><a href="">용인특례시 수지도서관, ‘AI로 그림책 작가 되기’ 참여자 모집</a></td>
+                                <td class="blind-m blind-t press-png">첨부파일</td>
+                                <td class="press-date">2026.03.03</td>
+                                <td class="blind-m press-views">706</td>
+                            </tr>
+                            <tr>
+                                <td class="blind-m blind-t press-number">97</td>
+                                <td class="blind-m press-img">이미지</td>
+                                <td class="table-list press-name"><span class="lb-cate gt">공통</span><a href="">용인특례시 상현도서관, ‘엄마의 영어 그림책 프로젝트’ 참가자 모집</a></td>
+                                <td class="blind-m blind-t press-png">첨부파일</td>
+                                <td class="press-date">2026.02.13</td>
+                                <td class="blind-m press-views">844</td>
+                            </tr>
+                            <tr>
+                                <td class="blind-m blind-t press-number">96</td>
+                                <td class="blind-m press-img">이미지</td>
+                                <td class="table-list press-name"><span class="lb-cate gt">공통</span><a href="">용인특례시 남사도서관, ‘나도 미디어 크리에이터’ 과정 운영</a></td>
+                                <td class="blind-m blind-t press-png">첨부파일</td>
+                                <td class="press-date">2026.02.12</td>
+                                <td class="blind-m press-views">721</td>
+                            </tr>
+                            <tr>
+                                <td class="blind-m blind-t press-number">95</td>
+                                <td class="blind-m press-img">이미지</td>
+                                <td class="table-list press-name"><span class="lb-cate gt">공통</span><a href="">용인특례시, 올해 독서문화행사 운영 계획 수립</a></td>
+                                <td class="blind-m blind-t press-png">첨부파일</td>
+                                <td class="press-date">2026.02.11</td>
+                                <td class="blind-m press-views">836</td>
+                            </tr>
+                            <tr>
+                                <td class="blind-m blind-t press-number">94</td>
+                                <td class="blind-m press-img">이미지</td>
+                                <td class="table-list press-name"><span class="lb-cate gt">공통</span><a href="">용인특례시, ‘2026년 해피버스 용인 북스타트’ 도서 선정</a></td>
+                                <td class="blind-m blind-t press-png">첨부파일</td>
+                                <td class="press-date">2026.02.03</td>
+                                <td class="blind-m press-views">766</td>
+                            </tr>
+                            <tr>
+                                <td class="blind-m blind-t press-number">93</td>
+                                <td class="blind-m press-img">이미지</td>
+                                <td class="table-list press-name"><span class="lb-cate gt">공통</span><a href="">용인특례시 동천도서관, 북클럽 지기 양성 프로그램 참가자 모집</a></td>
+                                <td class="blind-m blind-t press-png">첨부파일</td>
+                                <td class="press-date">2026.01.30</td>
+                                <td class="blind-m press-views">866</td>
+                            </tr>
+                            <tr>
+                                <td class="blind-m blind-t press-number">93</td>
+                                <td class="blind-m press-img">이미지</td>
+                                <td class="table-list press-name"><span class="lb-cate gt">공통</span><a href="">용인특례시 동천도서관, 북클럽 지기 양성 프로그램 참가자 모집</a></td>
+                                <td class="blind-m blind-t press-png">첨부파일</td>
+                                <td class="press-date">2026.01.30</td>
+                                <td class="blind-m press-views">866</td>
+                            </tr>
+                            <tr>
+                                <td class="blind-m blind-t press-number">92</td>
+                                <td class="blind-m press-img">이미지</td>
+                                <td class="table-list press-name"><span class="lb-cate gt">공통</span><a href="">용인특례시, 상반기 독서동아리 회원 409명 모집</a></td>
+                                <td class="blind-m blind-t press-png">첨부파일</td>
+                                <td class="press-date">2026.01.12</td>
+                                <td class="blind-m press-views">1218</td>
+                            </tr>
+                            <tr>
+                                <td class="blind-m blind-t press-number">91</td>
+                                <td class="blind-m press-img">이미지</td>
+                                <td class="table-list press-name"><span class="lb-cate gt">공통</span><a href="">용인특례시, ‘2026 올해의 책’ 선정 시작</a></td>
+                                <td class="blind-m blind-t press-png">첨부파일</td>
+                                <td class="press-date">2026.01.06</td>
+                                <td class="blind-m press-views">1216</td>
+                            </tr>
+                            <tr>
+                                <td class="blind-m blind-t press-number">90</td>
+                                <td class="blind-m press-img">이미지</td>
+                                <td class="table-list press-name"><span class="lb-cate gt">공통</span><a href="">용인특례시, 1월 2일부터 2026년 희망도서 바로대출제 시행</a></td>
+                                <td class="blind-m blind-t press-png">첨부파일</td>
+                                <td class="press-date">2026.01.02</td>
+                                <td class="blind-m press-views">1522</td>
+                            </tr>
+                            <tr>
+                                <td class="blind-m blind-t press-number">89</td>
+                                <td class="blind-m press-img">이미지</td>
+                                <td class="table-list press-name"><span class="lb-cate gt">공통</span><a href="">용인특례시 도서관, 문예마을 작가회로부터 시집 기증받아</a></td>
+                                <td class="blind-m blind-t press-png">첨부파일</td>
+                                <td class="press-date">2025.12.29</td>
+                                <td class="blind-m press-views">1347</td>
+                            </tr>
+                            <tr>
+                                <td class="blind-m blind-t press-number">88</td>
+                                <td class="blind-m press-img">이미지</td>
+                                <td class="table-list press-name"><span class="lb-cate gt">공통</span><a href="">용인특례시 공공도서관, 겨울 독서 교실 . 방학 특강</a></td>
+                                <td class="blind-m blind-t press-png">첨부파일</td>
+                                <td class="press-date">2025.12.24</td>
+                                <td class="blind-m press-views">1380</td>
+                            </tr>
+                            <tr>
+                                <td class="blind-m blind-t press-number">87</td>
+                                <td class="blind-m press-img">이미지</td>
+                                <td class="table-list press-name"><span class="lb-cate gt">공통</span><a href="">용인특례시 기흥도서관, ‘천권DREAM’ 완독자 인증서 수여</a></td>
+                                <td class="blind-m blind-t press-png">첨부파일</td>
+                                <td class="press-date">2025.12.22</td>
+                                <td class="blind-m press-views">1325</td>
+                            </tr>                
+                        </tbody>
+                    </table>
+                        <p class="paging-box">
+                            <a href="#" class="active">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                        </p>
+                </div><!--board End -->
+            </div><!--contents End -->
+
+
         </section><!-- // #main End -->
     </div><!-- // .container End -->
 

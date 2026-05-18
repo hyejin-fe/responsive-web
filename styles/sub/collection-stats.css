@@ -1,0 +1,75 @@
+* { word-break: keep-all; overflow-wrap: break-word;}
+
+
+table { font-size: 1em;}
+th, td { padding: 10px 5px;}
+#main .contents .chart-list {
+    width: 100%;
+    border: 1px solid #e1e1e1;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+}
+.chart-name { font-size: 20px; font-weight: 500;}
+.chart-info {
+    font-size: 14px;
+    font-weight: 400;
+}
+#main .contents .chart-list .chart-box {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 30px 15px;
+}
+#main .contents .grape-area,
+#main .contents .chrt {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#main .contents .grape-area {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    min-width: 0;
+}
+
+#main .contents .cap-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.chart th {
+    border-bottom: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+    width: 70px;
+}
+.chart thead th:nth-child(2) {
+    background-color: transparent;
+    border-right: 0;
+}
+
+.chart tbody tr:last-child th {
+    border-bottom: 1px solid #ababab;
+}
+
+/*반응형 구간*/
+@media screen and (max-width: 767px){ /*모바일최대*/
+    #main .contents .process-info li,
+    .btns-area label {
+        font-size: 14px;
+    }
+    
+}
+@media screen and (min-width:768px){ /*태블릿 최소*/
+    #main .contents .grape-area canvas {
+        margin: auto;
+    }
+    .break-on {
+        display: none;
+    }
+}
+@media screen and (min-width:1024px){ /*pc 최소*/
+    #main .contents .chart-list .chart-box {
+        flex-direction: row;
+    }
+}

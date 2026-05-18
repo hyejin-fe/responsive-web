@@ -1,0 +1,249 @@
+* { word-break: keep-all; overflow-wrap: break-word;}
+  
+br {display: none;}
+* img {
+    object-fit: cover;
+}
+
+/* #aside {} */
+
+#main .contents .user-select-wrapper input[type="radio"], 
+#main .contents .user-select-wrapper input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+}
+
+/*detail-box 영역*/
+#main .contents .detail-box dt {
+    font-weight: 500;
+    font-size: 20px;
+}
+#main .contents .process-info {
+    display: flex;
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 5px 10px;
+    border: 1px solid #e2e2e2;
+}
+#main .contents .process-info li {
+    flex: 1;
+    flex-shrink: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0 5px;
+}
+#main .contents .process-info li span {position: relative;}
+
+#main .contents .process-info li .on::after {
+    content: "";
+    position: absolute; left:0; bottom: -10px;
+    height: 5px;
+    width: 100%;
+    background-color: #1b6eab;
+}
+#main .contents .process-info .non-break {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*pc로 바뀔때 버튼이 앱솔루트화됨*/
+
+#main .contents .user-select-wrapper {
+    padding-top: 20px;
+    position: relative;
+}
+ 
+#main .contents .user-select-wrapper .off {
+    display: none;
+}
+#main .contents .user-select-wrapper .on { display: block;}
+#main .contents .user-select-wrapper h3 {
+    margin-bottom: 15px;
+}
+#main .contents .user-select-wrapper .dupli-info {
+    margin-left: 8px;
+    font-size: 1em;
+    color: #666;
+    font-weight: 400;
+}
+
+/*1~3단계 구역*/
+#main .contents .user-select-wrapper .btns-area {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:10px;
+    
+}
+.btns-area button {
+    min-width: 50px;
+    aspect-ratio: 1 / 1;
+    padding: 16px 8px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    cursor: pointer;
+    background-color: #f9f9fb;
+    font-size: 12px;
+    
+}
+.btns-area button.on {
+    background-color: #cce6fa;
+    color: #1b6eab;
+    border: 1px solid #1b6eab;
+    font-weight: 500;
+}
+.user-select-wrapper .step-area .btns-area button img {
+    width: 100%;
+    object-fit: cover;
+    padding: 10px 15px;
+    border-radius: 50%;
+}
+
+
+/* 4단계 구역*/
+.user-pick-area {
+    padding: 40px;
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.ai-pick-list {
+    border-top: 2px solid #222;
+    border-bottom: 1px solid #222;
+    padding: 25px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px
+} 
+
+.user-select-wrapper .card-item{
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #222;
+}
+
+.user-select-wrapper .ai-pick-list .card-item a {
+    position: relative;
+    display: block;
+    border-radius: 20px;
+}
+
+.user-pick-area .img-box,
+.ai-pick-final .img-box {
+    aspect-ratio: 1 / 1.5;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.user-books .info-box,
+.ai-pick-final .info-box {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    padding: 20px;
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.user-select-wrapper .card-item:hover .info-box {
+    opacity: 1;
+}
+
+.user-books .user-pick-area  .book-tit {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.ai-pick-list .card-item .img-box { position: relative;}
+/*결과단계*/
+.ai-pick-final .ai-pick-list .book-desc {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+
+
+/*버튼 구역*/
+.select-process-btns {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    position: static;
+}
+#main .user-select-wrapper .select-process-btns button {
+    padding: 10px 15px;
+    background-color: #727272;
+    border: 1px solid #727272;
+    font-size: 1rem;
+}
+#main .user-select-wrapper .select-process-btns button.on {
+    background-color: #1b6eab;
+    color: #FFF;
+    border: 1px solid #1b6eab;
+}
+#main .user-select-wrapper .select-process-btns .prev-btn {
+    display: none; /*js로 관리*/
+    background-color: #fff;
+    border: 1px solid #727272;
+    margin-right: 8px; 
+}
+#main .user-select-wrapper .select-process-btns .reset {
+    display: none;
+    background-color: #1b6eab;
+    color: #FFF;
+}
+
+#main .user-select-wrapper .select-process-btns .reset { display: none;}
+
+
+/*반응형 구간*/
+@media screen and (max-width: 767px){/*모바일 최대*/
+    #main .contents .process-info li,
+    .btns-area label {
+        font-size: 14px;
+    }
+    .break-on {
+        display: block;
+    }
+}
+@media screen and (min-width:768px){ /*태블릿 최소*/
+    .ai-pick-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .btns-area button {
+        font-size: 16px;
+    }
+}
+@media screen and (min-width: 1024px){ /* 데스크탑 min-width가 다를 수 있음 */
+    #main .contents .user-select-wrapper .btns-area {
+        grid-template-columns: repeat(5, 1fr);
+    };
+    .btns-area button {
+        font-size: 18px;
+    };
+    .ai-pick-list {
+        grid-template-columns: repeat(5, 1fr);
+    };
+    .user-select-wrapper {
+        position: relative;
+        padding-top: 80px;
+    }
+    .select-process-btns {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 0;
+    }
+}

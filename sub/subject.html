@@ -4,18 +4,595 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>주제별자료검색 | 수지도서관</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard.css">
-    <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/서브페이지명.css">
-    <script src="scripts/sub/서브페이지명.js" defer></script>
+    <link rel="stylesheet" href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css">
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/sub/subject.css">
+    <script src="../scripts/common.js" defer></script>
+    <script src="../scripts/sub/subject.js" defer></script>
 </head>
 <body>
 
-    <div class="container">
-        <aside id="aside">
-            
+    <div class="container inner">
+        <aside id="aside" class="blind-m">
+            <h1>자료검색</h1>
+            <div class="side-tab">
+                <dl>
+                    <dt>통합자료검색</dt>
+                    <dd class="on" >간략검색</dd>
+                    <dd>상세검색</dd>
+                    <dd>자료검색 도움말</dd>
+                </dl>
+                <dl class="active">
+                    <dt>주제별자료검색</dt>
+                </dl>
+                <dl>
+                    <dt>신착자료검색</dt>
+                </dl>
+                <dl>
+                    <dt>대출인기도서</dt>
+                </dl>
+               
+                <dl>
+                    <dt>스마트도서관자료검색</dt>
+                </dl>
+                <dl>
+                    <dt>구독자료검색</dt>
+                </dl>
+                <dl>
+                    <dt>희망도서신청</dt>
+                </dl>
+                <dl>
+                    <dt>희망도서바로대출</dt>
+                </dl>
+                   
+                <dl>
+                    <dt>디지털자료</dt>
+                    <dd class="on" >바로가기</dd>
+                    <dd>이용안내</dd>
+                </dl>
+            </div>
         </aside><!-- // #aside End -->
         <section id="main">
+            <p class="navi">
+                <span>자료검색</span>
+                <span>주제별자료검색</span>
+            </p>
+            <h1 class="tit-main">주제별자료검색</h1>
+            <div class="kdctit-wrap">
+                <ul class="icon-btn">
+                    <li><button>총류</button></li>
+                    <li><button>철학</button></li>
+                    <li><button>종교</button></li>
+                    <li><button>사회과학</button></li>
+                    <li><button>자연과학</button></li>
+                    <li><button>기술과학</button></li>
+                    <li><button>예술</button></li>
+                    <li><button>언어</button></li>
+                    <li><button>문학</button></li>
+                    <li><button>역사</button></li>
+                </ul>
+                <div class="kdc-box">
+                    <div class="ch show">
+                        <dl class="00">
+                            <dt>00 총류</dt>
+                            <dd>001 지식, 학문 일반</dd>
+                            <dd>003 시스템</dd>
+                            <dd>004 컴퓨터과학</dd>
+                            <dd>005 프로그래밍, 프로그램, 데이터</dd>
+                        </dl>
+                        <dl class="01">
+                            <dt>01 도서학, 서지학</dt>
+                            <dd>010 도서학, 서지학</dd>
+                            <dd>011 저작</dd>
+                            <dd>012 사본, 판본, 제본</dd>
+                            <dd>013 출판 및 판매</dd>
+                            <dd>014 개인서지 및 목록</dd>
+                            <dd>015 국가별 서지 및 목록</dd>
+                            <dd>016 주제별 서지 및 목록</dd>
+                            <dd>017 특수서지 및 목록</dd>
+                            <dd>018 일반서지 및 목록</dd>
+                            <dd>019 장서목록</dd>
+                        </dl>
+                        <dl class="02">
+                            <dt>02 문헌정보학</dt>
+                            <dd>020 문헌정보학</dd>
+                            <dd>021 도서관행정 및 재정</dd>
+                            <dd>022 도서관건물 및 설비</dd>
+                            <dd>023 도서관 경영, 관리</dd>
+                            <dd>024 수서, 정리 및 보관</dd>
+                            <dd>025 도서관봉사 및 활동</dd>
+                            <dd>026 일반 도서관</dd>
+                            <dd>027 학교 및 대학도서관</dd>
+                            <dd>029 독서 및 정보매체의 이용</dd>
+                        </dl>
+                        <dl class="03">
+                            <dt>03 백과사전</dt>
+                            <dd>030 백과사전</dd>
+                            <dd>031 한국어</dd>
+                            <dd>032 중국어</dd>
+                            <dd>033 일본어</dd>
+                            <dd>034 영어</dd>
+                            <dd>035 독일어</dd>
+                            <dd>036 프랑스어</dd>
+                            <dd>037 스페인어</dd>
+                            <dd>038 이탈리아어</dd>
+                            <dd>039 기타 제언어</dd>
+                        </dl>
+                    </div><!-- ch show End -->
+                    <div class="ch">
+                        <dl class="10">
+                            <dt>10 철학</dt>
+                            <dd>100 철학</dd>
+                            <dd>101 이론 및 철학의 효용</dd>
+                            <dd>102 잡저</dd>
+                            <dd>103 사전, 사전, 용어사전</dd>
+                            <dd>104 강연집, 수필집</dd>
+                            <dd>105 연속간행물</dd>
+                            <dd>106 학회, 단체, 협회, 기관, 회의</dd>
+                            <dd>107 지도법, 연구법 및 교육, 교육자료</dd>
+                            <dd>108 총서, 전집, 선집</dd>
+                            <dd>109 철학사</dd>
+                        </dl>
+                        <dl class="11">
+                            <dt>11 형이상학</dt>
+                            <dd>110 형이상학</dd>
+                            <dd>111 방법론</dd>
+                            <dd>112 존재론</dd>
+                            <dd>113 우주론 및 자연철학</dd>
+                            <dd>114 공간</dd>
+                            <dd>115 시간</dd>
+                            <dd>116 운동과 변화</dd>
+                            <dd>117 구조</dd>
+                            <dd>118 힘과 에너지</dd>
+                            <dd>119 물량과 질량</dd>
+                        </dl>
+                        <dl class="12">
+                            <dt>12 인식론, 인과론, 인간학</dt>
+                            <dd>120 인식론, 인과론, 인간학</dd>
+                            <dd>121 인실론</dd>
+                            <dd>122 인과론</dd>
+                            <dd>123 자유 및 필연</dd>
+                            <dd>124 목적론</dd>
+                            <dd>125 가치론</dd>
+                            <dd>126 철학적 인간학</dd>
+                        </dl>
+                        <dl class="13">
+                            <dt>13 철학의 체계</dt>
+                            <dd>130 철학의 체계</dd>
+                            <dd>131 관념론 및 관련철학</dd>
+                            <dd>132 비판철학</dd>
+                            <dd>133 합리론</dd>
+                            <dd>134 인문주의</dd>
+                            <dd>135 경험론</dd>
+                            <dd>136 자연주의</dd>
+                            <dd>137 유물론</dd>
+                            <dd>138 과학주의철학</dd>
+                            <dd>139 기타</dd>
+                        </dl>
+                    </div>
+                    <div class="ch">
+                        <dl class="20">
+                            <dt>20 종교</dt>
+                            <dd>200 종교</dd>
+                            <dd>201 종교철학 및 종교사상</dd>
+                            <dd>202 잡저</dd>
+                            <dd>203 사전, 사전</dd>
+                            <dd>204 자연종교, 자연신학</dd>
+                            <dd>205 연속간행물</dd>
+                            <dd>206 학회, 단체, 협회, 기관, 회의</dd>
+                            <dd>207 지도법, 연구법 및 교육, 교육자료</dd>
+                            <dd>208 총서, 전집, 선집</dd>
+                            <dd>209 종교사</dd>
+                        </dl>
+                        <dl class="21">
+                            <dt>21 비교종교학</dt>
+                            <dd>210 비교종교학</dd>
+                            <dd>211 교리</dd>
+                            <dd>212 종조, 창교자</dd>
+                            <dd>213 경전, 성전</dd>
+                            <dd>214 종교신앙, 신앙록, 신앙(수도)생활</dd>
+                            <dd>215 선교, 포교, 전도, 교육활동</dd>
+                            <dd>216 종단, 교단(교당론)</dd>
+                            <dd>217 예배형식, 의식, 의례</dd>
+                            <dd>218 종파, 교파</dd>
+                            <dd>219 신화, 신화학</dd>
+                        </dl>
+                        <dl class="22">
+                            <dt>22 불교</dt>
+                            <dd>220 불교</dd>
+                            <dd>221 불교교리</dd>
+                            <dd>222 제불, 보살, 불제자</dd>
+                            <dd>223 경전(불전, 불경, 대장경)</dd>
+                            <dd>224 종교신앙, 신앙록, 신앙생활</dd>
+                            <dd>225 포교, 교육, 교화활동</dd>
+                            <dd>226 사원론</dd>
+                            <dd>227 법회, 의식, 행사(의궤)</dd>
+                            <dd>228 종파</dd>
+                            <dd>229 라마교</dd>
+                        </dl>
+                        <dl class="23">
+                            <dt>23 기독교</dt>
+                            <dd>230 기독교</dd>
+                            <dd>231 기독교신학, 교의학(조직신학)</dd>
+                            <dd>232 예수그리스도, 사도</dd>
+                            <dd>233 성서</dd>
+                            <dd>234 종교신앙, 신앙록, 신앙생활</dd>
+                            <dd>235 전도, 교육, 교화활동, 목회학</dd>
+                            <dd>236 교회론</dd>
+                            <dd>237 예배, 의식, 성례</dd>
+                            <dd>238 교파</dd>
+                            <dd>239 유태교</dd>
+                        </dl>
+                    </div>
+                    <div class="ch">
+                        <dl class="30">
+                            <dt>30 사회과학</dt>
+                            <dd>300 사회과학</dd>
+                            <dd>301 사회사상</dd>
+                            <dd>302 잡저</dd>
+                            <dd>303 사전, 사전</dd>
+                            <dd>304 강연집, 수필집, 연설문집</dd>
+                            <dd>305 연속간행물</dd>
+                            <dd>306 학회, 단체, 협회, 기관, 회의</dd>
+                            <dd>307 연구법, 연구방법 및 교육, 교육자료</dd>
+                            <dd>308 총서, 전집, 선집</dd>
+                            <dd>309 정치, 경제, 사회, 문화사정 및 역사</dd>
+                        </dl>
+                        <dl class="31">
+                            <dt>31 통계학</dt>
+                            <dd>310 통계학</dd>
+                            <dd>311 아시아</dd>
+                            <dd>312 유럽</dd>
+                            <dd>313 아프리카</dd>
+                            <dd>314 북아메리카</dd>
+                            <dd>315 남아메리카</dd>
+                            <dd>316 오세아니아</dd>
+                            <dd>317 양극지방</dd>
+                            <dd>319 인구통계</dd>
+                        </dl>
+                        <dl class="32">
+                            <dt>32 경제학</dt>
+                            <dd>320 경제학</dd>
+                            <dd>321 경제각론</dd>
+                            <dd>322 경제정책</dd>
+                            <dd>323 산업경제 일반</dd>
+                            <dd>324 기업경제</dd>
+                            <dd>325 경영</dd>
+                            <dd>326 상업, 교통, 통신</dd>
+                            <dd>327 금융</dd>
+                            <dd>328 보험</dd>
+                            <dd>329 재정</dd>
+                        </dl>
+                        <dl class="33">
+                            <dt>33 사회학, 사회문제</dt>
+                            <dd>330 사회학, 사회문제</dd>
+                            <dd>331 사회학</dd>
+                            <dd>332 사회조직 및 제도</dd>
+                            <dd>334 사회문제</dd>
+                            <dd>335 생활문제</dd>
+                            <dd>337 여성문제</dd>
+                            <dd>338 사회복지</dd>
+                            <dd>339 사회단체</dd>
+                        </dl>
+                    </div>
+                    <div class="ch">
+                        <dl class="40">
+                            <dt>40 자연과학</dt>
+                            <dd>400 자연과학</dd>
+                            <dd>401 과학철학, 과학이론</dd>
+                            <dd>402 잡저</dd>
+                            <dd>403 사전, 사전</dd>
+                            <dd>404 강연집, 수필집, 연설문집</dd>
+                            <dd>405 연속간행물</dd>
+                            <dd>406 학회, 단체, 기관, 회의</dd>
+                            <dd>407 지도법, 연구법 및 교육, 교육자료</dd>
+                            <dd>408 전집, 총서</dd>
+                            <dd>409 과학사 및 지역구분</dd>
+                        </dl>
+                        <dl class="41">
+                            <dt>41 수학</dt>
+                            <dd>410 수학</dd>
+                            <dd>411 산수</dd>
+                            <dd>412 대수학</dd>
+                            <dd>413 확률론, 통계수학</dd>
+                            <dd>414 해석학</dd>
+                            <dd>415 기하학</dd>
+                            <dd>416 위상수학</dd>
+                            <dd>417 삼각법</dd>
+                            <dd>418 해석기하학</dd>
+                            <dd>419 기타 산법</dd>
+                        </dl>
+                        <dl class="42">
+                            <dt>42 물리학</dt>
+                            <dd>420 물리학</dd>
+                            <dd>421 고체역학</dd>
+                            <dd>422 유체역학</dd>
+                            <dd>423 기체역학</dd>
+                            <dd>424 음향학, 진동학</dd>
+                            <dd>425 광학</dd>
+                            <dd>426 열학</dd>
+                            <dd>427 전기학 전자학</dd>
+                            <dd>428 자기</dd>
+                            <dd>429 현대물리학</dd>
+                        </dl>
+                        <dl class="43">
+                            <dt>43 화학</dt>
+                            <dd>430 화학</dd>
+                            <dd>431 이론화학과 물리화학</dd>
+                            <dd>432 화학실험실, 기기, 시설</dd>
+                            <dd>433 분석화학</dd>
+                            <dd>434 합성화학일반</dd>
+                            <dd>435 무기화학</dd>
+                            <dd>436 금속원소와 그 화합물</dd>
+                            <dd>437 유기화학</dd>
+                            <dd>438 환상화합물</dd>
+                            <dd>439 고분자화합물과 기타 유기물</dd>
+                        </dl>
+                    </div>
+                    <div class="ch">
+                        <dl class="50">
+                            <dt>50 기술과학</dt>
+                            <dd>500 기술과학</dd>
+                            <dd>501 기술철학</dd>
+                            <dd>502 잡저</dd>
+                            <dd>503 사전, 사전, 용어사전</dd>
+                            <dd>504 강연집, 수필집, 연설</dd>
+                            <dd>505 연속간행물</dd>
+                            <dd>506 학회, 단체, 기관, 회의</dd>
+                            <dd>507 연구법 및 교육지도</dd>
+                            <dd>508 전집, 총서</dd>
+                            <dd>509 기술사</dd>
+                        </dl>
+                        <dl class="51">
+                            <dt>51 의학</dt>
+                            <dd>510 의학</dd>
+                            <dd>511 기초의학</dd>
+                            <dd>512 임상의학 일반</dd>
+                            <dd>513 내과학</dd>
+                            <dd>514 외과</dd>
+                            <dd>515 치과의학, 이비인후과</dd>
+                            <dd>516 산부인과, 소아과학</dd>
+                            <dd>517 건강증진, 공중보건 및</dd>
+                            <dd>518 약학</dd>
+                            <dd>519 한의학</dd>
+                        </dl>
+                        <dl class="52">
+                            <dt>52 농업, 농학</dt>
+                            <dd>520 농업, 농학</dd>
+                            <dd>521 농업기초학</dd>
+                            <dd>522 농업경제</dd>
+                            <dd>523 재배 및 보호</dd>
+                            <dd>524 작물학</dd>
+                            <dd>525 원예</dd>
+                            <dd>526 임학, 임업</dd>
+                            <dd>527 축산학</dd>
+                            <dd>528 수의학</dd>
+                            <dd>529 수산업, 생물자원의</dd>
+                        </dl>
+                        <dl class="53">
+                            <dt>53 공학, 공업일반, 토목</dt>
+                            <dd>530 공학, 공업일반, 토목공학, 환경공학</dd>
+                            <dd>531 토목공학</dd>
+                            <dd>532 토목역학, 토목재료</dd>
+                            <dd>533 측량</dd>
+                            <dd>534 도로공학</dd>
+                            <dd>535 철도공학</dd>
+                            <dd>536 교량공학</dd>
+                            <dd>537 수리공학</dd>
+                            <dd>538 항만공학</dd>
+                            <dd>539 위생, 도시, 환경공학</dd>
+                        </dl>
+                    </div>
+                    <div class="ch">
+                        <dl class="60">
+                            <dt>60 예술</dt>
+                            <dd>600 예술</dd>
+                            <dd>601 미술이론, 미학</dd>
+                            <dd>602 미술의 재료 및 기법</dd>
+                            <dd>603 미술사전</dd>
+                            <dd>604 미술의 주제</dd>
+                            <dd>605 미술 연속간행물</dd>
+                            <dd>606 미술 분야의 학회, 단체</dd>
+                            <dd>607 미술의 지도법, 연구법</dd>
+                            <dd>608 미술전집, 총서</dd>
+                            <dd>609 미술사</dd>
+                        </dl>
+                        <dl class="61">
+                            <dt>61 건축술</dt>
+                            <dd>610 건축술</dd>
+                            <dd>611 궁전, 성곽</dd>
+                            <dd>612 종교건물</dd>
+                            <dd>613 공공건물</dd>
+                            <dd>614 과학 및 연구용건물</dd>
+                            <dd>615 공업용건물</dd>
+                            <dd>616 상업, 교통, 통신용건물</dd>
+                            <dd>617 주거용 건물</dd>
+                            <dd>618 기타 건물</dd>
+                            <dd>619 장식 및 의장</dd>
+                        </dl>
+                        <dl class="62">
+                            <dt>62 조각 및 조형미술</dt>
+                            <dd>620 조각 및 조형미술</dd>
+                            <dd>622 조소재료 및 기법</dd>
+                            <dd>623 목조</dd>
+                            <dd>624 석조</dd>
+                            <dd>625 금동조</dd>
+                            <dd>626 점토조소, 소조</dd>
+                            <dd>627 기타 재료</dd>
+                            <dd>628 전각, 인장</dd>
+                            <dd>629 제상</dd>
+                        </dl>
+                        <dl class="63">
+                            <dt>63 공예, 장식미술</dt>
+                            <dd>630 공예, 장식미술</dd>
+                            <dd>631 도자공예, 유리공예</dd>
+                            <dd>632 금속공예</dd>
+                            <dd>633 보석, 갑각, 패류공예</dd>
+                            <dd>634 목, 죽, 화훼, 왕골공</dd>
+                            <dd>635 칠공예</dd>
+                            <dd>636 염직물공예</dd>
+                            <dd>637 고무, 플라스틱공예</dd>
+                            <dd>638 미술가구</dd>
+                            <dd>639 장식예술</dd>
+                        </dl>
+                    </div>
+                    <div class="ch">
+                        <dl class="70">
+                            <dt>70 언어</dt>
+                            <dd>700 언어</dd>
+                            <dd>701 언어학</dd>
+                            <dd>702 잡저</dd>
+                            <dd>703 사전</dd>
+                            <dd>704 강연집</dd>
+                            <dd>705 연속간행물</dd>
+                            <dd>706 학회, 단체, 기관, 회의</dd>
+                            <dd>707 지도법, 연구법 및 교육</dd>
+                            <dd>708 전집, 총서</dd>
+                            <dd>709 언어사</dd>
+                        </dl>
+                        <dl class="71">
+                            <dt>71 한국어</dt>
+                            <dd>710 한국어</dd>
+                            <dd>711 음운, 음성, 문자</dd>
+                            <dd>712 어원, 어의</dd>
+                            <dd>713 사전</dd>
+                            <dd>714 어휘</dd>
+                            <dd>715 문법</dd>
+                            <dd>716 작문</dd>
+                            <dd>717 독본, 해석, 회화</dd>
+                            <dd>718 방언</dd>
+                        </dl>
+                        <dl class="72">
+                            <dt>72 중국어</dt>
+                            <dd>720 중국어</dd>
+                            <dd>721 음운, 음성, 문자</dd>
+                            <dd>722 어원, 어의</dd>
+                            <dd>723 사전</dd>
+                            <dd>724 어휘</dd>
+                            <dd>725 문법</dd>
+                            <dd>726 작문</dd>
+                            <dd>727 독본, 해석, 회화</dd>
+                            <dd>728 방언</dd>
+                        </dl>
+                        <dl class="73">
+                            <dt>73 일본어</dt>
+                            <dd>730 일본어</dd>
+                            <dd>731 음운, 음성, 문자</dd>
+                            <dd>732 어원, 어의</dd>
+                            <dd>733 사전</dd>
+                            <dd>734 어휘</dd>
+                            <dd>735 문법</dd>
+                            <dd>736 작문</dd>
+                            <dd>737 독본, 해석, 회화</dd>
+                            <dd>738 방언</dd>
+                            <dd>739 기타 아시아 제어</dd>
+                        </dl>
+                    </div>
+                    <div class="ch">
+                        <dl class="80">
+                            <dt>80 문학</dt>
+                            <dd>800 문학</dd>
+                            <dd>801 문학이론</dd>
+                            <dd>802 문장작법, 수사학</dd>
+                            <dd>803 사전, 사전</dd>
+                            <dd>804 강연집, 수필</dd>
+                            <dd>805 연속간행물</dd>
+                            <dd>806 학회, 단체, 기관, 회의</dd>
+                            <dd>807 지도법 및 연구법, 교육</dd>
+                            <dd>808 전집, 총서</dd>
+                            <dd>809 문학사, 평론</dd>
+                        </dl>
+                        <dl class="81">
+                            <dt>81 한국문학</dt>
+                            <dd>810 한국문학</dd>
+                            <dd>811 시</dd>
+                            <dd>812 희곡</dd>
+                            <dd>813 소설</dd>
+                            <dd>814 수필</dd>
+                            <dd>815 연설, 웅변</dd>
+                            <dd>816 일기, 서간, 기행</dd>
+                            <dd>817 풍자</dd>
+                            <dd>818 르포르타주 및 기타</dd>
+                        </dl>
+                        <dl class="82">
+                            <dt>82 중국문학</dt>
+                            <dd>820 한국문학</dd>
+                            <dd>821 시</dd>
+                            <dd>822 희곡</dd>
+                            <dd>823 소설</dd>
+                            <dd>824 수필</dd>
+                            <dd>825 연설, 웅변</dd>
+                            <dd>826 일기, 서간, 기행</dd>
+                            <dd>827 풍자</dd>
+                            <dd>828 르포르타주 및 기타</dd>
+                        </dl>
+                        <dl class="83">
+                            <dt>83 일본문학</dt>
+                            <dd>830 한국문학</dd>
+                            <dd>831 시</dd>
+                            <dd>832 희곡</dd>
+                            <dd>833 소설</dd>
+                            <dd>834 수필</dd>
+                            <dd>835 연설, 웅변</dd>
+                            <dd>836 일기, 서간, 기행</dd>
+                            <dd>837 풍자</dd>
+                            <dd>838 르포르타주 및 기타</dd>
+                            <dd>839 기타 아시아 제문학</dd>
+                        </dl>
+                    </div>
+                    <div class="ch">
+                        <dl class="90">
+                            <dt>90 역사</dt>
+                            <dd>900 역사</dd>
+                            <dd>901 역사철학 및 이론</dd>
+                            <dd>902 역사보조학</dd>
+                            <dd>903 사전, 사전</dd>
+                            <dd>904 강연집, 사평</dd>
+                            <dd>905 연속간행물</dd>
+                            <dd>906 학회, 단체, 기관, 회의</dd>
+                            <dd>907 지도법, 연구법 및 교육</dd>
+                            <dd>908 전집, 총서</dd>
+                            <dd>909 세계사, 세계문화사</dd>
+                        </dl>
+                        <dl class="91">
+                            <dt>91 아시아</dt>
+                            <dd>910 아시아</dd>
+                            <dd>911 한국</dd>
+                            <dd>912 중국</dd>
+                            <dd>913 일본</dd>
+                            <dd>914 동남아시아</dd>
+                            <dd>915 인디아와 남부아시아</dd>
+                            <dd>916 중앙아시아</dd>
+                            <dd>917 시베리아(서백리아)</dd>
+                            <dd>918 서남아시아, 중동</dd>
+                            <dd>919 아라비아반도</dd>
+                        </dl>
+                        <dl class="92">
+                            <dt>92 유럽</dt>
+                            <dd>920 유럽</dd>
+                            <dd>921 고대그리스(희랍고대사)</dd>
+                            <dd>922 고대로마(로마고대사)</dd>
+                            <dd>923 스칸디나비아</dd>
+                            <dd>924 영국, 아일랜드</dd>
+                            <dd>925 독일과 중앙유럽</dd>
+                            <dd>926 프랑스와 인접국가</dd>
+                            <dd>927 스페인 및 인접국가</dd>
+                            <dd>928 이탈리아 및 인접국가</dd>
+                            <dd>929 러시아와 동부유럽</dd>
+                        </dl>
+                        <dl class="93">
+                            <dt>93 아프리카</dt>
+                            <dd>930 아프리카</dd>
+                            <dd>931 북아프리카</dd>
+                            <dd>934 서아프리카</dd>
+                            <dd>936 중아프리카</dd>
+                            <dd>937 동아프리카</dd>
+                            <dd>938 남아프리카</dd>
+                            <dd>939 남인도양제도</dd>
+                        </dl>
+                    </div>
+                </div><!-- kdc-box End -->
+            </div><!-- kdctit-wrap End -->
             
         </section><!-- // #main End -->
     </div><!-- // .container End -->

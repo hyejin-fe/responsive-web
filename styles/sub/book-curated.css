@@ -1,0 +1,158 @@
+/*검색창*/
+.contents .base-form {
+    border: 0 none;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f7f7f7;
+}
+.contents .base-form .search-bottom {
+    display: flex;
+    gap: 4px;
+    margin-top: 5px;
+}
+.search-top,
+.search-bottom {
+    min-height: 50px;
+    position: relative;
+}
+.search-top { z-index: 50;}
+.search-library { width: 100%;}
+.search-tit { min-width: 80px;}
+
+.contents .base-form .search-library,
+.contents .base-form .search-tit {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    flex-shrink: 0;
+    border-bottom: 0 none;
+}
+.base-form .search-library.open,
+.base-form .search-tit.open {
+    z-index: 100;
+}
+.search .search-bottom {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contents .base-form li {
+    display: none;
+    width: 100%;
+    padding: 10px 15px;
+    border-top: 0 none;
+    cursor: pointer;
+}
+.contents .base-form li.show {
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
+
+.contents .base-form input {
+    background-color: #fff;
+    margin-left: 84px;
+}
+
+.contents .base-form button {
+    /* width: 20%; */
+    border: 1px solid #444;
+    background-color: #444;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 10px 10px 10px 30px;
+}
+/*리스트*/
+#main .contents .cont-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap:5px; */
+    border-bottom: 1px  solid #e2e2e2;
+}
+.cont-list .curation-card {
+    width: 50%;
+    padding:15px 5px;
+    border-bottom: 1px  solid #e2e2e2;
+}
+.cont-list .img-box {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: #eee; /*임시*/
+}
+
+.cont-list .curation-card dl dt {
+    width: 100%;
+    font-size: 17px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 15px 0 10px 0;
+    font-weight: 500;
+}
+.cont-list .curation-card .lb-cate {
+    font-size: 14px;
+    margin-right: 5px;
+}
+.cont-list .curation-card dl dd {
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/*paging 구간*/
+#main .contents .paging {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 25px;
+    gap:1px;
+}
+#main .contents .paging a {
+    text-align: center;
+    line-height: 24px;
+}
+.paging-btn {
+    color: transparent;
+}
+
+
+/*반응형 구간*/
+@media screen and (max-width: 767px){/*모바일 최대*/
+
+}
+@media screen and (min-width:768px){ /*태블릿 최소*/
+    .contents .base-form {
+        padding: 15px 20px;
+    }
+    .cont-list .curation-card {
+        width: calc(100% / 3)
+    }
+}
+@media screen and (min-width: 1024px){ /* 데스크탑 min-width가 다를 수 있음 */
+    .contents .base-form {
+        padding: 20px;
+    }
+    fieldset {
+        display: flex;
+        justify-content: center;
+        gap: 4px;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .contents .base-form .search-top {
+        width: calc(20% - 4px);
+    }
+    #main .contents .base-form .search-bottom {
+        width: calc(80% - 4px);
+        margin: 0;
+    }
+    .contents .base-form button {
+        font-size: 20px;
+    }
+
+}

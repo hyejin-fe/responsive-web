@@ -4,19 +4,455 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>대출인기도서 | 수지도서관</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard.css">
-    <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/서브페이지명.css">
-    <script src="scripts/sub/서브페이지명.js" defer></script>
+    <link rel="stylesheet" href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css">
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/sub/best.css">
+    <script src="../scripts/common.js" defer></script>
+    <script src="../scripts/sub/best.js" defer></script>
 </head>
 <body>
 
-    <div class="container">
-        <aside id="aside">
+    <div class="container inner">
+        <aside id="aside" class="blind-m" >
+            <h1>자료검색</h1>
+            <div class="side-tab">
+                
+                <dl>
+                    <dt>통합자료검색</dt>
+                    <dd class="on">간략검색</dd>
+                    <dd>상세검색</dd>
+                    <dd>자료검색 도움말</dd>
+                </dl>
             
+                <dl>
+                    <dt>주제별자료검색</dt>
+                </dl>
+                <dl>
+                    <dt>신착자료검색</dt>
+                </dl>
+                <dl class="active">
+                    <dt>대출인기도서</dt>
+                </dl>
+               
+                <dl>
+                    <dt>스마트도서관자료검색</dt>
+                </dl>
+                <dl>
+                    <dt>구독자료검색</dt>
+                </dl>
+                <dl>
+                    <dt>희망도서신청</dt>
+                </dl>
+                <dl>
+                    <dt>희망도서바로대출</dt>
+                </dl>
+                   
+                <dl>
+                    <dt>디지털자료</dt>
+                    <dd class="on">바로가기</dd>
+                    <dd>이용안내</dd>
+                </dl>
+                
+
+            </div>
         </aside><!-- // #aside End -->
+
         <section id="main">
-            
+            <div class="main-top">
+                <p class="navi">
+                    <span>자료검색</span>
+                    <span>대출인기도서</span>
+                    <span>대출베스트</span>
+                </p>
+                <h1 class="tit-main">대출베스트</h1>
+            </div>
+
+            <ul class="tab-btn">
+                <li class="best-a active">대출베스트</li>
+                <li class="best-b">공공도서관 인기도서</li>               
+            </ul>
+
+
+            <div class="loan-best-area-a main-contents show">
+                <h2 class="blind">검색어를 입력하세요.</h2>
+                <div class="form-area">
+                    <form action="" method="post">
+                        <fieldset>
+                            <ul title="도서관선택" class="libary">
+                                <li class="active">전체도서관</li>
+                                <li>용잉중앙도서관</li>
+                                <li>구갈희망누리도서관</li>
+                                <li>구성도서관</li>
+                                <li>기흥도서관</li>
+                                <li>남사도서관</li>
+                                <li>동백도서관</li>
+                                <li>동천도서관</li>
+                                <li>모현도서관</li>
+                                <li>보라도서관</li>
+                                <li>보정도서관</li>
+                                <li>수지도서관</li>
+                            </ul>
+                            <ul title="기간선택" class="date">
+                                <li class="active">기간선택</li>
+                                <li>6달 이내</li>
+                                <li>3달 이내</li>
+                                <li>1달 이내</li>
+                                <li>3주 이내</li>
+                                <li>2주 이내</li>
+                                <li>1주 이내</li>
+                            </ul>
+                        </fieldset>                 
+                    </form>
+                    <p class="search-btn"><button><span>돋보기</span>검색</button></p>
+                </div>   
+                <div class="icon-btn-area">
+                    <p><button class="view-all active">전체보기</button></p>
+                    <ul class="icon-btn">
+                        <li><button>총류</button></li>
+                        <li><button>철학</button></li>
+                        <li><button>종교</button></li>
+                        <li><button>사회과학</button></li>
+                        <li><button>자연과학</button></li>
+                        <li><button>기술과학</button></li>
+                        <li><button>예술</button></li>
+                        <li><button>언어</button></li>
+                        <li><button>문학</button></li>
+                        <li><button>역사</button></li>
+                    </ul>
+                </div>
+
+                <div class="img-list-area">
+                    <ul>
+                        <li class="img-area"><img src="" alt="">이미지영역</li>
+                        <li class="text"><span>도서</span><span class="text-tit">파뿌리</span></li>
+                    </ul>
+                    <ul>
+                        <li class="img-area"><img src="" alt="">이미지영역</li>
+                        <li class="text"><span>도서</span><span class="text-tit">놓지마 정신줄!!: 완전판. 19</span></li>
+                    </ul>
+                    <ul>
+                        <li class="img-area"><img src="" alt="">이미지영역</li>
+                        <li class="text"><span>도서</span><span class="text-tit">(설민석의) 한국사 대모험.27 ,최재형 편</span></li>
+                        
+                    </ul>
+                    <ul>
+                        <li class="img-area"><img src="" alt="">이미지영역</li>
+                        <li class="text"><span>도서</span><span class="text-tit">빨간내복야코 어린이 상식: 이거 모르면 지구인 아님. 1, 속담</span></li>
+                    </ul>
+                    <ul>
+                        <li class="img-area"><img src="" alt="">이미지영역</li>
+                        <li class="text"><span>도서</span><span class="text-tit">슈뻘맨의 숨은 과학 찾기. 5: 엉뚱 도전 속에 숨은 과학 상식</span></li>
+                    </ul>
+                    <ul>
+                        <li class="img-area"><img src="" alt="">이미지영역</li>
+                        <li class="text"><span>도서</span><span class="text-tit">극한견주 : 사모예드 솜이와 함께하는 극한 인생!. 4</span></li>
+                    </ul>
+                    <ul>
+                        <li class="img-area"><img src="" alt="">이미지영역</li>
+                        <li class="text"><span>도서</span><span class="text-tit">뽀짜툰. 6</span></li>
+                    </ul>
+                    <ul>
+                        <li class="img-area"><img src="" alt="">이미지영역</li>
+                        <li class="text"><span>도서</span><span class="text-tit">흔한남매. 2</span></li>
+                    </ul>
+                    <ul>
+                        <li class="img-area"><img src="" alt="">이미지영역</li>
+                        <li class="text"><span>도서</span><span class="text-tit">이상한 과자 가게 전천당. 1</span></li>
+                    </ul>
+                    <ul>
+                        <li class="img-area"><img src="" alt="">이미지영역</li>
+                        <li class="text"><span>도서</span><span class="text-tit">이상한 과자 가게 전천당. 2</span></li>
+                    </ul>
+                    <ul>
+                        <li class="img-area"><img src="" alt="">이미지영역</li>
+                        <li class="text"><span>도서</span><span class="text-tit">흔한남매. 5</span></li>
+                    </ul>
+                    <ul>
+                        <li class="img-area"><img src="" alt="">이미지영역</li>
+                        <li class="text"><span>도서</span><span class="text-tit">최강 배틀왕 : 결정판</span></li>
+                    </ul>
+
+                </div>
+                    
+                
+            </div>
+
+
+            <div class="popular-books-area main-contents">
+                <form action="" method="post">
+                    <fieldset>
+                        <legend class="blind"></legend>
+                        <dl>
+                            <dt>성별</dt>
+                            <dd>
+                                
+                                <button for="userAll" class="active">전체</button>
+                                
+                                <button for="male">남자</button>
+                                
+                                <button for="female">여자</button>
+                            
+                            </dd>
+                            
+                        </dl>
+
+                        <dl>
+                            <dt>연령대</dt>
+                            <dd>
+                                
+                                <button for="userageall" class="active">전체</button>        
+                                
+                                <button for="userage2">유아</button>
+                                
+                                <button for="userage4">청소년</button>
+                                
+                                <button for="userage5">20대</button>
+                                
+                                <button for="userage7">30대</button>
+                                
+                                <button for="userage8">40대</button>
+                                
+                                <button for="userage10">60대이상</button>
+                            </dd>
+                        </dl>
+                        
+                        
+                        
+                        <dl>
+                            <dt>지역</dt>
+                            <dd>
+                                
+                                <button for="areaAll" class="active">전체</button>
+                                
+                                <button for="area1">서울</button>
+                                
+                                <button for="area2">대구</button>
+                                
+                                <button for="area3">충북</button>
+                                
+                                <button for="area4">인천</button>
+                                
+                                <button for="area5">충남</button>
+                                
+                                <button for="area6">광주</button>
+                                
+                                <button for="area7">전북</button>
+                                
+                                <button for="area8">대전</button>
+                                
+                                <button for="area9">전남</button>
+                                
+                                <button for="area10">울산</button>
+                                
+                                <button for="area11">경북</button>
+                                
+                                <button for="area12">경남</button>
+                                
+                                <button for="area13">제주</button>
+                                
+                                <button for="area14">세종</button>
+                                
+                                <button for="area15">경기</button>
+                                
+                                <button for="area16">부산</button>
+                                
+                                <button for="area17">강원</button>
+                            </dd>
+                            
+                        </dl>
+
+                        <dl>
+                            <dt>주제</dt>
+                            <dd>
+                                
+                                <button for="topicAll" class="active">전체</button>
+                                
+                                <button for="topic1">총류</button>
+                                
+                                <button for="topic2">철학</button>
+                                
+                                <button for="topic3">종교</button>
+                                
+                                <button for="topic4">사회과학</button>
+                                
+                                <button for="topic5">자연과학</button>
+                                
+                                <button for="topic6">기술과학</button>
+                                
+                                <button for="topic7">예술</button>
+                                
+                                <button for="topic8">언어</button>
+                                
+                                <button for="topic9">문학</button>
+                                
+                                <button for="topic10">역사</button>
+                            </dd>
+                        </dl>
+
+                        <dl class="loanPeriod-area">
+                            <dt>대출기간</dt>
+                            <dd class="loanPeriod">
+                                <input type="text" name="" id="" value="2026-04-22">
+                                <span>~</span>
+                                <input type="text" name="" id="" value="2026-04-29">
+                            </dd>   
+                            <dd>
+                                <div class="time-area">
+                                    <button for="time1">금년</button>
+                                    
+                                    <button for="time2">금월</button>
+                                    
+                                    <button for="time3">금주</button>
+                                </div>
+                            </dd> 
+                            
+                        </dl>
+                        
+
+                        
+
+                    <div>
+                        
+                    <dl class="libary-area">
+                        <dt>도서관</dt>
+                        <dd>
+                            <ul title="도서관선택" class="libary-b">
+                            <li class="active">도서관선택</li>
+                            <li>전체도서관</li>
+                            <li>용잉중앙도서관</li>
+                            <li>구갈희망누리도서관</li>
+                            <li>구성도서관</li>
+                            <li>기흥도서관</li>
+                            <li>남사도서관</li>
+                            <li>동백도서관</li>
+                            <li>동천도서관</li>
+                            <li>모현도서관</li>
+                            <li>보라도서관</li>
+                            <li>보정도서관</li>
+                            <li>수지도서관</li>
+                        </ul>
+                        </dd>
+                    </dl>
+                        
+                            
+                        
+                    </fieldset>
+
+                    
+
+                    
+
+                </form>
+                <ul class="tab-btn">
+                    <li class=""><button>초기화</button></li>
+                    <li><button>검색</button></li>
+                </ul>
+                    
+
+               
+
+                <ul class="best-book-list">
+                    
+                    <li class="card-area">
+                        <div class="card">
+                            <div class="img-area"><img src="" alt="">이미지영역</div>
+                            <div class="text-area">
+                                <dl>
+                                    <dt>안녕이라 그랬어 :김애란 소설</dt>
+                                    <dd>저자 : 지은이: 김애란</dd>
+                                    <dd>발행사 : 문학동네</dd>
+                                    <dd>발행년도 : 2025</dd>
+                                    <dd>ISBN : 9791141602376</dd>
+                                    <dd>소장건수 : 98건</dd>          
+                                </dl>      
+                            </div>                           
+                        </div>
+                        <button class="col-Search">소장자료검색</button>
+                    </li>
+
+                    <li class="card-area">
+                        <div class="card">
+                            <div class="img-area"><img src="" alt="">이미지영역</div>
+                            <div class="text-area">
+                                <dl>
+                                    <dt>소년이 온다 :한강 장편소설</dt>
+                                    <dd>저자 : 지은이: 한강</dd>
+                                    <dd>발행사 : 창비</dd>
+                                    <dd>발행년도 : 2014</dd>
+                                    <dd>ISBN : 9788936434120</dd>
+                                    <dd>소장건수 : 184건</dd>                                   
+                                </dl>                               
+                            </div>                       
+                        </div>
+                        <button class="col-Search">소장자료검색</button>
+                    </li>
+                    <li class="card-area">
+                        <div class="card">
+                            <div class="img-area"><img src="" alt="">이미지영역</div>
+                            <div class="text-area">
+                                <dl>
+                                    <dt>작별하지 않는다 :한강 장편소설</dt>
+                                    <dd>저자 : 지은이: 한강</dd>
+                                    <dd>발행사 : 문학동네</dd>
+                                    <dd>발행년도 : 2021</dd>
+                                    <dd>ISBN : 9788954682152</dd>
+                                    <dd>소장건수 : 103건</dd>  
+                                </dl>
+                            </div>
+                        </div>
+                        <button class="col-Search">소장자료검색</button>
+                    </li>
+                    <li class="card-area">
+                        <div class="card">
+                            <div class="img-area"><img src="" alt="">이미지영역</div>
+                            <div class="text-area">
+                                <dl>
+                                    <dt>혼모노 :성해나 소설집</dt>
+                                    <dd>저자 : 지은이: 성해나</dd>
+                                    <dd>발행사 : 창비</dd>
+                                    <dd>발행년도 : 2025</dd>
+                                    <dd>ISBN : 9788936439743</dd>
+                                    <dd>소장건수 : 86건</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <button class="col-Search">소장자료검색</button>
+                    </li>
+                    <li class="card-area">
+                        <div class="card">
+                            <div class="img-area"><img src="" alt="">이미지영역</div>
+                            <div class="text-area">
+                                <dl>
+                                    <dt>절창 :구병모 장편소설</dt>
+                                    <dd>저자 : 지은이: 구병모</dd>
+                                    <dd>발행사 : 문학동네</dd>
+                                    <dd>발행년도 : 2025</dd>
+                                    <dd>ISBN : 9791141602451</dd>
+                                    <dd>소장건수 : 42건</dd>
+                                    
+                                </dl>
+                            </div>
+                        </div>
+                        <button class="col-Search">소장자료검색</button> 
+                    </li>
+
+                </ul>
+                <div class="paging-box">
+                    <p class="paging">
+                        <a>1</a>
+                        <a>2</a>
+                        <a>3</a>
+                        <a>4</a>
+                        <a>5</a>
+                        <a>6</a>
+                        <a>7</a>
+                        <a>8</a>
+                        <a>9</a>
+                        <a>10</a>
+                    </p>
+                </div>
+
+            </div>
         </section><!-- // #main End -->
     </div><!-- // .container End -->
 

@@ -1,0 +1,432 @@
+.search input {
+    height: 46px;
+}
+
+.subject-ch li {
+    height: 47px;
+}
+.base-form {
+    height: 120px;
+    border: 0 none;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #e2e2e2;
+    position: relative;
+}
+
+.base-form .library-ch {
+    width: calc(100% - 20px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    overflow: hidden;
+    position: absolute; left: 10px; top: 8px;
+    z-index: 1;
+}
+.base-form .library-ch.show {
+    height: 200px;
+    overflow-y: auto;
+}
+
+.base-form .search {
+    width: calc(100% - 20px);
+    display: flex;
+    gap: 4px;
+    margin-top: 5px;
+    position: relative; right: 10px; bottom: 10px;
+}
+
+.base-form .search ul {
+    width: 20%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    position: absolute; left: 10px; top: 54px;
+}
+
+.base-form l {
+    display: none;
+    height: 46px;
+    padding: 10px 20px 10px 15px;
+    border-top: 1px solid #e2e2e2;
+}
+.base-form li:first-child {
+    border-top: 0 none;
+}
+
+.base-form ul li.active {
+    display: block;
+    border-top: 0 none;
+}
+.base-form ul.show li {
+    display: block;
+}
+.base-form ul.show li:first-child {
+    border-top: 0 none;
+}
+
+.base-form .search div {
+    width: calc(80% - 4px);
+    position: absolute; left: calc(23% + 5px); top: 56px;
+    display: flex;
+    gap: 6px;
+}
+
+.base-form input {
+    background-color: #fff;
+}
+
+.base-form button {
+    width: 50%;
+    border: 1px solid #444;
+    background-color: #444;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 3px;
+    padding: 10px 0;
+    box-sizing: border-box
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.notices{
+    display: none;
+}
+
+
+.notices.show{
+    display: block;
+}
+.notices-b {
+    display: none;
+} 
+
+.notices-b.show {
+    display: block;
+} 
+.promo-list{
+    display: none;
+}
+.promo-list.show{
+    display: block;
+}
+fieldset { 
+
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 30px;
+}
+
+
+form ul li{ 
+    display: none;
+}
+form ul li.active { 
+    display: block;
+    padding: 10px 5px;
+    width: 100%;   
+}
+form ul {
+    
+    flex: 1;
+    flex-wrap: wrap;
+    border: 1px solid #e2e2e2;
+    background-color: #fff;
+}
+form li:first-child {
+    border-bottom: 1px solid #e2e2e2;
+}
+.tab-btn {
+   
+    margin: 24px 0;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.tab-btn li {
+    min-width: 33%;
+    padding: 5px;
+    
+}
+
+.paging-box { text-align: center; margin: 40px 0; }
+.paging-box a {
+    display: inline-block;
+    width: 35px;
+    height: 40px;
+    font-size: 20px; 
+    font-weight: 300;
+    color: #232323;
+    padding: 5px;
+}
+
+.paging-box a.active{
+    color: #fff;
+    background-color: #232323;
+}
+table thead { border-bottom: 1px solid #ababab; }
+table tbody tr { border-bottom: 1px solid #e4e4e4; }
+
+/* 두번째 컨텐츠영역*/
+
+/* .job-post {background-color: antiquewhite;} */
+
+
+/* 세번째 컨텐츠영역*/
+
+.text-area {
+    display: flex;
+    align-items: center;
+    width: 100%
+}
+.text-area span {display: block;}
+.text-area .txt {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.post-cont .img-list {
+    
+}
+
+.promo-list .img-list{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr)); 
+    gap: 8px;
+
+}
+
+
+.img-area {background-color: #bdbdbd; }
+
+/*테이블*/
+
+.post-cont {
+    
+}
+
+th { 
+    text-align: center;
+}
+
+.lb-cate {
+    padding: 4px 20px;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: 500;
+}
+.base {
+    background-color: #303030;
+}
+.sj { /* 수지 */
+    background-color: #1b6eab;
+}
+.jj { /* 죽전 */
+    background-color: #a88200;
+}
+.bj { /* 보정 */
+    background-color: #8a9a5b;
+}
+.dc { /* 동천 */
+    background-color: #14c0ba;
+}
+.sb { /* 성복 */
+    background-color: #119814;
+}
+.gh { /* 기흥 */
+    background-color: #595bd1;
+}
+.cd { /* 창덕 */
+    background-color: #3784f0;
+}
+.mh { /* 모현 */
+    background-color: #aa7800;
+}
+.date-t {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 1.1;
+    text-align: center;
+    color: #777;
+}
+
+.post-cont table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.post-cont tr:first-child td {
+        border-top: 0 none;
+        
+    }
+.post-cont td {
+    border-bottom: 0 none;
+}
+.post-cont tr:last-child td {
+    border-bottom: 0 none;
+}
+
+td.date { color: #464646; }
+td { padding: 10px 6px; }
+
+@media screen and (max-width: 767px){
+    .base-form .search div {
+        width: calc(87% - 4px);
+    }
+    .tab-btn li { font-size: 18px; }
+    .post-cont .blind-m {display: none;}
+    .date { width: 100px; }
+    .post-cont .table-list {
+        white-space: nowrap; /* 줄바꿈 넘어가지 않게 /한 줄로 */
+        overflow-x: hidden;  /* 넘친 부분 화면에 표시 x */
+        text-overflow: ellipsis; /* 넘친 부분 ...으로 표현 */
+    }
+    .promo-list .img-list .text-area {
+        white-space: nowrap; /* 줄바꿈 넘어가지 않게 /한 줄로 */
+        overflow-x: hidden;  /* 넘친 부분 화면에 표시 x */
+        text-overflow: ellipsis; /* 넘친 부분 ...으로 표현 */
+    }
+    .promo-list .img-list .text-area {
+        white-space: nowrap; /* 줄바꿈 넘어가지 않게 /한 줄로 */
+        overflow-x: hidden;  /* 넘친 부분 화면에 표시 x */
+        text-overflow: ellipsis; /* 넘친 부분 ...으로 표현 */
+        }
+    .paging-box a {
+        display: inline-block;
+        width: 20px;
+        height: 40px;
+        font-size: 14px; 
+        font-weight: 300;
+        color: #232323;
+        padding: 5px;
+    }
+    .paging-box { margin: 10px 0; }
+
+}
+
+
+
+
+@media screen and (min-width: 768px){
+
+    
+    .base-form .search div {
+        width: calc(80% - 4px);
+    }
+    
+    .post-cont .blind-m {display: none;}
+    .icon{
+            width: 60px;
+        }
+    .table-list { width: 550px;}
+    .file {
+        width: 50px;
+    }
+    .date { width: 100px;}
+    .view-n { width: 50px; }
+    
+    .promo-list .img-list .text-area {
+    white-space: nowrap; /* 줄바꿈 넘어가지 않게 /한 줄로 */
+    overflow-x: hidden;  /* 넘친 부분 화면에 표시 x */
+    text-overflow: ellipsis; /* 넘친 부분 ...으로 표현 */
+    }
+    .paging-box a {
+        display: inline-block;
+        width: 35px;
+        height: 40px;
+        font-size: 16px; 
+        font-weight: 300;
+        color: #232323;
+        padding: 5px;
+    }
+}
+
+
+
+
+@media screen and (min-width: 1023px){
+    .post-cont .blind-m {display: block;}
+    .date { width: 120px; }
+    .promo-list .img-list{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr)); 
+        gap: 8px;
+    }
+    .post-cont .table-list {
+    white-space: nowrap; /* 줄바꿈 넘어가지 않게 /한 줄로 */
+    overflow-x: hidden;  /* 넘친 부분 화면에 표시 x */
+    text-overflow: ellipsis; /* 넘친 부분 ...으로 표현 */
+    }
+    .promo-list .img-list .text-area {
+    white-space: nowrap; /* 줄바꿈 넘어가지 않게 /한 줄로 */
+    overflow-x: hidden;  /* 넘친 부분 화면에 표시 x */
+    text-overflow: ellipsis; /* 넘친 부분 ...으로 표현 */
+    }
+    .icon{
+        width: 60px;
+    }
+    .table-list { width: 590px;}
+    .file {
+        width: 50px;
+    }
+    .view-n { width: 80px; }
+    fieldset { display: flex; gap: 4px;}
+    
+
+
+    .base-form {    
+        height: 102px;   
+    }
+    .base-form fieldset {
+        display: flex;
+    }
+
+    .base-form .library-ch {
+        width: calc(30% - 14px);
+        position: absolute; top:25px;
+    }
+
+    .base-form .search {
+        margin-top: 0;
+        width: calc(70% - 10px);
+        position: absolute; top: 25px; bottom: auto;
+    }
+    .base-form .search ul {
+        position: absolute;
+        left: 1px;
+        top: -1px;
+    }
+    .base-form button {
+        width: 30%;
+    }
+    .base-form .search button {
+        padding: 10px 0;
+        font-size: 18px;
+        box-sizing: border-box;
+    }
+    .base-form .search div {
+            position: absolute;
+            left: calc(20% + 5px);
+            top: 0;
+    }
+
+    
+}

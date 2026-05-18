@@ -4,19 +4,360 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>공지사항 | 수지도서관</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard.css">
-    <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/서브페이지명.css">
-    <script src="scripts/sub/서브페이지명.js" defer></script>
+    <link rel="stylesheet" href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css">
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/sub/notices.css">
+    <script src="../scripts/common.js" defer></script>
+    <script src="../scripts/sub/notices.js" defer></script>
 </head>
 <body>
 
-    <div class="container">
-        <aside id="aside">
-            
+    <div class="container inner">
+        <aside id="aside" class="blind-m">
+            <h1>열린마당</h1>
+            <div class="side-tab">
+                <dl>
+                    <dt>도서관소식</dt>
+                </dl>
+                <dl>
+                    <dt>보도자료</dt>
+                </dl>
+                <dl>
+                    <dt>도서관연중행사</dt>
+                </dl>
+                <dl>
+                    <dt>도서관 카드뉴스</dt>
+                </dl>
+                <dl>
+                    <dt>자주하는질문</dt>
+                </dl>
+                <dl>
+                    <dt>묻고답하기</dt>
+                </dl>
+                <dl>
+                    <dt>설문조사</dt>
+                </dl>
+                <dl>
+                    <dt>원클릭대관신청</dt>
+                    <dd class="on">수지도서관대관신청</dd>
+                    <dd>원클릭대관신청</dd>
+                    <dd>원클릭대관신청안내</dd>
+                </dl>
+                <dl>
+                    <dt>견학신청</dt>
+                </dl>
+                <dl>
+                    <dt>시민참여</dt>
+                    <dd class="on">자원활동가</dd>
+                    <dd>자원봉사신청안내</dd>
+                    <dd>강사지원신청</dd>
+                    <dd>도서관공모</dd>
+                </dl>
+                <dl class="active">
+                    <dt>도서기증</dt>
+                </dl>
+            </div>
         </aside><!-- // #aside End -->
         <section id="main">
+            <div class="main-top">
+                <p class="navi">
+                    <span>열린마당</span>
+                    <span>도서관소식</span>
+                    <span>공지사항</span>
+                </p>
+                <h1 class="tit-main">공지사항</h1>
+            </div>
             
+            <ul class="tab-btn">
+                <li class="tab-btn-a active">공지사항</li>
+                <li class="tab-btn-b">채용공고</li>               
+                <li class="tab-btn-c">홍보자료</li>               
+            </ul>
+
+
+                <h2 class="blind">검색어를 입력하세요.</h2>
+                <div class="base-form">
+                    <form>
+                        <fieldset>
+                            <legend class="blind"></legend>
+                            <div class="text01">
+                                <label for="libraryCh" class="blind">조회할 도서관 선택</label>
+                                
+
+                                    <ul name="libraryCh" id="libraryCh" class="library-ch">
+                                        <li class="libary-list active">전체도서관</li>
+                                        <li>도서관정책과</li>
+                                        <li>구갈희망누리도서관</li>
+                                        <li>기흥도서관</li>
+                                        <li>남사도서관</li>
+                                        <li>동백도서관</li>
+                                        <li>동천도서관</li>
+                                        <li>모현도서관</li>
+                                        <li>보라도서관</li>
+                                        <li>보정도서관</li>
+                                        <li>상현도서관</li>
+                                        <li>서농도서관</li>
+                                        <li>성복도서관</li>
+                                        <li>수지도서관</li>
+                                        <li>양지해밀도서관</li>
+                                        <li>영덕도서관</li>
+                                        <li>이동꿈툴도서관</li>
+                                        <li>죽전도서관</li>
+                                        <li>창덕도서관</li>
+                                        <li>포곡도서관</li>
+                                        <li>흥덕도서관</li>
+                                    </ul>
+                            </div>
+                            <div class="search">
+                                <ul class="subject-ch">
+                                <li class="active">제목</li>
+                                <li>내용</li>
+                                </ul>
+                                <div>
+                                    <label for="userName" class="blind">검색어를 입력해 주세요</label>
+                                    <input type="text" name="userName" id="userName">
+                                    <button>검색</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            <div class="notices post-cont">
+                <table>
+                    <caption></caption>
+                    <thead>
+                        <tr>
+                            <th class="icon blind-m">번호</th>
+                            <th class="table-list">제목</th>
+                            <th class="blind-m file">첨부</th>
+                            <th class="date">등록일</th>
+                            <th class="view-n blind-m">조회수</th>
+                        </tr>
+                    </thead>
+                    <!-- <tfoot>
+                        <tr>
+                            <th></th>
+                            <td></td>
+                        </tr>
+                    </tfoot> -->
+                    <tbody>
+                        <tr>
+                            <td class="icon blind-m">아이콘</td>
+                            <td class="table-list"><span class="lb-cate base">공통</span>2026년 용인시 도서관 공휴일(노동절, 어린이날) 휴관 안내</td>
+                            <td class="blind-m file"></td>
+                            <td class="date">2026.04.16</td>
+                            <td class="view-n blind-m">11608</td>
+                        </tr>
+                        <tr>
+                            <td class="icon blind-m">아이콘</td>   
+                            <td class="table-list"><span class="lb-cate base">공통</span>도서관 이용자 승용차 요일제 시행 안내</td>
+                            <td class="blind-m file"></td>
+                            <td class="date">2026.04.08</td>
+                            <td class="view-n blind-m">2734</td>
+                        </tr>
+                        <tr>
+                            <td class="icon blind-m">아이콘</td>                   
+                            <td class="table-list"><span class="lb-cate dc">동천</span>[동천] 동천도서관 5월 특성화 프로그램 「우리의 마음을 함께 담다 : 가족 미니 정원 만들기</td>
+                            <td class="blind-m file">첨</td>
+                            <td class="date">2026.04.29</td>
+                            <td class="view-n blind-m">12</td>
+                        </tr>
+                        <tr>
+                            <td class="icon blind-m">아이콘</td>                         
+                            <td class="table-list"><span class="lb-cate jj ">죽전</span>죽전도서관 장서점검에 따른 임시휴관 및 상호대차 안내</td>
+                            <td class="blind-m file"></td>
+                            <td class="date">2026.04.27</td>
+                            <td class="view-n blind-m">100</td>
+                        </tr>
+                        <tr>
+                            <td class="icon blind-m">아이콘</td>                     
+                            <td class="table-list"><span class="lb-cate sb">성복</span>성복도서관 5월 재능기부 프로그램 초등독서미술 「그림책으로 떠나는 마음성장 여행」 모집 안내</td>
+                            <td class="blind-m file"></td>
+                            <td class="date">2026.04.27</td>
+                            <td class="view-n blind-m">96</td>
+                        </tr>
+                        <tr>
+                            <td class="icon blind-m">아이콘</td>                        
+                            <td class="table-list"><span class="lb-cate sj">수지</span>(5/6)수지도서관 재능기부 프로그램 「놀이약방」 안내</td>
+                            <td class="blind-m file">첨</td>
+                            <td class="date">2026.04.24</td>
+                            <td class="view-n blind-m">139</td>
+                        </tr>
+                        <tr>
+                            <td class="icon blind-m">아이콘</td>                         
+                            <td class="table-list"><span class="lb-cate mh">모현</span>[모현] 5월 북스타트 주간 프로그램 <보람 그림책작가와의 만남> 모집 안내</td>
+                            <td class="blind-m file">첨</td>
+                            <td class="date">2026.04.24</td>
+                            <td class="view-n blind-m">95</td>
+                        </tr>
+                        <tr>
+                            <td class="icon blind-m">아이콘</td>                          
+                            <td class="table-list"><span class="lb-cate gh">기흥</span>기흥도서관 5월 독서문화 프로그램 「내 삶의 주인공이 되는 글쓰기」 운영 안내</td>
+                            <td class="blind-m file">첨</td>
+                            <td class="date">2026.04.24</td>
+                            <td class="view-n blind-m">153</td>
+                        </tr>
+                        <tr>
+                            <td class="icon blind-m">아이콘</td>                           
+                            <td class="table-list"><span class="lb-cate sj">수지</span>2026년 상반기 정규독서프로그램 <오디세우스와 키르케의 여정> 안내</td>
+                            <td class="blind-m file">첨</td>
+                            <td class="date">2026.04.21</td>
+                            <td class="view-n blind-m">161</td>
+                        </tr>
+                        <tr>
+                            <td class="icon blind-m">아이콘</td>                 
+                            <td class="table-list"><span class="lb-cate sj">수지</span>[메이커] 2026년 5월 메이커스페이스 장비안전교육(레이저커터, 3D프린터) 일정 안내</td>
+                            <td class="blind-m file"></td>
+                            <td class="date">2026.04.16</td>
+                            <td class="view-n blind-m">153</td>
+                        </tr>
+                        
+                    
+                    </tbody>
+                </table>
+
+                
+                    <p class="paging-box">
+                        <a href="#">이전 1</a>
+                        <a href="#" class="active">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">7</a>
+                        <a href="#">8</a>
+                        <a href="#">9</a>
+                        <a href="#">10 다음</a>
+                    </p>
+                
+            </div>
+
+            <div class="post-cont notices-b">
+                <table>
+                    <caption></caption>
+                    <thead>
+                        <tr>
+                            <th class="icon blind-m">번호</th>
+                            <th class="table-list">제목</th>
+                            <th class="blind-m file">첨부</th>
+                            <th class="date">등록일</th>
+                            <th class="view-n blind-m">조회수</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <td><span>이미지</span>등록된 게시글이 없습니다.</td>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <div class="promo-list post-cont">
+                <ul class="img-list">
+                    <li>
+                        <div class="img-area"><img src="" alt="">이미지영역</div>
+                        <div>
+                            
+                            <p class="text-area"><span class="lb-cate base">공통</span><span class="txt">(가칭)보정종합복지회관 내 도서관 특화주제 선정을 위한시민 선호도 조사</span></p>
+                            <p class="date-t">2025.08.21</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-area"><img src="" alt="">이미지영역</div>
+                        <div>
+                            
+                            <p class="text-area"><span class="lb-cate base">공통</span><span class="txt">2025년 용인특례시 독서마라톤 대회📚</span></p>
+                            <p class="date-t">2024.12.31</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-area"><img src="" alt="">이미지영역</div>
+                        <div>
+                            
+                            <p class="text-area"><span class="lb-cate base">공통</span><span class="txt">2025년 용인시 도서관 겨울 독서교실 및 방학특강📚</span></p>
+                            <p class="date-t">2024.12.19</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-area"><img src="" alt="">이미지영역</div>
+                        <div>
+                            
+                            <p class="text-area"><span class="lb-cate base">공통</span><span class="txt">도서관 이용 문화 안내 📖</span></p>
+                            <p class="date-t">2024.07.29</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-area"><img src="" alt="">이미지영역</div>
+                        <div>
+                            
+                            <p class="text-area"><span class="lb-cate sj ">수지</span><span class="txt">2024년 수지도서관 「책 소개 영상 콘텐츠 공모전」 안내</span></p>
+                            <p class="date-t">2024.07.11</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-area"><img src="" alt="">이미지영역</div>
+                        <div>
+                            
+                            <p class="text-area"><span class="lb-cate base">공통</span><span class="txt">용인시도서관 시민 참여 북 컬렉션(7월)📖</span></p>
+                            <p class="date-t">2024.07.05</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-area"><img src="" alt="">이미지영역</div>
+                        <div>
+                            
+                            <p class="text-area"><span class="lb-cate base">공통</span><span class="txt">2024년 하반기 용인시 도서관 작가강연회(7~11월)</span></p>
+                            <p class="date-t">2024.07.04</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-area"><img src="" alt="">이미지영역</div>
+                        <div>
+                            
+                            <p class="text-area"><span class="lb-cate base">공통</span><span class="txt">한국외국어대학교 특수외국어 배워보기 후속 연계 강좌 안내</span></p>
+                            <p class="date-t">2024.07.03</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-area"><img src="" alt="">이미지영역</div>
+                        <div>
+                            
+                            <p class="text-area"><span class="lb-cate base">공통</span><span class="txt">폭염 시 행동 요령 🌞</span></p>
+                            <p class="date-t">2024.06.26</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-area"><img src="" alt="">이미지영역</div>
+                        <div>
+                            
+                            <p class="text-area"><span class="lb-cate base">공통</span><span class="txt">용인시도서관 시민 참여 북 컬렉션(6월)📖</span></p>
+                            <p class="date-t">2024.06.11</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-area"><img src="" alt="">이미지영역</div>
+                        <div>
+                            
+                            <p class="text-area"><span class="lb-cate base">공통 </span><span class="txt">용인시도서관 시민 참여 북 컬렉션(5월)📖</span></p>
+                            <p class="date-t">2024.05.22</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-area"><img src="" alt="">이미지영역</div>
+                        <div>
+                            
+                            <p class="text-area"><span class="lb-cate sj">수지</span><span class="txt">수지도서관, 국립어린이청소년도서관 지원 「2024 이야기가 있는 코딩」 프로그램 안내</span></p>
+                            <p class="date-t">2024.05.01</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="paging-box">
+                    <p class="paging">
+                        <a>1</a>
+                        <a>2</a>
+                        
+                    </p>
+                </div>
+            </div>
         </section><!-- // #main End -->
     </div><!-- // .container End -->
 

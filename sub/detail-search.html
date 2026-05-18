@@ -4,21 +4,196 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>상세검색 | 수지도서관</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard.css">
-    <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/detail-search.css">
-    <script src="scripts/sub/서브페이지명.js" defer></script>
+    <link rel="stylesheet" href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css">
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/sub/detail-search.css">
+    <script src="../scripts/common.js" defer></script>
+    <script src="../scripts/sub/detail-search.js" defer></script>
 </head>
 <body>
-
-    <div class="container">
-        <aside id="aside">
-            
+    <div class="container inner">
+        <aside id="aside" class="blind-m">
+            <h1>상세검색</h1>
+            <div class="side-tab">
+                <dl class="active">
+                    <dt>통합자료검색</dt>
+                    <dd>간략검색</dd>
+                    <dd class="on">상세검색</dd>
+                    <dd>자료검색 도움말</dd>
+                </dl>
+                <dl>
+                    <dt>주제별자료검색</dt>
+                </dl>
+                <dl>
+                    <dt>신착자료검색</dt>
+                </dl>
+                <dl>
+                    <dt>대출인기도서</dt>
+                </dl>
+                <dl>
+                    <dt>스마트도서관자료검색</dt>
+                </dl>
+                <dl>
+                    <dt>구독자료검색</dt>
+                </dl>
+                <dl>
+                    <dt>희망도서신청</dt>
+                </dl>
+                <dl>
+                    <dt>희망도서바로대출</dt>
+                </dl>
+                <dl>
+                    <dt>디지털자료</dt>
+                    <dd>바로가기</dd>
+                    <dd>이용안내</dd>
+                </dl>
+            </div>
         </aside><!-- // #aside End -->
         <section id="main">
-            
+            <div class="main-top">
+                <p class="navi">
+                    <span>자료검색</span>
+                    <span>통합자료검색</span>
+                    <span>상세검색</span>
+                </p>
+                <h1 class="tit-main">상세검색</h1>
+            </div><!--main top-->
+            <div class="contents">
+                <h2 class="blind">상세조건을 선택하고 입력하세요.</h2>
+                <form action="" method="get">
+                    <fieldset>
+                        <div class="form-area">
+                            <legend class="blind">검색항목, 표준부호, 발행연도, 도서관, 자료실, 정렬조건, 출력건수 조건에 맞게 검색하면 결과가 나옵니다.</legend>
+                            <div class="search-key01">
+                                <p><span>검색항목</span></p> 
+                                <ul class="spacing"><!--오른쪽항목-->
+                                    <li>
+                                        <select class="dropdown">
+                                            <option value="1" selected>도서명</option>
+                                            <option value="2">저자</option>
+                                            <option value="3">출판사</option>
+                                            <option value="4">키워드</option>
+                                        </select>
+                                        <input type="text" class="base-form">
+                                    </li>
+                                    <li>
+                                        <select class="dropdown">
+                                            <option value="1" selected>저자</option>
+                                            <option value="2">서명</option>
+                                            <option value="3">발행자</option>
+                                            <option value="4">키워드</option>
+                                        </select>
+                                        <input type="text" class="base-form">
+                                    </li>
+                                    <li>
+                                        <select class="dropdown">
+                                            <option value="1" selected>발행자</option>
+                                            <option value="2">서명</option>
+                                            <option value="3">발행자</option>
+                                            <option value="4">키워드</option>
+                                        </select>
+                                        <input type="text" class="base-form">
+                                    </li>
+                                    <li>
+                                        <select class="dropdown">
+                                            <option value="1" selected>키워드</option>
+                                            <option value="2">서명</option>
+                                            <option value="3">발행자</option>
+                                        </select>
+                                        <input type="text" class="base-form">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="search-key02">
+                                <p><span>표준부호</span></p>
+                                <div class="spacing">
+                                    <select class="dropdown">
+                                        <option value="1" selected>ISBN</option>
+                                        <option value="2">ISSN</option>
+                                    </select>
+                                    <input type="text" class="base-form">
+                                </div>
+                            </div>
+                            <div class="search-key03">
+                                <p><span>발행연도</span></p>
+                                <div class="spacing">
+                                    <input type="text" placeholder="발행년(시작)" class="base-form">
+                                    <span class="years-gap">~</span>
+                                    <input type="text" placeholder="발행년(종료)" class="base-form">
+                                </div>
+                            </div>
+                            <div class="search-key04">
+                                <p><span>도서관</span></p>
+                                <select class="dropdown select-wide">
+                                    <option value="1" selected>수지도서관</option>
+                                    <option value="2">전체도서관</option>
+                                    <option value="3">보정도서관</option>
+                                    <option value="4">기흥도서관</option>
+                                    <option value="5">구성도서관</option>
+                                    <option value="6">남사도서관</option>
+                                    <option value="7">동백도서관</option>
+                                    <option value="8">동천도서관</option>
+                                    <option value="9">모현도서관</option>
+                                    <option value="10">상현도서관</option>
+                                </select>
+                            </div>
+                            <div class="search-key05">
+                                <p><span>자료실</span></p>
+                                <select class="dropdown select-wide">
+                                    <option value="1" selected>[수지]종합자료실</option>
+                                    <option value="2">전체자료실</option>
+                                    <option value="3">용인시청[민원실]</option>
+                                    <option value="5">[중앙]종합자료실</option>
+                                    <option value="6">[성복]종합자료1</option>
+                                    <option value="7">용인중앙시장역[경전철]</option>
+                                    <option value="8">성복역[신분당선]</option>
+                                    <option value="9">[서농]정기간행물실</option>
+                                    <option value="10">[동백]디지털자료실</option>
+                                </select>
+                            </div>
+                            <div class="search-key06">
+                                <p><span>정렬조건</span></p>
+                                <div class="spacing">
+                                    <!-- <ul class="dropdown select-wide filter-by">
+                                        <li class="selected">정확도순</li>
+                                        <li>등록일</li>
+                                        <li>서명</li>
+                                        <li>저자</li>
+                                    </ul> -->
+                                    <!--앤 숨김 처리-->
+                                    <!-- <ul class="dropdown select-wide sort-by">
+                                        <li class="selected">오름차순</li>
+                                        <li>내림차순</li>
+                                    </ul> -->
+                                        <select class="dropdown select-wide filter-by">
+                                            <option value="1" selected>정확도순</option>
+                                            <option value="2">등록일</option>
+                                            <option value="3">서명</option>
+                                            <option value="4">저자</option>
+                                        </select>
+                                        <select class="dropdown select-wide sort-by">
+                                            <option value="1" selected>오름차순</option>
+                                            <option value="2">내림차순</option>
+                                        </select>
+                                </div>
+                            </div>
+                            <div class="search-key07">
+                                <p><span>출력건수</span></p>
+                                <select class="dropdown select-wide">
+                                    <option value="1" selected>10건</option>
+                                    <option value="2">20건</option>
+                                    <option value="3">50건</option>
+                                </select>
+                            </div>
+                        </div>
+                        <P class="btn-area">
+                            <button type="reset" class="reset-btn">초기화</button>
+                            <button type="submit" class="search-btn">검색</button>
+                        </P>
+                    </fieldset>
+                </form>
+            </div>
         </section><!-- // #main End -->
     </div><!-- // .container End -->
-
 </body>
 </html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도서관일정 | 수지도서관</title>
+    <link rel="stylesheet" href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css">
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/sub/schedule.css">
+    <script src="../scripts/common.js" defer></script>
+    <script src="../scripts/sub/schedule.js" defer></script>
+</head>
+<body>
+    <div class="container inner">
+        <aside id="aside" class="blind-m">
+            <h1>문화행사</h1>
+            <div class="side-tab">
+                <dl>
+                    <dt>문화행사신청</dt>
+                </dl>
+                <dl class="active">
+                    <dt>도서관일정</dt>
+                </dl>
+                <dl>
+                    <dt>독서교실·방학특강</dt>
+                </dl>
+                <dl>
+                    <dt>메이커스페이스</dt>
+                </dl>
+                <dl>
+                    <dt>미디어창작실</dt>
+                </dl>
+                <dl>
+                    <dt>VR·AR체험관</dt>
+                </dl>
+                <dl>
+                    <dt>북스타트</dt>
+                </dl>
+                <dl>
+                    <dt>독서마라톤</dt>
+                </dl>
+                <dl>
+                    <dt>전국독서감상문대회</dt>
+                </dl>
+                <dl>
+                    <dt>휴먼라이브러리</dt>
+                </dl>
+                <dl>
+                    <dt>북페스티벌</dt>
+                </dl>
+            </div>
+        </aside><!-- // #aside End -->
+        <section id="main">
+            <div class="main-top">
+                <p class="navi">
+                    <span>독서마당</span>
+                    <span>추천도서</span>
+                    <span>사서북큐레이션</span>
+                </p>
+                <h1 class="tit-main">도서관일정</h1>
+            </div><!--main top-->
+            <div class="contents">
+                <div class="detail-box">
+                    <div class="month">
+                        <button class="prev-month"><img src="../images/icon/prev.png" alt="이전달력"></button>
+                        <p>2026.05</p>
+                        <button class="next-month"><img src="../images/icon/next.png" alt="다음달력"></button>
+                        <span class="today-card">오늘</span>
+                    </div>
+                    <ul class="schedule-info">
+                        <li><span class="icon-holiday">H</span>휴관일</li>
+                        <li><span class="icon-event">E</span>문화행사 프로그램</li>
+                        <li><span class="icon-makerspace">M</span>메이커스페이스</li>
+                    </ul>
+                </div><!--/빗금-->
+                <h2 class="blind">날짜를 선택하시면 도서관 일정을 자세히 볼수있습니다.</h2>
+                <div class="calendar">
+                    <table class="month-may">
+                        <thead>
+                            <tr>
+                                <th class="sun" scope="col">일</th>
+                                <th class="mon" scope="col">월</th>
+                                <th class="tue" scope="col">화</th>
+                                <th class="wed" scope="col">수</th>
+                                <th class="thu" scope="col">목</th>
+                                <th class="fri" scope="col">금</th>
+                                <th class="sat" scope="col">토</th>
+                            </tr>
+                        </thead>
+                        <!-- <tfoot></tfoot> -->
+                        <tbody>
+                            <tr>
+                                <td class="sun blank"></td>
+                                <td class="mon blank"></td>
+                                <td class="tue blank"></td>
+                                <td class="wed blank"></td>
+                                <td class="thu blank"></td>
+                                <td class="fri">1<span class="icon-holiday">H</span></td>
+                                <td class="sat">2</td>
+                            </tr>
+                            <tr>
+                                <td class="sun">3</td>
+                                <td class="mon">4</td>
+                                <td class="tue">5<span class="icon-holiday">H</span></td>
+                                <td class="wed">6<span class="icon-today">T</span></td>
+                                <td class="thu">7</td>
+                                <td class="fri">8</td>
+                                <td class="sat">9</td>
+                            </tr>
+                            <tr>
+                                <td class="sun">10</td>
+                                <td class="mon">11<span class="icon-holiday">H</span></td>
+                                <td class="tue">12</td>
+                                <td class="wed">13</td>
+                                <td class="thu">14</td>
+                                <td class="fri">15</td>
+                                <td class="sat">16</td>
+                            </tr>
+                            <tr>
+                                <td class="sun">17</td>
+                                <td class="mon">18</td>
+                                <td class="tue">19</td>
+                                <td class="wed">20</td>
+                                <td class="thu">21</td>
+                                <td class="fri">22</td>
+                                <td class="sat">23</td>
+                            </tr>
+                            <tr>
+                                <td class="sun">24<span class="icon-holiday">H</span></td>
+                                <td class="mon">25<span class="icon-holiday">H</span></td>
+                                <td class="tue">26</td>
+                                <td class="wed">27</td>
+                                <td class="thu">28</td>
+                                <td class="fri">29</td>
+                                <td class="sat">30</td>
+                            </tr>
+                            <tr>
+                                <td class="sun">31</td>
+                                <td class="mon blank"></td>
+                                <td class="tue blank"></td>
+                                <td class="wed blank"></td>
+                                <td class="thu blank"></td>
+                                <td class="fri blank"></td>
+                                <td class="sat blank"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="month-june hide">
+                            <thead>
+                                <tr>
+                                    <th class="sun" scope="col">일</th>
+                                    <th class="mon" scope="col">월</th>
+                                    <th class="tue" scope="col">화</th>
+                                    <th class="wed" scope="col">수</th>
+                                    <th class="thu" scope="col">목</th>
+                                    <th class="fri" scope="col">금</th>
+                                    <th class="sat" scope="col">토</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- 1주차: 1일(월) 시작 -->
+                                <tr>
+                                    <td class="sun blank"></td>
+                                    <td class="mon">1</td>
+                                    <td class="tue">2</td>
+                                    <td class="wed">3<span class="icon-holiday">H</span></td>
+                                    <td class="thu">4</td>
+                                    <td class="fri">5</td>
+                                    <td class="sat">6<span class="icon-holiday">H</span></td>
+                                </tr>
+                                <!-- 2주차 -->
+                                <tr>
+                                    <td class="sun">7</td>
+                                    <td class="mon">8<span class="icon-holiday">H</span></td>
+                                    <td class="tue">9</td>
+                                    <td class="wed">10</td>
+                                    <td class="thu">11</td>
+                                    <td class="fri">12</td>
+                                    <td class="sat">13</td>
+                                </tr>
+                                <!-- 3주차 -->
+                                <tr>
+                                    <td class="sun">14</td>
+                                    <td class="mon">15</td>
+                                    <td class="tue">16</td>
+                                    <td class="wed">17</td>
+                                    <td class="thu">18</td>
+                                    <td class="fri">19</td>
+                                    <td class="sat">20</td>
+                                </tr>
+                                <!-- 4주차 -->
+                                <tr>
+                                    <td class="sun">21</td>
+                                    <td class="mon">22<span class="icon-holiday">H</span></td>
+                                    <td class="tue">23</td>
+                                    <td class="wed">24</td>
+                                    <td class="thu">25</td>
+                                    <td class="fri">26</td>
+                                    <td class="sat">27</td>
+                                </tr>
+                                <!-- 5주차 -->
+                                <tr>
+                                    <td class="sun">28</td>
+                                    <td class="mon">29</td>
+                                    <td class="tue">30</td>
+                                    <td class="wed blank"></td>
+                                    <td class="thu blank"></td>
+                                    <td class="fri blank"></td>
+                                    <td class="sat blank"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </div><!--calendar-->
+                <div class="cal-info">
+                <table>
+                    <caption>2026.05.06 수지도서관 일정</caption>
+                    <thead>
+                        <tr>
+                            <th>구분</th>
+                            <th>내용</th>
+                        </tr>
+                    </thead>
+                    <!-- <tfoot></tfoot> -->
+                    <tbody>
+                        <tr>
+                            <th>행사</th>
+                            <td>수지도서관 재능기부프로그램 「놀이약방」</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div><!--contents-->
+        </section>
+    </div><!-- // .container End -->
+</body>
+</html>

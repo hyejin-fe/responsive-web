@@ -4,19 +4,176 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>도서관 자료현황 | 수지도서관</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard.css">
-    <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/collection-stats.css">
-    <script src="scripts/sub/서브페이지명.js" defer></script>
+    <link rel="stylesheet" href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/sub/collection-stats.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../scripts/common.js" defer></script>
+    <script src="../scripts/sub/collection-stats.js" defer></script>
+    
 </head>
 <body>
-
-    <div class="container">
-        <aside id="aside">
-            
+    <div class="container inner">
+        <aside id="aside" class="blind-m">
+            <h1>자료현황</h1>
+            <div class="side-tab">
+                <dl>
+                    <dt>인사말</dt>
+                </dl>
+                <dl>
+                    <dt>연혁</dt>
+                </dl>
+                <dl>
+                    <dt>도서관아카이브</dt>
+                    <dd>아카이브소개</dd>
+                    <dd>아카이브자료</dd>
+                </dl>
+                <dl class="active">
+                    <dt>도서관현황</dt>
+                    <dd class="on">자료현황</dd>
+                    <dd>시설현황</dd>
+                    <dd>층별안내</dd>
+                    <dd>360도 투어</dd>
+                </dl>
+                <dl>
+                    <dt>조직도/직원정보</dt>
+                    <dd>조직도</dd>
+                    <dd>직원정보</dd>
+                </dl>
+                <dl>
+                    <dt>찾아오시는길</dt>
+                </dl>
+            </div>
         </aside><!-- // #aside End -->
         <section id="main">
-            
+            <div class="main-top">
+                <p class="navi">
+                    <span>도서관소개</span>
+                    <span>도서관현황</span>
+                    <span>자료현황</span>
+                </p>
+                <h1 class="tit-main">자료현황</h1>
+            </div>
+            <!--아래시작-->
+            <!--빗금공간이었던것-->
+            <div class="contents">
+                <div class="detail-box">
+                    <p>수지도서관 전체 자료실에 대한 현황입니다.</p>
+                </div><!--/빗금-->
+                <ul>
+                    <li class="chart-list">
+                        <h2 class="blind">도서 자료 이용 현황 차트</h2>
+                        <!--그래프 공간-->
+                        <div class="chart-box">
+                            <div class="grape-area">
+                                <canvas class="book-chart"></canvas>
+                            </div>
+                            <!--표 공간-->
+                            <table class="chart">
+                                <caption>
+                                    <div class="cap-box">
+                                        <span class="chart-name">도서</span>
+                                        <span class="chart-info">단위(권)</span>
+                                    </div>
+                                </caption>
+                                <thead>
+                                    <tr>
+                                        <th>전체</th>
+                                        <th>259,422</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>일반</th>
+                                        <td>165,573</td>
+                                    </tr>
+                                    <tr>
+                                        <th>어린이</th>
+                                        <td>75,916</td>
+                                    </tr>
+                                    <tr>
+                                        <th>참고</th>
+                                        <td>2457</td>
+                                    </tr>
+                                    <tr>
+                                        <th>원서</th>
+                                        <td>15,364</td>
+                                    </tr>
+                                    <tr>
+                                        <th>점자</th>
+                                        <td>112</td>
+                                    </tr>
+                                </tbody>
+                            </table><!--/도서-->
+                        </div>
+                    </li>
+                    <li class="chart-list">
+                        <h2 class="blind">비도서 자료 이용 현황 차트</h2>
+                        <div class="chart-box">
+                            <!--그래프 공간-->
+                            <div class="grape-area">
+                                <canvas class="non-book-chart"></canvas>
+                            </div>
+                            <!--표 공간-->
+                            <table class="chart">
+                                <caption>
+                                    <div class="cap-box">
+                                        <span class="tit-sec">비도서</span>
+                                        <span class="chart-info">단위(점)</span>
+                                    </div>
+                                </caption>
+                                <thead>
+                                    <tr>
+                                        <th>전체</th>
+                                        <th>3,689</th> 
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>DVD</th>
+                                        <td>3,689</td>
+                                    </tr>
+                                </tbody>
+                            </table><!--비도서-->
+                        </div>
+                    </li>
+                    <li class="chart-list">
+                        <h2 class="blind">정기간행물 이용 현황 차트</h2>
+                        <div class="chart-box">
+                            <!--그래프 공간-->
+                            <div class="grape-area">
+                                <canvas class="periodical-chart"></canvas>
+                            </div>
+                            <!--표 공간-->
+                            <table class="chart">
+                                <caption>
+                                    <div class="cap-box">
+                                        <span class="tit-sec">정기간행물</span>
+                                        <span class="chart-info">단위(종)</span>
+                                    </div>
+                                </caption>
+                                <thead>
+                                    <tr>
+                                        <th>전체</th>
+                                        <th>86</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>일반잡지</th>
+                                        <td>76</td>
+                                    </tr>
+                                    <tr>
+                                        <th>어린이<br class="break-on">잡지</th>
+                                        <td>10</td>
+                                    </tr>
+                                </tbody>
+                            </table><!--정기 간행물-->
+                        </div>
+                    </li>
+                </ul>
+            </div><!--contents-->
         </section><!-- // #main End -->
     </div><!-- // .container End -->
 
