@@ -596,7 +596,23 @@ legend {
     width: 100%;
 }
 .dona-list .post-cont td {
-    padding: 10px 10px;
+    padding: 50px 10px;
+    text-align: center;
+}
+.dona-list .post-cont td span {
+    display: inline-block;
+    position: relative;
+    padding-left: 127px;
+    height: 100px;
+    line-height: 100px;
+}
+.dona-list .post-cont td span::before {
+    content: "";
+    background: url("../../images/ico_nodata.png") no-repeat;
+    background-position: 0 0;
+    width: 127px;
+    height: 100px;
+    position: absolute; left: 0; top: 0;
 }
 
 
