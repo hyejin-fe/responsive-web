@@ -1,3 +1,8 @@
+/* 메인내용부분 */
+#main {
+    width: 80%;
+}
+
 .search input {
     height: 46px;
 }
@@ -203,9 +208,6 @@ table tbody tr { border-bottom: 1px solid #e4e4e4; }
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.post-cont .img-list {
-    
-}
 
 .promo-list .img-list{
     display: grid;
@@ -218,10 +220,6 @@ table tbody tr { border-bottom: 1px solid #e4e4e4; }
 .img-area {background-color: #bdbdbd; }
 
 /*테이블*/
-
-.post-cont {
-    
-}
 
 th { 
     text-align: center;

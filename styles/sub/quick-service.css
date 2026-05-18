@@ -1,3 +1,8 @@
+/* 메인내용부분 */
+#main {
+    width: 80%;
+}
+
 /* 탭버튼 */
 .contents .tab-btn {
     display: flex;

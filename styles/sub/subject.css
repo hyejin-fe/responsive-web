@@ -1,3 +1,8 @@
+/* 메인내용부분 */
+#main {
+    width: 80%;
+}
+
 #main .icon-btn {
     display: grid;
     grid-template-columns: repeat(4,1fr);

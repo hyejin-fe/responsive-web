@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+/* 메인내용부분 */
+#main {
+    width: 80%;
+}
+
 
 /* tab-btn */
 #main .contents .tab-btn {

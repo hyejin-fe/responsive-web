@@ -1,4 +1,9 @@
 
+/* 메인내용부분 */
+#main {
+    width: 80%;
+}
+
 @media screen and (max-width: 768px) {
     #main .contents .history-top {
         height: 300px;

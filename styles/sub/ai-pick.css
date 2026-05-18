@@ -5,6 +5,11 @@ br {display: none;}
     object-fit: cover;
 }
 
+/* 메인내용부분 */
+#main {
+    width: 80%;
+}
+
 /* #aside {} */
 
 #main .contents .user-select-wrapper input[type="radio"], 

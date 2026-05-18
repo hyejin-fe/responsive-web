@@ -1,10 +1,14 @@
-
-
 h1 {font-size: 26px;}
+dl, dt, dd { font-size: inherit; }
+
+/* 메인내용부분 */
+#main {
+    width: 80%;
+}
 
 #main .main-top { padding: 20px 8px; border-bottom: 1px solid #e2e2e2; border-top: 1px solid #e2e2e2;;}
 #main .main-content { padding-top: 30px; }
-dl, dt, dd { font-size: inherit; }
+
 
 .loan-best-area-a fieldset { 
     
