@@ -1,3 +1,14 @@
+/* 선택자 - 팝업공지 */
+const today = new Date();
+const year = today.getFullYear();
+const month = today.getMonth();
+const date = today.getDate();
+
+const popupWrap = document.querySelector(".popup-wrap");
+const closeBtn = popupWrap.querySelector(".close-btn");
+const checkBox = popupWrap.querySelector("input");
+const label = popupWrap.querySelector("label");
+
 /* 선택자 - 메인 */
 const restInfo = document.querySelector(".rest-info");
 const restPrevBtn = restInfo.querySelector(".prev");
@@ -5,10 +16,13 @@ const restNextBtn = restInfo.querySelector(".next");
 const restMonth = restInfo.querySelector(".month");
 const restBox = restInfo.querySelector(".rest-box");
 
+/* 선택자 - 아카이브 */
+const secArchbanner = document.querySelector(".archive-banner");
+const selBox = secArchbanner.querySelector(".sel-box")
+
 /* 선택자 - 북큐레이션 */
 const curation = document.querySelector(".curation");
 const curationTabBtns = curation.querySelectorAll(".tab-btn button");
-
 const curationSwiper = curation.querySelector(".curation-swiper");
 const contAll = curationSwiper.querySelectorAll(".curation-banner-cont");
 
@@ -20,7 +34,37 @@ const slidePrevBtn = curationSwiper.querySelector(".prev");
 const slideNextBtn = curationSwiper.querySelector(".next");
 
 
-// 메인 1. 인기 검색어 슬라이드
+// 팝업공지 1. 닫기 버튼 클릭
+closeBtn.addEventListener("click",function(){
+    if(checkBox.checked){
+        const endDate = new Date(year, month, date, 23,59,59 );
+        localStorage.setItem("popupEnd",endDate);
+    }
+    popupWrap.style.display = "none";
+})
+
+// 팝업공지 1-2. 체크박스 off/on -change
+checkBox.addEventListener("change", function(){
+    console.log(checkBox.checked); // true 또는 false
+    if(checkBox.checked){
+        label.classList.add("check");
+    }else{
+        label.classList.remove("check");
+    }
+}) 
+
+const popupEnd = localStorage.getItem("popupEnd");
+    if(popupEnd){
+    // 저장된 시간
+    const endDate = new Date(popupEnd);
+
+    if(today < endDate){
+        popupWrap.style.display = "none";
+    }
+}
+
+
+// 메인 2. 인기 검색어 슬라이드
 var trendingSwiper = new Swiper(".trending-swiper", {
     direction: "vertical",
     loop: true,
@@ -38,7 +82,7 @@ var trendingSwiper = new Swiper(".trending-swiper", {
     },
 });
 
-// 메인 2. 휴무날 슬라이드
+// 메인 2-2. 휴무날 슬라이드
 restPrevBtn.addEventListener("click", function(){
     const showDay = restBox.querySelector(".show");
 
@@ -61,7 +105,76 @@ restNextBtn.addEventListener("click", function(){
 })
 
 
-// 북큐레이션 1. 탭버튼 클릭시,
+// 팝업존 3. 
+var popupZone = new Swiper(".popup-zone .swiper ", {
+    slidesPerView: 'auto', //cdn 슬라이더 너비 고정 초기화
+    
+    loop: true,
+    centeredSlides: false,
+    spaceBetween: 10,
+
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+
+    navigation: {
+        nextEl: ".popup-zone .next",
+        prevEl: ".popup-zone .prev",
+    },
+});
+
+// 도서관아카이브 5. 카드뉴스-ul
+selBox.addEventListener("click", (e) => {
+    const sellist = e.target.closest("li"); 
+    const alllist = selBox.querySelectorAll("li");
+    const pickList = selBox.querySelectorAll("li.on");
+    
+    if (!sellist) return;
+    selBox.classList.add("open");
+    if (pickList.length === 1){
+        alllist.forEach((list) => {
+            list.classList.add("on");
+        });
+    }else{
+        alllist.forEach((list) => {
+            list.classList.remove("on");
+        });
+        selBox.classList.remove("open");
+        sellist.classList.add("on");
+    }
+})
+
+// 도서관아카이브 5. 슬라이드배너
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 'auto', //cdn 슬라이더 너비 고정 초기화
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
+
+// 문화행사 6. 슬라이드배너
+var swiper = new Swiper(".cult-banner", {
+    loop: true,
+    slidesPerView: 'auto',
+    centeredSlides: false, //강제 가운데 정렬 막기
+
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
+
+// 북큐레이션 7. 탭버튼 클릭시,
 curationTabBtns.forEach(function(btn, inx){
     btn.addEventListener("click", function(e){
         curationTabBtns.forEach(function(e){
@@ -80,8 +193,8 @@ curationTabBtns.forEach(function(btn, inx){
     });
 })
 
-// 북큐레이션 2. 슬라이드배너
-// 2-1. 이전 버튼 클릭
+// 북큐레이션 7. 슬라이드배너
+// 7-1. 이전 버튼 클릭
 slidePrevBtn.addEventListener("click", function(e){
     if (e.isTrusted) { // isTrusted (사용자 직접 클릭 여부)
         clearInterval(autoID);
@@ -89,7 +202,7 @@ slidePrevBtn.addEventListener("click", function(e){
     moveSlide("prev");
 });
 
-// 2-2. 다음 버튼 클릭
+// 7-2. 다음 버튼 클릭
 slideNextBtn.addEventListener("click", function (e){
     if (e.isTrusted) {
         clearInterval(autoID);
@@ -97,16 +210,14 @@ slideNextBtn.addEventListener("click", function (e){
     moveSlide("next");
 });
 
-// 2-3. 자동 실행
+// 7-3. 자동 실행
 let autoID = setInterval(function(){
     slideNextBtn.dispatchEvent(new Event("click")); // .trigger("click") 대신 dispatchEvent 사용
 }, 2000);
 
 
-// 북큐레이션 1. 탭버튼 함수
 
-
-// 북큐레이션 2. 슬라이드 이동 함수
+// 북큐레이션 7. 슬라이드 이동 함수
 function moveSlide(btn) {
     const bannerLiAll = curationBanner.querySelectorAll("li");
     const bannerSnow = curationBanner.querySelector(".show");
