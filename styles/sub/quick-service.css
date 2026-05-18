@@ -60,7 +60,7 @@
 }
 
 .contents .library-service .ani-btn li p.icon {
-    background-image: url("../../images/ico_libService.png");
+    background-image: url("../../images/quick-service/ico_libService.png");
     width: 100px;
     height: 100px;
     margin: 10px auto;
@@ -128,7 +128,7 @@
 
 
 .contents .culture-service .ani-btn li p.icon {
-    background-image: url("../../images/ico_bookCulture.png");
+    background-image: url("../../images/quick-service/ico_bookCulture.png");
     width: 100px;
     height: 100px;
     margin: 10px auto;

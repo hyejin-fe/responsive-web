@@ -147,6 +147,7 @@ selBox.addEventListener("click", (e) => {
 
 // 도서관아카이브 5. 슬라이드배너
 var swiper = new Swiper(".mySwiper", {
+    loop: true,
     slidesPerView: 'auto', //cdn 슬라이더 너비 고정 초기화
     spaceBetween: 10,
     navigation: {

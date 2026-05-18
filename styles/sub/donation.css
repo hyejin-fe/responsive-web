@@ -444,7 +444,6 @@ legend {
 }
 
 
-
 /* .dona-inquiry */
 #main .contents .dona-inquiry {
     display: none;
@@ -581,7 +580,6 @@ legend {
 }
 
 
-
 /* .dona-list */
 #main .contents .dona-list {
     display: none;
@@ -607,19 +605,18 @@ legend {
 .dona-list .post-cont td span {
     display: inline-block;
     position: relative;
-    padding-left: 127px;
+    padding-left: 137px;
     height: 100px;
     line-height: 100px;
 }
 .dona-list .post-cont td span::before {
     content: "";
-    background: url("../../images/ico_nodata.png") no-repeat;
+    background: url("../../images/donation/ico_nodata.png") no-repeat;
     background-position: 0 0;
     width: 127px;
     height: 100px;
     position: absolute; left: 0; top: 0;
 }
-
 
 
 
