@@ -1,8 +1,3 @@
-/* 메인내용부분 */
-#main {
-    width: 80%;
-}
-
 .search input {
     height: 46px;
 }
@@ -93,30 +88,9 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .notices{
     display: none;
 }
-
 
 .notices.show{
     display: block;
@@ -272,9 +246,9 @@ th {
 }
 
 .post-cont tr:first-child td {
-        border-top: 0 none;
-        
-    }
+    border-top: 0 none;
+    
+}
 .post-cont td {
     border-bottom: 0 none;
 }
@@ -324,8 +298,6 @@ td { padding: 10px 6px; }
 
 
 @media screen and (min-width: 768px){
-
-    
     .base-form .search div {
         width: calc(80% - 4px);
     }
@@ -359,8 +331,12 @@ td { padding: 10px 6px; }
 
 
 
+@media screen and (min-width: 1024px){
+    /* 메인내용부분 */
+    #main {
+        width: 80%;
+    }
 
-@media screen and (min-width: 1023px){
     .post-cont .blind-m {display: block;}
     .date { width: 120px; }
     .promo-list .img-list{

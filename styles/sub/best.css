@@ -1,11 +1,6 @@
 h1 {font-size: 26px;}
 dl, dt, dd { font-size: inherit; }
 
-/* 메인내용부분 */
-#main {
-    width: 80%;
-}
-
 #main .main-top { padding: 20px 8px; border-bottom: 1px solid #e2e2e2; border-top: 1px solid #e2e2e2;;}
 #main .main-content { padding-top: 30px; }
 
@@ -186,7 +181,6 @@ dl, dt, dd { font-size: inherit; }
 }
 
 .popular-books-area .libary ul {
-    
     height: 40px;
     background-color: #fff;
     border: 1px solid #c8c8c8;
@@ -319,133 +313,138 @@ label {
 
 
 @media screen and (max-width: 767px){
-body {
-    font-size: 14px;
-    line-height: 1.4;
-}
-.form-area .libary, .form-area .date { 
-    width: 45%;
-}  
-.date   { position: absolute; top:20px;  left: 51%; } 
-.search-btn {
-    position: absolute; bottom: 10px; left: 4%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 92%;
-    height: 36px;
-}
-   
-.post-cont .blind-m {display: none;}
-.post-cont .date {width: 80px;}
-.card .text-area button { height: 42px;}
-.loanPeriod {
-    white-space: nowrap;
-    overflow: hidden;
-    display: inline-block;
-}
-.loanPeriod input {
-    width: 40%;
-}
-.popular-books-area dd {
-    white-space: normal;
-}
-.popular-books-area ul {
-    white-space: normal;
-}
+    body {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    .form-area .libary, .form-area .date { 
+        width: 45%;
+    }  
+    .date   { position: absolute; top:20px;  left: 51%; } 
+    .search-btn {
+        position: absolute; bottom: 10px; left: 4%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 92%;
+        height: 36px;
+    }
+    
+    .post-cont .blind-m {display: none;}
+    .post-cont .date {width: 80px;}
+    .card .text-area button { height: 42px;}
+    .loanPeriod {
+        white-space: nowrap;
+        overflow: hidden;
+        display: inline-block;
+    }
+    .loanPeriod input {
+        width: 40%;
+    }
+    .popular-books-area dd {
+        white-space: normal;
+    }
+    .popular-books-area ul {
+        white-space: normal;
+    }
 
 }
 
 
 
 @media screen and (min-width: 768px){
-body { font-size: 17px; }
-.form-area .libary, .form-area .date { 
-    width: 45%;
-}  
-.date   { position: absolute; top:20px;  left: 51%; } 
-.search-btn {
-    position: absolute; bottom:10px;  left: 34px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 92%;
-    height: 36px;
-}
-.post-cont .blind-m {display: block;}
-.date { width: 100px; }
-.img-list-area {
-    
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
-}
-.card .img-area {width: 143px; height: 198px;}
-.card .text-area button { height: 42px;}
-.tab-btn li {
-    font-size: 20px;
-}
-.loanPeriod {
-    white-space: nowrap;
-    overflow: hidden;
-    display: inline-block;
-}
-.card-area .text-area dt {
-    font-size: 22px;
-}
-.time-area {
-    position: absolute; bottom: 44px; left: 428px;
+    body { font-size: 17px; }
+    .form-area .libary, .form-area .date { 
+        width: 45%;
+    }  
+    .date   { position: absolute; top:20px;  left: 51%; } 
+    .search-btn {
+        position: absolute; bottom:10px;  left: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 92%;
+        height: 36px;
+    }
+    .post-cont .blind-m {display: block;}
+    .date { width: 100px; }
+    .img-list-area {
+        
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+    .card .img-area {width: 143px; height: 198px;}
+    .card .text-area button { height: 42px;}
+    .tab-btn li {
+        font-size: 20px;
+    }
+    .loanPeriod {
+        white-space: nowrap;
+        overflow: hidden;
+        display: inline-block;
+    }
+    .card-area .text-area dt {
+        font-size: 22px;
+    }
+    .time-area {
+        position: absolute; bottom: 44px; left: 428px;
+
+    }
 
 }
 
-}
 
 
 
+@media screen and (min-width: 1024px){
+    /* 메인내용부분 */
+    #main {
+        width: 80%;
+    }
 
-@media screen and (min-width: 1023px){
-body {font-size: 17px;}
-.form-area .libary, .form-area .date { 
-    width: 40%;
-    
-}  
-.form-area {position: relative; height: 92px;}
-.date   { position: absolute; top:20px;  left: 46%; } 
-.post-cont .blind-m {display: block;}
-.img-list-area {
-    
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 8px;
-}
+    body {font-size: 17px;}
+    .form-area .libary, .form-area .date { 
+        width: 40%;
+        
+    }  
+    .form-area {position: relative; height: 92px;}
+    .date   { position: absolute; top:20px;  left: 46%; } 
+    .post-cont .blind-m {display: block;}
+    .img-list-area {
+        
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+    }
 
-.search-btn { 
-    position: absolute; top:16px; left: 88%;
-    width: 10%;
-    height: 45px;
-    justify-content: center;
-    align-items: center;
-    
-}
+    .search-btn { 
+        position: absolute; top:16px; left: 88%;
+        width: 10%;
+        height: 45px;
+        justify-content: center;
+        align-items: center;
+        
+    }
 
-.card { position: relative; }
-.card .text-area {display: flex;}
-.card .text-area button { position: absolute; top:75px; right: 8px; width: 170px; height: 54px;}
-.card-area { position: relative; }
-.card .img-area {width: 143px; height: 198px;}
-.card-area .col-Search { 
-    width: 170px; 
-    height: 50px;
-    position: absolute; top:80px; 
-    right: 50px; }
+    .card { position: relative; }
+    .card .text-area {display: flex;}
+    .card .text-area button { position: absolute; top:75px; right: 8px; width: 170px; height: 54px;}
+    .card-area { position: relative; }
+    .card .img-area {width: 143px; height: 198px;}
+    .card-area .col-Search { 
+        width: 170px; 
+        height: 50px;
+        position: absolute; top:80px; 
+        right: 50px; }
 
-.card-area .text-area dt { 
-    font-size: 23px;
-}
-.time-area {
-    position: absolute; bottom: 44px; left: 428px;
-    
-}
+    .card-area .text-area dt { 
+        font-size: 23px;
+    }
+    .time-area {
+        position: absolute; bottom: 44px; left: 428px;
+        
+    }
 
-* { word-break: keep-all; overflow-wrap: break-word;} 
+    * { word-break: keep-all; overflow-wrap: break-word;} 
 }

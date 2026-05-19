@@ -1,8 +1,3 @@
-/* 메인내용부분 */
-#main {
-    width: 80%;
-}
-
 
 .archive { 
     padding: 30px 10px;
@@ -73,7 +68,11 @@
     
 }
 
-@media screen and (min-width: 1023px){
+@media screen and (min-width: 1024px){
+    /* 메인내용부분 */
+    #main {
+        width: 80%;
+    }
 
     .res-list ul {
         width: calc(80% - 6px);
@@ -90,3 +89,4 @@
     } 
     
 }
+

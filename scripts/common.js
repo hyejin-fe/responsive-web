@@ -3,8 +3,9 @@ const snsMenu = document.querySelector(".sns-menu");
 const snsBtn = snsMenu.querySelector("button");
 const snsDropdown = snsMenu.querySelector(".dropdown");
 
-const searchBtn = document.querySelector(".search-btn");
-const menuBtn = document.querySelector(".menu-btn");
+const headerBor = document.querySelector(".header-bar")
+const searchBtn = headerBor.querySelector(".search-btn");
+const menuBtn = headerBor.querySelector(".menu-btn");
 
 const searchArea = document.querySelector(".search-area");
 const searchClose = searchArea.querySelector("button");

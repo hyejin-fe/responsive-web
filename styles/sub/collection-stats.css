@@ -1,10 +1,5 @@
 * { word-break: keep-all; overflow-wrap: break-word;}
 
-/* 메인내용부분 */
-#main {
-    width: 80%;
-}
-
 table { font-size: 1em;}
 th, td { padding: 10px 5px;}
 #main .contents .chart-list {
@@ -56,6 +51,8 @@ th, td { padding: 10px 5px;}
     border-bottom: 1px solid #ababab;
 }
 
+
+
 /*반응형 구간*/
 @media screen and (max-width: 767px){ /*모바일최대*/
     #main .contents .process-info li,
@@ -64,6 +61,8 @@ th, td { padding: 10px 5px;}
     }
     
 }
+
+
 @media screen and (min-width:768px){ /*태블릿 최소*/
     #main .contents .grape-area canvas {
         margin: auto;
@@ -72,7 +71,14 @@ th, td { padding: 10px 5px;}
         display: none;
     }
 }
+
+
 @media screen and (min-width:1024px){ /*pc 최소*/
+    /* 메인내용부분 */
+    #main {
+        width: 80%;
+    }
+
     #main .contents .chart-list .chart-box {
         flex-direction: row;
     }

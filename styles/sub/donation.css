@@ -2,11 +2,6 @@
     box-sizing: border-box;
 }
 
-/* 메인내용부분 */
-#main {
-    width: 80%;
-}
-
 
 /* tab-btn */
 #main .contents .tab-btn {
@@ -39,19 +34,21 @@
 
 
 /* 공통부분 */
-#main .contents .detail-box {
-    padding: 10px;
-    margin-bottom: 25px;
-}
-.detail-box p:first-child {
-    font-size: 20px;
-    font-weight: 500;
-}
-
 #main .contents .tit-sub {
     margin-top: 25px;
     margin-bottom: 10px;
+    padding-left: 24px;
+    position: relative;
 }
+#main .contents .tit-sub::before {
+    content: "";
+    background: url("../../images/bg.png") no-repeat;
+    background-position: 0 0;
+    width: 19px;
+    height: 28px;
+    position: absolute; left: 0; top: 0;
+}
+
 
 fieldset {
     border: 0 none;
@@ -700,6 +697,11 @@ legend {
 }
 
 @media screen and (min-width: 1024px){
+    /* 메인내용부분 */
+    #main {
+        width: 80%;
+    }
+
     #main .contents .step-area {
         grid-template-columns: repeat(4, 1fr);
     }

@@ -1,8 +1,3 @@
-/* 메인내용부분 */
-#main {
-    width: 80%;
-}
-
 /* 공통부분 */
 #main .contents .tit-sec {
     margin-bottom: 30px;
@@ -115,5 +110,12 @@
 
     .user-login .find button {
         font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /* 메인내용부분 */
+    #main {
+        width: 80%;
     }
 }

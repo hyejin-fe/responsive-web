@@ -1,8 +1,3 @@
-/* 메인내용부분 */
-#main {
-    width: 80%;
-}
-
 #main .icon-btn {
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -104,20 +99,20 @@
     .kdctit-wrap .kdc-box dt {font-size: 21px;}
 }
 @media screen and (min-width: 1024px){ 
-    body { 
-        
+    /* 메인내용부분 */
+    #main {
+        width: 80%;
     }
+
     .kdctit-wrap .kdc-box dt, dd {
         white-space: nowrap; /* 줄바꿈 넘어가지 않게 /한 줄로 */
         overflow-x: hidden;  /* 넘친 부분 화면에 표시 x */
         text-overflow: ellipsis; /* 넘친 부분 ...으로 표현 */
     }
-    .kdctit-wrap .kdc-box .ch { 
-        
-    }
-    
+
     .kdctit-wrap .kdc-box .ch.show {display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 15px;}
+        gap: 15px;
+    }
 }
 

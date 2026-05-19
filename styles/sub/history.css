@@ -1,15 +1,4 @@
 
-/* 메인내용부분 */
-#main {
-    width: 80%;
-}
-
-@media screen and (max-width: 768px) {
-    #main .contents .history-top {
-        height: 300px;
-    }
-}
-
 #main .contents .history-top {
     margin-bottom: 70px;
     border-radius: 5px;
@@ -41,9 +30,11 @@
 }
 
 .history-top p {
+    width: fit-content;
     font-size: 30px;
     font-weight: 500;
     line-height: 1.2;
+    margin: 0 auto;
     margin-bottom: 10px;
     color: #fff;
 }
@@ -54,7 +45,7 @@
 
 .history-top li {
     border: 0 none;
-    padding: 10px 15px 0 15px;
+    padding: 10px 20px 0 20px;
 }
 .history-top li button {
     font-size: 18px;
@@ -139,6 +130,11 @@
     font-weight: 400;
 }
 
+@media screen and (max-width: 768px) {
+    #main .contents .history-top {
+        height: 300px;
+    }
+}
 
 @media screen and (min-width: 768px) {
     .history-top ul {
@@ -156,7 +152,8 @@
 
 
 @media screen and (min-width: 1024px) {
-    .history-top p {
-        width: 510px;
+    /* 메인내용부분 */
+    #main {
+        width: 80%;
     }
 }
